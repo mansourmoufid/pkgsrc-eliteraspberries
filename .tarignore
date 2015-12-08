@@ -1,0 +1,6 @@
+.tarignore
+.git
+README.md
+release.sh
+*.tar
+*.tar.gz
