@@ -1,6 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	alt-ergo-0.99.1
+PKGREVISION=	2
 CATEGORIES=	math
 MASTER_SITES=	http://alt-ergo.ocamlpro.com/download_manager.php?target=
 
@@ -15,7 +16,7 @@ USE_LANGUAGES=	c
 
 USE_TOOLS+=	gmake
 
-.include "../../lang/ocaml/buildlink3.mk"
+.include "../../eliteraspberries/ocaml/buildlink3.mk"
 .include "../../eliteraspberries/zarith/buildlink3.mk"
 .include "../../eliteraspberries/ocamlgraph/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
