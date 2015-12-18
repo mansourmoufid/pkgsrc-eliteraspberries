@@ -1,0 +1,77 @@
+$NetBSD$
+
+--- Makefile.orig	2015-11-12 20:02:03.000000000 +0000
++++ Makefile
+@@ -22,9 +22,7 @@ ifndef PREFIX
+   $(error Please define PREFIX)
+ endif
+ 
+-ifndef TARGET
+-  TARGET := native
+-endif
++TARGET ?= native
+ 
+ # ----------------------------------------------------------------------------
+ 
+@@ -40,10 +38,10 @@ endif
+ # These may be overridden from outside; e.g., our opam package description
+ # provides its own values of docdir, libdir, and mandir.
+ 
+-bindir          := $(PREFIX)/bin
+-docdir		:= $(PREFIX)/share/doc/menhir
+-libdir	        := $(PREFIX)/share/menhir
+-mandir          := $(PREFIX)/share/man/man1
++bindir          ?= $(PREFIX)/bin
++docdir          ?= $(PREFIX)/share/doc/menhir
++libdir          ?= $(PREFIX)/share/menhir
++mandir          ?= $(PREFIX)/share/man/man1
+ MANS            := menhir.1
+ DOCS            := manual.pdf demos
+ MLYLIB          := src/standard.mly
+@@ -159,32 +157,32 @@ endif
+ 
+ install:
+ # Install the executable.
+-	mkdir -p $(bindir)
+-	install $(BUILDDIR)/menhir.$(TARGET) $(bindir)/$(MENHIREXE)
++	mkdir -p $(DESTDIR)$(bindir)
++	install $(BUILDDIR)/menhir.$(TARGET) $(DESTDIR)$(bindir)/$(MENHIREXE)
+ # Install the library.
+-	mkdir -p $(libdir)
+-	install -m 644 $(MLYLIB) $(libdir)
++	mkdir -p $(DESTDIR)$(libdir)
++	install -m 644 $(MLYLIB) $(DESTDIR)$(libdir)
+ 	@if $(USE_OCAMLFIND) ; then \
+ 	  echo Installing MenhirLib via ocamlfind. ; \
+-	  ocamlfind install menhirLib src/META $(patsubst %,$(BUILDDIR)/%,$(MENHIRLIB)) ; \
++	  ocamlfind install -destdir $(DESTDIR)$(PREFIX)/lib/ocaml/site-lib menhirLib src/META $(patsubst %,$(BUILDDIR)/%,$(MENHIRLIB)) ; \
+ 	else \
+ 	  echo Installing MenhirLib manually. ; \
+-	  install -m 644 $(patsubst %,$(BUILDDIR)/%,$(MENHIRLIB)) $(libdir) ; \
++	  install -m 644 $(patsubst %,$(BUILDDIR)/%,$(MENHIRLIB)) $(DESTDIR)$(libdir) ; \
+ 	fi
+ # Install the documentation, if it has been built.
+ 	if [ -f manual.pdf ] ; then \
+-	  mkdir -p $(docdir) ; \
+-	  mkdir -p $(mandir) ; \
+-	  cp -r $(DOCS) $(docdir) ; \
+-	  cp -r $(MANS) $(mandir) ; \
++	  mkdir -p $(DESTDIR)$(docdir) ; \
++	  mkdir -p $(DESTDIR)$(mandir) ; \
++	  cp -r $(DOCS) $(DESTDIR)$(docdir) ; \
++	  cp -r $(MANS) $(DESTDIR)$(mandir) ; \
+ 	fi
+ 
+ uninstall:
+-	rm -rf $(bindir)/$(MENHIREXE)
+-	rm -rf $(libdir)
++	rm -rf $(DESTDIR)$(bindir)/$(MENHIREXE)
++	rm -rf $(DESTDIR)$(libdir)
+ 	@if $(USE_OCAMLFIND) ; then \
+ 	  echo Un-installing MenhirLib via ocamlfind. ; \
+ 	  ocamlfind remove menhirLib ; \
+ 	fi
+-	rm -rf $(docdir)
+-	rm -rf $(mandir)/$(MANS)
++	rm -rf $(DESTDIR)$(docdir)
++	rm -rf $(DESTDIR)$(mandir)/$(MANS)
