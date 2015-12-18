@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	ocamlgraph-1.8.6
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	math devel
 MASTER_SITES=	http://ocamlgraph.lri.fr/download/
 
@@ -17,6 +17,6 @@ USE_TOOLS+=	gmake
 
 INSTALL_TARGET=	install-findlib
 
-.include "../../lang/ocaml/buildlink3.mk"
+.include "../../eliteraspberries/ocaml/buildlink3.mk"
 .include "../../devel/ocaml-findlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
