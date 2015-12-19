@@ -1,0 +1,2 @@
+Camlp4 is a preprocessor for OCaml.  As a preprocessor, you can do syntax
+extensions to your OCaml programs.
