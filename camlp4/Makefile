@@ -3,6 +3,7 @@
 GITHUB_PROJECT=	camlp4
 DISTNAME=	4.02+6
 PKGNAME=	${GITHUB_PROJECT}-${DISTNAME}
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GITHUB:=ocaml/}
 DIST_SUBDIR=	${GITHUB_PROJECT}
@@ -24,4 +25,5 @@ BUILD_TARGET=	byte
 INSTALL_TARGET=	install install-META
 
 .include "../../eliteraspberries/ocaml/buildlink3.mk"
+.include "../../devel/ocaml-findlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
