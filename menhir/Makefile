@@ -1,6 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	menhir-20151112
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://cristal.inria.fr/~fpottier/menhir/
 
