@@ -1,0 +1,3 @@
+Coccinelle is a program matching and transformation engine which provides
+the language SmPL (Semantic Patch Language) for specifying desired matches
+and transformations in C code.

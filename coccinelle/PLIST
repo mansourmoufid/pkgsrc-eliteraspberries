@@ -1,0 +1,16 @@
+@comment $NetBSD$
+bin/pycocci
+bin/spatch
+bin/spatch.opt
+lib/coccinelle/ocaml/coccilib.cmi
+lib/coccinelle/ocaml/exposed_modules.cmi
+lib/coccinelle/ocaml/ocamlcocci_aux.cmi
+lib/coccinelle/ocaml/prepare_ocamlcocci.cmi
+lib/coccinelle/ocaml/run_ocamlcocci.cmi
+lib/coccinelle/ocaml/yes_prepare_ocamlcocci.cmi
+lib/coccinelle/spatch.opt
+lib/coccinelle/standard.h
+lib/coccinelle/standard.iso
+man/man1/pycocci.1
+man/man1/spatch.1
+man/man3/Coccilib.3cocci
