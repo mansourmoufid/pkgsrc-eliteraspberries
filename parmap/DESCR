@@ -1,0 +1,2 @@
+Parmap is a minimalistic library allowing to exploit multicore
+architectures for OCaml programs with minimal modifications.
