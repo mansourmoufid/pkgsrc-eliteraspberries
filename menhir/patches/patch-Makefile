@@ -28,7 +28,7 @@ $NetBSD$
  MANS            := menhir.1
  DOCS            := manual.pdf demos
  MLYLIB          := src/standard.mly
-@@ -159,32 +157,32 @@ endif
+@@ -159,32 +157,33 @@ endif
  
  install:
  # Install the executable.
@@ -44,6 +44,7 @@ $NetBSD$
  	@if $(USE_OCAMLFIND) ; then \
  	  echo Installing MenhirLib via ocamlfind. ; \
 -	  ocamlfind install menhirLib src/META $(patsubst %,$(BUILDDIR)/%,$(MENHIRLIB)) ; \
++	  mkdir -p $(DESTDIR)$(PREFIX)/lib/ocaml/site-lib; \
 +	  ocamlfind install -destdir $(DESTDIR)$(PREFIX)/lib/ocaml/site-lib menhirLib src/META $(patsubst %,$(BUILDDIR)/%,$(MENHIRLIB)) ; \
  	else \
  	  echo Installing MenhirLib manually. ; \
