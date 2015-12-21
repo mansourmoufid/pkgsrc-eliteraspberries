@@ -2,7 +2,7 @@
 
 DISTNAME=	frama-c-Sodium-20150201
 PKGNAME=	${DISTNAME:S/-Sodium//}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://frama-c.com/download/
 
@@ -21,7 +21,7 @@ CONFIGURE_ARGS+=	--disable-gui
 .include "options.mk"
 
 .include "../../eliteraspberries/ocaml/buildlink3.mk"
-.include "../../devel/ocaml-findlib/buildlink3.mk"
+.include "../../eliteraspberries/ocaml-findlib/buildlink3.mk"
 .include "../../devel/gmp/buildlink3.mk"
 .include "../../eliteraspberries/zarith/buildlink3.mk"
 .include "../../eliteraspberries/ocamlgraph/buildlink3.mk"
