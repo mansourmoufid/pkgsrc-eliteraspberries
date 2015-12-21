@@ -1,6 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	coccinelle-1.0.4
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://coccinelle.lip6.fr/distrib/
 EXTRACT_SUFX=	.tgz
@@ -25,7 +26,7 @@ CONFIGURE_ARGS+=	--disable-pcre-syntax
 CONFIGURE_ARGS+=	--without-pdflatex
 
 .include "../../eliteraspberries/ocaml/buildlink3.mk"
-.include "../../devel/ocaml-findlib/buildlink3.mk"
+.include "../../eliteraspberries/ocaml-findlib/buildlink3.mk"
 .include "../../eliteraspberries/camlp4/buildlink3.mk"
 .include "../../eliteraspberries/menhir/buildlink3.mk"
 .include "../../eliteraspberries/parmap/buildlink3.mk"
