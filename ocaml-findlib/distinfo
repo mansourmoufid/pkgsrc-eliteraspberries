@@ -1,0 +1,9 @@
+$NetBSD$
+
+SHA1 (findlib-1.6.1.tar.gz) = ca84a83c4e64e1d2823386c3880cc11b00c99c39
+RMD160 (findlib-1.6.1.tar.gz) = aeec03730ef05c161e9ce7d06283ab56aecb1358
+Size (findlib-1.6.1.tar.gz) = 254797 bytes
+SHA1 (patch-Makefile) = 69982653d251ed7f7bc1ff53eb9a1748e73c7e30
+SHA1 (patch-src_bytes_Makefile) = 0825384ef13c047175ff3136c16538a339627451
+SHA1 (patch-src_findlib-toolbox_Makefile) = 7e5cfa3fb4c279df76aae576310d7f9bed5e169a
+SHA1 (patch-src_findlib_Makefile) = cb2140690a7fd87391965d17ada02585c7d033ea

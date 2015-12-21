@@ -1,0 +1,23 @@
+--- src/bytes/Makefile.orig	2015-12-07 09:35:24.000000000 -0500
++++ src/bytes/Makefile	2015-12-21 16:35:58.000000000 -0500
+@@ -19,12 +19,16 @@
+ 	$(OCAMLBUILD) $$files
+ 
+ install: all
+-	mkdir -p "$(prefix)$(OCAML_SITELIB)/bytes"
+-	cd _build/ && cp ../META $(BYTE_FILES) "$(prefix)$(OCAML_SITELIB)/bytes"
+-	cd _build/ && for f in $(NATIVE_FILES) $(NATIVE_FILES_DYNLINK); do if [ -f "$$f" ]; then cp $$f "$(prefix)$(OCAML_SITELIB)/bytes"; fi; done
++	mkdir -p "$(DESTDIR)$(prefix)$(OCAML_SITELIB)/bytes"
++	cd _build/ && cp ../META $(BYTE_FILES) "$(DESTDIR)$(prefix)$(OCAML_SITELIB)/bytes"
++	cd _build/ && for f in $(NATIVE_FILES) $(NATIVE_FILES_DYNLINK); do \
++		if [ -f "$$f" ]; then \
++			cp $$f "$(DESTDIR)$(prefix)$(OCAML_SITELIB)/bytes"; \
++		fi; \
++	done
+ 
+ uninstall: 
+-	rm -rf "$(prefix)$(OCAML_SITELIB)/bytes"
++	rm -rf "$(DESTDIR)$(prefix)$(OCAML_SITELIB)/bytes"
+ 
+ # install-self and uninstall-self use ocamlfind already. This is a bit
+ # questionable here.
