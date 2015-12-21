@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	menhir-20151112
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://cristal.inria.fr/~fpottier/menhir/
 
@@ -23,5 +23,5 @@ MAKE_ENV+=	mandir=${PREFIX}/${PKGMANDIR}
 MAKE_ENV+=	docdir=${PREFIX}/share/doc/menhir
 
 .include "../../eliteraspberries/ocaml/buildlink3.mk"
-.include "../../devel/ocaml-findlib/buildlink3.mk"
+.include "../../eliteraspberries/ocaml-findlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
