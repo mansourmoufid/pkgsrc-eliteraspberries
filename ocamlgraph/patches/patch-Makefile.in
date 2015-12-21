@@ -10,12 +10,29 @@ $NetBSD$
  prefix	=@prefix@
  exec_prefix=@exec_prefix@
  datarootdir=@datarootdir@
-@@ -418,7 +417,7 @@ ifeq (@LABLGNOMECANVAS@,yes)
+@@ -418,13 +417,14 @@ ifeq (@LABLGNOMECANVAS@,yes)
  endif
  
  ifdef DESTDIR
 -OCAMLFINDDEST := -destdir $(DESTDIR)
-+OCAMLFINDDEST := -destdir $(DESTDIR)$(OCAMLLIB)/site-lib
++OCAMLFINDDEST := $(DESTDIR)$(OCAMLLIB)/site-lib
  endif
  
  install-findlib: META
+ ifdef OCAMLFIND
++	mkdir -p $(OCAMLFINDDEST)
+ ifeq (@LABLGNOMECANVAS@,yes)
+-	$(OCAMLFIND) install $(OCAMLFINDDEST) ocamlgraph META \
++	$(OCAMLFIND) install -destdir $(OCAMLFINDDEST) ocamlgraph META \
+ 		$(SRCDIR)/*.mli $(VIEWER_DIR)/*.mli $(DGRAPH_DIR)/*.mli \
+ 		graph$(OBJEXT) graph$(LIBEXT) graph.cmx graph.cmo graph.cmi \
+ 		$(CMA) $(CMXA) \
+@@ -433,7 +433,7 @@ ifeq (@LABLGNOMECANVAS@,yes)
+                 $(DGRAPH_CMXLIB) $(DGRAPH_CMOLIB) $(DGRAPH_CMILIB) \
+                 $(DGRAPH_CMXLIB:.cmx=.o)
+ else
+-	$(OCAMLFIND) install $(OCAMLFINDDEST) ocamlgraph META \
++	$(OCAMLFIND) install -destdir $(OCAMLFINDDEST) ocamlgraph META \
+ 		$(SRCDIR)/*.mli $(VIEWER_DIR)/*.mli $(DGRAPH_DIR)/*.mli \
+ 		graph$(LIBEXT) graph.cmx graph.cmo graph.cmi $(CMA) $(CMXA)
+ endif
