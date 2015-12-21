@@ -2,7 +2,7 @@ $NetBSD$
 
 --- project.mak.orig	2015-11-09 21:23:00.000000000 +0000
 +++ project.mak
-@@ -81,25 +81,25 @@ doc: $(MLISRC)
+@@ -81,25 +81,26 @@ doc: $(MLISRC)
  
  ifeq ($(INSTMETH),install)
  install:
@@ -27,6 +27,7 @@ $NetBSD$
  ifeq ($(INSTMETH),findlib)
  install:
 -	$(OCAMLFIND) install -destdir "$(INSTALLDIR)" zarith META $(TOINSTALL) dllzarith.$(DLLSUFFIX)
++	mkdir -p $(DESTDIR)$(INSTALLDIR)
 +	$(OCAMLFIND) install -destdir "$(DESTDIR)$(INSTALLDIR)" zarith META $(TOINSTALL) dllzarith.$(DLLSUFFIX)
  
  uninstall:
