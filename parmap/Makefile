@@ -3,7 +3,7 @@
 GITHUB_PROJECT=	parmap
 DISTNAME=	1.0-rc7
 PKGNAME=	${GITHUB_PROJECT}-${DISTNAME:S/-/+/}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GITHUB:=rdicosmo/parmap/archive/}
 DIST_SUBDIR=	${GITHUB_PROJECT}
@@ -19,5 +19,5 @@ GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake
 
 .include "../../eliteraspberries/ocaml/buildlink3.mk"
-.include "../../devel/ocaml-findlib/buildlink3.mk"
+.include "../../eliteraspberries/ocaml-findlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
