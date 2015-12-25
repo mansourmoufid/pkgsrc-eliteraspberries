@@ -7,7 +7,7 @@ tar \
     -v \
     -c \
     -f $prefix/$tar \
-    --format pax \
+    --format ustar \
     -X $prefix/.tarignore \
     pkgsrc/eliteraspberries/*
 gzip $prefix/$tar
