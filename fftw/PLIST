@@ -3,7 +3,8 @@ bin/fftw-wisdom-to-conf
 bin/fftwf-wisdom
 include/fftw3.h
 info/fftw3.info
-lib/libfftw3f.la
+lib/libfftw3f.3.${SOEXT}
+lib/libfftw3f.${SOEXT}
 lib/pkgconfig/fftw3f.pc
 man/man1/fftw-wisdom-to-conf.1
 man/man1/fftwf-wisdom.1

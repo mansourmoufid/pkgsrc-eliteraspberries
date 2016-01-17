@@ -18,8 +18,8 @@ PKGCONFIG_OVERRIDE+=	fftw.pc.in
 
 INFO_FILES=	fftw3.info
 
-CONFIGURE_ARGS+=	--enable-static
-CONFIGURE_ARGS+=	--disable-shared
+CONFIGURE_ARGS+=	--disable-static
+CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	--disable-debug
 CONFIGURE_ARGS+=	--disable-fortran
 CONFIGURE_ARGS+=	--disable-mpi
@@ -29,10 +29,19 @@ CONFIGURE_ARGS+=	--with-pic
 
 CONFIGURE_ARGS+=	--enable-float
 
+.include "../../mk/bsd.prefs.mk"
+
 .if ${MACHINE_ARCH} == "i386"
 CONFIGURE_ARGS+=	--enable-sse
 .elif ${MACHINE_ARCH} == "x86_64"
 CONFIGURE_ARGS+=	--enable-sse2
 .endif
+
+.if ${OPSYS} == "Darwin"
+SOEXT=		dylib
+.else
+SOEXT=		so
+.endif
+PLIST_SUBST+=	SOEXT=${SOEXT}
 
 .include "../../mk/bsd.pkg.mk"
