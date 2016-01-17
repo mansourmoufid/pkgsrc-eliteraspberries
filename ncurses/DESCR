@@ -1,0 +1,6 @@
+Ncurses (new curses, pronounced "enn-curses") started as a freely
+distributable "clone" of System V Release 4.0 (SVr4) curses.  It has
+outgrown the "clone" description, and now contains many features which
+are not in SVr4 curses.  Curses is a pun on the term "cursor
+optimization".  It is a library of functions that manage an
+application's display on character-cell terminals (e.g., VT100).
