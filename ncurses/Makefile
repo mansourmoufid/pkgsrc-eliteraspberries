@@ -21,5 +21,6 @@ CONFIGURE_ARGS+=	--without-profile
 CONFIGURE_ARGS+=	--enable-rpath
 CONFIGURE_ARGS+=	--disable-relink
 CONFIGURE_ARGS+=	--disable-rpath-hack
+CONFIGURE_ARGS+=	--without-manpages
 
 .include "../../mk/bsd.pkg.mk"
