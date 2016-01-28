@@ -1,0 +1,21 @@
+$NetBSD$
+
+https://github.com/ocaml/ocaml/pull/447
+
+--- stdlib/Makefile.orig	2015-05-12 14:46:37.000000000 +0000
++++ stdlib/Makefile
+@@ -48,10 +48,10 @@ stdlib.p.cmxa: $(OBJS:.cmo=.p.cmx)
+ camlheader target_camlheader camlheaderd target_camlheaderd camlheader_ur: \
+   header.c ../config/Makefile
+ 	if $(SHARPBANGSCRIPTS); then \
+-	  echo '#!$(BINDIR)/ocamlrun' > camlheader && \
+-	  echo '#!$(TARGET_BINDIR)/ocamlrun' > target_camlheader && \
+-	  echo '#!$(BINDIR)/ocamlrund' > camlheaderd && \
+-	  echo '#!$(TARGET_BINDIR)/ocamlrund' > target_camlheaderd && \
++	  echo '#!/usr/bin/env ocamlrun' > camlheader && \
++	  echo '#!/usr/bin/env ocamlrun' > target_camlheader && \
++	  echo '#!/usr/bin/env ocamlrund' > camlheaderd && \
++	  echo '#!/usr/bin/env ocamlrund' > target_camlheaderd && \
+ 	  echo '#!' | tr -d '\012' > camlheader_ur; \
+ 	else \
+ 	  for suff in '' d; do \

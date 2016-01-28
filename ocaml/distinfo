@@ -4,3 +4,4 @@ SHA1 (ocaml-4.02.3.tar.gz) = e68ffd2b5bb491a6345f46b27675e1361a49b274
 RMD160 (ocaml-4.02.3.tar.gz) = 3946204b9396a7fb81ae1042ce67a494579c151b
 Size (ocaml-4.02.3.tar.gz) = 3108892 bytes
 SHA1 (patch-configure) = eca24b4063b4c6a8cd0bdc70fc9fb581c22c7923
+SHA1 (patch-stdlib_Makefile) = 5518adf316d3d80fb5becefdbcdf6299267c7965
