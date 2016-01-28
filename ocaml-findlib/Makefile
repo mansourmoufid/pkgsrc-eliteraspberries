@@ -1,6 +1,8 @@
 # $NetBSD$
 
 DISTNAME=	findlib-1.6.1
+PKGNAME=	ocaml-${DISTNAME}
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://download.camlcity.org/download/
 
