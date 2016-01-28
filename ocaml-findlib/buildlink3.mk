@@ -1,14 +1,14 @@
 # $NetBSD$
 
-BUILDLINK_TREE+=	findlib
+BUILDLINK_TREE+=	ocaml-findlib
 
-.if !defined(FINDLIB_BUILDLINK3_MK)
-FINDLIB_BUILDLINK3_MK:=
+.if !defined(OCAML_FINDLIB_BUILDLINK3_MK)
+OCAML_FINDLIB_BUILDLINK3_MK:=
 
-BUILDLINK_API_DEPENDS.findlib+=	findlib>=1.6.1
-BUILDLINK_PKGSRCDIR.findlib?=	../../eliteraspberries/ocaml-findlib
+BUILDLINK_API_DEPENDS.ocaml-findlib+=	ocaml-findlib>=1.6.1nb3
+BUILDLINK_PKGSRCDIR.ocaml-findlib?=	../../eliteraspberries/ocaml-findlib
 
 .include "../../eliteraspberries/ocaml/buildlink3.mk"
-.endif	# FINDLIB_BUILDLINK3_MK
+.endif	# OCAML_FINDLIB_BUILDLINK3_MK
 
-BUILDLINK_TREE+=	-findlib
+BUILDLINK_TREE+=	-ocaml-findlib
