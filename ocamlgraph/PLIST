@@ -24,12 +24,9 @@ lib/ocaml/site-lib/ocamlgraph/fixpoint.mli
 lib/ocaml/site-lib/ocamlgraph/flow.mli
 lib/ocaml/site-lib/ocamlgraph/gmap.mli
 lib/ocaml/site-lib/ocamlgraph/gml.mli
-lib/ocaml/site-lib/ocamlgraph/graph.a
 lib/ocaml/site-lib/ocamlgraph/graph.cma
 lib/ocaml/site-lib/ocamlgraph/graph.cmi
 lib/ocaml/site-lib/ocamlgraph/graph.cmo
-lib/ocaml/site-lib/ocamlgraph/graph.cmx
-lib/ocaml/site-lib/ocamlgraph/graph.cmxa
 lib/ocaml/site-lib/ocamlgraph/graphml.mli
 lib/ocaml/site-lib/ocamlgraph/graphviz.mli
 lib/ocaml/site-lib/ocamlgraph/imperative.mli

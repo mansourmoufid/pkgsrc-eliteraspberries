@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Makefile.in.orig	2015-01-23 07:24:01.000000000 +0000
+--- Makefile.in.orig	2015-01-23 07:22:52.000000000 +0000
 +++ Makefile.in
 @@ -16,7 +16,6 @@
  ##########################################################################
@@ -27,12 +27,19 @@ $NetBSD$
  		$(SRCDIR)/*.mli $(VIEWER_DIR)/*.mli $(DGRAPH_DIR)/*.mli \
  		graph$(OBJEXT) graph$(LIBEXT) graph.cmx graph.cmo graph.cmi \
  		$(CMA) $(CMXA) \
-@@ -433,7 +433,7 @@ ifeq (@LABLGNOMECANVAS@,yes)
+@@ -433,9 +433,13 @@ ifeq (@LABLGNOMECANVAS@,yes)
                  $(DGRAPH_CMXLIB) $(DGRAPH_CMOLIB) $(DGRAPH_CMILIB) \
                  $(DGRAPH_CMXLIB:.cmx=.o)
  else
 -	$(OCAMLFIND) install $(OCAMLFINDDEST) ocamlgraph META \
 +	$(OCAMLFIND) install -destdir $(OCAMLFINDDEST) ocamlgraph META \
  		$(SRCDIR)/*.mli $(VIEWER_DIR)/*.mli $(DGRAPH_DIR)/*.mli \
- 		graph$(LIBEXT) graph.cmx graph.cmo graph.cmi $(CMA) $(CMXA)
+-		graph$(LIBEXT) graph.cmx graph.cmo graph.cmi $(CMA) $(CMXA)
++		graph.cmo graph.cmi $(CMA)
++ifeq ($(OCAMLBEST),opt)
++	$(OCAMLFIND) install -destdir $(OCAMLFINDDEST) \
++		graph$(OBJEXT) graph$(LIBEXT) graph.cmx $(CMXA)
++endif
  endif
+ endif
+ 
