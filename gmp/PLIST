@@ -1,0 +1,8 @@
+@comment $NetBSD$
+include/gmp.h
+lib/libgmp.10.${SOEXT}
+lib/libgmp.${SOEXT}
+share/info/dir
+share/info/gmp.info
+share/info/gmp.info-1
+share/info/gmp.info-2
