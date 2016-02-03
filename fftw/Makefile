@@ -1,6 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	fftw-3.3.4
+PKGREVISION=	2
 CATEGORIES=	math
 MASTER_SITES=	http://fftw.org/
 
@@ -36,12 +37,5 @@ CONFIGURE_ARGS+=	--enable-sse
 .elif ${MACHINE_ARCH} == "x86_64"
 CONFIGURE_ARGS+=	--enable-sse2
 .endif
-
-.if ${OPSYS} == "Darwin"
-SOEXT=		dylib
-.else
-SOEXT=		so
-.endif
-PLIST_SUBST+=	SOEXT=${SOEXT}
 
 .include "../../mk/bsd.pkg.mk"
