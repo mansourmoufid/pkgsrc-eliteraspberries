@@ -1,0 +1,14 @@
+@comment $NetBSD$
+include/libpng16/png.h
+include/libpng16/pngconf.h
+include/libpng16/pnglibconf.h
+include/png.h
+include/pngconf.h
+include/pnglibconf.h
+lib/libpng16.a
+lib/libpng.a
+lib/pkgconfig/libpng.pc
+lib/pkgconfig/libpng16.pc
+man/man3/libpng.3
+man/man3/libpngpf.3
+man/man5/png.5
