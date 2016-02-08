@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- configure.orig	2015-11-09 21:23:00.000000000 +0000
++++ configure
+@@ -30,7 +30,7 @@ ocamlmklib='ocamlmklib'
+ ocamldep='ocamldep'
+ ocamldoc='ocamldoc'
+ ccinc="$CPPFLAGS"
+-cclib="$LDFLAGS"
++cclib=""
+ asopt=''
+ ccdef=''
+ mlflags="$OCAMLFLAGS"

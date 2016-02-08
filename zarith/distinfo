@@ -3,4 +3,5 @@ $NetBSD$
 SHA1 (zarith-1.4.1.tgz) = 684d686a5e5234876dc41d247b6cecf47bd81d89
 RMD160 (zarith-1.4.1.tgz) = b0c858cb3757ce9bbd8f191b90ffeb76e81c5aa1
 Size (zarith-1.4.1.tgz) = 88831 bytes
+SHA1 (patch-configure) = a8b4289bb1e9db0acd25ceaca3fb2379419d8320
 SHA1 (patch-project.mak) = 44b0db6cfdc86a11b00a9b93fbbc703651434dd7
