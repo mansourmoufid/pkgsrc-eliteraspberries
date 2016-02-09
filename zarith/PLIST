@@ -8,5 +8,8 @@ lib/ocaml/site-lib/zarith/q.cmi
 lib/ocaml/site-lib/zarith/q.mli
 lib/ocaml/site-lib/zarith/z.cmi
 lib/ocaml/site-lib/zarith/z.mli
+lib/ocaml/site-lib/zarith/zarith.a
 lib/ocaml/site-lib/zarith/zarith.cma
+lib/ocaml/site-lib/zarith/zarith.cmxa
+lib/ocaml/site-lib/zarith/zarith.cmxs
 lib/ocaml/site-lib/zarith/zarith.h

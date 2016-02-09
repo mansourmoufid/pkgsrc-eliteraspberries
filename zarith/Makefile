@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	zarith-1.4.1
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	math devel
 MASTER_SITES=	https://forge.ocamlcore.org/frs/download.php/1574/
 EXTRACT_SUFX=	.tgz
