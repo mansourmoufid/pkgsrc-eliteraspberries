@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	ocaml-4.02.3
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	lang
 MASTER_SITES=	http://caml.inria.fr/pub/distrib/ocaml-4.02/
 
@@ -31,6 +31,6 @@ CONFIGURE_ARGS+=	-cc ${CC}
 CFLAGS=
 LDFLAGS=
 
-BUILD_TARGET=	world
+BUILD_TARGET=	world.opt
 
 .include "../../mk/bsd.pkg.mk"
