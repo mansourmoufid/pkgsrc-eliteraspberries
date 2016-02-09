@@ -2,7 +2,7 @@
 
 DISTNAME=	frama-c-Sodium-20150201
 PKGNAME=	${DISTNAME:S/-Sodium//}
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	devel
 MASTER_SITES=	http://frama-c.com/download/
 
