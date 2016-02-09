@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	alt-ergo-0.99.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	math
 MASTER_SITES=	http://alt-ergo.ocamlpro.com/download_manager.php?target=
 
@@ -10,7 +10,6 @@ HOMEPAGE=	http://alt-ergo.ocamlpro.com/
 COMMENT=	SMT solver for program verification
 LICENSE=	cecill-2.1
 
-WRKSRC=		${WRKDIR}/alt-ergo-0.99.1
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c
 
