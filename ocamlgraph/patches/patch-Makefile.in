@@ -27,19 +27,12 @@ $NetBSD$
  		$(SRCDIR)/*.mli $(VIEWER_DIR)/*.mli $(DGRAPH_DIR)/*.mli \
  		graph$(OBJEXT) graph$(LIBEXT) graph.cmx graph.cmo graph.cmi \
  		$(CMA) $(CMXA) \
-@@ -433,9 +433,13 @@ ifeq (@LABLGNOMECANVAS@,yes)
+@@ -433,7 +433,7 @@ ifeq (@LABLGNOMECANVAS@,yes)
                  $(DGRAPH_CMXLIB) $(DGRAPH_CMOLIB) $(DGRAPH_CMILIB) \
                  $(DGRAPH_CMXLIB:.cmx=.o)
  else
 -	$(OCAMLFIND) install $(OCAMLFINDDEST) ocamlgraph META \
 +	$(OCAMLFIND) install -destdir $(OCAMLFINDDEST) ocamlgraph META \
  		$(SRCDIR)/*.mli $(VIEWER_DIR)/*.mli $(DGRAPH_DIR)/*.mli \
--		graph$(LIBEXT) graph.cmx graph.cmo graph.cmi $(CMA) $(CMXA)
-+		graph.cmo graph.cmi $(CMA)
-+ifeq ($(OCAMLBEST),opt)
-+	$(OCAMLFIND) install -destdir $(OCAMLFINDDEST) \
-+		graph$(OBJEXT) graph$(LIBEXT) graph.cmx $(CMXA)
-+endif
+ 		graph$(LIBEXT) graph.cmx graph.cmo graph.cmi $(CMA) $(CMXA)
  endif
- endif
- 

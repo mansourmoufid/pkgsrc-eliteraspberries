@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	ocamlgraph-1.8.6
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	math devel
 MASTER_SITES=	${MASTER_SITE_GITHUB:=backtracking/}
 GITHUB_TAG=	c10607cdeab1200834cde8f5f6a2f8ed1de4d76c
