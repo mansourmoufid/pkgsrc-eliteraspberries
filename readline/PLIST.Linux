@@ -1,0 +1,7 @@
+@comment $NetBSD$
+lib/libhistory.so
+lib/libhistory.so.6
+lib/libhistory.so.${PKGVERSION}
+lib/libreadline.so
+lib/libreadline.so.6
+lib/libreadline.so.${PKGVERSION}
