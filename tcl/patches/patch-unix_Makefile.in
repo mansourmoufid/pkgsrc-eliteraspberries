@@ -1,0 +1,17 @@
+$NetBSD$
+
+--- unix/Makefile.in.orig	2015-03-11 13:59:56.000000000 +0000
++++ unix/Makefile.in
+@@ -953,11 +953,7 @@ install-headers:
+ 		fi; \
+ 	    done;
+ 	@echo "Installing header files to $(INCLUDE_INSTALL_DIR)/";
+-	@for i in $(GENERIC_DIR)/tcl.h $(GENERIC_DIR)/tclDecls.h \
+-		$(GENERIC_DIR)/tclOO.h $(GENERIC_DIR)/tclOODecls.h \
+-		$(GENERIC_DIR)/tclPlatDecls.h \
+-		$(GENERIC_DIR)/tclTomMath.h \
+-		$(GENERIC_DIR)/tclTomMathDecls.h ; \
++	@for i in $(GENERIC_HDRS) $(UNIX_HDRS) ; \
+ 	    do \
+ 	    $(INSTALL_DATA) $$i "$(INCLUDE_INSTALL_DIR)"; \
+ 	    done;

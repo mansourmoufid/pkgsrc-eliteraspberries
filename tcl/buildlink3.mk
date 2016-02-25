@@ -1,0 +1,13 @@
+# $NetBSD$
+# BUILDLINK_DEPMETHOD.tcl?=	build
+
+BUILDLINK_TREE+=	tcl
+
+.if !defined(TCL_BUILDLINK3_MK)
+TCL_BUILDLINK3_MK:=
+
+BUILDLINK_API_DEPENDS.tcl+=	tcl>=8.6.4
+BUILDLINK_PKGSRCDIR.tcl?=	../../eliteraspberries/tcl
+.endif	# TCL_BUILDLINK3_MK
+
+BUILDLINK_TREE+=	-tcl

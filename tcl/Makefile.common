@@ -1,0 +1,18 @@
+# $NetBSD$
+# used by eliteraspberries/tcl/Makefile
+# used by eliteraspberries/tk/Makefile
+
+TCL_VERSION=	8.6.4
+
+.include "../../mk/bsd.prefs.mk"
+
+CONFIGURE_ARGS+=	--enable-shared
+
+.if defined(ABI) && ${ABI} == "64"
+CONFIGURE_ARGS+=	--enable-64bit
+.endif
+
+.if ${OPSYS} == "Darwin"
+CONFIGURE_ARGS+=	--enable-corefoundation
+CONFIGURE_ARGS+=	--disable-framework
+.endif
