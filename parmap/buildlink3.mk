@@ -5,7 +5,7 @@ BUILDLINK_TREE+=	parmap
 .if !defined(PARMAP_BUILDLINK3_MK)
 PARMAP_BUILDLINK3_MK:=
 
-BUILDLINK_API_DEPENDS.parmap+=	parmap>=1.0+rc7nb3
+BUILDLINK_API_DEPENDS.parmap+=	parmap>=1.0rc7nb4
 BUILDLINK_PKGSRCDIR.parmap?=	../../eliteraspberries/parmap
 
 .include "../../eliteraspberries/ocaml/buildlink3.mk"
