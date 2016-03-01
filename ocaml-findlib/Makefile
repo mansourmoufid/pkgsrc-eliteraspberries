@@ -2,7 +2,7 @@
 
 DISTNAME=	findlib-1.6.1
 PKGNAME=	ocaml-${DISTNAME}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	http://download.camlcity.org/download/
 
@@ -22,6 +22,8 @@ CONFIGURE_ARGS+=	-mandir ${PREFIX}/${PKGMANDIR}
 CONFIGURE_ARGS+=	-sitelib ${PREFIX}/lib/ocaml/site-lib
 CONFIGURE_ARGS+=	-no-camlp4
 CONFIGURE_ARGS+=	-no-custom
+
+BUILD_TARGET=	all opt
 
 .include "../../eliteraspberries/ocaml/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
