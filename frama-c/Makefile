@@ -1,8 +1,7 @@
 # $NetBSD$
 
-DISTNAME=	frama-c-Sodium-20150201
-PKGNAME=	${DISTNAME:S/-Sodium//}
-PKGREVISION=	6
+DISTNAME=	frama-c-Magnesium-20151002
+PKGNAME=	${DISTNAME:S/-Magnesium//}
 CATEGORIES=	devel
 MASTER_SITES=	http://frama-c.com/download/
 

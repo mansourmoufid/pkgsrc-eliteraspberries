@@ -1,5 +1,6 @@
 $NetBSD$
 
-SHA1 (frama-c-Sodium-20150201.tar.gz) = 71c7d9ea6d36a82d78069081f64db7209aa2a40f
-RMD160 (frama-c-Sodium-20150201.tar.gz) = 0b1efe9c3a55c421bacde58a0e05a0d06fd4e4d1
-Size (frama-c-Sodium-20150201.tar.gz) = 6155507 bytes
+SHA1 (frama-c-Magnesium-20151002.tar.gz) = 5aa50a310bf35f9a4acc5931b0e3f119ff65eb71
+RMD160 (frama-c-Magnesium-20151002.tar.gz) = 46649c7e5c0b4e169cd1ab26a8a127a0e632f53a
+SHA512 (frama-c-Magnesium-20151002.tar.gz) = 86e86dcc683651a5c57a548134bd70fd4b0a71a9290000872954a04aae09c72e73f8c0916498ad5c09b9f014728f643a1805add458eb7cb539facd25138ff901
+Size (frama-c-Magnesium-20151002.tar.gz) = 6330931 bytes
