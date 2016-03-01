@@ -4,6 +4,7 @@ PA_VERSION=	v19_20140130
 
 DISTNAME=	pa_stable_${PA_VERSION}
 PKGNAME=	portaudio-${PA_VERSION}
+PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://www.portaudio.com/archives/
 EXTRACT_SUFX=	.tgz

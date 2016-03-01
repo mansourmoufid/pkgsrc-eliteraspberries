@@ -1,0 +1,5 @@
+@comment $NetBSD$
+include/pa_linux_alsa.h
+lib/libportaudio.so.2.0.0
+lib/libportaudio.so.2
+lib/libportaudio.so
