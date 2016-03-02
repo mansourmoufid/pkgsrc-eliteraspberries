@@ -1,0 +1,29 @@
+$NetBSD$
+
+--- configure.ac.orig	2015-12-05 19:47:20.000000000 +0000
++++ configure.ac
+@@ -1196,8 +1196,10 @@ yes)
+ 	    # environment with a value that is the same as what we'll use
+ 	    # in the Makefile to ensure that we'll get the same compiler
+ 	    # environment during configure and build time.
+-	    MACOSX_DEPLOYMENT_TARGET="$CONFIGURE_MACOSX_DEPLOYMENT_TARGET"
+-	    export MACOSX_DEPLOYMENT_TARGET
++	    if test "x${MACOSX_DEPLOYMENT_TARGET}" = "x" ; then
++	        MACOSX_DEPLOYMENT_TARGET="$CONFIGURE_MACOSX_DEPLOYMENT_TARGET"
++	        export MACOSX_DEPLOYMENT_TARGET
++	    fi
+ 	    EXPORT_MACOSX_DEPLOYMENT_TARGET=''
+ 
+ 	    if test "${enable_universalsdk}"; then
+@@ -4518,11 +4520,6 @@ then
+   [Define to printf format modifier for long long type])
+ fi
+ 
+-if test $ac_sys_system = Darwin
+-then
+-	LIBS="$LIBS -framework CoreFoundation"
+-fi
+-
+ 
+ AC_CACHE_CHECK([for %zd printf() format support], ac_cv_have_size_t_format, [dnl
+ AC_RUN_IFELSE([AC_LANG_SOURCE([[

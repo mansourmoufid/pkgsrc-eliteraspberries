@@ -1,6 +1,7 @@
 # $NetBSD$
 # used by eliteraspberries/tcl/Makefile
 # used by eliteraspberries/tk/Makefile
+# used by eliteraspberries/python/Makefile
 
 TCL_MAJOR_VERSION=	8
 TCL_MINOR_VERSION=	6
