@@ -2,8 +2,6 @@
 # used by eliteraspberries/tcl/Makefile
 # used by eliteraspberries/tk/Makefile
 
-TCL_VERSION=	8.6.4
-
 .include "../../mk/bsd.prefs.mk"
 
 CONFIGURE_ARGS+=	--enable-shared

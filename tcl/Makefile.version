@@ -1,0 +1,9 @@
+# $NetBSD$
+# used by eliteraspberries/tcl/Makefile
+# used by eliteraspberries/tk/Makefile
+
+TCL_MAJOR_VERSION=	8
+TCL_MINOR_VERSION=	6
+TCL_PATCH_LEVEL=	4
+TCL_BASEVER=		${TCL_MAJOR_VERSION}.${TCL_MINOR_VERSION}
+TCL_VERSION=		${TCL_BASEVER}.${TCL_PATCH_LEVEL}
