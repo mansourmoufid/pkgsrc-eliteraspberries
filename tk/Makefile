@@ -1,8 +1,10 @@
 # $NetBSD$
 
+.include "../../eliteraspberries/tcl/Makefile.version"
+
 DISTNAME=	tk${TCL_VERSION}-src
 PKGNAME=	tk-${TCL_VERSION}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tcl/}
 
