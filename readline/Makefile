@@ -1,6 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	readline-6.3
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.cwru.edu/pub/bash/
 
@@ -10,6 +11,8 @@ COMMENT=	GNU Readline library
 LICENSE=	gnu-gpl-v3
 
 GNU_CONFIGURE=	yes
+
+CFLAGS+=	-I${LOCALBASE}/include/ncurses
 
 CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	--disable-static
