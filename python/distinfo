@@ -5,4 +5,5 @@ RMD160 (Python-2.7.11.tgz) = a922f99bb0ee226913faa7b43a736427ea4d135f
 SHA512 (Python-2.7.11.tgz) = f21df53da87e9e3c14599a34388976e7dd09b951dff3c4b978fe224beeff07e749c0059ffd94f68ca9b75ecaef142b285d579b8dfaad4eab85aca33957114937
 Size (Python-2.7.11.tgz) = 16856409 bytes
 SHA1 (patch-Makefile.pre.in) = ac607c55e8365dfeb6f10a8fafa40cc81d703b6a
+SHA1 (patch-Objects_fileobject.c) = 931b41d5205a0fefcb9705a759c3a4b80a2313b4
 SHA1 (patch-configure.ac) = f414cdf2db806ab08aca69df4b17669ab95e0b00

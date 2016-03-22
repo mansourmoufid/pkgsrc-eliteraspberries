@@ -4,6 +4,7 @@
 
 DISTNAME=	Python-${PYTHON_VERSION}
 PKGNAME=	python-${PYTHON_VERSION}
+PKGREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	https://www.python.org/ftp/python/${PYTHON_VERSION}/
 EXTRACT_SUFX=	.tgz
