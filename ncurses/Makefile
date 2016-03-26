@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	ncurses-6.0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://invisible-mirror.net/archives/ncurses/
 
