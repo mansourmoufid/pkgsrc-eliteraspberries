@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	ocaml-4.02.3
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	lang
 MASTER_SITES=	http://caml.inria.fr/pub/distrib/ocaml-4.02/
 
@@ -17,6 +17,7 @@ USE_TOOLS+=	gmake
 
 CONFIGURE_ARGS+=	-prefix ${PREFIX}
 CONFIGURE_ARGS+=	-libs ${LDFLAGS:Q}
+CONFIGURE_ARGS+=	-host ${MACHINE_GNU_PLATFORM}
 
 .include "../../mk/bsd.prefs.mk"
 
