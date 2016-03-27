@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	coccinelle-1.0.4
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://coccinelle.lip6.fr/distrib/
 EXTRACT_SUFX=	.tgz
@@ -21,14 +21,13 @@ CONFIGURE_ARGS+=	--with-menhir=${PREFIX}/bin/menhir
 
 CONFIGURE_ARGS+=	--disable-python
 CONFIGURE_ARGS+=	--disable-pycaml
-CONFIGURE_ARGS+=	--disable-pcre
-CONFIGURE_ARGS+=	--disable-pcre-syntax
 CONFIGURE_ARGS+=	--without-pdflatex
+
+.include "options.mk"
 
 .include "../../eliteraspberries/ocaml/buildlink3.mk"
 .include "../../eliteraspberries/ocaml-findlib/buildlink3.mk"
 .include "../../eliteraspberries/camlp4/buildlink3.mk"
 .include "../../eliteraspberries/menhir/buildlink3.mk"
 .include "../../eliteraspberries/parmap/buildlink3.mk"
-.include "../../devel/pcre/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
