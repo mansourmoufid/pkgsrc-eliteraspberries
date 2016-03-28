@@ -8,7 +8,6 @@ lib/coccinelle/ocaml/ocamlcocci_aux.cmi
 lib/coccinelle/ocaml/prepare_ocamlcocci.cmi
 lib/coccinelle/ocaml/run_ocamlcocci.cmi
 lib/coccinelle/ocaml/yes_prepare_ocamlcocci.cmi
-lib/coccinelle/spatch.opt
 lib/coccinelle/standard.h
 lib/coccinelle/standard.iso
 man/man1/pycocci.1

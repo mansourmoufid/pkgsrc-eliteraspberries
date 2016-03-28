@@ -3,3 +3,4 @@ $NetBSD$
 SHA1 (coccinelle-1.0.4.tgz) = eb74e3083129a1536d5acd4a8132d27918a10ed6
 RMD160 (coccinelle-1.0.4.tgz) = fb363fd359bf41fbde07748f9eae31ce34de95f9
 Size (coccinelle-1.0.4.tgz) = 2484218 bytes
+SHA1 (patch-Makefile) = 9c66e88b246c7b5aea176de5b737ce74c374be8e
