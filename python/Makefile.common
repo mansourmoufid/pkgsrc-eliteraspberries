@@ -1,5 +1,6 @@
 # $NetBSD$
 # used by eliteraspberries/python-setuptools/Makefile
+# used by eliteraspberries/python-wheel/Makefile
 
 .include "../../eliteraspberries/python/Makefile.version"
 
