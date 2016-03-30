@@ -4,7 +4,7 @@
 
 DISTNAME=	Python-${PYTHON_VERSION}
 PKGNAME=	python-${PYTHON_VERSION}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	lang
 MASTER_SITES=	https://www.python.org/ftp/python/${PYTHON_VERSION}/
 EXTRACT_SUFX=	.tgz
@@ -37,9 +37,7 @@ CONFIGURE_ARGS+=	--with-tcltk-libs="-L${LOCALBASE}/lib ${TCLTK_LIBS}"
 
 CONFIGURE_ARGS+=	OPT="${CFLAGS}"
 
-PLIST_SUBST+=	PYTHON_MAJOR_VERSION=${PYTHON_MAJOR_VERSION}
-PLIST_SUBST+=	PYTHON_BASEVER=${PYTHON_BASEVER}
-PLIST_SUBST+=	PYTHON_VERSION=${PYTHON_VERSION}
+.include "../../eliteraspberries/python/Makefile.common"
 
 .include "../../archivers/bzip2/buildlink3.mk"
 .include "../../databases/sqlite3/buildlink3.mk"
