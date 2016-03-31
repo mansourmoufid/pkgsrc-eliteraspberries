@@ -1,6 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	pcre-ocaml-7.2.2
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GITHUB:=mmottl/}
 GITHUB_RELEASE=	v${PKGVERSION_NOREV}
@@ -10,9 +11,12 @@ HOMEPAGE=	${MASTER_SITE_GITHUB:=mmottl/pcre-ocaml/}
 COMMENT=	OCaml bindings to PCRE
 LICENSE=	gnu-lgpl-v2.1
 
+CONFIGURE_ARGS+=	--prefix ${PREFIX}
+CONFIGURE_ARGS+=	--disable-examples
+
 do-configure:
 	cd ${WRKSRC} && \
-	ocaml setup.ml -configure ${CONFIGURE_ARGS} --prefix ${PREFIX}
+	ocaml setup.ml -configure ${CONFIGURE_ARGS}
 
 do-build:
 	cd ${WRKSRC} && \
