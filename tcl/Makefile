@@ -4,7 +4,7 @@
 
 DISTNAME=	tcl${TCL_VERSION}-src
 PKGNAME=	tcl-${TCL_VERSION}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tcl/}
 
@@ -30,6 +30,9 @@ pre-configure:
 	${RM} -rf ${WRKSRC}/pkgs/tdbcpostgres1.0.3
 	${RM} -rf ${WRKSRC}/pkgs/sqlite3.8.8.3
 	${RM} -rf ${WRKSRC}/pkgs/tdbcsqlite3-1.0.3
+	${RM} -rf ${WRKSRC}/compat/zlib
+
+CONFIGURE_ARGS+=	--without-zlib
 
 .include "../../eliteraspberries/tcl/Makefile.common"
 
@@ -39,4 +42,5 @@ SUBST_MESSAGE.tcl-config=	Fixing paths in tclConfig.sh.
 SUBST_FILES.tcl-config=		unix/tclConfig.sh
 SUBST_SED.tcl-config=		-e "s,${WRKSRC},../../..,g"
 
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
