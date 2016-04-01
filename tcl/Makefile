@@ -23,7 +23,7 @@ GNU_CONFIGURE=		yes
 CONFIGURE_DIRS=		unix
 BUILD_DIRS=		unix
 
-pre-configure:
+post-extract:
 	${RM} -rf ${WRKSRC}/pkgs/tdbc1.0.3
 	${RM} -rf ${WRKSRC}/pkgs/tdbcmysql1.0.3
 	${RM} -rf ${WRKSRC}/pkgs/tdbcodbc1.0.3
