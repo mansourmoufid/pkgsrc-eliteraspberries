@@ -4,7 +4,7 @@
 
 DISTNAME=	tk${TCL_VERSION}-src
 PKGNAME=	tk-${TCL_VERSION}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tcl/}
 
@@ -39,4 +39,5 @@ SUBST_FILES.tk-config=		unix/tkConfig.sh
 SUBST_SED.tk-config=		-e "s,${WRKSRC},../../..,g"
 
 .include "../../eliteraspberries/tcl/buildlink3.mk"
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
