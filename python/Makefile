@@ -4,7 +4,7 @@
 
 DISTNAME=	Python-${PYTHON_VERSION}
 PKGNAME=	python-${PYTHON_VERSION}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	lang
 MASTER_SITES=	https://www.python.org/ftp/python/${PYTHON_VERSION}/
 EXTRACT_SUFX=	.tgz
@@ -15,7 +15,7 @@ COMMENT=	Python programming language
 LICENSE=	python-software-foundation
 
 GNU_CONFIGURE=	yes
-USE_TOOLS+=	autoconf gmake pkg-config
+USE_TOOLS+=	autoconf gmake perl pkg-config
 USE_LANGUAGES=	c
 
 PKGCONFIG_OVERRIDE+=	Misc/python.pc.in
