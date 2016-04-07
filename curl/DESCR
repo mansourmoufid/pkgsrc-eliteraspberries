@@ -1,0 +1,4 @@
+curl is an open source command line tool and library for transferring
+data with URL syntax, supporting DICT, FILE, FTP, FTPS, Gopher, HTTP,
+HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP,
+SMB, SMTP, SMTPS, Telnet and TFTP.
