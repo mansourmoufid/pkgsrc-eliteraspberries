@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/libarchive.so.13.1.2
+lib/libarchive.so.13
+lib/libarchive.so
