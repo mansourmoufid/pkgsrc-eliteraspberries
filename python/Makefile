@@ -4,7 +4,7 @@
 
 DISTNAME=	Python-${PYTHON_VERSION}
 PKGNAME=	python-${PYTHON_VERSION}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	lang
 MASTER_SITES=	https://www.python.org/ftp/python/${PYTHON_VERSION}/
 EXTRACT_SUFX=	.tgz
@@ -19,8 +19,6 @@ USE_TOOLS+=	autoconf gmake perl pkg-config
 USE_LANGUAGES=	c
 
 PKGCONFIG_OVERRIDE+=	Misc/python.pc.in
-
-CFLAGS+=	-I${LOCALBASE}/include/ncurses
 
 pre-configure:
 	cd ${WRKSRC} && autoconf
