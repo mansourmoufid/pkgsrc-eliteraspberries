@@ -1,4 +1,5 @@
 # $NetBSD$
+# used by eliteraspberries/python/Makefile
 # used by eliteraspberries/python-setuptools/Makefile
 # used by eliteraspberries/python-wheel/Makefile
 
