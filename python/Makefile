@@ -30,8 +30,8 @@ CONFIGURE_ARGS+=	--without-ensurepip
 .include "../../eliteraspberries/tcl/Makefile.version"
 
 TCLTK_LIBS=		-ltcl${TCL_BASEVER} -ltk${TCL_BASEVER}
-CONFIGURE_ARGS+=	--with-tcltk-includes="-I${LOCALBASE}/include"
-CONFIGURE_ARGS+=	--with-tcltk-libs="-L${LOCALBASE}/lib ${TCLTK_LIBS}"
+CONFIGURE_ARGS+=	--with-tcltk-includes="-I${PREFIX}/include"
+CONFIGURE_ARGS+=	--with-tcltk-libs="-L${PREFIX}/lib ${TCLTK_LIBS}"
 
 CONFIGURE_ARGS+=	OPT="${CFLAGS}"
 
