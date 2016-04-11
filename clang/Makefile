@@ -25,6 +25,8 @@ USE_LANGUAGES=	c c++
 CONFIGURE_DIRS=	build
 CMAKE_ARG_PATH=	..
 
+SPATCH=		no
+
 post-extract:
 	mv ${WRKDIR}/cfe-${LLVM_VERSION}.src ${WRKSRC}/tools/clang
 	mv ${WRKDIR}/libcxx-${LLVM_VERSION}.src ${WRKSRC}/projects/libcxx
