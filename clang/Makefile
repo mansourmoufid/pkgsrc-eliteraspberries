@@ -1,0 +1,69 @@
+# $NetBSD$
+
+LLVM_MAJOR_VERSION=	3
+LLVM_MINOR_VERSION=	8
+LLVM_PATCH_VERSION=	0
+LLVM_BASEVER=		${LLVM_MAJOR_VERSION}.${LLVM_MINOR_VERSION}
+LLVM_VERSION=		${LLVM_BASEVER}.${LLVM_PATCH_VERSION}
+
+PKGNAME=	clang-${LLVM_VERSION}
+CATEGORIES=	lang
+MASTER_SITES=	http://llvm.org/releases/${LLVM_VERSION}/
+EXTRACT_SUFX=	.tar.xz
+DISTFILES=	llvm-${LLVM_VERSION}.src${EXTRACT_SUFX} \
+		cfe-${LLVM_VERSION}.src${EXTRACT_SUFX} \
+		libcxx-${LLVM_VERSION}.src${EXTRACT_SUFX}
+
+MAINTAINER=	mansourmoufid@gmail.com
+HOMEPAGE=	http://clang.llvm.org/
+COMMENT=	C language family frontend for LLVM
+LICENSE=	original-bsd
+
+WRKSRC=		${WRKDIR}/llvm-${LLVM_VERSION}.src
+USE_LANGUAGES=	c c++
+
+CONFIGURE_DIRS=	build
+CMAKE_ARG_PATH=	..
+
+post-extract:
+	mv ${WRKDIR}/cfe-${LLVM_VERSION}.src ${WRKSRC}/tools/clang
+	mv ${WRKDIR}/libcxx-${LLVM_VERSION}.src ${WRKSRC}/projects/libcxx
+	mkdir ${WRKSRC}/build
+
+CXXFLAGS+=	-std=c++11 -stdlib=libc++
+
+CMAKE_ARGS+=	-G "Unix Makefiles"
+
+CMAKE_ARGS+=	-DCMAKE_BUILD_TYPE="Release"
+CMAKE_ARGS+=	-DCMAKE_C_FLAGS="${CFLAGS}"
+CMAKE_ARGS+=	-DCMAKE_CXX_FLAGS="${CXXFLAGS}"
+CMAKE_ARGS+=	-DCMAKE_EXE_LINKER_FLAGS="${LDFLAGS}"
+CMAKE_ARGS+=	-DCMAKE_INSTALL_PREFIX="${PREFIX}"
+
+CMAKE_ARGS+=	-DLLVM_BUILD_DOCS=OFF
+CMAKE_ARGS+=	-DLLVM_BUILD_EXAMPLES=OFF
+CMAKE_ARGS+=	-DLLVM_BUILD_TESTS=OFF
+CMAKE_ARGS+=	-DLLVM_ENABLE_DOXYGEN=OFF
+CMAKE_ARGS+=	-DLLVM_ENABLE_PIC=ON
+CMAKE_ARGS+=	-DLLVM_ENABLE_SPHINX=OFF
+CMAKE_ARGS+=	-DLLVM_ENABLE_ZLIB=OFF
+CMAKE_ARGS+=	-DLLVM_INCLUDE_EXAMPLES=OFF
+CMAKE_ARGS+=	-DLLVM_INCLUDE_TESTS=OFF
+CMAKE_ARGS+=	-DLLVM_USE_SANITIZER=""
+
+# https://llvm.org/bugs/show_bug.cgi?id=25753
+CMAKE_ARGS+=	-DLLVM_BUILD_EXTERNAL_COMPILER_RT=ON
+
+.include "../../mk/bsd.prefs.mk"
+
+CMAKE_ARGS+=	-DLLVM_TARGETS_TO_BUILD="X86"
+CMAKE_ARGS+=	-DLLVM_TARGET_ARCH="${MACHINE_ARCH}"
+
+do-configure:
+	cd ${WRKSRC}/build && \
+	cmake ${CMAKE_ARGS} ${CMAKE_ARG_PATH}
+
+BUILDLINK_DEPMETHOD.cmake=	build
+.include "../../eliteraspberries/cmake/buildlink3.mk"
+.include "../../eliteraspberries/ncurses/buildlink3.mk"
+.include "../../mk/bsd.pkg.mk"
