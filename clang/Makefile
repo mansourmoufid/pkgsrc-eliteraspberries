@@ -3,10 +3,9 @@
 .include "../../eliteraspberries/llvm/Makefile.common"
 
 PKGNAME=	clang-${LLVM_VERSION}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	lang
-DISTFILES+=	cfe-${LLVM_VERSION}.src${EXTRACT_SUFX} \
-		libcxx-${LLVM_VERSION}.src${EXTRACT_SUFX}
+DISTFILES+=	cfe-${LLVM_VERSION}.src${EXTRACT_SUFX}
 
 MAINTAINER=	mansourmoufid@gmail.com
 HOMEPAGE=	http://clang.llvm.org/
@@ -17,9 +16,11 @@ USE_LANGUAGES=	c c++
 
 post-extract:
 	mv ${WRKDIR}/cfe-${LLVM_VERSION}.src ${WRKSRC}/tools/clang
-	mv ${WRKDIR}/libcxx-${LLVM_VERSION}.src ${WRKSRC}/projects/libcxx
 
 CXXFLAGS+=	-std=c++11 -stdlib=libc++
+CXXFLAGS+=	-nostdinc++
+CXXFLAGS+=	-I${BUILDLINK_PREFIX.libcxx}/include/c++/v1
+LDFLAGS+=	-L${BUILDLINK_PREFIX.libcxx}/lib
 
 CMAKE_ARGS+=	-DLLVM_USE_SANITIZER=""
 
@@ -29,5 +30,6 @@ CMAKE_ARGS+=	-DLLVM_BUILD_EXTERNAL_COMPILER_RT=ON
 
 BUILDLINK_DEPMETHOD.cmake=	build
 .include "../../eliteraspberries/cmake/buildlink3.mk"
+.include "../../eliteraspberries/libcxx/buildlink3.mk"
 .include "../../eliteraspberries/ncurses/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

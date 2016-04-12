@@ -2,7 +2,4 @@
 lib/BugpointPasses.dylib
 lib/LLVMHello.dylib
 lib/libLTO.dylib
-lib/libc++.1.0.dylib
-lib/libc++.1.dylib
-lib/libc++.dylib
 lib/libclang.dylib
