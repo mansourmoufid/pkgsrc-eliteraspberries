@@ -1437,7 +1437,6 @@ lib/libclangTooling.a
 lib/libclangToolingCore.a
 libexec/c++-analyzer
 libexec/ccc-analyzer
-man/man1/scan-build.1
 share/clang/clang-format-bbedit.applescript
 share/clang/clang-format-diff.py
 share/clang/clang-format-sublime.py

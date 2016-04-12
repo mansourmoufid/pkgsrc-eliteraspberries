@@ -3,7 +3,7 @@
 .include "../../eliteraspberries/llvm/Makefile.common"
 
 PKGNAME=	clang-${LLVM_VERSION}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	lang
 DISTFILES+=	cfe-${LLVM_VERSION}.src${EXTRACT_SUFX}
 
