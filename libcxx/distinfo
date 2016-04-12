@@ -1,0 +1,14 @@
+$NetBSD$
+
+SHA1 (libcxx-3.8.0.src.tar.xz) = e0f0de1e921f74b67d82ed97cb6ddc60f59941af
+RMD160 (libcxx-3.8.0.src.tar.xz) = f170b4fa81172ee7c973e8a70f5880e89bb243b4
+SHA512 (libcxx-3.8.0.src.tar.xz) = 3a9f0c9b4b0c22757028800b28c5fd7b28fc79d0cbf33cad2087de493dc778c93f2df4b919f162638d883069f60a633f36ddc18d7da8ae00c6af409266a05e6b
+Size (libcxx-3.8.0.src.tar.xz) = 1062884 bytes
+SHA1 (libcxxabi-3.8.0.src.tar.xz) = 454767798a34191c722ba6817080bac03a07a222
+RMD160 (libcxxabi-3.8.0.src.tar.xz) = d7f54271a6607dac13ebd105e3b048ad2af33999
+SHA512 (libcxxabi-3.8.0.src.tar.xz) = 4702ed44a33e6418b08a38f7b8b4f9df838d5c36a5b635c9769b4539850120b60bfbe40ab27543de2cf492b9ccfbb8b3110295aa466f96d61fddd1ff50c92be5
+Size (libcxxabi-3.8.0.src.tar.xz) = 508900 bytes
+SHA1 (llvm-3.8.0.src.tar.xz) = 723ac918979255706434a05f5af34b71c49c9971
+RMD160 (llvm-3.8.0.src.tar.xz) = 3c657d061bc8e9de017b0cf1f1a7e63f215b0295
+SHA512 (llvm-3.8.0.src.tar.xz) = 2c76e79d803768ed20af6ca1801cf2518071bf9835c54580ea3eb6219a66cdcf8b4c575f192c15082cc18d2468b7611dacb57950b605813a2317125c2d33c138
+Size (llvm-3.8.0.src.tar.xz) = 16580932 bytes
