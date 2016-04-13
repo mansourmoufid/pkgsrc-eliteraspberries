@@ -3,7 +3,7 @@
 .include "../../eliteraspberries/llvm/Makefile.common"
 
 PKGNAME=	libcxx-${LLVM_VERSION}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel
 DISTFILES+=	libcxxabi-${LLVM_VERSION}.src${EXTRACT_SUFX} \
 		libcxx-${LLVM_VERSION}.src${EXTRACT_SUFX}
