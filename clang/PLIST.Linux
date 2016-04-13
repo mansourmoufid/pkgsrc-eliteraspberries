@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/BugpointPasses.so
+lib/LLVMHello.so
+lib/libLTO.so
+lib/libclang.so
+lib/libclang.so.3.8

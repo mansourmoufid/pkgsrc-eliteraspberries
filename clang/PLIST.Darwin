@@ -1,4 +1,5 @@
 @comment $NetBSD$
+bin/set-xcode-analyzer
 lib/BugpointPasses.dylib
 lib/LLVMHello.dylib
 lib/libLTO.dylib

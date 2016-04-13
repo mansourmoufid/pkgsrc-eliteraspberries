@@ -45,7 +45,6 @@ bin/opt
 bin/sancov
 bin/scan-build
 bin/scan-view
-bin/set-xcode-analyzer
 bin/verify-uselistorder
 bin/yaml2obj
 include/clang-c/BuildSystem.h
