@@ -4,7 +4,17 @@ http://caml.inria.fr/mantis/view.php?id=6900
 
 --- configure.orig	2015-05-12 14:46:37.000000000 +0000
 +++ configure
-@@ -743,7 +743,7 @@ if test $with_sharedlibs = "yes"; then
+@@ -444,6 +444,9 @@ case "$bytecc,$target" in
+     bytecccompopts="-fno-defer-pop $gcc_warnings";;
+ esac
+ 
++bytecccompopts="$bytecccompopts ${CFLAGS}"
++bytecclinkopts="$bytecclinkopts ${LDFLAGS/-pie/}"
++
+ # Configure compiler to use in further tests
+ 
+ cc="$bytecc -O $bytecclinkopts"
+@@ -743,7 +746,7 @@ if test $with_sharedlibs = "yes"; then
        byteccrpath="-Wl,-rpath,"
        mksharedlibrpath="-rpath "
        shared_libraries_supported=true;;
@@ -13,7 +23,17 @@ http://caml.inria.fr/mantis/view.php?id=6900
        mksharedlib="$bytecc -bundle -flat_namespace -undefined suppress -read_only_relocs suppress"
        bytecccompopts="$dl_defs $bytecccompopts"
        dl_needs_underscore=false
-@@ -783,11 +783,7 @@ if test $with_sharedlibs = "yes"; then
+@@ -768,6 +771,9 @@ if test $with_sharedlibs = "yes"; then
+   esac
+ fi
+ 
++sharedcccompopts="$sharedcccompopts ${CFLAGS}"
++natdynlinkopts="$natdynlinkopts ${LDFLAGS/-pie/}"
++
+ if test -z "$mkmaindll"; then
+   mkmaindll=$mksharedlib
+ fi
+@@ -783,11 +789,7 @@ if test $with_sharedlibs = "yes"; then
      i[3456]86-*-linux*)           natdynlink=true;;
      i[3456]86-*-gnu*)             natdynlink=true;;
      x86_64-*-linux*)              natdynlink=true;;
@@ -26,3 +46,26 @@ http://caml.inria.fr/mantis/view.php?id=6900
      x86_64-*-darwin*)             natdynlink=true;;
      powerpc*-*-linux*)            natdynlink=true;;
      sparc*-*-linux*)              natdynlink=true;;
+@@ -907,6 +909,9 @@ case "$arch,$nativecc,$system,$target" i
+   *,gcc*,*,*)          nativecccompopts="$gcc_warnings";;
+ esac
+ 
++nativecccompopts="$nativecccompopts ${CFLAGS}"
++nativecclinkopts="$nativecclinkopts ${LDFLAGS/-pie/}"
++
+ asppprofflags='-DPROFILING'
+ 
+ case "$arch,$system" in
+@@ -1686,12 +1691,6 @@ if $no_naked_pointers; then
+   echo "#define NO_NAKED_POINTERS" >> m.h
+ fi
+ 
+-# Add Unix-style optimization flag
+-bytecccompopts="-O $bytecccompopts"
+-dllcccompopts="-O $dllcccompopts"
+-nativecccompopts="-O $nativecccompopts"
+-sharedcccompopts="-O $sharedcccompopts"
+-
+ # Final twiddling of compiler options to work around known bugs
+ 
+ nativeccprofopts="$nativecccompopts"

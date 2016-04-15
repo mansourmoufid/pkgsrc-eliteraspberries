@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	ocaml-4.02.3
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	lang
 MASTER_SITES=	http://caml.inria.fr/pub/distrib/ocaml-4.02/
 
@@ -16,21 +16,17 @@ USE_LANGUAGES=	c
 USE_TOOLS+=	gmake
 
 CONFIGURE_ARGS+=	-prefix ${PREFIX}
-CONFIGURE_ARGS+=	-libs ${LDFLAGS:Q}
-CONFIGURE_ARGS+=	-host ${MACHINE_GNU_PLATFORM}
 
 .include "../../mk/bsd.prefs.mk"
 
+CONFIGURE_ARGS+=	-host ${MACHINE_GNU_PLATFORM}
 .if ${OPSYS} == "Darwin"
-CONFIGURE_ARGS+=	-cc "${CC} -arch ${MACHINE_ARCH}"
-CONFIGURE_ARGS+=	-aspp "${CC} -arch ${MACHINE_ARCH} -c"
-CONFIGURE_ARGS+=	-as "as -arch ${MACHINE_ARCH}"
-.else
-CONFIGURE_ARGS+=	-cc ${CC}
+CFLAGS+=		-arch ${MACHINE_ARCH}
 .endif
 
-CFLAGS=
-LDFLAGS=
+CONFIGURE_ARGS+=	-cc "${CC}"
+CONFIGURE_ARGS+=	-aspp "${CC} -c"
+CONFIGURE_ARGS+=	-as "as"
 
 BUILD_TARGET=	world.opt
 
