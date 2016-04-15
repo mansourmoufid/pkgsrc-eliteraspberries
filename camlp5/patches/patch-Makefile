@@ -1,0 +1,25 @@
+$NetBSD$
+
+--- Makefile.orig	2016-01-26 10:57:54.000000000 +0000
++++ Makefile
+@@ -12,7 +12,6 @@ PR_O=pr_o.cmo
+ DIFF_OPT=
+ # For possible installation in a fake root directory
+ # by "make install DESTDIR=..."
+-DESTDIR=
+ 
+ all:
+ 	@echo "Please refer to the installation instructions in file INSTALL."
+@@ -61,9 +60,9 @@ install:
+ 	done
+ 
+ uninstall:
+-	rm -rf "$(LIBDIR)/$(CAMLP5N)"
+-	cd "$(BINDIR)"; rm -f *$(CAMLP5N)* odyl ocpp; cd ..
+-	cd "$(MANDIR)/man1"; rm -f *$(CAMLP5N)* odyl ocpp; cd ../..
++	rm -rf "$(DESTDIR)$(LIBDIR)/$(CAMLP5N)"
++	cd "$(DESTDIR)$(BINDIR)"; rm -f *$(CAMLP5N)* odyl ocpp; cd ..
++	cd "$(DESTDIR)$(MANDIR)/man1"; rm -f *$(CAMLP5N)* odyl ocpp; cd ../..
+ 
+ clean::
+ 	$(MAKE) clean_hot clean_cold

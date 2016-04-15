@@ -1,0 +1,7 @@
+$NetBSD$
+
+SHA1 (camlp5-6.15.tgz) = 823fe7fd906816c0976dc78ed802533c485e99f9
+RMD160 (camlp5-6.15.tgz) = a83152ad3bad83de16aca0e1b906023a2f038eee
+SHA512 (camlp5-6.15.tgz) = 658ff32d1d124e91e85d8eba47039bb75573b3807d67fae723335bb06d3237c4151f6d671fb3b068ec4ebffdde03f7956174c9f0ca29eafa5990974987bc2aca
+Size (camlp5-6.15.tgz) = 756199 bytes
+SHA1 (patch-Makefile) = a059031173a403972370a1e86fcc4befecc06d9b
