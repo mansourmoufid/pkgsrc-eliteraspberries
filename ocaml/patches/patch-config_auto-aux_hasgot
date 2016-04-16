@@ -1,0 +1,16 @@
+$NetBSD$
+
+--- config/auto-aux/hasgot.orig	2012-07-17 15:31:12.000000000 +0000
++++ config/auto-aux/hasgot
+@@ -35,8 +35,8 @@ done
+  echo "}") >> hasgot.c
+ 
+ if test "$verbose" = yes; then
+-  echo "hasgot $args: $cc $opts -o tst hasgot.c $libs" >&2
+-  exec $cc $opts -o tst hasgot.c $libs > /dev/null
++  echo "hasgot $args: $cc $CFLAGS $opts -o tst hasgot.c $libs $LDFLAGS" >&2
++  exec $cc $CFLAGS $opts -o tst hasgot.c $libs $LDFLAGS > /dev/null
+ else
+-  exec $cc $opts -o tst hasgot.c $libs > /dev/null 2>/dev/null
++  exec $cc $CFLAGS $opts -o tst hasgot.c $libs $LDFLAGS > /dev/null 2>/dev/null
+ fi
