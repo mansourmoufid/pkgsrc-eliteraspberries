@@ -1,13 +1,12 @@
 # $NetBSD$
 
-DISTNAME=	ocamlgraph-1.8.6
-PKGREVISION=	8
+DISTNAME=	ocamlgraph-1.8.7
 CATEGORIES=	math devel
 MASTER_SITES=	${MASTER_SITE_GITHUB:=backtracking/}
-GITHUB_TAG=	c10607cdeab1200834cde8f5f6a2f8ed1de4d76c
+GITHUB_TAG=	b111462199e62e9e4c9a9da8df09afa45d8dc778
 
 MAINTAINER=	mansourmoufid@gmail.com
-HOMEPAGE=	https://github.com/backtracking/ocamlgraph
+HOMEPAGE=	${MASTER_SITE_GITHUB:=backtracking/ocamlgraph}
 COMMENT=	OCamlgraph is a graph library for Objective Caml
 LICENSE=	gnu-lgpl-v2.1
 

@@ -1,6 +1,7 @@
 $NetBSD$
 
-SHA1 (ocamlgraph-1.8.6-c10607cdeab1200834cde8f5f6a2f8ed1de4d76c.tar.gz) = 7d63f41388f01cc226877cadd8ccbce90eb35585
-RMD160 (ocamlgraph-1.8.6-c10607cdeab1200834cde8f5f6a2f8ed1de4d76c.tar.gz) = b0747111a93fdd16126c88cbb56cf7fecb36d29a
-Size (ocamlgraph-1.8.6-c10607cdeab1200834cde8f5f6a2f8ed1de4d76c.tar.gz) = 2153135 bytes
+SHA1 (ocamlgraph-1.8.7-b111462199e62e9e4c9a9da8df09afa45d8dc778.tar.gz) = 7372b9c2e2174ec2c824d3d1390a558815e08661
+RMD160 (ocamlgraph-1.8.7-b111462199e62e9e4c9a9da8df09afa45d8dc778.tar.gz) = ed27afe5c405167ec30dba8000ec0e07dc927a87
+SHA512 (ocamlgraph-1.8.7-b111462199e62e9e4c9a9da8df09afa45d8dc778.tar.gz) = 94ffb61659518b8541e6a879e2ad06c00d17fa8a8bc2cb6a0ea3fea2fc03c904abe77b7249005f004a31801fed186ef629abc35c3a69d18cef9f91e636c2ae4b
+Size (ocamlgraph-1.8.7-b111462199e62e9e4c9a9da8df09afa45d8dc778.tar.gz) = 2150606 bytes
 SHA1 (patch-Makefile.in) = 531256e2c0088c514b5a5a6ca7f2b13ceaa7192f
