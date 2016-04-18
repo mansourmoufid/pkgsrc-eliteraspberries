@@ -18,4 +18,7 @@ BUILDLINK_PKGSRCDIR.python?=	../../eliteraspberries/python
 .include "../../eliteraspberries/tk/buildlink3.mk"
 .endif	# PYTHON_BUILDLINK3_MK
 
+.include "../../eliteraspberries/python/Makefile.version"
+BUILDLINK_INCDIRS.python+=	include/python${PYTHON_BASEVER}
+
 BUILDLINK_TREE+=	-python
