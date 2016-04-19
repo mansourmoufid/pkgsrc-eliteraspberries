@@ -3,6 +3,7 @@
 # used by eliteraspberries/python-setuptools/Makefile
 # used by eliteraspberries/python-wheel/Makefile
 # used by eliteraspberries/numpy/Makefile
+# used by eliteraspberries/cython/Makefile
 
 .include "../../eliteraspberries/python/Makefile.version"
 
