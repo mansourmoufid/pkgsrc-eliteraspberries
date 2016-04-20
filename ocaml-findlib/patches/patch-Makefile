@@ -1,6 +1,8 @@
 --- Makefile.orig	2015-12-07 09:35:24.000000000 -0500
 +++ Makefile	2015-12-21 16:35:58.000000000 -0500
-@@ -17,14 +17,14 @@
+--- Makefile.orig	2015-12-07 14:35:24.000000000 +0000
++++ Makefile
+@@ -17,14 +17,14 @@ opt:
  	for p in $(PARTS); do ( cd src/$$p; $(MAKE) opt ) || exit; done
  
  install:
@@ -18,7 +20,7 @@
  	fi
  	$(MAKE) install-doc
  
-@@ -71,32 +71,46 @@
+@@ -71,32 +71,46 @@ findlib.conf: findlib.conf.in
  
  .PHONY: install-doc
  install-doc:

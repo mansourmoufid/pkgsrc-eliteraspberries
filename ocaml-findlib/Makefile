@@ -2,7 +2,7 @@
 
 DISTNAME=	findlib-1.6.1
 PKGNAME=	ocaml-${DISTNAME}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	devel
 MASTER_SITES=	http://download.camlcity.org/download/
 
