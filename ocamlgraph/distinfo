@@ -4,4 +4,4 @@ SHA1 (ocamlgraph-1.8.7-b111462199e62e9e4c9a9da8df09afa45d8dc778.tar.gz) = 7372b9
 RMD160 (ocamlgraph-1.8.7-b111462199e62e9e4c9a9da8df09afa45d8dc778.tar.gz) = ed27afe5c405167ec30dba8000ec0e07dc927a87
 SHA512 (ocamlgraph-1.8.7-b111462199e62e9e4c9a9da8df09afa45d8dc778.tar.gz) = 94ffb61659518b8541e6a879e2ad06c00d17fa8a8bc2cb6a0ea3fea2fc03c904abe77b7249005f004a31801fed186ef629abc35c3a69d18cef9f91e636c2ae4b
 Size (ocamlgraph-1.8.7-b111462199e62e9e4c9a9da8df09afa45d8dc778.tar.gz) = 2150606 bytes
-SHA1 (patch-Makefile.in) = 531256e2c0088c514b5a5a6ca7f2b13ceaa7192f
+SHA1 (patch-Makefile.in) = 0f06e06fd9051ce8be4abeba48776d064693b297
