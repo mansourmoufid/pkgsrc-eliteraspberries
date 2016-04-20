@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	coccinelle-1.0.4
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	devel
 MASTER_SITES=	http://coccinelle.lip6.fr/distrib/
 EXTRACT_SUFX=	.tgz
@@ -22,6 +22,8 @@ CONFIGURE_ARGS+=	--with-menhir=${PREFIX}/bin/menhir
 CONFIGURE_ARGS+=	--disable-python
 CONFIGURE_ARGS+=	--disable-pycaml
 CONFIGURE_ARGS+=	--without-pdflatex
+
+MAKE_ENV+=		OCAMLCFLAGS="-cc ${CC} -ccopt '-fpic'"
 
 .include "options.mk"
 
