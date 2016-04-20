@@ -32,7 +32,15 @@ https://github.com/rdicosmo/parmap/pull/37
  
  
  ifeq ("@OCAMLBEST@","opt")
-@@ -83,16 +68,16 @@ INSTALL_STUFF += $(filter-out $(wildcard
+@@ -39,6 +24,7 @@ DIST_TARBALL = $(DIST_DIR).tar.gz
+ 
+ OBFLAGS = -j 10 -use-ocamlfind #-classic-display
+ #OBFLAGS += $(OBFLAGS) -tag debug -tag profile
++OBFLAGS += -cflags "-cc ${CC} -ccopt '-fpic'"
+ 
+ BYTELIBS = parmap.cma
+ OPTLIBS=
+@@ -83,16 +69,16 @@ INSTALL_STUFF += $(filter-out $(wildcard
  INSTALL_STUFF += $(wildcard _build/*.so _build/*.a)
  
  install: $(LIBS) META
