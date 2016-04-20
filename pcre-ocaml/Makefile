@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	pcre-ocaml-7.2.2
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GITHUB:=mmottl/}
 GITHUB_RELEASE=	v${PKGVERSION_NOREV}
@@ -20,7 +20,8 @@ do-configure:
 
 do-build:
 	cd ${WRKSRC} && \
-	ocaml setup.ml -build
+	ocaml setup.ml -build \
+		-cflags \"-cc ${CC} -ccopt '-fpic'\"
 
 do-install:
 	cd ${WRKSRC} && \
