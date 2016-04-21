@@ -3,7 +3,7 @@
 .include "../../eliteraspberries/llvm/Makefile.common"
 
 PKGNAME=	clang-${LLVM_VERSION}
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	lang
 DISTFILES+=	cfe-${LLVM_VERSION}.src${EXTRACT_SUFX}
 
@@ -27,9 +27,7 @@ CMAKE_ARGS+=	-DLLVM_USE_SANITIZER=""
 # https://llvm.org/bugs/show_bug.cgi?id=25753
 CMAKE_ARGS+=	-DLLVM_BUILD_EXTERNAL_COMPILER_RT=ON
 
-
 BUILDLINK_DEPMETHOD.cmake=	build
 .include "../../eliteraspberries/cmake/buildlink3.mk"
 .include "../../eliteraspberries/libcxx/buildlink3.mk"
-.include "../../eliteraspberries/ncurses/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
