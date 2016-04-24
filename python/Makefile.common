@@ -4,6 +4,7 @@
 # used by eliteraspberries/python-wheel/Makefile
 # used by eliteraspberries/numpy/Makefile
 # used by eliteraspberries/cython/Makefile
+# used by eliteraspberries/pillow/Makefile
 
 .include "../../eliteraspberries/python/Makefile.version"
 
