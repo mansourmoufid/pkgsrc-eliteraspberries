@@ -1,5 +1,4 @@
 # $NetBSD$
-# BUILDLINK_DEPMETHOD.libpng?=	build
 
 BUILDLINK_TREE+=	libpng
 
@@ -7,7 +6,7 @@ BUILDLINK_TREE+=	libpng
 LIBPNG_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.libpng+=	libpng>=1.6.21
-BUILDLINK_PKGSRCDIR.libpng?=	../../eliteraspberries/png
+BUILDLINK_PKGSRCDIR.libpng?=	../../eliteraspberries/libpng
 
 .include "../../devel/zlib/buildlink3.mk"
 .endif	# LIBPNG_BUILDLINK3_MK
