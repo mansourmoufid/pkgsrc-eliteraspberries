@@ -1,6 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	pyglet-1.2.4
+PKGNAME=	python-${DISTNAME}
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_PYPI:=p/pyglet/}
 

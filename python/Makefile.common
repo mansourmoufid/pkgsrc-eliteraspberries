@@ -6,7 +6,7 @@
 # used by eliteraspberries/cython/Makefile
 # used by eliteraspberries/pillow/Makefile
 # used by eliteraspberries/docopt/Makefile
-# used by eliteraspberries/pyglet/Makefile
+# used by eliteraspberries/python-pyglet/Makefile
 # used by eliteraspberries/pyinstaller/Makefile
 
 .include "../../eliteraspberries/python/Makefile.version"
