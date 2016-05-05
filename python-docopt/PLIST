@@ -1,0 +1,7 @@
+@comment $NetBSD$
+lib/python${PYTHON_BASEVER}/site-packages/docopt-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/PKG-INFO
+lib/python${PYTHON_BASEVER}/site-packages/docopt-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/SOURCES.txt
+lib/python${PYTHON_BASEVER}/site-packages/docopt-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/dependency_links.txt
+lib/python${PYTHON_BASEVER}/site-packages/docopt-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/top_level.txt
+lib/python${PYTHON_BASEVER}/site-packages/docopt.py
+lib/python${PYTHON_BASEVER}/site-packages/docopt.pyc

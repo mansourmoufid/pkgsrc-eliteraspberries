@@ -1,6 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	docopt-0.6.2
+PKGNAME=	python-${DISTNAME}
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_PYPI:=d/docopt/}
 

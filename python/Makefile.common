@@ -5,7 +5,7 @@
 # used by eliteraspberries/python-numpy/Makefile
 # used by eliteraspberries/cython/Makefile
 # used by eliteraspberries/python-pillow/Makefile
-# used by eliteraspberries/docopt/Makefile
+# used by eliteraspberries/python-docopt/Makefile
 # used by eliteraspberries/python-pyglet/Makefile
 # used by eliteraspberries/pyinstaller/Makefile
 
