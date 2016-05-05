@@ -40,7 +40,7 @@ do-install:
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../eliteraspberries/jpeg/buildlink3.mk"
 .include "../../eliteraspberries/libpng/buildlink3.mk"
-.include "../../eliteraspberries/numpy/buildlink3.mk"
 .include "../../eliteraspberries/python/buildlink3.mk"
+.include "../../eliteraspberries/python-numpy/buildlink3.mk"
 .include "../../eliteraspberries/python-setuptools/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
