@@ -1,6 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	Pillow-3.2.0
+PKGNAME=	python-${DISTNAME:S/Pillow/pillow/}
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_PYPI:=P/Pillow/}
 
