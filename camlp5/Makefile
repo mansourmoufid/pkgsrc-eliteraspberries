@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	camlp5-6.15
+DISTNAME=	camlp5-6.16
 CATEGORIES=	devel
 MASTER_SITES=	http://camlp5.gforge.inria.fr/distrib/src/
 EXTRACT_SUFX=	.tgz
