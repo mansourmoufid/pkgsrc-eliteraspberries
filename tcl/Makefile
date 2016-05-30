@@ -4,7 +4,6 @@
 
 DISTNAME=	tcl${TCL_VERSION}-src
 PKGNAME=	tcl-${TCL_VERSION}
-PKGREVISION=	3
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tcl/}
 
@@ -24,12 +23,12 @@ CONFIGURE_DIRS=		unix
 BUILD_DIRS=		unix
 
 post-extract:
-	${RM} -rf ${WRKSRC}/pkgs/tdbc1.0.3
-	${RM} -rf ${WRKSRC}/pkgs/tdbcmysql1.0.3
-	${RM} -rf ${WRKSRC}/pkgs/tdbcodbc1.0.3
-	${RM} -rf ${WRKSRC}/pkgs/tdbcpostgres1.0.3
-	${RM} -rf ${WRKSRC}/pkgs/sqlite3.8.8.3
-	${RM} -rf ${WRKSRC}/pkgs/tdbcsqlite3-1.0.3
+	${RM} -rf ${WRKSRC}/pkgs/tdbc*
+	${RM} -rf ${WRKSRC}/pkgs/tdbcmysql*
+	${RM} -rf ${WRKSRC}/pkgs/tdbcodbc*
+	${RM} -rf ${WRKSRC}/pkgs/tdbcpostgres*
+	${RM} -rf ${WRKSRC}/pkgs/sqlite3*
+	${RM} -rf ${WRKSRC}/pkgs/tdbcsqlite3*
 	${RM} -rf ${WRKSRC}/compat/zlib
 
 CONFIGURE_ARGS+=	--without-zlib
