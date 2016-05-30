@@ -43,6 +43,7 @@ lib/tk8.6/demos/image1.tcl
 lib/tk8.6/demos/image2.tcl
 lib/tk8.6/demos/images/earth.gif
 lib/tk8.6/demos/images/earthris.gif
+lib/tk8.6/demos/images/face.xbm
 lib/tk8.6/demos/images/flagdown.xbm
 lib/tk8.6/demos/images/flagup.xbm
 lib/tk8.6/demos/images/gray25.xbm
@@ -101,8 +102,6 @@ lib/tk8.6/fontchooser.tcl
 lib/tk8.6/iconlist.tcl
 lib/tk8.6/icons.tcl
 lib/tk8.6/images/README
-lib/tk8.6/images/lamp.png
-lib/tk8.6/images/lamp.svg
 lib/tk8.6/images/logo.eps
 lib/tk8.6/images/logo100.gif
 lib/tk8.6/images/logo64.gif
