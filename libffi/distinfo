@@ -6,3 +6,4 @@ SHA512 (libffi-3.2.1.tar.gz) = 980ca30a8d76f963fca722432b1fe5af77d7a4e4d2eac5144
 Size (libffi-3.2.1.tar.gz) = 940837 bytes
 SHA1 (patch-ac) = f3c6324f4334d23e684b4eca25173a13be5d37eb
 SHA1 (patch-ad) = 8bb3ec9ea69a8c06b0b1963b3f24018c6384c249
+SHA1 (patch-src_dlmalloc.c) = 4e1615ec012e28859c7efa101b9a3dae62dbdccc

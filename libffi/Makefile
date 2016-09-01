@@ -1,6 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	libffi-3.2.1
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	ftp://sourceware.org/pub/libffi/
 
