@@ -1,6 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	Pillow-3.3.0
+PKGREVISION=	2
 PKGNAME=	python-${DISTNAME:S/Pillow/pillow/}
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_PYPI:=P/Pillow/}
@@ -18,9 +19,7 @@ SUBST_FILES.python-shebang+=	Scripts/*.py
 SETUP_ARGS+=	--disable-freetype
 SETUP_ARGS+=	--disable-jpeg2000
 SETUP_ARGS+=	--disable-lcms
-SETUP_ARGS+=	--disable-tcl
 SETUP_ARGS+=	--disable-tiff
-SETUP_ARGS+=	--disable-tk
 SETUP_ARGS+=	--disable-webp
 SETUP_ARGS+=	--disable-webpmux
 
