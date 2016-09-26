@@ -5,6 +5,7 @@
 .include "../../mk/bsd.prefs.mk"
 
 CONFIGURE_ARGS+=	--enable-shared
+CONFIGURE_ARGS+=	--disable-symbols
 
 .if defined(ABI) && ${ABI} == "64"
 CONFIGURE_ARGS+=	--enable-64bit
