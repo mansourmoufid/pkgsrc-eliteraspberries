@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/libmbedcrypto.dylib
+lib/libmbedtls.dylib
+lib/libmbedx509.dylib

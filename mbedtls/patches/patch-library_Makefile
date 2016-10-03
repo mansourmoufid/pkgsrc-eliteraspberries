@@ -1,0 +1,38 @@
+--- library/Makefile.orig	2016-06-27 14:50:36.000000000 -0400
++++ library/Makefile	2016-10-02 20:05:12.000000000 -0400
+@@ -35,7 +35,7 @@
+ SOEXT_X509=so.0
+ SOEXT_CRYPTO=so.0
+ 
+-DLEXT=so
++DLEXT?=so
+ # OSX shared library extension:
+ # DLEXT=dylib
+ 
+@@ -73,8 +73,6 @@
+ 		ssl_cookie.o	ssl_srv.o	ssl_ticket.o	\
+ 		ssl_tls.o
+ 
+-.SILENT:
+-
+ .PHONY: all static shared clean
+ 
+ ifndef SHARED
+@@ -104,7 +102,7 @@
+ 
+ libmbedtls.dylib: $(OBJS_TLS)
+ 	echo "  LD    $@"
+-	$(CC) -dynamiclib $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@ $(OBJS_TLS)
++	$(CC) -dynamiclib -L. -lmbedcrypto -lmbedx509 $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@ $(OBJS_TLS)
+ 
+ libmbedtls.dll: $(OBJS_TLS) libmbedx509.dll
+ 	echo "  LD    $@"
+@@ -127,7 +125,7 @@
+ 
+ libmbedx509.dylib: $(OBJS_X509)
+ 	echo "  LD    $@"
+-	$(CC) -dynamiclib $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@ $(OBJS_X509)
++	$(CC) -dynamiclib -L. -lmbedcrypto $(LOCAL_LDFLAGS) $(LDFLAGS) -o $@ $(OBJS_X509)
+ 
+ libmbedx509.dll: $(OBJS_X509) libmbedcrypto.dll
+ 	echo "  LD    $@"

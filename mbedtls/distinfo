@@ -1,0 +1,10 @@
+$NetBSD$
+
+SHA1 (mbedtls-2.3.0-apache.tgz) = 85fa4e61849646561a4d1f584fac3bf811db6066
+RMD160 (mbedtls-2.3.0-apache.tgz) = b54a06c673dd3f4f0ddbb78acabfed7aaa8cb0d8
+SHA512 (mbedtls-2.3.0-apache.tgz) = 96b55c0b159e5f2a0895670b2db693e52d2ee70198c4ff1f50c62d07a9f66e683b9862564059f2c0c955ebefefb98e02ad19c9df5ee18aebeff120bd15f43e27
+Size (mbedtls-2.3.0-apache.tgz) = 1896335 bytes
+SHA1 (patch-Makefile) = adf745af3c030a7efc390e52c1844d121c25d725
+SHA1 (patch-include_mbedtls_ssl.h) = af4d1a9027386760f208c93c69ccf93385bd96e9
+SHA1 (patch-library_Makefile) = c28871b70b036963d0f2a9bb2a63356aacd04391
+SHA1 (patch-programs_Makefile) = 96d5f56327510947f7a06b6fd1a3e3081565a8de
