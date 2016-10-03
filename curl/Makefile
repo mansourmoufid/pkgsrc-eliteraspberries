@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	curl-7.48.0
+DISTNAME=	curl-7.50.3
 CATEGORIES=	www
 MASTER_SITES=	https://curl.haxx.se/download/
 
