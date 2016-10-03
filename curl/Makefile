@@ -1,6 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	curl-7.50.3
+PKGREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	https://curl.haxx.se/download/
 
@@ -49,7 +50,6 @@ CONFIGURE_ARGS+=	--without-darwinssl
 CONFIGURE_ARGS+=	--without-ssl
 CONFIGURE_ARGS+=	--without-gnutls
 CONFIGURE_ARGS+=	--without-polarssl
-CONFIGURE_ARGS+=	--without-mbedtls
 CONFIGURE_ARGS+=	--without-cyassl
 CONFIGURE_ARGS+=	--without-nss
 CONFIGURE_ARGS+=	--without-axtls
@@ -64,5 +64,7 @@ CONFIGURE_ARGS+=	--without-winidn
 CONFIGURE_ARGS+=	--without-libidn
 CONFIGURE_ARGS+=	--without-nghttp2
 CONFIGURE_ARGS+=	--without-zsh-functions-dir
+
+.include "options.mk"
 
 .include "../../mk/bsd.pkg.mk"
