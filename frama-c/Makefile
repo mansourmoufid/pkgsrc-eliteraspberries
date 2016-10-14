@@ -2,6 +2,7 @@
 
 DISTNAME=	frama-c-Magnesium-20151002
 PKGNAME=	${DISTNAME:S/-Magnesium//}
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://frama-c.com/download/
 
@@ -13,7 +14,6 @@ LICENSE=	gnu-lgpl-v2
 GNU_CONFIGURE=	yes
 
 USE_TOOLS+=	gmake
-EXTRACT_USING=	gtar
 
 CONFIGURE_ARGS+=	--disable-gui
 
