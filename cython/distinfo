@@ -1,6 +1,6 @@
 $NetBSD$
 
-SHA1 (Cython-0.24.tar.gz) = 32f12b8dd976111668ef8ba7e716a850869a0bf6
-RMD160 (Cython-0.24.tar.gz) = 897098b87df320dec734d1832ac967064b0ce782
-SHA512 (Cython-0.24.tar.gz) = 9ac22934a4f344b02246538d8317cbecc66236e9c84d782f8121ef2e2c100de2a21cbfb55de3defcab294c71847467870e56fdb5bc38c0db0de7acd560d16e96
-Size (Cython-0.24.tar.gz) = 1671837 bytes
+SHA1 (Cython-0.25.1.tar.gz) = 9a91747e523ab24a469674f862b87c9bddc4dd82
+RMD160 (Cython-0.25.1.tar.gz) = a44b0accf27ae0ae59274fd59c8b16a1e9ca067e
+SHA512 (Cython-0.25.1.tar.gz) = cde26de8b7a626ee39e66223e5b9b3d6b2db182531da7c36f1d63bd720693e710f1976eaeaa4745e7a4b7872ec608ba4784569199303bcbabe1cc464da2ad913
+Size (Cython-0.25.1.tar.gz) = 1701919 bytes

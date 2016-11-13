@@ -1,9 +1,9 @@
 # $NetBSD$
 
 DISTNAME=	Cython-${PKGVERSION_NOREV}
-PKGNAME=	cython-0.24
+PKGNAME=	cython-0.25.1
 CATEGORIES=	devel
-MASTER_SITES=	http://cython.org/release/
+MASTER_SITES=	${MASTER_SITE_PYPI:=c/cython/}
 
 MAINTAINER=	mansourmoufid@gmail.com
 HOMEPAGE=	http://cython.org/

@@ -12,6 +12,8 @@ LICENSE=	mit
 
 USE_LANGUAGES=	# none
 
+SPATCH=		no
+
 .include "../../eliteraspberries/python/Makefile.common"
 
 do-build:
