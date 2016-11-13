@@ -1,7 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	coccinelle-1.0.4
-PKGREVISION=	6
+DISTNAME=	coccinelle-1.0.6
 CATEGORIES=	devel
 MASTER_SITES=	http://coccinelle.lip6.fr/distrib/
 EXTRACT_SUFX=	.tgz
@@ -13,6 +12,8 @@ LICENSE=	gnu-gpl-v2
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake
+
+SPATCH=		no
 
 CONFIGURE_ARGS+=	--enable-release
 
