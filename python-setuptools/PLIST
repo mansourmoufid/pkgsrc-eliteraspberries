@@ -7,6 +7,8 @@ lib/python${PYTHON_BASEVER}/site-packages/pkg_resources/__init__.py
 lib/python${PYTHON_BASEVER}/site-packages/pkg_resources/__init__.pyc
 lib/python${PYTHON_BASEVER}/site-packages/pkg_resources/_vendor/__init__.py
 lib/python${PYTHON_BASEVER}/site-packages/pkg_resources/_vendor/__init__.pyc
+lib/python${PYTHON_BASEVER}/site-packages/pkg_resources/_vendor/appdirs.py
+lib/python${PYTHON_BASEVER}/site-packages/pkg_resources/_vendor/appdirs.pyc
 lib/python${PYTHON_BASEVER}/site-packages/pkg_resources/_vendor/packaging/__about__.py
 lib/python${PYTHON_BASEVER}/site-packages/pkg_resources/_vendor/packaging/__about__.pyc
 lib/python${PYTHON_BASEVER}/site-packages/pkg_resources/_vendor/packaging/__init__.py
@@ -70,6 +72,8 @@ lib/python${PYTHON_BASEVER}/site-packages/setuptools/command/install_lib.py
 lib/python${PYTHON_BASEVER}/site-packages/setuptools/command/install_lib.pyc
 lib/python${PYTHON_BASEVER}/site-packages/setuptools/command/install_scripts.py
 lib/python${PYTHON_BASEVER}/site-packages/setuptools/command/install_scripts.pyc
+lib/python${PYTHON_BASEVER}/site-packages/setuptools/command/py36compat.py
+lib/python${PYTHON_BASEVER}/site-packages/setuptools/command/py36compat.pyc
 lib/python${PYTHON_BASEVER}/site-packages/setuptools/command/register.py
 lib/python${PYTHON_BASEVER}/site-packages/setuptools/command/register.pyc
 lib/python${PYTHON_BASEVER}/site-packages/setuptools/command/rotate.py
@@ -94,12 +98,18 @@ lib/python${PYTHON_BASEVER}/site-packages/setuptools/extension.py
 lib/python${PYTHON_BASEVER}/site-packages/setuptools/extension.pyc
 lib/python${PYTHON_BASEVER}/site-packages/setuptools/extern/__init__.py
 lib/python${PYTHON_BASEVER}/site-packages/setuptools/extern/__init__.pyc
+lib/python${PYTHON_BASEVER}/site-packages/setuptools/glob.py
+lib/python${PYTHON_BASEVER}/site-packages/setuptools/glob.pyc
 lib/python${PYTHON_BASEVER}/site-packages/setuptools/launch.py
 lib/python${PYTHON_BASEVER}/site-packages/setuptools/launch.pyc
 lib/python${PYTHON_BASEVER}/site-packages/setuptools/lib2to3_ex.py
 lib/python${PYTHON_BASEVER}/site-packages/setuptools/lib2to3_ex.pyc
-lib/python${PYTHON_BASEVER}/site-packages/setuptools/msvc9_support.py
-lib/python${PYTHON_BASEVER}/site-packages/setuptools/msvc9_support.pyc
+lib/python${PYTHON_BASEVER}/site-packages/setuptools/monkey.py
+lib/python${PYTHON_BASEVER}/site-packages/setuptools/monkey.pyc
+lib/python${PYTHON_BASEVER}/site-packages/setuptools/msvc.py
+lib/python${PYTHON_BASEVER}/site-packages/setuptools/msvc.pyc
+lib/python${PYTHON_BASEVER}/site-packages/setuptools/namespaces.py
+lib/python${PYTHON_BASEVER}/site-packages/setuptools/namespaces.pyc
 lib/python${PYTHON_BASEVER}/site-packages/setuptools/package_index.py
 lib/python${PYTHON_BASEVER}/site-packages/setuptools/package_index.pyc
 lib/python${PYTHON_BASEVER}/site-packages/setuptools/py26compat.py
@@ -118,8 +128,6 @@ lib/python${PYTHON_BASEVER}/site-packages/setuptools/ssl_support.py
 lib/python${PYTHON_BASEVER}/site-packages/setuptools/ssl_support.pyc
 lib/python${PYTHON_BASEVER}/site-packages/setuptools/unicode_utils.py
 lib/python${PYTHON_BASEVER}/site-packages/setuptools/unicode_utils.pyc
-lib/python${PYTHON_BASEVER}/site-packages/setuptools/utils.py
-lib/python${PYTHON_BASEVER}/site-packages/setuptools/utils.pyc
 lib/python${PYTHON_BASEVER}/site-packages/setuptools/version.py
 lib/python${PYTHON_BASEVER}/site-packages/setuptools/version.pyc
 lib/python${PYTHON_BASEVER}/site-packages/setuptools/windows_support.py

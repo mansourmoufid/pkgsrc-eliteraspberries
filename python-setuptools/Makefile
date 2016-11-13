@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	setuptools-20.4
+DISTNAME=	setuptools-28.8.0
 PKGNAME=	python-${DISTNAME}
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_PYPI:=s/setuptools/}
@@ -9,6 +9,8 @@ MAINTAINER=	mansourmoufid@gmail.com
 HOMEPAGE=	https://github.com/pypa/setuptools
 COMMENT=	Python setuptools
 LICENSE=	mit
+
+SPATCH=		no
 
 .include "../../eliteraspberries/python/Makefile.common"
 

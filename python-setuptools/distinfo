@@ -1,6 +1,6 @@
 $NetBSD$
 
-SHA1 (setuptools-20.4.tar.gz) = b9ffbf5e29765c4a786c7242be1b03bfe08ad1c0
-RMD160 (setuptools-20.4.tar.gz) = 1a9921fa4097d072047bc3d90b3b4280dba7eec1
-SHA512 (setuptools-20.4.tar.gz) = fadd7c6feee5808bcde8a83d0f51d1c60f60ae6dab9c11c2e48d42c4db584f1b8c67a0ef0d3c0216dadc26c14f53bf14c0ab703c3205261c9770409c84f8ad3c
-Size (setuptools-20.4.tar.gz) = 675976 bytes
+SHA1 (setuptools-28.8.0.tar.gz) = 04c69a7d5487f5f4023ec2f2367492cdaa7195c7
+RMD160 (setuptools-28.8.0.tar.gz) = c1ba52b6654c6cb0d99a915d489aa145d84eb445
+SHA512 (setuptools-28.8.0.tar.gz) = da7381ecf6deaaa100202165c76c1abddfe825d9ec4e05ec976a455e5abf5b00a52d4e8806fef751dd2347869adb4dffbecb899e51716cb6abc7164ec0c8a1cb
+Size (setuptools-28.8.0.tar.gz) = 646952 bytes
