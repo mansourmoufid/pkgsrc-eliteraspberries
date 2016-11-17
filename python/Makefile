@@ -4,7 +4,7 @@
 
 DISTNAME=	Python-${PYTHON_VERSION}
 PKGNAME=	python-${PYTHON_VERSION}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	lang
 MASTER_SITES=	https://www.python.org/ftp/python/${PYTHON_VERSION}/
 EXTRACT_SUFX=	.tgz
@@ -27,6 +27,7 @@ CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	--with-system-ffi
 CONFIGURE_ARGS+=	--without-ensurepip
 CONFIGURE_ARGS+=	--without-pydebug
+CONFIGURE_ARGS+=	--without-pymalloc
 
 .include "../../eliteraspberries/tcl/Makefile.version"
 
