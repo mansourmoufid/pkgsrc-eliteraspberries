@@ -1,7 +1,6 @@
 $NetBSD$
 
-SHA1 (cmake-3.5.1.tar.gz) = 9b115c17ec4c1b9d7ab88f161781bb78a1d9b556
-RMD160 (cmake-3.5.1.tar.gz) = f212f91ca1e3d039b2cfccee4f235c45eeb6b677
-SHA512 (cmake-3.5.1.tar.gz) = f78185eb1a2344167888b13ce2a0e8657594bc9c4195c99f5a2be3f953dd2ff630081c2d63b180215851eec8c9565fab8ee1c481ca4c0e6eb9dc27b574d45616
-Size (cmake-3.5.1.tar.gz) = 6863121 bytes
-SHA1 (patch-Source_kwsys_MD5.c) = 01f8dd96595b26e7160b42aee2d8b0544e091db5
+SHA1 (cmake-3.7.0.tar.gz) = 53e2437a2644fc02eff34dc4904739e2e26e0556
+RMD160 (cmake-3.7.0.tar.gz) = e0a40516e55a52e1c18d93bdf7cd1d06cf6dc4cd
+SHA512 (cmake-3.7.0.tar.gz) = badeb81ea5b2a765d0ae222d6c7612eba570f46b3645ac8a22e1cf5ea52648239c707e80d51c1d31f8e5b15167e37e6b4d9f6308280560b11feddc3d2fa745cd
+Size (cmake-3.7.0.tar.gz) = 7359368 bytes
