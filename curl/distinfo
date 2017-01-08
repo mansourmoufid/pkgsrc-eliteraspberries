@@ -1,7 +1,7 @@
 $NetBSD$
 
-SHA1 (curl-7.50.3.tar.gz) = be0065afc76a3d8568f5f78d8efddadb6310f9d7
-RMD160 (curl-7.50.3.tar.gz) = 761651253398686f4df9783dcf6000443844f0c6
-SHA512 (curl-7.50.3.tar.gz) = b671536cfe8e5c29b9794c4eeabfdb26725a48725de1b95d5141350d583cc2b30f91089286ea1f7cd3bd8b3fe460a5161e10c3fff3c5519fe9351227ad073a5e
-Size (curl-7.50.3.tar.gz) = 8908593 bytes
+SHA1 (curl-7.52.1.tar.gz) = 73097952ada80fbaff924c706ba57d1f77c38d00
+RMD160 (curl-7.52.1.tar.gz) = 29f989fd1fd82cf8c90ef5ef11dfaf9a5532d2d7
+SHA512 (curl-7.52.1.tar.gz) = 414c3daa2754172f6fb645b3669d15f621fd248488d88666312963275c19c70d2b0c3b3bcb8d8aa8db6d504a59cb846dd2003ec38080d06caba6dfa8eb2d52ed
+Size (curl-7.52.1.tar.gz) = 3504621 bytes
 SHA1 (patch-scripts_Makefile.in) = 843ebbc6b6bfd80fdfe131710d0ec6b4248e587c

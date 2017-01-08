@@ -1,7 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	curl-7.50.3
-PKGREVISION=	3
+DISTNAME=	curl-7.52.1
 CATEGORIES=	www
 MASTER_SITES=	https://curl.haxx.se/download/
 
@@ -67,5 +66,4 @@ CONFIGURE_ARGS+=	--without-zsh-functions-dir
 
 .include "options.mk"
 
-.include "../../eliteraspberries/ca-certificates/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
