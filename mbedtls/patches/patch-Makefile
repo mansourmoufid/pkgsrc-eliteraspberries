@@ -1,5 +1,5 @@
---- Makefile.orig	2016-06-27 14:50:36.000000000 -0400
-+++ Makefile	2016-10-02 20:27:56.000000000 -0400
+--- Makefile.orig	2017-01-09 11:20:20.000000000 -0800
++++ Makefile	2017-01-09 11:20:28.000000000 -0800
 @@ -1,9 +1,7 @@
  
 -DESTDIR=/usr/local
@@ -10,4 +10,4 @@
 -
  .PHONY: all no_test programs lib tests install uninstall clean test check covtest lcov apidoc apidoc_clean
  
- all: programs tests post_build
+ all: programs tests

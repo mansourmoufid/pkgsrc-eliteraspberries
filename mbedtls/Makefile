@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	mbedtls-2.3.0-apache
+DISTNAME=	mbedtls-2.4.0-apache
 PKGNAME=	${DISTNAME:S/-apache//}
 CATEGORIES=	security
 MASTER_SITES=	https://tls.mbed.org/download/
