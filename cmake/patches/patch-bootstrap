@@ -1,0 +1,13 @@
+--- bootstrap.orig	2017-01-11 09:24:57.000000000 -0800
++++ bootstrap	2017-01-11 09:28:08.000000000 -0800
+@@ -642,6 +642,10 @@
+   --no-system-bzip2|--no-system-curl|--no-system-expat|--no-system-jsoncpp|--no-system-libarchive|--no-system-zlib|--no-system-liblzma)
+     lib=`cmake_arg "$1" "--no-system-"`
+     cmake_bootstrap_system_libs="${cmake_bootstrap_system_libs} -DCMAKE_USE_SYSTEM_LIBRARY_`cmake_toupper $lib`=0" ;;
++  --system-libuv)
++    cmake_bootstrap_system_libs="${cmake_bootstrap_system_libs} -DCMAKE_USE_SYSTEM_LIBRARY_LIBUV=1" ;;
++  --no-system-libuv)
++    cmake_bootstrap_system_libs="${cmake_bootstrap_system_libs} -DCMAKE_USE_SYSTEM_LIBRARY_LIBUV=0" ;;
+   --qt-gui) cmake_bootstrap_qt_gui="1" ;;
+   --no-qt-gui) cmake_bootstrap_qt_gui="0" ;;
+   --qt-qmake=*) cmake_bootstrap_qt_qmake=`cmake_arg "$1"` ;;

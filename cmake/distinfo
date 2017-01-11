@@ -4,3 +4,7 @@ SHA1 (cmake-3.7.0.tar.gz) = 53e2437a2644fc02eff34dc4904739e2e26e0556
 RMD160 (cmake-3.7.0.tar.gz) = e0a40516e55a52e1c18d93bdf7cd1d06cf6dc4cd
 SHA512 (cmake-3.7.0.tar.gz) = badeb81ea5b2a765d0ae222d6c7612eba570f46b3645ac8a22e1cf5ea52648239c707e80d51c1d31f8e5b15167e37e6b4d9f6308280560b11feddc3d2fa745cd
 Size (cmake-3.7.0.tar.gz) = 7359368 bytes
+SHA1 (patch-Source_CMakeLists.txt) = 496091ff7564ab6035ab53efed993972c285e645
+SHA1 (patch-Source_cmArchiveWrite.cxx) = 1e0bd415cd88371a8e1322b5d3ca68790ae2000b
+SHA1 (patch-Utilities_cmlibuv_include_tree.h) = d78d880eee090cdffde3d1f76b67ff75cc72a9c1
+SHA1 (patch-bootstrap) = 37fa79e62b1bccacd24274ba651b9ca0a5b9a33d
