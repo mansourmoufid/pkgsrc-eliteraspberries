@@ -1,7 +1,7 @@
 # $NetBSD$
 
-DISTNAME=	fftw-3.3.4
-PKGREVISION=	2
+DISTNAME=	fftw-3.3.6-pl1
+PKGNAME=	${DISTNAME:S/-pl1//}
 CATEGORIES=	math
 MASTER_SITES=	http://fftw.org/
 
@@ -14,6 +14,8 @@ GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 USE_TOOLS+=	pkg-config
 USE_LANGUAGES=	c
+
+SPATCH=		no
 
 PKGCONFIG_OVERRIDE+=	fftw.pc.in
 
