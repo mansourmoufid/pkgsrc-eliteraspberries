@@ -1855,9 +1855,6 @@ lib/python${PYTHON_BASEVER}/lib2to3/fixes/fix_basestring.pyo
 lib/python${PYTHON_BASEVER}/lib2to3/fixes/fix_buffer.py
 lib/python${PYTHON_BASEVER}/lib2to3/fixes/fix_buffer.pyc
 lib/python${PYTHON_BASEVER}/lib2to3/fixes/fix_buffer.pyo
-lib/python${PYTHON_BASEVER}/lib2to3/fixes/fix_callable.py
-lib/python${PYTHON_BASEVER}/lib2to3/fixes/fix_callable.pyc
-lib/python${PYTHON_BASEVER}/lib2to3/fixes/fix_callable.pyo
 lib/python${PYTHON_BASEVER}/lib2to3/fixes/fix_dict.py
 lib/python${PYTHON_BASEVER}/lib2to3/fixes/fix_dict.pyc
 lib/python${PYTHON_BASEVER}/lib2to3/fixes/fix_dict.pyo
@@ -2595,9 +2592,6 @@ lib/python${PYTHON_BASEVER}/sre_parse.pyo
 lib/python${PYTHON_BASEVER}/sre.py
 lib/python${PYTHON_BASEVER}/sre.pyc
 lib/python${PYTHON_BASEVER}/sre.pyo
-lib/python${PYTHON_BASEVER}/ssl.py
-lib/python${PYTHON_BASEVER}/ssl.pyc
-lib/python${PYTHON_BASEVER}/ssl.pyo
 lib/python${PYTHON_BASEVER}/stat.py
 lib/python${PYTHON_BASEVER}/stat.pyc
 lib/python${PYTHON_BASEVER}/stat.pyo
@@ -2696,7 +2690,6 @@ lib/python${PYTHON_BASEVER}/test/capath/6e88d7b8.0
 lib/python${PYTHON_BASEVER}/test/capath/99d0fa06.0
 lib/python${PYTHON_BASEVER}/test/capath/ce7b8643.0
 lib/python${PYTHON_BASEVER}/test/cfgparser.1
-lib/python${PYTHON_BASEVER}/test/check_soundcard.vbs
 lib/python${PYTHON_BASEVER}/test/cjkencodings/big5hkscs.txt
 lib/python${PYTHON_BASEVER}/test/cjkencodings/big5hkscs-utf8.txt
 lib/python${PYTHON_BASEVER}/test/cjkencodings/big5.txt
@@ -2928,9 +2921,6 @@ lib/python${PYTHON_BASEVER}/test/list_tests.pyo
 lib/python${PYTHON_BASEVER}/test/lock_tests.py
 lib/python${PYTHON_BASEVER}/test/lock_tests.pyc
 lib/python${PYTHON_BASEVER}/test/lock_tests.pyo
-lib/python${PYTHON_BASEVER}/test/make_ssl_certs.py
-lib/python${PYTHON_BASEVER}/test/make_ssl_certs.pyc
-lib/python${PYTHON_BASEVER}/test/make_ssl_certs.pyo
 lib/python${PYTHON_BASEVER}/test/mapping_tests.py
 lib/python${PYTHON_BASEVER}/test/mapping_tests.pyc
 lib/python${PYTHON_BASEVER}/test/mapping_tests.pyo
@@ -3004,12 +2994,6 @@ lib/python${PYTHON_BASEVER}/test/Sine-1000Hz-300ms.aif
 lib/python${PYTHON_BASEVER}/test/sortperf.py
 lib/python${PYTHON_BASEVER}/test/sortperf.pyc
 lib/python${PYTHON_BASEVER}/test/sortperf.pyo
-lib/python${PYTHON_BASEVER}/test/ssl_cert.pem
-lib/python${PYTHON_BASEVER}/test/ssl_key.passwd.pem
-lib/python${PYTHON_BASEVER}/test/ssl_key.pem
-lib/python${PYTHON_BASEVER}/test/ssl_servers.py
-lib/python${PYTHON_BASEVER}/test/ssl_servers.pyc
-lib/python${PYTHON_BASEVER}/test/ssl_servers.pyo
 lib/python${PYTHON_BASEVER}/test/string_tests.py
 lib/python${PYTHON_BASEVER}/test/string_tests.pyc
 lib/python${PYTHON_BASEVER}/test/string_tests.pyo
@@ -3954,9 +3938,6 @@ lib/python${PYTHON_BASEVER}/test/test_spwd.pyo
 lib/python${PYTHON_BASEVER}/test/test_sqlite.py
 lib/python${PYTHON_BASEVER}/test/test_sqlite.pyc
 lib/python${PYTHON_BASEVER}/test/test_sqlite.pyo
-lib/python${PYTHON_BASEVER}/test/test_ssl.py
-lib/python${PYTHON_BASEVER}/test/test_ssl.pyc
-lib/python${PYTHON_BASEVER}/test/test_ssl.pyo
 lib/python${PYTHON_BASEVER}/test/test_startfile.py
 lib/python${PYTHON_BASEVER}/test/test_startfile.pyc
 lib/python${PYTHON_BASEVER}/test/test_startfile.pyo
