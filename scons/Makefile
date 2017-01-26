@@ -13,16 +13,12 @@ USE_LANGUAGES=	# none
 
 SPATCH=		no
 
-.include "../../eliteraspberries/python/Makefile.common"
-
-do-build:
-	cd ${WRKSRC} && python setup.py build
-
 do-install:
 	cd ${WRKSRC} && \
-	python setup.py install \
-		--prefix=${DESTDIR}${PREFIX}
+	env ${MAKE_ENV} \
+	python setup.py ${SETUPPY_ARGS} install --prefix=${DESTDIR}${PREFIX}
 
 .include "../../eliteraspberries/python/buildlink3.mk"
 .include "../../eliteraspberries/python-setuptools/buildlink3.mk"
+.include "../../eliteraspberries/python-setuptools/setuppy.mk"
 .include "../../mk/bsd.pkg.mk"

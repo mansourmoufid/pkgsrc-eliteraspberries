@@ -15,25 +15,17 @@ LICENSE=	gnu-gpl-v2
 
 USE_LANGUAGES=	c
 
-.include "../../eliteraspberries/python/Makefile.common"
-
 post-extract:
 	rm -f ${WRKSRC}/PyInstaller/bootloader/Darwin-64bit/run*
 	rm -f ${WRKSRC}/PyInstaller/bootloader/Linux-32bit/run*
 	rm -f ${WRKSRC}/PyInstaller/bootloader/Linux-64bit/run*
+	cd ${WRKSRC}/bootloader && python ./waf distclean
 
-do-build:
-	cd ${WRKSRC}/bootloader && python ./waf distclean all
-	cd ${WRKSRC} && python setup.py build
-
-do-install:
-	cd ${WRKSRC} && \
-	python setup.py install \
-		--prefix=${DESTDIR}${PREFIX} \
-		--record=PLIST.in \
-		--single-version-externally-managed
+pre-build:
+	cd ${WRKSRC}/bootloader && python ./waf all
 
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../eliteraspberries/python/buildlink3.mk"
 .include "../../eliteraspberries/python-setuptools/buildlink3.mk"
+.include "../../eliteraspberries/python-setuptools/setuppy.mk"
 .include "../../mk/bsd.pkg.mk"

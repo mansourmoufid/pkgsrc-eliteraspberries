@@ -11,31 +11,17 @@ HOMEPAGE=	http://python-pillow.org/
 COMMENT=	Friendly fork of the Python Imaging Library
 LICENSE=	mit
 
-.include "../../eliteraspberries/python/Makefile.common"
-
 SUBST_FILES.python-shebang+=	PIL/*.py
 SUBST_FILES.python-shebang+=	Scripts/*.py
 
-SETUP_ARGS+=	--disable-freetype
-SETUP_ARGS+=	--disable-jpeg2000
-SETUP_ARGS+=	--disable-lcms
-SETUP_ARGS+=	--disable-tiff
-SETUP_ARGS+=	--disable-webp
-SETUP_ARGS+=	--disable-webpmux
-
-SETUP_ARGS+=	--enable-jpeg
-SETUP_ARGS+=	--enable-zlib
-
-do-build:
-	cd ${WRKSRC} && \
-	python setup.py build_ext ${SETUP_ARGS}
-
-do-install:
-	cd ${WRKSRC} && \
-	python setup.py build_ext ${SETUP_ARGS} install \
-		--prefix=${DESTDIR}${PREFIX} \
-		--record=PLIST.in \
-		--single-version-externally-managed
+SETUPPY_BUILDEXT_ARGS+=	--disable-freetype
+SETUPPY_BUILDEXT_ARGS+=	--disable-jpeg2000
+SETUPPY_BUILDEXT_ARGS+=	--disable-lcms
+SETUPPY_BUILDEXT_ARGS+=	--disable-tiff
+SETUPPY_BUILDEXT_ARGS+=	--disable-webp
+SETUPPY_BUILDEXT_ARGS+=	--disable-webpmux
+SETUPPY_BUILDEXT_ARGS+=	--enable-jpeg
+SETUPPY_BUILDEXT_ARGS+=	--enable-zlib
 
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../eliteraspberries/jpeg/buildlink3.mk"
@@ -43,4 +29,5 @@ do-install:
 .include "../../eliteraspberries/python/buildlink3.mk"
 .include "../../eliteraspberries/python-numpy/buildlink3.mk"
 .include "../../eliteraspberries/python-setuptools/buildlink3.mk"
+.include "../../eliteraspberries/python-setuptools/setuppy.mk"
 .include "../../mk/bsd.pkg.mk"
