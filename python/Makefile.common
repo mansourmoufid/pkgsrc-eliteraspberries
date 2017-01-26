@@ -15,12 +15,6 @@ PLIST_SUBST+=	PYTHON_MAJOR_VERSION=${PYTHON_MAJOR_VERSION}
 PLIST_SUBST+=	PYTHON_BASEVER=${PYTHON_BASEVER}
 PLIST_SUBST+=	PYTHON_VERSION=${PYTHON_VERSION}
 
-SUBST_CLASSES+=			python-shebang
-SUBST_STAGE.python-shebang=	pre-configure
-SUBST_MESSAGE.python-shebang=	Fixing python interpreter paths
-SUBST_FILES.python-shebang=	*.py
-SUBST_SED.python-shebang=	-e 's,\#!.*python,\#!/usr/bin/env python,'
-
 CPPFLAGS+=	-DPyMem_Malloc=malloc
 CPPFLAGS+=	-DPyMem_Realloc=realloc
 CPPFLAGS+=	-DPyMem_Free=free

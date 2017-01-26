@@ -11,9 +11,6 @@ HOMEPAGE=	http://python-pillow.org/
 COMMENT=	Friendly fork of the Python Imaging Library
 LICENSE=	mit
 
-SUBST_FILES.python-shebang+=	PIL/*.py
-SUBST_FILES.python-shebang+=	Scripts/*.py
-
 SETUPPY_BUILDEXT_ARGS+=	--disable-freetype
 SETUPPY_BUILDEXT_ARGS+=	--disable-jpeg2000
 SETUPPY_BUILDEXT_ARGS+=	--disable-lcms
