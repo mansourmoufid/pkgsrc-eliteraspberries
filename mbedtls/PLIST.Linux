@@ -1,0 +1,7 @@
+@comment $NetBSD$
+lib/libmbedcrypto.so
+lib/libmbedcrypto.so.0
+lib/libmbedtls.so
+lib/libmbedtls.so.10
+lib/libmbedx509.so
+lib/libmbedx509.so.0
