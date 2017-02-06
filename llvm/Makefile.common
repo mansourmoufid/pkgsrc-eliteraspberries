@@ -44,7 +44,8 @@ CMAKE_ARGS+=	-DLLVM_TARGETS_TO_BUILD="X86"
 CMAKE_ARGS+=	-DLLVM_TARGET_ARCH="${MACHINE_ARCH}"
 
 do-configure:
-	cd ${WRKSRC}/build && cmake ${CMAKE_ARGS} ${CMAKE_ARG_PATH}
+	cd ${WRKSRC}/build && \
+	env ${MAKE_ENV} cmake ${CMAKE_ARGS} ${CMAKE_ARG_PATH}
 
 BUILDLINK_DEPMETHOD.cmake=	build
 .include "../../eliteraspberries/cmake/buildlink3.mk"
