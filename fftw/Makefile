@@ -2,6 +2,7 @@
 
 DISTNAME=	fftw-3.3.6-pl1
 PKGNAME=	${DISTNAME:S/-pl1//}
+PKGREVISION=	2
 CATEGORIES=	math
 MASTER_SITES=	http://fftw.org/
 
