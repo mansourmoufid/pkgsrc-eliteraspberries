@@ -9,6 +9,7 @@ SHA1 (patch-Makefile.pre.in) = ac607c55e8365dfeb6f10a8fafa40cc81d703b6a
 SHA1 (patch-Modules_cjkcodecs_cjkcodecs.h) = d0a273a9c56415b5e783b75554c44dd27ff4461a
 SHA1 (patch-Objects_dictobject.c) = 07b4e6a5765e347ca299a49da14d4c904bdda79e
 SHA1 (patch-Objects_fileobject.c) = 931b41d5205a0fefcb9705a759c3a4b80a2313b4
+SHA1 (patch-Objects_listobject.c) = fcbdd11798e06013daeb4ca14a3afc7f804edae2
 SHA1 (patch-Objects_object.c) = deb5ec2bcede8a0a29e0c7919f33ca0217083e0c
 SHA1 (patch-Objects_setobject.c) = caebccc291206db54652271d529e9ef69c00860a
 SHA1 (patch-Python_dtoa.c) = 503d4ec38260e5845a5ca67e7adf1266aef72a54
