@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	libpng-1.6.26
+DISTNAME=	libpng-1.6.28
 CATEGORIES=	devel graphics
 MASTER_SITES=	http://download.sourceforge.net/libpng/
 
