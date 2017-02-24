@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	libffi-3.2.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	ftp://sourceware.org/pub/libffi/
 
@@ -16,6 +16,8 @@ USE_TOOLS+=	pkg-config
 USE_LANGUAGES=	c
 
 PKGCONFIG_OVERRIDE+=	libffi.pc.in
+
+SPATCH=		no
 
 CONFIGURE_ARGS+=	--includedir=${PREFIX}/include
 CONFIGURE_ARGS+=	--disable-shared
