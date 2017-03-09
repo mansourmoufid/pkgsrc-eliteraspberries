@@ -1,10 +1,9 @@
 # $NetBSD$
 
-PA_VERSION=	v19_20140130
+PA_VERSION=	v190600_20161030
 
 DISTNAME=	pa_stable_${PA_VERSION}
 PKGNAME=	portaudio-${PA_VERSION}
-PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://www.portaudio.com/archives/
 EXTRACT_SUFX=	.tgz
@@ -17,7 +16,7 @@ LICENSE=	modified-bsd
 WRKSRC=		${WRKDIR}/portaudio
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-USE_TOOLS+=	autoconf gmake pkg-config
+USE_TOOLS+=	autoconf gmake perl pkg-config
 USE_LANGUAGES=	c
 
 PKGCONFIG_OVERRIDE+=	portaudio-2.0.pc.in

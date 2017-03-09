@@ -1,13 +1,13 @@
 $NetBSD$
 
---- configure.in.orig	2014-01-16 17:49:33.000000000 +0000
-+++ configure.in
-@@ -204,7 +204,7 @@ case "${host_os}" in
+--- configure.in.orig	2017-03-09 15:31:59.000000000 -0500
++++ configure.in	2017-03-09 15:32:20.000000000 -0500
+@@ -204,7 +204,7 @@
  
          AC_DEFINE(PA_USE_COREAUDIO,1)
  
--        CFLAGS="$CFLAGS -I\$(top_srcdir)/src/os/unix -Werror"
-+        CFLAGS="$CFLAGS -I\$(top_srcdir)/src/os/unix"
+-        CFLAGS="$CFLAGS -I\$(top_srcdir)/src/os/unix -Wno-deprecated -Werror"
++        CFLAGS="$CFLAGS -I\$(top_srcdir)/src/os/unix -Wno-deprecated"
          LIBS="-framework CoreAudio -framework AudioToolbox -framework AudioUnit -framework Carbon"
  
          if test "x$enable_mac_universal" = "xyes" ; then
