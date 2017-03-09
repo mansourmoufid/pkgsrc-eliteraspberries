@@ -1,6 +1,7 @@
 # $NetBSD$
 # used by eliteraspberries/python/Makefile
 # used by eliteraspberries/python-setuptools/Makefile
+# used by eliteraspberries/python-setuptools/setuppy.mk
 # used by eliteraspberries/python-wheel/Makefile
 # used by eliteraspberries/python-numpy/Makefile
 # used by eliteraspberries/cython/Makefile
