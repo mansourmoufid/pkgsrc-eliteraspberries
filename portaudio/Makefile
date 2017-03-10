@@ -1,9 +1,8 @@
 # $NetBSD$
 
-PA_VERSION=	v190600_20161030
-
-DISTNAME=	pa_stable_${PA_VERSION}
-PKGNAME=	portaudio-${PA_VERSION}
+DISTNAME=	pa_stable_v190600_20161030
+PKGNAME=	portaudio-${DISTNAME:S/pa_stable_v//}
+PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://www.portaudio.com/archives/
 EXTRACT_SUFX=	.tgz
