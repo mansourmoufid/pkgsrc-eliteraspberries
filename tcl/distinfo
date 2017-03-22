@@ -4,4 +4,6 @@ SHA1 (tcl8.6.5-src.tar.gz) = c3a50ea58dac00a3c7e83cb4a4651c40d0f55160
 RMD160 (tcl8.6.5-src.tar.gz) = 6c31d99775fb7b2c7aeb0d0fb20f2796d75215c2
 SHA512 (tcl8.6.5-src.tar.gz) = e58177728eea14df0492f9e3ec20ce5ad53150954ea901f0f337ac07d5b2d2196709f1364d94104043b0f2939eeb7296888a3b6d4f92df209b5c6174638f039f
 Size (tcl8.6.5-src.tar.gz) = 9398130 bytes
+SHA1 (patch-generic_tclExecute.c) = 65b13b49885142fc2ca10390beb3b0f186e96911
+SHA1 (patch-generic_tclNamesp.c) = 59060d9b1140371ade41e6891e8d2529d4a47e53
 SHA1 (patch-unix_Makefile.in) = 02f94d85bd056bbbb73f586fb69d8e6516aaee81
