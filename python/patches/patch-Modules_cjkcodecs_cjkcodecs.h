@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- Modules/cjkcodecs/cjkcodecs.h.orig	2016-10-30 11:54:40.000000000 -0400
 +++ Modules/cjkcodecs/cjkcodecs.h	2016-10-30 12:12:58.000000000 -0400
 @@ -60,8 +60,10 @@
