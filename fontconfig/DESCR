@@ -1,0 +1,3 @@
+Fontconfig is a library for configuring and customizing font access.
+Fontconfig can discover new fonts when installed automatically,
+removing a common source of configuration problems.
