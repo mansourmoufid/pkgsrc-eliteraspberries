@@ -1,0 +1,8 @@
+$NetBSD$
+
+SHA1 (freetype-2.8.tar.gz) = e00114efd7a01f7b5cbb7d93788e1dff36ca5c0d
+RMD160 (freetype-2.8.tar.gz) = 68024520644bf86192a18782923dae80f9f5162b
+SHA512 (freetype-2.8.tar.gz) = ca93cd069f445c1cb6ff1d4319aca9d2136186f71d2114867f01e7588c821bee23b0b9172eb4ee9906a9c14c6228b059f57ed55ab82b24a1be9eb67cbd03e53c
+Size (freetype-2.8.tar.gz) = 2481718 bytes
+SHA1 (patch-builds_unix_configure.ac) = d5c4b36f107e42b2167bc04797da8badc511f4c9
+SHA1 (patch-src-gzip-rules.mk) = d5f329abf807a261ef0b9afb18069a8c16997b13

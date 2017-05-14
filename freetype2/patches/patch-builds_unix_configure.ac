@@ -1,0 +1,70 @@
+$NetBSD$
+
+--- builds/unix/configure.ac.orig	2017-05-13 06:45:59.000000000 -0400
++++ builds/unix/configure.ac	2017-05-13 20:58:25.000000000 -0400
+@@ -328,12 +328,6 @@
+   zlib_pkg="zlib"
+   have_zlib_pkg=no
+ 
+-  if test x"$ZLIB_CFLAGS" = x -a x"$ZLIB_LIBS" = x; then
+-    PKG_CHECK_EXISTS([$zlib_pkg], [have_zlib_pkg=yes])
+-  fi
+-  PKG_CHECK_MODULES([ZLIB], [$zlib_pkg],
+-                    [have_zlib="yes (pkg-config)"], [:])
+-
+   if test $have_zlib_pkg = yes; then
+     # we have zlib.pc
+     zlib_reqpriv="$zlib_pkg"
+@@ -377,12 +371,6 @@
+   bzip2_pkg="bzip2"
+   have_bzip2_pkg=no
+ 
+-  if test x"$BZIP2_CFLAGS" = x -a x"$BZIP2_LIBS" = x; then
+-    PKG_CHECK_EXISTS([$bzip2_pkg], [have_bzip2_pkg=yes])
+-  fi
+-  PKG_CHECK_MODULES([BZIP2], [$bzip2_pkg],
+-                    [have_bzip2="yes (pkg-config)"], [:])
+-
+   if test $have_bzip2_pkg = yes; then
+     # we have bzip2.pc
+     bzip2_reqpriv="$bzip2_pkg"
+@@ -426,12 +414,6 @@
+   libpng_pkg="libpng"
+   have_libpng_pkg=no
+ 
+-  if test x"$LIBPNG_CFLAGS" = x -a x"$LIBPNG_LIBS" = x; then
+-    PKG_CHECK_EXISTS([$libpng_pkg], [have_libpng_pkg=yes])
+-  fi
+-  PKG_CHECK_MODULES([LIBPNG], [$libpng_pkg],
+-                    [have_libpng="yes (pkg-config)"], [:])
+-
+   if test $have_libpng_pkg = yes; then
+     # we have libpng.pc
+     libpng_reqpriv="$libpng_pkg"
+@@ -440,24 +422,13 @@
+   else
+     libpng_reqpriv=
+ 
+-    if test "$have_libpng" != no; then
++    if test x"$LIBPNG_CFLAGS" != x -o x"$LIBPNG_LIBS" != x; then
+       # LIBPNG_CFLAGS and LIBPNG_LIBS are set by the user
+       libpng_libspriv="$LIBPNG_LIBS"
+       libpng_libsstaticconf="$LIBPNG_LIBS"
+       have_libpng="yes (LIBPNG_CFLAGS and LIBPNG_LIBS)"
+     else
+-      # fall back to config script.
+-      AC_MSG_CHECKING([for libpng-config])
+-      if which libpng-config > /dev/null 2>&1; then
+-        LIBPNG_CFLAGS=`libpng-config --cflags`
+-        LIBPNG_LIBS=`libpng-config --ldflags`
+-        libpng_libspriv=`libpng-config --static --ldflags`
+-        libpng_libsstaticconf="$libpng_libspriv"
+-        have_libpng="yes (libpng-config)"
+-        AC_MSG_RESULT([yes])
+-      else
+-        AC_MSG_RESULT([no])
+-      fi
++      have_libpng="no"
+     fi
+   fi
+ fi
