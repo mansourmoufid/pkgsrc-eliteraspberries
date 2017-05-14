@@ -1,0 +1,9 @@
+$NetBSD$
+
+SHA1 (motif-2.3.7.tar.gz) = be3e5a7e488f56cebfe3258c51938834effbbb6c
+RMD160 (motif-2.3.7.tar.gz) = 6d9b9d910458ef75c2002e64c10650c2f3a81c39
+SHA512 (motif-2.3.7.tar.gz) = 2485f6e111139d6815e8ac38630d082ac73474b033818b4a92b46f5e2213fa85030ef8095672b2e31b1ed5c207d3baf58f01ec5deec0cd3bd9527cb341f741f8
+Size (motif-2.3.7.tar.gz) = 5715478 bytes
+SHA1 (patch-ac_find_xft.m4) = b4a52df7cf618cb89e417fe27f4a1169b72d8b3e
+SHA1 (patch-configure.ac) = 4529b63b693eb9353f6113b4eef51007964fa7b0
+SHA1 (patch-lib_Xm_XmP.h) = dd59ec6fce8b4440c4c920455f891fc213bc65f0

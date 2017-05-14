@@ -1,0 +1,27 @@
+$NetBSD$
+
+--- configure.ac.orig	2017-03-27 18:40:13.000000000 -0400
++++ configure.ac	2017-05-14 10:41:22.000000000 -0400
+@@ -3,12 +3,6 @@
+ AC_CONFIG_SRCDIR([lib/Xm/Form.c])
+ AC_PREREQ(2.52)
+ AC_CONFIG_AUX_DIR(.)
+-AC_CHECK_FILE(/usr/X/include/X11/X.h,
+-  AC_PREFIX_DEFAULT(/usr/X),
+-  AC_PREFIX_DEFAULT(/usr))
+-AC_CHECK_FILE(/usr/X11R6/include/X11/X.h,
+-  AC_PREFIX_DEFAULT(/usr/X11R6),
+-  AC_PREFIX_DEFAULT(/usr))
+ 
+ dnl AM_MAINTAINER_MODE
+ AC_CANONICAL_TARGET
+@@ -159,9 +160,6 @@
+ if test x$GCC = xyes
+ then
+     CFLAGS="$CFLAGS -Wall -g -fno-strict-aliasing -Wno-unused -Wno-comment"
+-    if test ` $CC -dumpversion | sed -e 's/\(^.\).*/\1/'` = "4" ; then
+-        CFLAGS="$CFLAGS -fno-tree-ter"
+-    fi
+ fi
+ AC_DEFINE(NO_OL_COMPAT, 1, "No OL Compatability")
+ 

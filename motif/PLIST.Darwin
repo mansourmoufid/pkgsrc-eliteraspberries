@@ -1,0 +1,7 @@
+@comment $NetBSD$
+lib/libMrm.4.dylib
+lib/libMrm.dylib
+lib/libUil.4.dylib
+lib/libUil.dylib
+lib/libXm.4.dylib
+lib/libXm.dylib
