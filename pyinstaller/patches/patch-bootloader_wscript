@@ -1,0 +1,37 @@
+$NetBSD$
+
+--- bootloader/wscript.orig	2017-05-31 21:16:20.000000000 -0400
++++ bootloader/wscript	2017-05-31 21:17:14.000000000 -0400
+@@ -49,14 +49,6 @@
+ }
+ 
+ 
+-if is_darwin:
+-    # OS X 10.7 might not understand some load commands.
+-    # The following variable fixes 10.7 compatibility.
+-    # According to OS X doc this variable is equivalent to gcc option:
+-    #   -mmacosx-version-min=10.7
+-    os.environ['MACOSX_DEPLOYMENT_TARGET'] = '10.7'
+-
+-
+ # TODO strip created binaries.
+ 
+ 
+@@ -498,9 +490,6 @@
+             # Use Unicode entry point wmain/wWinMain
+             ctx.env.append_value('LINKFLAGS', '-municode')
+ 
+-    if is_darwin:
+-        ctx.env.append_value('CFLAGS', '-mmacosx-version-min=10.7')
+-
+     # On linux link only with needed libraries.
+     # -Wl,--as-needed is on some platforms detected during configure but
+     # fails during build. (Mac OS X, Solaris, AIX)
+@@ -515,7 +504,6 @@
+     ctx.setenv('debug', basic_env)  # Ensure env contains shared values.
+     debug_env = ctx.env
+     # This define enables verbose console output of the bootloader.
+-    ctx.env.append_value('DEFINES', ['LAUNCH_DEBUG'])
+     ctx.env.append_value('DEFINES', 'NDEBUG')
+ 
+     ## setup windowed DEBUG environment
