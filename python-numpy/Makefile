@@ -2,7 +2,7 @@
 
 DISTNAME=	numpy-1.11.0
 PKGNAME=	python-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=numpy}/NumPy/${PKGVERSION_NOREV}/
 
@@ -12,8 +12,6 @@ COMMENT=	Python numerical computing package
 LICENSE=	original-bsd
 
 USE_LANGUAGES=	c
-
-SPATCH=		no
 
 .include "../../eliteraspberries/python/Makefile.common"
 
