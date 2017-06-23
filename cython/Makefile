@@ -2,6 +2,7 @@
 
 DISTNAME=	Cython-${PKGVERSION_NOREV}
 PKGNAME=	cython-0.25.2
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_PYPI:=c/cython/}
 
@@ -12,7 +13,8 @@ LICENSE=	apache-2.0
 
 USE_LANGUAGES=	c
 
-SPATCH=		no
+post-patch:
+	find ${WRKSRC} -name '*.orig' | while read f; do rm -f $$f; done
 
 .include "../../eliteraspberries/python/buildlink3.mk"
 .include "../../eliteraspberries/python-setuptools/buildlink3.mk"
