@@ -1,0 +1,45 @@
+$NetBSD$
+
+--- numpy/core/src/multiarray/scalartypes.c.src.orig	2017-06-20 16:26:55.000000000 -0400
++++ numpy/core/src/multiarray/scalartypes.c.src	2017-06-20 16:35:19.000000000 -0400
+@@ -113,9 +113,11 @@
+     PyObject *obj;
+     const size_t size = _PyObject_VAR_SIZE(type, nitems + 1);
+ 
+-    obj = (PyObject *)PyObject_Malloc(size);
++    obj = malloc(size);
++    if (obj == NULL) {
++        return NULL;
++    }
+     /*
+-     * Fixme. Need to check for no memory.
+      * If we don't need to zero memory, we could use
+      * PyObject_{New, NewVar} for this whole function.
+      */
+@@ -144,7 +146,7 @@
+      * COPYSLOT it, instead it takes the next parent PyInt which has a
+      * different allocator
+      */
+-    PyObject_Free(v);
++    free(v);
+ }
+ 
+ 
+@@ -1596,7 +1598,7 @@
+ 
+         gentype_getreadbuf(self, 0, (void **)&data);
+         descr = PyArray_DescrFromScalar(self);
+-        newmem = PyObject_Malloc(descr->elsize);
++        newmem = malloc(descr->elsize);
+         if (newmem == NULL) {
+             Py_DECREF(descr);
+             return PyErr_NoMemory();
+@@ -1605,7 +1607,7 @@
+             descr->f->copyswap(newmem, data, 1, NULL);
+         }
+         new = PyArray_Scalar(newmem, descr, NULL);
+-        PyObject_Free(newmem);
++        free(newmem);
+         Py_DECREF(descr);
+         return new;
+     }
