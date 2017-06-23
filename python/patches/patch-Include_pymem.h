@@ -2,19 +2,6 @@ $NetBSD$
 
 --- Include/pymem.h.orig	2016-12-17 15:05:05.000000000 -0500
 +++ Include/pymem.h	2017-05-21 12:00:24.000000000 -0400
-@@ -49,9 +49,9 @@
-    performed on failure (no exception is set, no warning is printed, etc).
- */
- 
--PyAPI_FUNC(void *) PyMem_Malloc(size_t);
--PyAPI_FUNC(void *) PyMem_Realloc(void *, size_t);
--PyAPI_FUNC(void) PyMem_Free(void *);
-+#define PyMem_Malloc	malloc
-+#define PyMem_Realloc	realloc
-+#define PyMem_Free	free
- 
- /* Starting from Python 1.6, the wrappers Py_{Malloc,Realloc,Free} are
-    no longer supported. They used to call PyErr_NoMemory() on failure. */
 @@ -59,9 +59,9 @@
  /* Macros. */
  #ifdef PYMALLOC_DEBUG
