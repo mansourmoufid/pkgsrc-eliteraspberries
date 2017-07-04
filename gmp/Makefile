@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	gmp-6.1.0
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel math
 MASTER_SITES=	https://gmplib.org/download/gmp/
 EXTRACT_SUFX=	.tar.lz

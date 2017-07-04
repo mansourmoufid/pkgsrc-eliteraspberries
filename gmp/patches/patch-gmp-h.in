@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- gmp-h.in.orig	2017-07-03 22:22:45.000000000 -0400
++++ gmp-h.in	2017-07-03 22:23:02.000000000 -0400
+@@ -490,7 +490,7 @@
+ __GMP_DECLSPEC extern int gmp_errno;
+ 
+ #define gmp_version __gmp_version
+-__GMP_DECLSPEC extern const char * const gmp_version;
++__GMP_DECLSPEC extern const char gmp_version[];
+ 
+ 
+ /**************** Random number routines.  ****************/

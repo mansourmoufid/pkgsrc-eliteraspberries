@@ -4,3 +4,6 @@ SHA1 (gmp-6.1.0.tar.lz) = 047d134c6cc35092e590258ac64ba9cd9f4e3017
 RMD160 (gmp-6.1.0.tar.lz) = e9c3bbe6205b346fbe2553fd34cfcfc943d7954a
 SHA512 (gmp-6.1.0.tar.lz) = df2605b3632b8437c675e5f1458496cce746041dd45c5155ffd9ebddd6cf753a8c018f7ba942f437208aa844359820a802ffeee1ff7d5b7ccf197cce3e1c156c
 Size (gmp-6.1.0.tar.lz) = 1943881 bytes
+SHA1 (patch-gmp-h.in) = f8555b6343d15b01c0dfdde758e0bb5ab937c91f
+SHA1 (patch-mini-gmp_mini-gmp.c) = 80803a8ea25d48db9c5c3023666a1a4fd810f1c1
+SHA1 (patch-version.c) = 8bb43a4d060fa945b043137395266b970b29eb22
