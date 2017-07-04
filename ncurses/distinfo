@@ -4,4 +4,4 @@ SHA1 (ncurses-6.0.tar.gz) = acd606135a5124905da770803c05f1f20dd3b21c
 RMD160 (ncurses-6.0.tar.gz) = 4d9e5938f00b400bfb0d37f3c54f2f36c4157d48
 Size (ncurses-6.0.tar.gz) = 3131891 bytes
 SHA1 (patch-form_fty__enum.c) = 225978270a63fd261a854f312bf882209ca030c5
-SHA1 (patch-ncurses_tty_tty_update.c) = 786c7252d0c88daecb6085f16200e96846f3955d
+SHA1 (patch-ncurses_tty_tty_update.c) = de0b19354cd250096f2f5f3a92f442c52b7c6eae
