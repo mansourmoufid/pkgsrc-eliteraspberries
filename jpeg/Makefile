@@ -2,6 +2,7 @@
 
 DISTNAME=	jpegsrc.v9b
 PKGNAME=	${DISTNAME:S/src.v/-/}
+PKGREVISION=	2
 CATEGORIES=	devel graphics
 MASTER_SITES=	http://www.ijg.org/files/
 
