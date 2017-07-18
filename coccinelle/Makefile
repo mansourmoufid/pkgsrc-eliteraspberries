@@ -16,8 +16,6 @@ USE_TOOLS+=	gmake
 
 SPATCH=		no
 
-CONFIGURE_ARGS+=	--enable-release
-
 CONFIGURE_ARGS+=	--with-ocamlfind=${PREFIX}/bin/ocamlfind
 CONFIGURE_ARGS+=	--with-menhir=${PREFIX}/bin/menhir
 
