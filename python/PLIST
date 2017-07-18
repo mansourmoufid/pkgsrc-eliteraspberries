@@ -848,7 +848,6 @@ lib/python${PYTHON_BASEVER}/distutils/tests/test_versionpredicate.pyo
 lib/python${PYTHON_BASEVER}/distutils/tests/test_version.py
 lib/python${PYTHON_BASEVER}/distutils/tests/test_version.pyc
 lib/python${PYTHON_BASEVER}/distutils/tests/test_version.pyo
-lib/python${PYTHON_BASEVER}/distutils/tests/xxmodule.c
 lib/python${PYTHON_BASEVER}/distutils/text_file.py
 lib/python${PYTHON_BASEVER}/distutils/text_file.pyc
 lib/python${PYTHON_BASEVER}/distutils/text_file.pyo
