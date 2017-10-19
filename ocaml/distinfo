@@ -10,5 +10,5 @@ SHA1 (patch-config_auto-aux_hasgot) = 9f0ee4cf3b932b70024ffaa349333630f9a77695
 SHA1 (patch-config_auto-aux_hasgot2) = c60c8f94a822a39a45facef499e98d13d3ce3a16
 SHA1 (patch-config_auto-aux_runtest) = ccad32cb689fe782cb0d0877c45c1eb579a1b793
 SHA1 (patch-config_auto-aux_trycompile) = 9f7c995e3ccdd52ab6afe724707dc604b32a6e05
-SHA1 (patch-configure) = 476b4d1e7ed15733ef05755f28bf27aadfaf857f
+SHA1 (patch-configure) = 7b5d82808f843e5060b910c3acb2b257c55c3fb9
 SHA1 (patch-stdlib_Makefile) = 5518adf316d3d80fb5becefdbcdf6299267c7965

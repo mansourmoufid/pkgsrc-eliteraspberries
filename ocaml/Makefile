@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	ocaml-4.02.3
-PKGREVISION=	9
+PKGREVISION=	10
 CATEGORIES=	lang
 MASTER_SITES=	http://caml.inria.fr/pub/distrib/ocaml-4.02/
 
