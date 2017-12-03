@@ -1,6 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	fontconfig-2.12.1
+PKGREVISION=	2
 CATEGORIES=	fonts
 MASTER_SITES=	https://www.freedesktop.org/software/fontconfig/release/
 
@@ -11,9 +12,15 @@ LICENSE=	modified-bsd
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-USE_TOOLS+=	pkg-config
+USE_TOOLS+=	gmake pkg-config
 
 PKGCONFIG_OVERRIDE+=	fontconfig.pc.in
+
+pre-patch:
+	cd ${WRKSRC}; cp src/fcobjshash.gperf src/fcobjshash.gperf.orig
+
+pre-configure:
+	cd ${WRKSRC}; cp src/fcobjshash.gperf.orig src/fcobjshash.gperf
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 CONFIGURE_ARGS+=	--disable-iconv
