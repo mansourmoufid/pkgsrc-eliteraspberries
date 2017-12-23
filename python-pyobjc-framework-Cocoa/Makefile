@@ -1,0 +1,19 @@
+# $NetBSD$
+
+DISTNAME=	pyobjc-framework-Cocoa-4.1
+PKGNAME=	python-${DISTNAME}
+CATEGORIES=	devel
+MASTER_SITES=	${MASTER_SITE_PYPI:=p/pyobjc-framework-Cocoa/}
+
+MAINTAINER=	mansourmoufid@gmail.com
+HOMEPAGE=	https://bitbucket.org/ronaldoussoren/pyobjc
+COMMENT=	PyObjC wrappers for the core Cocoa frameworks
+LICENSE=	mit
+
+USE_LANGUAGES=	c
+
+.include "../../eliteraspberries/python/buildlink3.mk"
+.include "../../eliteraspberries/python-setuptools/buildlink3.mk"
+.include "../../eliteraspberries/python-setuptools/setuppy.mk"
+.include "../../eliteraspberries/python-pyobjc-core/buildlink3.mk"
+.include "../../mk/bsd.pkg.mk"
