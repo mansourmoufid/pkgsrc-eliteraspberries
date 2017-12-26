@@ -1,4 +1,4 @@
 @comment $NetBSD$
-lib/itcl4.0.4/libitcl4.0.4.dylib
+lib/itcl4.1.1/libitcl4.1.1.dylib
 lib/libtcl8.6.dylib
-lib/thread2.7.3/libthread2.7.3.dylib
+lib/thread2.8.2/libthread2.8.2.dylib

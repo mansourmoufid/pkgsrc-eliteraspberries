@@ -1,6 +1,6 @@
 $NetBSD$
 
-SHA1 (tk8.6.5-src.tar.gz) = e63f9e46cfd4ea37799554b003958b54b51dc347
-RMD160 (tk8.6.5-src.tar.gz) = dc34fe23e2aa018dfe70d082d99793a48b37aa84
-SHA512 (tk8.6.5-src.tar.gz) = 9acf2ef993a566a7cdd1efe21dc896b09125c65d86df53ab5a78542b21d3f031e9f9d72b81738705636c268b5ce72934c483eb087d5c0114f913c9075db9a3b1
-Size (tk8.6.5-src.tar.gz) = 4417393 bytes
+SHA1 (tk8.6.8-src.tar.gz) = 7d674881bcfda5acb937bea084b10fe271463632
+RMD160 (tk8.6.8-src.tar.gz) = 8a900988a01aa267e8c23681dfab926e36c1caa9
+SHA512 (tk8.6.8-src.tar.gz) = d0d30637b733fb0b0d38461b6d872934c04af422fcdb7ec41a72331b2529cc94414e6f441f95a98642d69505e4f41469847fedd1cbe58bd08cdd818fcabd1db9
+Size (tk8.6.8-src.tar.gz) = 4319854 bytes
