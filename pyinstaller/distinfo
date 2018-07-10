@@ -6,5 +6,6 @@ SHA512 (pyinstaller/PyInstaller-3.2.tar.gz) = 568facc21e9ee06ff3f505c4e413d3a173
 Size (pyinstaller/PyInstaller-3.2.tar.gz) = 2775557 bytes
 SHA1 (patch-PyInstaller_building_build_main.py) = 879c8fd676b78d92fcc663cc6d6e54fb102b0b73
 SHA1 (patch-PyInstaller_depend_bindepend.py) = baf72d307826a15fb5ff143eb1a057c01518d0c7
-SHA1 (patch-PyInstaller_hooks_hook-_tkinter.py) = 96da7a37b3a3ba1605d3578f3b7c7bfdbaeb9c34
+SHA1 (patch-PyInstaller_hooks_hook-_tkinter.py) = 3aa6c10b48778ee71d0511b8b3c26cf84e842da8
+SHA1 (patch-PyInstaller_loader_rthooks_pyi_rth__tkinter.py) = 0d5afe75358627751ab4fb1a0a106e469a35c1bf
 SHA1 (patch-bootloader_wscript) = 5fd9294b710d834838e4348ec81a04aee4e4ed8c
