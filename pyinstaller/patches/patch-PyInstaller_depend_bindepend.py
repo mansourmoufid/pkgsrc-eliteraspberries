@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- PyInstaller/depend/bindepend.py.orig	2016-01-31 15:22:49.000000000 -0500
 +++ PyInstaller/depend/bindepend.py	2016-04-29 19:52:04.000000000 -0400
 @@ -630,9 +630,14 @@

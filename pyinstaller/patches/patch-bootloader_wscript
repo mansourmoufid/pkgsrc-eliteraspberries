@@ -27,11 +27,3 @@ $NetBSD$
      # On linux link only with needed libraries.
      # -Wl,--as-needed is on some platforms detected during configure but
      # fails during build. (Mac OS X, Solaris, AIX)
-@@ -515,7 +504,6 @@
-     ctx.setenv('debug', basic_env)  # Ensure env contains shared values.
-     debug_env = ctx.env
-     # This define enables verbose console output of the bootloader.
--    ctx.env.append_value('DEFINES', ['LAUNCH_DEBUG'])
-     ctx.env.append_value('DEFINES', 'NDEBUG')
- 
-     ## setup windowed DEBUG environment
