@@ -1,0 +1,4 @@
+pefile is a multi-platform Python module to parse and work with
+Portable Executable (aka PE) files.  Most of the information contained
+in the PE headers is accessible as well as all sections' details and
+their data.
