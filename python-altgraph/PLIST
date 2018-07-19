@@ -1,0 +1,20 @@
+@comment $NetBSD$
+lib/python${PYTHON_BASEVER}/site-packages/altgraph-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/PKG-INFO
+lib/python${PYTHON_BASEVER}/site-packages/altgraph-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/SOURCES.txt
+lib/python${PYTHON_BASEVER}/site-packages/altgraph-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/dependency_links.txt
+lib/python${PYTHON_BASEVER}/site-packages/altgraph-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/top_level.txt
+lib/python${PYTHON_BASEVER}/site-packages/altgraph-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/zip-safe
+lib/python${PYTHON_BASEVER}/site-packages/altgraph/Dot.py
+lib/python${PYTHON_BASEVER}/site-packages/altgraph/Dot.pyc
+lib/python${PYTHON_BASEVER}/site-packages/altgraph/Graph.py
+lib/python${PYTHON_BASEVER}/site-packages/altgraph/Graph.pyc
+lib/python${PYTHON_BASEVER}/site-packages/altgraph/GraphAlgo.py
+lib/python${PYTHON_BASEVER}/site-packages/altgraph/GraphAlgo.pyc
+lib/python${PYTHON_BASEVER}/site-packages/altgraph/GraphStat.py
+lib/python${PYTHON_BASEVER}/site-packages/altgraph/GraphStat.pyc
+lib/python${PYTHON_BASEVER}/site-packages/altgraph/GraphUtil.py
+lib/python${PYTHON_BASEVER}/site-packages/altgraph/GraphUtil.pyc
+lib/python${PYTHON_BASEVER}/site-packages/altgraph/ObjectGraph.py
+lib/python${PYTHON_BASEVER}/site-packages/altgraph/ObjectGraph.pyc
+lib/python${PYTHON_BASEVER}/site-packages/altgraph/__init__.py
+lib/python${PYTHON_BASEVER}/site-packages/altgraph/__init__.pyc
