@@ -1,8 +1,7 @@
 # $NetBSD$
 
 GITHUB_PROJECT=	pyinstaller
-PKGNAME=	${GITHUB_PROJECT}-3.2
-PKGREVISION=	3
+PKGNAME=	${GITHUB_PROJECT}-3.3.1
 DISTNAME=	PyInstaller-${PKGVERSION_NOREV}
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GITHUB:=pyinstaller/}
@@ -29,4 +28,7 @@ pre-build:
 .include "../../eliteraspberries/python/buildlink3.mk"
 .include "../../eliteraspberries/python-setuptools/buildlink3.mk"
 .include "../../eliteraspberries/python-setuptools/setuppy.mk"
+.include "../../eliteraspberries/python-dis3/buildlink3.mk"
+.include "../../eliteraspberries/python-macholib/buildlink3.mk"
+.include "../../eliteraspberries/python-pefile/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

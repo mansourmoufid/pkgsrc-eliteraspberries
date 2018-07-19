@@ -1,29 +1,27 @@
 $NetBSD$
 
---- bootloader/wscript.orig	2017-05-31 21:16:20.000000000 -0400
-+++ bootloader/wscript	2017-05-31 21:17:14.000000000 -0400
-@@ -49,14 +49,6 @@
- }
+--- bootloader/wscript.orig	2018-07-19 17:22:18.000000000 -0400
++++ bootloader/wscript	2018-07-19 17:24:59.000000000 -0400
+@@ -569,11 +569,7 @@
  
  
--if is_darwin:
--    # OS X 10.7 might not understand some load commands.
--    # The following variable fixes 10.7 compatibility.
--    # According to OS X doc this variable is equivalent to gcc option:
--    #   -mmacosx-version-min=10.7
--    os.environ['MACOSX_DEPLOYMENT_TARGET'] = '10.7'
--
--
- # TODO strip created binaries.
+     elif ctx.env.DEST_OS == 'darwin':
+-        # OS X 10.7 might not understand some load commands.
+-        # The following variable fixes 10.7 compatibility.
+-        # According to OS X doc this variable is equivalent to gcc option:
+-        #   -mmacosx-version-min=10.7
+-        os.environ['MACOSX_DEPLOYMENT_TARGET'] = '10.7'
++        pass
  
+     ### Libraries
  
-@@ -498,9 +490,6 @@
-             # Use Unicode entry point wmain/wWinMain
+@@ -636,8 +632,7 @@
              ctx.env.append_value('LINKFLAGS', '-municode')
  
--    if is_darwin:
+     if ctx.env.DEST_OS == 'darwin':
 -        ctx.env.append_value('CFLAGS', '-mmacosx-version-min=10.7')
--
+-        ctx.env.append_value('LINKFLAGS', '-mmacosx-version-min=10.7')
++        pass
+ 
      # On linux link only with needed libraries.
      # -Wl,--as-needed is on some platforms detected during configure but
-     # fails during build. (Mac OS X, Solaris, AIX)
