@@ -1,0 +1,8 @@
+@comment $NetBSD$
+lib/python${PYTHON_BASEVER}/site-packages/PyAudio-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/PKG-INFO
+lib/python${PYTHON_BASEVER}/site-packages/PyAudio-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/SOURCES.txt
+lib/python${PYTHON_BASEVER}/site-packages/PyAudio-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/dependency_links.txt
+lib/python${PYTHON_BASEVER}/site-packages/PyAudio-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/top_level.txt
+lib/python${PYTHON_BASEVER}/site-packages/_portaudio.so
+lib/python${PYTHON_BASEVER}/site-packages/pyaudio.py
+lib/python${PYTHON_BASEVER}/site-packages/pyaudio.pyc
