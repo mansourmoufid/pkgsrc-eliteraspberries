@@ -1,13 +1,15 @@
 $NetBSD$
 
---- configure.in.orig	2017-03-09 15:31:59.000000000 -0500
-+++ configure.in	2017-03-09 15:32:20.000000000 -0500
-@@ -204,7 +204,7 @@
+--- configure.in.orig	2016-10-29 21:23:04.000000000 -0400
++++ configure.in	2018-08-12 14:53:05.000000000 -0400
+@@ -204,8 +204,9 @@
  
          AC_DEFINE(PA_USE_COREAUDIO,1)
  
 -        CFLAGS="$CFLAGS -I\$(top_srcdir)/src/os/unix -Wno-deprecated -Werror"
 +        CFLAGS="$CFLAGS -I\$(top_srcdir)/src/os/unix -Wno-deprecated"
          LIBS="-framework CoreAudio -framework AudioToolbox -framework AudioUnit -framework Carbon"
++        INCLUDES="$INCLUDES pa_mac_core.h"
  
          if test "x$enable_mac_universal" = "xyes" ; then
+            case `xcodebuild -version | sed -n 's/Xcode \(.*\)/\1/p'` in

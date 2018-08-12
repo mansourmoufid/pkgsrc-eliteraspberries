@@ -1,3 +1,4 @@
 @comment $NetBSD$
+include/pa_mac_core.h
 lib/libportaudio.2.dylib
 lib/libportaudio.dylib

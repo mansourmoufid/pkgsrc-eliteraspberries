@@ -2,7 +2,7 @@
 
 DISTNAME=	pa_stable_v190600_20161030
 PKGNAME=	portaudio-${DISTNAME:S/pa_stable_v//}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	http://www.portaudio.com/archives/
 EXTRACT_SUFX=	.tgz
