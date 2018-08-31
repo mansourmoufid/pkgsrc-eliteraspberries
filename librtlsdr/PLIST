@@ -1,0 +1,4 @@
+@comment $NetBSD$
+include/rtl-sdr.h
+include/rtl-sdr_export.h
+lib/pkgconfig/librtlsdr.pc
