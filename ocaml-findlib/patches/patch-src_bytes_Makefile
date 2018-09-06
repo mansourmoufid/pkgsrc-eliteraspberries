@@ -1,7 +1,7 @@
+$NetBSD$
+
 --- src/bytes/Makefile.orig	2015-12-07 09:35:24.000000000 -0500
 +++ src/bytes/Makefile	2015-12-21 16:35:58.000000000 -0500
---- src/bytes/Makefile.orig	2015-12-07 14:35:24.000000000 +0000
-+++ src/bytes/Makefile
 @@ -2,6 +2,7 @@ BYTE_FILES=bytes.cmi bytes.cma
  NATIVE_FILES=bytes.cmx bytes$(LIB_SUFFIX) bytes.cmxa
  NATIVE_FILES_DYNLINK=bytes.cmxs

@@ -2,7 +2,7 @@
 
 DISTNAME=	findlib-1.6.1
 PKGNAME=	ocaml-${DISTNAME}
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	devel
 MASTER_SITES=	http://download.camlcity.org/download/
 
@@ -13,7 +13,7 @@ LICENSE=	mit
 
 HAS_CONFIGURE=	yes
 USE_LANGUAGES=	c
-USE_TOOLS+=	gmake
+USE_TOOLS+=	gmake m4
 
 MAKE_JOBS_SAFE=	no
 
