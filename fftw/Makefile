@@ -1,8 +1,7 @@
 # $NetBSD$
 
-DISTNAME=	fftw-3.3.6-pl1
-PKGNAME=	${DISTNAME:S/-pl1//}
-PKGREVISION=	2
+DISTNAME=	fftw-3.3.8
+PKGNAME=	${DISTNAME:C/-pl.*//}
 CATEGORIES=	math
 MASTER_SITES=	http://fftw.org/
 
@@ -20,7 +19,7 @@ SPATCH=		no
 
 PKGCONFIG_OVERRIDE+=	fftw.pc.in
 
-INFO_FILES=	fftw3.info
+INFO_FILES=	yes
 
 CONFIGURE_ARGS+=	--disable-static
 CONFIGURE_ARGS+=	--enable-shared
