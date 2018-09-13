@@ -1,0 +1,12 @@
+# $NetBSD$
+
+BUILDLINK_TREE+=	sdl2
+
+.if !defined(SDL2_BUILDLINK3_MK)
+SDL2_BUILDLINK3_MK:=
+
+BUILDLINK_API_DEPENDS.sdl2+=	sdl2>=2.0.8
+BUILDLINK_PKGSRCDIR.sdl2?=	../../eliteraspberries/sdl2
+.endif	# SDL2_BUILDLINK3_MK
+
+BUILDLINK_TREE+=	-sdl2
