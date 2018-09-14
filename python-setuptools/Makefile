@@ -1,9 +1,10 @@
 # $NetBSD$
 
-DISTNAME=	setuptools-28.8.0
+DISTNAME=	setuptools-40.2.0
 PKGNAME=	python-${DISTNAME}
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_PYPI:=s/setuptools/}
+EXTRACT_SUFX=	.zip
 
 MAINTAINER=	mansourmoufid@gmail.com
 HOMEPAGE=	https://github.com/pypa/setuptools
