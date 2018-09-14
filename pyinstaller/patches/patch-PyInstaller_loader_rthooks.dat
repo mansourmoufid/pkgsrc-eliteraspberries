@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- PyInstaller/loader/rthooks.dat.orig	2018-09-13 12:32:06.000000000 -0400
++++ PyInstaller/loader/rthooks.dat	2018-09-13 12:32:29.000000000 -0400
+@@ -21,6 +21,7 @@
+     'PySide2':      ['pyi_rth_qt5plugins.py'],
+     'PySide2.QtQuick':  ['pyi_rth_qml.py'],
+     'PySide2.QtWebEngineWidgets': ['pyi_rth_qt5webengine.py'],
++    'sdl2': ['pyi_rth_sdl2.py'],
+     '_tkinter':    ['pyi_rth__tkinter.py'],
+     'traitlets':  ['pyi_rth_traitlets.py'],
+     'twisted.internet.reactor':        ['pyi_rth_twisted.py'],
