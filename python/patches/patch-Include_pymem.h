@@ -1,36 +1,39 @@
 $NetBSD$
 
---- Include/pymem.h.orig	2016-12-17 15:05:05.000000000 -0500
-+++ Include/pymem.h	2017-05-21 12:00:24.000000000 -0400
-@@ -59,9 +59,9 @@
+--- Include/pymem.h.orig	2018-04-29 18:47:33.000000000 -0400
++++ Include/pymem.h	2018-09-13 20:45:15.000000000 -0400
+@@ -57,27 +57,10 @@
+    no longer supported. They used to call PyErr_NoMemory() on failure. */
+ 
  /* Macros. */
- #ifdef PYMALLOC_DEBUG
+-#ifdef PYMALLOC_DEBUG
  /* Redirect all memory operations to Python's debugging allocator. */
 -#define PyMem_MALLOC		_PyMem_DebugMalloc
 -#define PyMem_REALLOC		_PyMem_DebugRealloc
 -#define PyMem_FREE		_PyMem_DebugFree
-+#define PyMem_MALLOC	malloc
-+#define PyMem_REALLOC	realloc
-+#define PyMem_FREE	free
- 
- #else	/* ! PYMALLOC_DEBUG */
- 
-@@ -71,11 +71,9 @@
-    pymalloc. To solve these problems, allocate an extra byte. */
- /* Returns NULL to indicate error if a negative size or size larger than
-    Py_ssize_t can represent is supplied.  Helps prevents security holes. */
+-
+-#else	/* ! PYMALLOC_DEBUG */
+-
+-/* PyMem_MALLOC(0) means malloc(1). Some systems would return NULL
+-   for malloc(0), which would be treated as an error. Some platforms
+-   would return a pointer with no memory behind it, which would break
+-   pymalloc. To solve these problems, allocate an extra byte. */
+-/* Returns NULL to indicate error if a negative size or size larger than
+-   Py_ssize_t can represent is supplied.  Helps prevents security holes. */
 -#define PyMem_MALLOC(n)		((size_t)(n) > (size_t)PY_SSIZE_T_MAX ? NULL \
--				: malloc((n) ? (n) : 1))
+-				: malloc(((n) != 0) ? (n) : 1))
 -#define PyMem_REALLOC(p, n)	((size_t)(n) > (size_t)PY_SSIZE_T_MAX  ? NULL \
--				: realloc((p), (n) ? (n) : 1))
+-				: realloc((p), ((n) != 0) ? (n) : 1))
 -#define PyMem_FREE		free
+-
+-#endif	/* PYMALLOC_DEBUG */
 +#define PyMem_MALLOC	malloc
 +#define PyMem_REALLOC	realloc
 +#define PyMem_FREE	free
  
- #endif	/* PYMALLOC_DEBUG */
- 
-@@ -89,12 +87,8 @@
+ /*
+  * Type-oriented memory interface
+@@ -89,12 +72,8 @@
   * overflow checking is always done.
   */
  
@@ -45,7 +48,7 @@ $NetBSD$
  
  /*
   * The value of (p) is always clobbered by this macro regardless of success.
-@@ -102,18 +96,14 @@
+@@ -102,18 +81,14 @@
   * error if so.  This means the original value of (p) MUST be saved for the
   * caller's memory error handler to not lose track of it.
   */
