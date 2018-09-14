@@ -1,4 +1,0 @@
-PySoundCard can play and record audio data.  Audio devices are supported
-through PortAudio, which is a free, cross-platform, open-source audio
-I/O library that runs on may platforms including Windows, OS X, and
-Unix (OSS/ALSA).
