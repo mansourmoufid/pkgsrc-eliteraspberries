@@ -1,0 +1,8 @@
+$NetBSD$
+
+SHA1 (luarocks-3.0.4.tar.gz) = 86a270938d6aafd1af65b57a1cc527bb2745b8a6
+RMD160 (luarocks-3.0.4.tar.gz) = 0948a52cf64c7c25d85c60266ce9ac0947f81bb8
+SHA512 (luarocks-3.0.4.tar.gz) = 65a28f0dca4fc45a0ee413493d0e4287de9c495b27c0366d955a16d03adf94b36cb9dbeda00fb74045809eb5048b78ea5158257b5ddafa924dc8ff0f017e95f8
+Size (luarocks-3.0.4.tar.gz) = 205350 bytes
+SHA1 (patch-GNUmakefile) = 45728adae3ba29333a6c1de52bb83939b7274ae6
+SHA1 (patch-src_luarocks_core_cfg.lua) = 37748a4a32d57b9de1418c219e90a0a066fced92
