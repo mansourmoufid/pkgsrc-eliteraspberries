@@ -1,0 +1,13 @@
+@comment $NetBSD$
+bin/lua
+bin/luac
+include/lauxlib.h
+include/lua.h
+include/lua.hpp
+include/luaconf.h
+include/lualib.h
+lib/liblua.a
+man/man1/lua.1
+man/man1/luac.1
+@pkgdir share/lua/${LUA_BASEVER}
+@pkgdir lib/lua/${LUA_BASEVER}

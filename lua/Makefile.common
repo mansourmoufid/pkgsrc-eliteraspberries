@@ -1,0 +1,8 @@
+# $NetBSD$
+# used by eliteraspberries/lua/Makefile
+# used by eliteraspberries/luarocks/Makefile
+
+.include "../../eliteraspberries/lua/Makefile.version"
+
+PLIST_SUBST+=	LUA_BASEVER=${LUA_BASEVER}
+PLIST_SUBST+=	LUA_VERSION=${LUA_VERSION}
