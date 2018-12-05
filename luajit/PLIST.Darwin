@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/libluajit-5.1.${LUAJIT_VERSION}.dylib
+lib/libluajit-5.1.2.dylib
+lib/libluajit-5.1.dylib

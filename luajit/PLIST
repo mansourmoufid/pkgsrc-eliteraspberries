@@ -1,0 +1,24 @@
+@comment $NetBSD$
+bin/luajit
+bin/luajit-${LUAJIT_VERSION}
+include/luajit-${LUAJIT_BASEVER}/lauxlib.h
+include/luajit-${LUAJIT_BASEVER}/lua.h
+include/luajit-${LUAJIT_BASEVER}/lua.hpp
+include/luajit-${LUAJIT_BASEVER}/luaconf.h
+include/luajit-${LUAJIT_BASEVER}/luajit.h
+include/luajit-${LUAJIT_BASEVER}/lualib.h
+lib/pkgconfig/luajit.pc
+man/man1/luajit.1
+share/luajit-${LUAJIT_VERSION}/jit/bc.lua
+share/luajit-${LUAJIT_VERSION}/jit/bcsave.lua
+share/luajit-${LUAJIT_VERSION}/jit/dis_arm.lua
+share/luajit-${LUAJIT_VERSION}/jit/dis_mips.lua
+share/luajit-${LUAJIT_VERSION}/jit/dis_mipsel.lua
+share/luajit-${LUAJIT_VERSION}/jit/dis_ppc.lua
+share/luajit-${LUAJIT_VERSION}/jit/dis_x64.lua
+share/luajit-${LUAJIT_VERSION}/jit/dis_x86.lua
+share/luajit-${LUAJIT_VERSION}/jit/dump.lua
+share/luajit-${LUAJIT_VERSION}/jit/v.lua
+share/luajit-${LUAJIT_VERSION}/jit/vmdef.lua
+@pkgdir share/lua/5.1
+@pkgdir lib/lua/5.1
