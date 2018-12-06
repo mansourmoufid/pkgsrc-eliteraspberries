@@ -6,3 +6,4 @@ SHA512 (luarocks-3.0.4.tar.gz) = 65a28f0dca4fc45a0ee413493d0e4287de9c495b27c0366
 Size (luarocks-3.0.4.tar.gz) = 205350 bytes
 SHA1 (patch-GNUmakefile) = 45728adae3ba29333a6c1de52bb83939b7274ae6
 SHA1 (patch-src_luarocks_core_cfg.lua) = 37748a4a32d57b9de1418c219e90a0a066fced92
+SHA1 (patch-src_luarocks_fs_unix.lua) = 0701f6604b9470f59247e29d8fad3085b4837123

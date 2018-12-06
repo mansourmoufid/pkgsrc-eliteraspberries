@@ -1,6 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	luarocks-3.0.4
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://luarocks.github.io/luarocks/releases/
 
