@@ -3,6 +3,7 @@
 .include "../../eliteraspberries/lua/Makefile.version"
 
 DISTNAME=	lua-${LUA_VERSION}
+PKGREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	https://www.lua.org/ftp/
 
@@ -14,6 +15,8 @@ LICENSE=	mit
 USE_LANGUAGES=	c
 
 .include "../../mk/bsd.prefs.mk"
+
+CPPFLAGS+=		-DLUA_ROOT=${PREFIX}
 
 BUILD_MAKE_FLAGS+=	PLAT="generic"
 BUILD_MAKE_FLAGS+=	SYSCFLAGS="-DLUA_USE_POSIX -DLUA_USE_DLOPEN"

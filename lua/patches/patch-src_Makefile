@@ -1,15 +1,35 @@
 $NetBSD$
 
 --- src/Makefile.orig	2018-06-25 13:46:36.000000000 -0400
-+++ src/Makefile	2018-12-04 22:37:24.000000000 -0500
-@@ -6,8 +6,8 @@
++++ src/Makefile	2018-12-07 11:13:41.000000000 -0500
+@@ -6,14 +6,15 @@
  # Your platform. See PLATS for possible values.
  PLAT= none
  
 -CC= gcc -std=gnu99
 -CFLAGS= -O2 -Wall -Wextra -DLUA_COMPAT_5_2 $(SYSCFLAGS) $(MYCFLAGS)
-+CC?= gcc -std=gnu99
-+CFLAGS+= -Wall -Wextra -DLUA_COMPAT_5_2 $(SYSCFLAGS) $(MYCFLAGS)
- LDFLAGS= $(SYSLDFLAGS) $(MYLDFLAGS)
+-LDFLAGS= $(SYSLDFLAGS) $(MYLDFLAGS)
++CPPFLAGS+= -DLUA_COMPAT_5_2
++CFLAGS+= -Wall -Wextra $(CPPFLAGS) $(SYSCFLAGS) $(MYCFLAGS)
++LDFLAGS+= $(SYSLDFLAGS) $(MYLDFLAGS)
  LIBS= -lm $(SYSLIBS) $(MYLIBS)
  
+-AR= ar rcu
+-RANLIB= ranlib
+-RM= rm -f
++CC?= gcc -std=gnu99
++AR?= ar
++RANLIB?= ranlib
++RM?= rm -f
+ 
+ SYSCFLAGS=
+ SYSLDFLAGS=
+@@ -56,7 +57,7 @@
+ a:	$(ALL_A)
+ 
+ $(LUA_A): $(BASE_O)
+-	$(AR) $@ $(BASE_O)
++	$(AR) -rcu $@ $(BASE_O)
+ 	$(RANLIB) $@
+ 
+ $(LUA_T): $(LUA_O) $(LUA_A)
