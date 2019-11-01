@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	libarchive-3.1.2
+DISTNAME=	libarchive-3.4.0
 CATEGORIES=	archivers
 MASTER_SITES=	http://libarchive.org/downloads/
 
