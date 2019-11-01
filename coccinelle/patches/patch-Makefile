@@ -1,34 +1,23 @@
---- Makefile.orig	2016-09-27 16:47:06.000000000 -0400
-+++ Makefile	2016-10-27 14:18:35.000000000 -0400
-@@ -383,13 +383,8 @@
- 		cp -fv ./bundles/pcre/dllpcre_stubs.so $(DESTDIR)$(LIBDIR); fi
+$NetBSD$
+
+--- Makefile.orig	2019-09-20 20:54:59.000000000 -0400
++++ Makefile	2019-09-20 20:56:57.000000000 -0400
+@@ -296,7 +296,7 @@
+ 	fi
  
- install: install-common install-man install-stubs $(PYTHON_INSTALL_TARGET)
--	rm -f $(DESTDIR)$(LIBDIR)/spatch
--	rm -f $(DESTDIR)$(LIBDIR)/spatch.opt
--	rm -f $(DESTDIR)$(BINDIR)/pycocci
- 	@$(MAKE) install -C tools/spgen
- 	$(INSTALL_PROGRAM) tools/pycocci $(DESTDIR)$(BINDIR)
--	@if test -x spatch -o -x spatch.opt; then \
--		$(MAKE) install-def;fi
- 	@if test -x spatch ; then \
- 		$(MAKE) install-byte; fi
- 	@if test -x spatch.opt ; then \
-@@ -410,13 +405,13 @@
- 
- # user will use spatch.byte to run spatch (bytecode)
- install-byte:
--	$(INSTALL_PROGRAM) spatch $(DESTDIR)$(LIBDIR)
--	$(INSTALL_PROGRAM) scripts/spatch.byte $(DESTDIR)$(BINDIR)/spatch.byte
-+	$(INSTALL_PROGRAM) spatch $(DESTDIR)$(BINDIR)/spatch.byte
-+	ln -sf $(DESTDIR)$(BINDIR)/spatch.byte $(DESTDIR)$(BINDIR)/spatch
- 
- # user will use spatch.opt to run spatch.opt (native)
- install-opt:
--	$(INSTALL_PROGRAM) spatch.opt $(DESTDIR)$(LIBDIR)
--	$(INSTALL_PROGRAM) scripts/spatch.opt $(DESTDIR)$(BINDIR)/spatch.opt
-+	$(INSTALL_PROGRAM) spatch.opt $(DESTDIR)$(BINDIR)/spatch.opt
-+	ln -sf $(DESTDIR)$(BINDIR)/spatch.opt $(DESTDIR)$(BINDIR)/spatch
- 
- uninstall:
- 	rm -f $(DESTDIR)$(BINDIR)/spatch
+ .PHONY: install-spatch
+-install-spatch : spatch$(TOOLS_SUFFIX)
++install-spatch : spatch$(TOOLS_SUFFIX) spatch.sh
+ 	$(MKDIR_P) $(DESTDIR)$(BINDIR) $(DESTDIR)$(LIBDIR)
+ 	$(MKDIR_P) $(DESTDIR)$(LIBDIR)/ocaml
+ 	if test -f bundles/pyml/dllpyml_stubs.so; then \
+@@ -307,7 +307,8 @@
+ 		$(INSTALL_PROGRAM) bundles/pcre/dllpcre_stubs.so \
+ 			$(DESTDIR)$(LIBDIR); \
+ 	fi
+-	$(INSTALL_PROGRAM) spatch$(TOOLS_SUFFIX) $(DESTDIR)$(BINDIR)/spatch
++	$(INSTALL_PROGRAM) spatch$(TOOLS_SUFFIX) $(DESTDIR)$(BINDIR)
++	$(INSTALL_PROGRAM) spatch.sh $(DESTDIR)$(BINDIR)/spatch
+ 	$(INSTALL_DATA) standard.h $(DESTDIR)$(LIBDIR)
+ 	$(INSTALL_DATA) standard.iso $(DESTDIR)$(LIBDIR)
+ 	$(INSTALL_DATA) ocaml/*.cmi $(DESTDIR)$(LIBDIR)/ocaml/

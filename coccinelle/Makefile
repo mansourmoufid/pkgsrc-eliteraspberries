@@ -1,10 +1,8 @@
 # $NetBSD$
 
-DISTNAME=	coccinelle-1.0.6
-PKGREVISION=	2
+DISTNAME=	coccinelle-1.0.7
 CATEGORIES=	devel
 MASTER_SITES=	http://coccinelle.lip6.fr/distrib/
-EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	mansourmoufid@gmail.com
 HOMEPAGE=	http://coccinelle.lip6.fr/
@@ -12,9 +10,15 @@ COMMENT=	Program matching and transformation engine for C
 LICENSE=	gnu-gpl-v2
 
 GNU_CONFIGURE=	yes
-USE_TOOLS+=	gmake
+USE_TOOLS+=	autoconf gmake perl
 
 SPATCH=		no
+
+post-extract:
+	sed -e 's/$${SPATCH}/spatch.opt/' < files/spatch.sh > ${WRKSRC}/spatch.sh
+
+pre-configure:
+	cd ${WRKSRC} && sh autogen
 
 CONFIGURE_ARGS+=	--with-ocamlfind=${PREFIX}/bin/ocamlfind
 CONFIGURE_ARGS+=	--with-menhir=${PREFIX}/bin/menhir
@@ -22,6 +26,7 @@ CONFIGURE_ARGS+=	--with-menhir=${PREFIX}/bin/menhir
 CONFIGURE_ARGS+=	--without-pdflatex
 
 MAKE_ENV+=		OCAMLCFLAGS="-cc ${CC} -ccopt '-fpic'"
+MAKE_ARGS+=		opt
 
 .include "options.mk"
 
