@@ -1,13 +1,12 @@
 # $NetBSD$
 
 CMAKE_MAJOR_VERSION=	3
-CMAKE_MINOR_VERSION=	7
-CMAKE_PATCH_VERSION=	0
+CMAKE_MINOR_VERSION=	9
+CMAKE_PATCH_VERSION=	6
 CMAKE_BASEVER=		${CMAKE_MAJOR_VERSION}.${CMAKE_MINOR_VERSION}
 CMAKE_VERSION=		${CMAKE_BASEVER}.${CMAKE_PATCH_VERSION}
 
 DISTNAME=	cmake-${CMAKE_VERSION}
-PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	https://cmake.org/files/v${CMAKE_BASEVER}/
 
@@ -28,17 +27,10 @@ CONFIGURE_ARGS+=	--mandir=${PKGMANDIR}
 CONFIGURE_ARGS+=	--system-libs
 CONFIGURE_ARGS+=	--no-system-jsoncpp
 CONFIGURE_ARGS+=	--no-system-libuv
+CONFIGURE_ARGS+=	--no-system-librhash
 
 PLIST_SUBST+=		CMAKE_BASEVER=${CMAKE_BASEVER}
 PLIST_SUBST+=		CMAKE_VERSION=${CMAKE_VERSION}
-
-post-extract:
-	rm -rf ${WRKSRC}/Utilities/cmbzip2
-	rm -rf ${WRKSRC}/Utilities/cmcurl
-	rm -rf ${WRKSRC}/Utilities/cmexpat
-	rm -rf ${WRKSRC}/Utilities/cmlibarchive
-	rm -rf ${WRKSRC}/Utilities/cmliblzma
-	rm -rf ${WRKSRC}/Utilities/cmzlib
 
 .include "../../archivers/bzip2/buildlink3.mk"
 .include "../../archivers/xz/buildlink3.mk"
