@@ -4,4 +4,6 @@ SHA1 (pip-18.0.tar.gz) = 337f4694bfcd4d698d9b02b38a7520fabc42a1d9
 RMD160 (pip-18.0.tar.gz) = ccb38f5c23bbf1d8c583f25565af5b614772ca94
 SHA512 (pip-18.0.tar.gz) = 51b8708756a8cbe5ca284fa09908d4acf1127493e4b645f2756ae55e4afd5dec619a017cedb695a044aa24a377909810a1caea4242bb3dc475bfe3435fcaa1bc
 Size (pip-18.0.tar.gz) = 1249656 bytes
-SHA1 (patch-src_pip__internal_download.py) = 30426f8d793214170a3027917e6f74e95a3a6643
+SHA1 (patch-src_pip__internal_download.py) = 535146a1fc53839648826d036a2b042999b3c51f
+SHA1 (patch-src_pip__internal_wheel.py) = 82212cc724518e851a49191048c8008b9ae8f0ed
+SHA1 (patch-src_pip__vendor_distlib_scripts.py) = 727cd9614db68f9afd8085caa9b3e9b5c3018fd0
