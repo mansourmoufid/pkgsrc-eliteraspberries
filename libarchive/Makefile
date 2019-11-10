@@ -1,6 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	libarchive-3.4.0
+PKGREVISION=	2
 CATEGORIES=	archivers
 MASTER_SITES=	http://libarchive.org/downloads/
 
@@ -10,9 +11,12 @@ COMMENT=	Multi-format archive and compression library
 LICENSE=	original-bsd AND 2-clause-bsd
 
 GNU_CONFIGURE=	yes
-USE_TOOLS+=	pkg-config
+USE_TOOLS+=	autoconf automake autoreconf perl pkg-config
 
 PKGCONFIG_OVERRIDE+=	build/pkgconfig/libarchive.pc.in
+
+pre-configure:
+	cd ${WRKSRC} && autoreconf -f -i
 
 CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	--disable-static
@@ -29,7 +33,6 @@ CONFIGURE_ARGS+=	--disable-xattr
 
 CONFIGURE_ARGS+=	--with-bz2lib
 CONFIGURE_ARGS+=	--with-lzma
-CONFIGURE_ARGS+=	--with-lzmadec
 CONFIGURE_ARGS+=	--with-zlib
 
 CONFIGURE_ARGS+=	--without-expat
