@@ -1,6 +1,6 @@
 $NetBSD$
 
-SHA1 (scons-2.5.1.tar.gz) = f742350251734df75355e51c70f291e119ef927a
-RMD160 (scons-2.5.1.tar.gz) = bb31c93b6aee4c9b1eb547cf3733e0a8d94f0e7c
-SHA512 (scons-2.5.1.tar.gz) = 0e39f7f22a6c4ecc13edcd843b050754da5ded5371b3a8b406395f7b53dd280f95f804707eec271f8de3624d06f5b4ba3cc788dc4eb891cad224a163544f51b9
-Size (scons-2.5.1.tar.gz) = 620909 bytes
+SHA1 (scons-3.1.2.tar.gz) = d7541717d503266b37004a33246b6688fe87dec0
+RMD160 (scons-3.1.2.tar.gz) = 6052ef4ebd702ce7dc9888d50c163664201c377f
+SHA512 (scons-3.1.2.tar.gz) = bfc0d58d33408a03eb37c1eff166af8139078026e6b43d6274afceac889d0a6743e359e89ad9a30be5ca43aeed26fba92fa4732854750b7d53091ef3e99b3d33
+Size (scons-3.1.2.tar.gz) = 668298 bytes

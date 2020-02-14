@@ -1,8 +1,6 @@
 $NetBSD$
 
-SHA1 (Pillow-3.3.0.tar.gz) = b115d02fde8e3df7feb2e17c98b5689cade49a89
-RMD160 (Pillow-3.3.0.tar.gz) = 260f57f65e0607f5df6845799556d855b8851bab
-SHA512 (Pillow-3.3.0.tar.gz) = fc8b899f6663099b2cf365dcb28cc06f05b0fc074eb8c32c8d2a63ab796af3416331965feb5ca63d447f2b596bed2f61ddc66b846b40ebc140a637e75e304bf6
-Size (Pillow-3.3.0.tar.gz) = 10578950 bytes
-SHA1 (patch-libImaging_GifDecode.c) = 4261601a4cafb201e92c4d153bc88a0e72314a77
-SHA1 (patch-libImaging_Unpack.c) = 3dd7c8ae6d735b5364753c63813242f858a6d1ac
+SHA1 (Pillow-6.2.2.tar.gz) = ed3cbafdb982cd55ca8bb726a3a76e7be89ea61c
+RMD160 (Pillow-6.2.2.tar.gz) = 22b39d6d4dff18415340df080e1b598ee204a97e
+SHA512 (Pillow-6.2.2.tar.gz) = 517c971d4fb23a47466a7e8326c8c29291f7832d4521001c1898d6223ea25d4b0a8b7c8f7e78dd706f421229a8261b558b9fbdc43e47a0a2a7b2b4bbc1a21eff
+Size (Pillow-6.2.2.tar.gz) = 37811273 bytes

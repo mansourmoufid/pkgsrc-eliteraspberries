@@ -1,12 +1,11 @@
 @comment $NetBSD$
 bin/virtualenv
-lib/python${PYTHON_BASEVER}/site-packages/virtualenv-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/PKG-INFO
-lib/python${PYTHON_BASEVER}/site-packages/virtualenv-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/SOURCES.txt
-lib/python${PYTHON_BASEVER}/site-packages/virtualenv-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/dependency_links.txt
-lib/python${PYTHON_BASEVER}/site-packages/virtualenv-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/entry_points.txt
-lib/python${PYTHON_BASEVER}/site-packages/virtualenv-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/not-zip-safe
-lib/python${PYTHON_BASEVER}/site-packages/virtualenv-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/top_level.txt
-lib/python${PYTHON_BASEVER}/site-packages/virtualenv.py
-lib/python${PYTHON_BASEVER}/site-packages/virtualenv.pyc
-lib/python${PYTHON_BASEVER}/site-packages/virtualenv_support/__init__.py
-lib/python${PYTHON_BASEVER}/site-packages/virtualenv_support/__init__.pyc
+lib/python/virtualenv-${PKGVERSION}.egg-info/PKG-INFO
+lib/python/virtualenv-${PKGVERSION}.egg-info/SOURCES.txt
+lib/python/virtualenv-${PKGVERSION}.egg-info/dependency_links.txt
+lib/python/virtualenv-${PKGVERSION}.egg-info/entry_points.txt
+lib/python/virtualenv-${PKGVERSION}.egg-info/requires.txt
+lib/python/virtualenv-${PKGVERSION}.egg-info/top_level.txt
+lib/python/virtualenv-${PKGVERSION}.egg-info/zip-safe
+lib/python/virtualenv.py
+lib/python/virtualenv_support/__init__.py

@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	pefile-2017.11.5
+DISTNAME=	pefile-2019.4.18
 PKGNAME=	python-${DISTNAME}
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_PYPI:=p/pefile/}
@@ -10,10 +10,8 @@ HOMEPAGE=	https://github.com/erocarrera/pefile
 COMMENT=	Python PE parsing module
 LICENSE=	mit
 
-USE_LANGUAGES=	c
-
 .include "../../eliteraspberries/python/buildlink3.mk"
-.include "../../eliteraspberries/python-setuptools/buildlink3.mk"
-.include "../../eliteraspberries/python-setuptools/setuppy.mk"
+.include "../../eliteraspberries/python/setuppy.mk"
 .include "../../eliteraspberries/python-future/buildlink3.mk"
+.include "../../eliteraspberries/python-setuptools/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

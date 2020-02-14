@@ -1,7 +1,6 @@
 @comment $NetBSD$
-lib/python${PYTHON_BASEVER}/site-packages/dis3-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/PKG-INFO
-lib/python${PYTHON_BASEVER}/site-packages/dis3-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/SOURCES.txt
-lib/python${PYTHON_BASEVER}/site-packages/dis3-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/dependency_links.txt
-lib/python${PYTHON_BASEVER}/site-packages/dis3-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/top_level.txt
-lib/python${PYTHON_BASEVER}/site-packages/dis3.py
-lib/python${PYTHON_BASEVER}/site-packages/dis3.pyc
+lib/python/dis3-${PKGVERSION}.egg-info/PKG-INFO
+lib/python/dis3-${PKGVERSION}.egg-info/SOURCES.txt
+lib/python/dis3-${PKGVERSION}.egg-info/dependency_links.txt
+lib/python/dis3-${PKGVERSION}.egg-info/top_level.txt
+lib/python/dis3.py

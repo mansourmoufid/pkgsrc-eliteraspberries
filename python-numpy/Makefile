@@ -1,10 +1,10 @@
 # $NetBSD$
 
-DISTNAME=	numpy-1.11.0
+DISTNAME=	numpy-1.13.3
 PKGNAME=	python-${DISTNAME}
-PKGREVISION=	4
 CATEGORIES=	math
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=numpy}/NumPy/${PKGVERSION_NOREV}/
+MASTER_SITES=	${MASTER_SITE_PYPI:=n/numpy/}
+EXTRACT_SUFX=	.zip
 
 MAINTAINER=	mansourmoufid@gmail.com
 HOMEPAGE=	http://www.numpy.org/
@@ -13,11 +13,7 @@ LICENSE=	original-bsd
 
 USE_LANGUAGES=	c
 
-.include "../../eliteraspberries/python/Makefile.common"
-
-MAKE_ENV+=	OPT="-ffast-math"
-
 .include "../../eliteraspberries/python/buildlink3.mk"
+.include "../../eliteraspberries/python/setuppy.mk"
 .include "../../eliteraspberries/python-setuptools/buildlink3.mk"
-.include "../../eliteraspberries/python-setuptools/setuppy.mk"
 .include "../../mk/bsd.pkg.mk"

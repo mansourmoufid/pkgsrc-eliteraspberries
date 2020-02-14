@@ -13,8 +13,8 @@ LICENSE=	mit
 
 USE_LANGUAGES=	c
 
-.include "../../eliteraspberries/python/buildlink3.mk"
-.include "../../eliteraspberries/python-setuptools/buildlink3.mk"
-.include "../../eliteraspberries/python-setuptools/setuppy.mk"
 .include "../../eliteraspberries/portaudio/buildlink3.mk"
+.include "../../eliteraspberries/python/buildlink3.mk"
+.include "../../eliteraspberries/python/setuppy.mk"
+.include "../../eliteraspberries/python-setuptools/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

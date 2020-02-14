@@ -1,9 +1,9 @@
 $NetBSD$
 
---- PyInstaller/building/build_main.py.orig	2018-06-12 17:32:25.000000000 -0400
-+++ PyInstaller/building/build_main.py	2018-06-12 18:00:48.000000000 -0400
-@@ -335,6 +335,11 @@
-         self.graph.set_setuptools_nspackages()
+--- PyInstaller/building/build_main.py.orig	2020-01-09 13:05:53.000000000 -0500
++++ PyInstaller/building/build_main.py	2020-02-11 16:08:33.000000000 -0500
+@@ -416,6 +416,11 @@
+             priority_scripts.append(self.graph.run_script(script))
  
          # Analyze the script's hidden imports (named on the command line)
 +        for hiddenimport in list(self.hiddenimports):
@@ -13,4 +13,4 @@ $NetBSD$
 +                    self.hiddenimports.extend(f.read().splitlines())
          self.graph.add_hiddenimports(self.hiddenimports)
  
- 
+         ### Post-graph hooks.

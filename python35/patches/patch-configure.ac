@@ -1,0 +1,33 @@
+$NetBSD$
+
+--- configure.ac.orig	2020-02-09 13:51:46.000000000 -0500
++++ configure.ac	2020-02-09 13:53:09.000000000 -0500
+@@ -3561,10 +3561,6 @@
+ dnl wrong version of the library)
+ case $ac_sys_system/$ac_sys_release in
+ Darwin/*)
+-	_CUR_CFLAGS="${CFLAGS}"
+-	_CUR_LDFLAGS="${LDFLAGS}"
+-	CFLAGS="${CFLAGS} -Wl,-search_paths_first"
+-	LDFLAGS="${LDFLAGS} -Wl,-search_paths_first -L/usr/local/lib"
+ 	;;
+ esac
+ 
+@@ -3572,8 +3568,6 @@
+ 
+ case $ac_sys_system/$ac_sys_release in
+ Darwin/*)
+-	CFLAGS="${_CUR_CFLAGS}"
+-	LDFLAGS="${_CUR_LDFLAGS}"
+ 	;;
+ esac
+ 
+@@ -4523,8 +4517,6 @@
+ 
+ AC_SUBST(EXT_SUFFIX)
+ case $ac_sys_system in
+-    Linux*|GNU*|Darwin)
+-	EXT_SUFFIX=.${SOABI}${SHLIB_SUFFIX};;
+     *)
+ 	EXT_SUFFIX=${SHLIB_SUFFIX};;
+ esac

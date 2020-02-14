@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	wheel-0.29.0
+DISTNAME=	wheel-0.33.6
 PKGNAME=	python-${DISTNAME}
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_PYPI:=w/wheel/}
@@ -10,9 +10,7 @@ HOMEPAGE=	https://bitbucket.org/pypa/wheel
 COMMENT=	Python wheel packaging
 LICENSE=	mit
 
-USE_LANGUAGES=	# none
-
 .include "../../eliteraspberries/python/buildlink3.mk"
+.include "../../eliteraspberries/python/setuppy.mk"
 .include "../../eliteraspberries/python-setuptools/buildlink3.mk"
-.include "../../eliteraspberries/python-setuptools/setuppy.mk"
 .include "../../mk/bsd.pkg.mk"

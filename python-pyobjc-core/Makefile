@@ -1,6 +1,8 @@
 # $NetBSD$
 
-DISTNAME=	pyobjc-core-4.1
+.include "../../eliteraspberries/python-pyobjc/Makefile.version"
+
+DISTNAME=	pyobjc-core-${PYOBJC_VERSION}
 PKGNAME=	python-${DISTNAME}
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_PYPI:=p/pyobjc-core/}
@@ -13,6 +15,6 @@ LICENSE=	mit
 USE_LANGUAGES=	c
 
 .include "../../eliteraspberries/python/buildlink3.mk"
+.include "../../eliteraspberries/python/setuppy.mk"
 .include "../../eliteraspberries/python-setuptools/buildlink3.mk"
-.include "../../eliteraspberries/python-setuptools/setuppy.mk"
 .include "../../mk/bsd.pkg.mk"

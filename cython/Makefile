@@ -1,8 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	Cython-${PKGVERSION_NOREV}
-PKGNAME=	cython-0.24
-PKGREVISION=	2
+PKGNAME=	cython-0.29.14
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_PYPI:=c/cython/}
 
@@ -17,6 +16,6 @@ post-patch:
 	find ${WRKSRC} -name '*.orig' | while read f; do rm -f $$f; done
 
 .include "../../eliteraspberries/python/buildlink3.mk"
+.include "../../eliteraspberries/python/setuppy.mk"
 .include "../../eliteraspberries/python-setuptools/buildlink3.mk"
-.include "../../eliteraspberries/python-setuptools/setuppy.mk"
 .include "../../mk/bsd.pkg.mk"

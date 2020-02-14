@@ -1,0 +1,7 @@
+case ${STAGE} in
+POST-INSTALL)
+    cd ${PREFIX}/bin && ${LN} -f -s python3.5 python
+    cd ${PREFIX}/include && ${LN} -F -s python3.5 python
+    cd ${PREFIX}/lib && ${LN} -F -s python3.5 python
+    ;;
+esac

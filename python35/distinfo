@@ -1,0 +1,9 @@
+$NetBSD$
+
+SHA1 (Python-3.5.7.tgz) = 70f16e95e52856ccb14b3a26d41b6dedb5180327
+RMD160 (Python-3.5.7.tgz) = 21e60b1da07ac4dff47fc077377033d02c71ac12
+SHA512 (Python-3.5.7.tgz) = 697d69b7eceee633f8f7d7c68e844d5bd82c065d008302d4a912d3658f00459ab25aa66c7c4b58cfb5912955a630d4e1c15e436c102daa78c3fb8e5e3d64c1a6
+Size (Python-3.5.7.tgz) = 20753760 bytes
+SHA1 (patch-Lib_distutils_command_install_egg_info.py) = 3753d716f041406db890e2931c80d9625ec2e4b8
+SHA1 (patch-configure.ac) = b46e4aac21f0f4b78dfb5dbe748c4eb39c2ade6c
+SHA1 (patch-setup.py) = 6b21cebe9aa7586dfcd2324d6f774e87f61a3651

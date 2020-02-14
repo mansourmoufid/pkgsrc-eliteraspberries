@@ -1,0 +1,102 @@
+# $NetBSD$
+
+DISTNAME=	Python-3.5.7
+PKGNAME=	python35-7
+CATEGORIES=	lang
+MASTER_SITES=	https://www.python.org/ftp/python/3.5.7/
+EXTRACT_SUFX=	.tgz
+
+MAINTAINER=	mansourmoufid@gmail.com
+HOMEPAGE=	https://www.python.org/
+COMMENT=	Python programming language
+LICENSE=	python-software-foundation
+
+GNU_CONFIGURE=	yes
+USE_TOOLS+=	autoconf automake autoreconf gmake perl pkg-config
+USE_LANGUAGES=	c
+
+PKGCONFIG_OVERRIDE+=	Misc/python.pc.in
+
+pre-configure:
+	cd ${WRKSRC} && autoreconf -i
+
+CONFIGURE_ARGS+=	--disable-universalsdk
+CONFIGURE_ARGS+=	--enable-shared
+CONFIGURE_ARGS+=	--mandir=${PKGMANDIR}
+CONFIGURE_ARGS+=	--with-system-ffi
+CONFIGURE_ARGS+=	--without-ensurepip
+CONFIGURE_ARGS+=	--without-pydebug
+CONFIGURE_ARGS+=	--without-pymalloc
+
+CONFIGURE_ARGS+=	OPT=""
+
+.include "../../eliteraspberries/tcl/Makefile.version"
+TCLTK_LIBS=		-ltcl${TCL_BASEVER} -ltk${TCL_BASEVER}
+CONFIGURE_ARGS+=	--with-tcltk-includes="-I${PREFIX}/include"
+CONFIGURE_ARGS+=	--with-tcltk-libs="-L${PREFIX}/lib ${TCLTK_LIBS}"
+
+PLIST_SUBST+=	X=3
+PLIST_SUBST+=	Y=5
+PLIST_SUBST+=	Z=7
+
+post-install: fix-suffixes
+
+.PHONY: fix-suffixes
+fix-suffixes:
+.for f in 2to3 idle pydoc python
+.for s in "" 3 3.5 -3 -3.5
+	cd ${DESTDIR}${PREFIX}/bin && ( \
+		${TEST} -h ${f}${s} && rm ${f}${s} || ${TRUE}; \
+	)
+.endfor
+.endfor
+.for f in 2to3
+	cd ${DESTDIR}${PREFIX}/bin && ( \
+		${TEST} -f ${f} && mv ${f} ${f}-3 || ${TRUE}; \
+		${TEST} -f ${f}-3 && mv ${f}-3 ${f}-3.5 || ${TRUE}; \
+	)
+.endfor
+.for f in idle pydoc python
+	cd ${DESTDIR}${PREFIX}/bin && ( \
+		${TEST} -f ${f} && mv ${f} ${f}3 || ${TRUE}; \
+		${TEST} -f ${f}3 && mv ${f}3 ${f}3.5 || ${TRUE}; \
+	)
+.endfor
+.for s in "" 3 3.5
+	cd ${DESTDIR}${PREFIX}/bin && ( \
+		${TEST} -h python${s}-config && rm python${s}-config || ${TRUE}; \
+	)
+.endfor
+	cd ${DESTDIR}${PREFIX}/bin && (	\
+		${TEST} -f python-config && mv python-config python3-config || ${TRUE}; \
+		${TEST} -f python3-config && mv python3-config python3.5-config || ${TRUE}; \
+	)
+
+PLIST.${OPSYS}:
+	${ECHO} '@comment $$NetBSD$$' > PLIST.${OPSYS}
+	find "${DESTDIR}${PRERIX}" -type f -o -type l \
+	| sed -e "s,^${DESTDIR}${PREFIX}[/]*,," \
+		-e 's,3[.]5[.]7,$${X}.$${Y}.$${Z},g' \
+		-e 's,3[.]5,$${X}.$${Y},g' \
+		-e 's,python3,python$${X},g' \
+		-e 's,pydoc3,pydoc$${X},g' \
+		-e 's,idle3,idle$${X},g' \
+		-e 's,-35,-$${X}$${Y},g' \
+		-e '/.pyc$$/d' \
+		-e '/.pyo$$/d' \
+		-e '/.whl$$/d' \
+		-e '/venv/d' \
+	| sort \
+	>> PLIST.${OPSYS}
+
+.include "../../archivers/bzip2/buildlink3.mk"
+.include "../../archivers/xz/buildlink3.mk"
+.include "../../databases/sqlite3/buildlink3.mk"
+.include "../../devel/zlib/buildlink3.mk"
+.include "../../eliteraspberries/libffi/buildlink3.mk"
+.include "../../eliteraspberries/ncurses/buildlink3.mk"
+.include "../../eliteraspberries/readline/buildlink3.mk"
+.include "../../eliteraspberries/tcl/buildlink3.mk"
+.include "../../eliteraspberries/tk/buildlink3.mk"
+.include "../../security/openssl/buildlink3.mk"
+.include "../../mk/bsd.pkg.mk"

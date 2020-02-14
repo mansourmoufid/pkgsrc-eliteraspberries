@@ -1,6 +1,6 @@
 $NetBSD$
 
-SHA1 (pycparser/release_v2.17.tar.gz) = bfe22c30caa62f73f705a60f19fdb17e6b139820
-RMD160 (pycparser/release_v2.17.tar.gz) = d725a0c2bfce08554202268b65be69cf2f49e57c
-SHA512 (pycparser/release_v2.17.tar.gz) = b061e7cca8552d01c2ce45fccd27acc85af9bda6b1a51cd257fa9f5c2ebd92b3297af7687577817d935890c1af1aac42009ee3c5b3d467149ef62f27a0f393eb
-Size (pycparser/release_v2.17.tar.gz) = 125719 bytes
+SHA1 (pycparser/release_v2.19.tar.gz) = 141582eb2a5ad9fee9bb7646cecb024f0406be8a
+RMD160 (pycparser/release_v2.19.tar.gz) = 2b70cf5d6c75bfe7d08ed7a26040e5d15d9d8b75
+SHA512 (pycparser/release_v2.19.tar.gz) = 88fe63c1a7a344c564dfd3b4f99735a4159c8a3f5738bab839943ea7fcbf1f5340f67326550b7e66508ea5862897e5bcdf363c2a8d47eccb50890573a2640a98
+Size (pycparser/release_v2.19.tar.gz) = 136661 bytes

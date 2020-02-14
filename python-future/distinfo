@@ -1,6 +1,6 @@
 $NetBSD$
 
-SHA1 (future-0.16.0.tar.gz) = 86ed881acef874d04576b9df03c29d25ad2cd25f
-RMD160 (future-0.16.0.tar.gz) = 69456fbc593b4ae123fafca1afb8d58062f44b97
-SHA512 (future-0.16.0.tar.gz) = 41c795cd1746a76df84de2da9fbc611fc6164322c1c712ec9e8a8626c21c2717cb4899ec150d95c5e0c037270e6bb71e099edd169609369aae619daea9df2e5f
-Size (future-0.16.0.tar.gz) = 824484 bytes
+SHA1 (future-0.18.2.tar.gz) = d8c8b2d3889fc22bb38f049ed8e3dbdc35a83d6e
+RMD160 (future-0.18.2.tar.gz) = d728505628b12cd395e4f8efead19ae61479a49d
+SHA512 (future-0.18.2.tar.gz) = 91c025f7d94bcdf93df838fab67053165a414fc84e8496f92ecbb910dd55f6b6af5e360bbd051444066880c5a6877e75157bd95e150ead46e5c605930dfc50f2
+Size (future-0.18.2.tar.gz) = 829220 bytes

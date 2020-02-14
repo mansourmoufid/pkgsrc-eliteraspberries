@@ -1,6 +1,6 @@
 $NetBSD$
 
-SHA1 (pyobjc-core-4.1.tar.gz) = c3b2a65a088064fbcc289f545491eb4a9cc8a8fe
-RMD160 (pyobjc-core-4.1.tar.gz) = 2a112a7000f26496dc77acd4320bd06088e2d7d1
-SHA512 (pyobjc-core-4.1.tar.gz) = 66c7b6ac058e751bd231eb6556a0341fccf8512b92496e01ec7db531d67d7f8ab92ec08e887d019a2af56cddd0a04ea4ddff47356f80c2cee1443ff950c3db09
-Size (pyobjc-core-4.1.tar.gz) = 799538 bytes
+SHA1 (pyobjc-core-5.3.tar.gz) = 0b9e10f77182760f682a6c0b675a3115156b7ce9
+RMD160 (pyobjc-core-5.3.tar.gz) = 6c2f3aa3d444bc5d577a3b59a116241374787587
+SHA512 (pyobjc-core-5.3.tar.gz) = bc574febb9c8d559455eb15e684a745ebedb34e6bc94bf0cdef790c7fd6d5d7f19406eb6eaf38366e471f147c98c0c1ccb9afd376f1ab0d1aca090d78b8a2265
+Size (pyobjc-core-5.3.tar.gz) = 811139 bytes

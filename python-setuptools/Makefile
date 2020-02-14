@@ -11,20 +11,8 @@ HOMEPAGE=	https://github.com/pypa/setuptools
 COMMENT=	Python setuptools
 LICENSE=	mit
 
-SPATCH=		no
-
-.include "../../eliteraspberries/python/Makefile.common"
-
-do-build:
-	cd ${WRKSRC} && \
-	python setup.py build
-
-do-install:
-	cd ${WRKSRC} && \
-	python setup.py install \
-		--prefix=${DESTDIR}${PREFIX} \
-		--record=PLIST.in \
-		--single-version-externally-managed
+SETUPPY_INSTALL_ARGS+=	--single-version-externally-managed
 
 .include "../../eliteraspberries/python/buildlink3.mk"
+.include "../../eliteraspberries/python/setuppy.mk"
 .include "../../mk/bsd.pkg.mk"

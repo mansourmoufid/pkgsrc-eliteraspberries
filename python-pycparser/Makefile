@@ -1,7 +1,7 @@
 # $NetBSD$
 
 GITHUB_PROJECT=	pycparser
-DISTNAME=	release_v2.17
+DISTNAME=	release_v2.19
 PKGNAME=	python-${GITHUB_PROJECT}-${DISTNAME:S/release_v//}
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GITHUB:=eliben/pycparser/archive/}
@@ -14,9 +14,7 @@ LICENSE=	modified-bsd
 
 WRKSRC=		${WRKDIR}/${GITHUB_PROJECT}-${DISTNAME}
 
-SPATCH=		no
-
 .include "../../eliteraspberries/python/buildlink3.mk"
+.include "../../eliteraspberries/python/setuppy.mk"
 .include "../../eliteraspberries/python-setuptools/buildlink3.mk"
-.include "../../eliteraspberries/python-setuptools/setuppy.mk"
 .include "../../mk/bsd.pkg.mk"

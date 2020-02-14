@@ -1,16 +1,11 @@
 @comment $NetBSD$
-lib/python${PYTHON_BASEVER}/site-packages/ordlookup/__init__.py
-lib/python${PYTHON_BASEVER}/site-packages/ordlookup/__init__.pyc
-lib/python${PYTHON_BASEVER}/site-packages/ordlookup/oleaut32.py
-lib/python${PYTHON_BASEVER}/site-packages/ordlookup/oleaut32.pyc
-lib/python${PYTHON_BASEVER}/site-packages/ordlookup/ws2_32.py
-lib/python${PYTHON_BASEVER}/site-packages/ordlookup/ws2_32.pyc
-lib/python${PYTHON_BASEVER}/site-packages/pefile-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/PKG-INFO
-lib/python${PYTHON_BASEVER}/site-packages/pefile-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/SOURCES.txt
-lib/python${PYTHON_BASEVER}/site-packages/pefile-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/dependency_links.txt
-lib/python${PYTHON_BASEVER}/site-packages/pefile-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/requires.txt
-lib/python${PYTHON_BASEVER}/site-packages/pefile-${PKGVERSION}-py${PYTHON_BASEVER}.egg-info/top_level.txt
-lib/python${PYTHON_BASEVER}/site-packages/pefile.py
-lib/python${PYTHON_BASEVER}/site-packages/pefile.pyc
-lib/python${PYTHON_BASEVER}/site-packages/peutils.py
-lib/python${PYTHON_BASEVER}/site-packages/peutils.pyc
+lib/python/ordlookup/__init__.py
+lib/python/ordlookup/oleaut32.py
+lib/python/ordlookup/ws2_32.py
+lib/python/pefile-${PKGVERSION}.egg-info/PKG-INFO
+lib/python/pefile-${PKGVERSION}.egg-info/SOURCES.txt
+lib/python/pefile-${PKGVERSION}.egg-info/dependency_links.txt
+lib/python/pefile-${PKGVERSION}.egg-info/requires.txt
+lib/python/pefile-${PKGVERSION}.egg-info/top_level.txt
+lib/python/pefile.py
+lib/python/peutils.py

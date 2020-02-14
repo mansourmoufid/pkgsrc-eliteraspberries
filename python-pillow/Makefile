@@ -1,7 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	Pillow-3.3.0
-PKGREVISION=	3
+DISTNAME=	Pillow-6.2.2
 PKGNAME=	python-${DISTNAME:S/Pillow/pillow/}
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_PYPI:=P/Pillow/}
@@ -10,6 +9,8 @@ MAINTAINER=	mansourmoufid@gmail.com
 HOMEPAGE=	http://python-pillow.org/
 COMMENT=	Friendly fork of the Python Imaging Library
 LICENSE=	mit
+
+USE_LANGUAGES=	c
 
 SETUPPY_BUILDEXT_ARGS+=	--disable-freetype
 SETUPPY_BUILDEXT_ARGS+=	--disable-jpeg2000
@@ -24,7 +25,7 @@ SETUPPY_BUILDEXT_ARGS+=	--enable-zlib
 .include "../../eliteraspberries/jpeg/buildlink3.mk"
 .include "../../eliteraspberries/libpng/buildlink3.mk"
 .include "../../eliteraspberries/python/buildlink3.mk"
+.include "../../eliteraspberries/python/setuppy.mk"
 .include "../../eliteraspberries/python-numpy/buildlink3.mk"
 .include "../../eliteraspberries/python-setuptools/buildlink3.mk"
-.include "../../eliteraspberries/python-setuptools/setuppy.mk"
 .include "../../mk/bsd.pkg.mk"

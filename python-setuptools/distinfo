@@ -4,3 +4,5 @@ SHA1 (setuptools-40.2.0.zip) = 5e225ba87f03d9e89bad793e1871e3b5c12e0d74
 RMD160 (setuptools-40.2.0.zip) = af4bdbefef4bc1aa188f5684ec67abcc7e5a0ccd
 SHA512 (setuptools-40.2.0.zip) = dc5c8e803118c918c04134fada0647d0e8938c0174cd7bee8ab33cb6f1837b138ba18ee5ebf0d253ffae5ab7c4f729a8ae86eead409677e239fbc0946b6b201d
 Size (setuptools-40.2.0.zip) = 853783 bytes
+SHA1 (patch-pkg_resources___init__.py) = 8314b4bb501ab8e8eb0c1a8e3408383e81f5375d
+SHA1 (patch-setup.py) = 6fcf0e97084dd3a7620b3996c5c4308e9dbd1d48

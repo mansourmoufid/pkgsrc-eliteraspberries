@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	future-0.16.0
+DISTNAME=	future-0.18.2
 PKGNAME=	python-${DISTNAME}
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_PYPI:=f/future/}
@@ -10,9 +10,7 @@ HOMEPAGE=	https://python-future.org/
 COMMENT=	Clean single-source support for Python 3 and 2
 LICENSE=	mit
 
-USE_LANGUAGES=	c
-
 .include "../../eliteraspberries/python/buildlink3.mk"
+.include "../../eliteraspberries/python/setuppy.mk"
 .include "../../eliteraspberries/python-setuptools/buildlink3.mk"
-.include "../../eliteraspberries/python-setuptools/setuppy.mk"
 .include "../../mk/bsd.pkg.mk"

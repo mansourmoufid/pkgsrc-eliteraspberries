@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/libpython${X}.${Y}.dylib
+lib/python${X}.${Y}/lib-dynload/_scproxy.so
+lib/python${X}.${Y}/plat-darwin/IN.py
+lib/python${X}.${Y}/plat-darwin/regen

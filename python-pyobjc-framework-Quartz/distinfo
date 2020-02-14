@@ -1,7 +1,7 @@
 $NetBSD$
 
-SHA1 (pyobjc-framework-Quartz-4.1.tar.gz) = 9e1cb7d60c8c8f935ec7e358e34833eabe1f1b9d
-RMD160 (pyobjc-framework-Quartz-4.1.tar.gz) = dcb49b84ea33a02146f44cfc70c291d4cd1fb728
-SHA512 (pyobjc-framework-Quartz-4.1.tar.gz) = fe193a776fefa55649f51ec12be71ac72dc11d6b2f3a53b2973a1b4f3f079cd1ab3ec239ab94aff12969166cdec882fda2db55c35ffdb192d7700556527725a5
-Size (pyobjc-framework-Quartz-4.1.tar.gz) = 3336784 bytes
+SHA1 (pyobjc-framework-Quartz-5.3.tar.gz) = 3097ea9586c508587b154d6d5eec300616e45d7c
+RMD160 (pyobjc-framework-Quartz-5.3.tar.gz) = a06bc0f1da8559473be5b420a462693483487351
+SHA512 (pyobjc-framework-Quartz-5.3.tar.gz) = 0a3868fed23b122d2f3d81025515a310c7112ddb20cdea800f66b92d767de1992bafbfaa89100c5ef56cdda8f296c2eaf4b5ce210cf0cfc0a243aa290ab636cd
+Size (pyobjc-framework-Quartz-5.3.tar.gz) = 3372445 bytes
 SHA1 (patch-pyobjc_setup.py) = e86152ba96459d9507dcc16afc48ecc3b13507a7

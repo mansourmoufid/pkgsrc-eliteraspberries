@@ -1,13 +1,13 @@
 $NetBSD$
 
-SHA1 (pyinstaller/PyInstaller-3.3.1.tar.gz) = 578324d2dfb4edbfca34903dbde404c95a211663
-RMD160 (pyinstaller/PyInstaller-3.3.1.tar.gz) = 807618c5de81d5d7e7d2f5604d1e0debf39ed975
-SHA512 (pyinstaller/PyInstaller-3.3.1.tar.gz) = d990c67e92e12a6a5d2b95d2139478824ba0485f5ceee93a27aac63ed80ae13b8acca947742b6a9b5b1489888cfa5ee4ce8a4ae05bc994be4ef726914db1746a
-Size (pyinstaller/PyInstaller-3.3.1.tar.gz) = 3458638 bytes
-SHA1 (patch-PyInstaller_building_build_main.py) = 879c8fd676b78d92fcc663cc6d6e54fb102b0b73
+SHA1 (pyinstaller/PyInstaller-3.6.tar.gz) = a8c97df46c1d2ea4a09c15458dc00925fe94eb5e
+RMD160 (pyinstaller/PyInstaller-3.6.tar.gz) = 89d682b195fc2c027439b2f697f9967b34c982d4
+SHA512 (pyinstaller/PyInstaller-3.6.tar.gz) = 97e7ac3632b5a84a85268c68cb3f3a404ca9f2786396f31016313a15c81c9c453983fd9d0376de0e7543401d3ad8af58b839dde7cefb0dfe7cbb9f3ac360f3e0
+Size (pyinstaller/PyInstaller-3.6.tar.gz) = 3539593 bytes
+SHA1 (patch-PyInstaller_building_build_main.py) = 0ec8403c61993fec3760aa23f52844af87cd70c4
 SHA1 (patch-PyInstaller_hooks_hook-_tkinter.py) = 3aa6c10b48778ee71d0511b8b3c26cf84e842da8
 SHA1 (patch-PyInstaller_hooks_hook-sdl2.py) = 3a229ab970b1e79ffeee80f57ef1ce4ebfed5350
-SHA1 (patch-PyInstaller_loader_rthooks.dat) = 37b7c845edc52dc4c5a4a34bf46d5842504d2cd7
+SHA1 (patch-PyInstaller_loader_rthooks.dat) = 7d0d7ee109975b5da0086fc4d4bb552d53e617a4
 SHA1 (patch-PyInstaller_loader_rthooks_pyi_rth__tkinter.py) = 0d5afe75358627751ab4fb1a0a106e469a35c1bf
 SHA1 (patch-PyInstaller_loader_rthooks_pyi_rth_sdl2.py) = ef91d17ebeb25b5510d638b31c185e812f60c7ee
 SHA1 (patch-bootloader_wscript) = 4094c5939924368c90dd86b9107c9a10bcc89543

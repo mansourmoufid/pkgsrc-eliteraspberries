@@ -1,0 +1,3 @@
+@comment $NetBSD$
+lib/python/PyInstaller/bootloader/Linux-64bit/run
+lib/python/PyInstaller/bootloader/Linux-64bit/run_d
