@@ -1,12 +1,12 @@
 # $NetBSD$
 
 DISTNAME=	readline-6.3
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.cwru.edu/pub/bash/
+MASTER_SITES=	ftp://ftp.gnu.org/gnu/readline/
 
 MAINTAINER=	mansourmoufid@gmail.com
-HOMEPAGE=	http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html
+HOMEPAGE=	https://tiswww.cwru.edu/php/chet/readline/rltop.html
 COMMENT=	GNU Readline library
 LICENSE=	gnu-gpl-v3
 
