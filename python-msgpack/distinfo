@@ -1,0 +1,7 @@
+$NetBSD$
+
+SHA1 (msgpack-0.6.2.tar.gz) = 19f52aa24cc16163d64ab1a3c53f2587b723b106
+RMD160 (msgpack-0.6.2.tar.gz) = 48cc4b2df2dad4b6f5b815f15aa262dcdc2db2d6
+SHA512 (msgpack-0.6.2.tar.gz) = 95b92e3d35e0500dd4256d18bf76e586e57cc66319b4459ac5daef599277a5049177a89ad86e291dbdc4c7a918901a89d9218353ddc4a7d0b399e8a98afef363
+Size (msgpack-0.6.2.tar.gz) = 119062 bytes
+SHA1 (patch-setup.py) = da0f48f09a0cdd61c7bd5f0b9565a6f867c3a69c

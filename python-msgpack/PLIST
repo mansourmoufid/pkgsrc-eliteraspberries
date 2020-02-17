@@ -1,0 +1,9 @@
+@comment $NetBSD$
+lib/python/msgpack-${PKGVERSION}.egg-info/PKG-INFO
+lib/python/msgpack-${PKGVERSION}.egg-info/SOURCES.txt
+lib/python/msgpack-${PKGVERSION}.egg-info/dependency_links.txt
+lib/python/msgpack-${PKGVERSION}.egg-info/top_level.txt
+lib/python/msgpack/__init__.py
+lib/python/msgpack/_version.py
+lib/python/msgpack/exceptions.py
+lib/python/msgpack/fallback.py
