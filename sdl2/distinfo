@@ -1,8 +1,7 @@
 $NetBSD$
 
-SHA1 (SDL2-2.0.8.tar.gz) = 959ec6ded277821995d2e3cafd973f6ab9f48ab7
-RMD160 (SDL2-2.0.8.tar.gz) = 131abebf4e693df09b7ee09cba89809b539f7fe5
-SHA512 (SDL2-2.0.8.tar.gz) = 673c6058b8692a36b4a3594456b10ef6051efe79e4fb644421fc5c76b11fd68b895840a2c8b72413418c378733e2993d33f19767d0d7ed101eda6310bd70c869
-Size (SDL2-2.0.8.tar.gz) = 4909017 bytes
-SHA1 (patch-src_thread_pthread_SDL_systhread.c) = 1821fbbe874de4fa31799dbded46dddcec0959d1
+SHA1 (SDL2-2.0.10.tar.gz) = fb31312ea1d4b45db839796ae2336dfe3d5884e5
+RMD160 (SDL2-2.0.10.tar.gz) = b35818cbf8eaf0c9c4d3b6d7a293c05a368366b2
+SHA512 (SDL2-2.0.10.tar.gz) = f49b869362699b3282f6e82920e59c7fac581bcbf955f18a81cc126293c08093a90df7fcb39517cc8bc32708d2213fe645a42b655d6d811c1386efebb3d3c798
+Size (SDL2-2.0.10.tar.gz) = 5550762 bytes
 SHA1 (patch-src_video_cocoa_SDL_cocoawindow.m) = bea56ccd7634720aca75054e0263d48307a7c865

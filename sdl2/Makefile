@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	sdl2-2.0.8
+DISTNAME=	sdl2-2.0.10
 CATEGORIES=	devel multimedia
 DISTFILES=	${DISTNAME:tu}.tar.gz
 MASTER_SITES=	https://www.libsdl.org/release/
