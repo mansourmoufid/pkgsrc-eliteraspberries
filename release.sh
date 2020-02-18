@@ -1,4 +1,6 @@
 #!/bin/sh
+set -e
+set -x
 prefix=pkgsrc/eliteraspberries
 cd ../..
 tar=pkgsrc-eliteraspberries-$1.tar
