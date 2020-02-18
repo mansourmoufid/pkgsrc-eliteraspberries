@@ -1,0 +1,7 @@
+$NetBSD$
+
+SHA1 (meson-0.53.1.tar.gz) = 835f9e2b8951e9a01f3527269d44083109b33a29
+RMD160 (meson-0.53.1.tar.gz) = e15d73b1d10249365da4562d3cef3bfb4a1a56df
+SHA512 (meson-0.53.1.tar.gz) = 0c96c354bcd7e6945473c7df0ddff929ef2bae9c2dfc7b48c6c6174c7f2be4f798398929f9c4d5986aa5fc882305ff76371ad0d65a499f058b33b05ff7025859
+Size (meson-0.53.1.tar.gz) = 1552121 bytes
+SHA1 (patch-setup.py) = 2b4c5d0984de51470e6267428e15213669de4e2e
