@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- configure.ac.orig	2019-09-19 03:23:44.000000000 -0400
++++ configure.ac	2020-02-23 13:42:24.000000000 -0500
+@@ -1616,6 +1615,9 @@
+   [default_safe_string=false],
+   [default_safe_string=true])
+ 
++common_cflags="$CFLAGS $common_cflags"
++common_cppflags="$CPPFLAGS $common_cppflags"
++
+ oc_cflags="$common_cflags $internal_cflags"
+ oc_cppflags="$common_cppflags $internal_cppflags"
+ ocamlc_cflags="$common_cflags $sharedlib_cflags"

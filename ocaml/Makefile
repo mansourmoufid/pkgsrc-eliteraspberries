@@ -1,32 +1,28 @@
 # $NetBSD$
 
-DISTNAME=	ocaml-4.02.3
-PKGREVISION=	10
+DISTNAME=	ocaml-4.08.1
 CATEGORIES=	lang
-MASTER_SITES=	http://caml.inria.fr/pub/distrib/ocaml-4.02/
+MASTER_SITES=	http://caml.inria.fr/pub/distrib/ocaml-4.08/
 
 MAINTAINER=	mansourmoufid@gmail.com
 HOMEPAGE=	http://ocaml.org/
 COMMENT=	OCaml is a general purpose programming language
 LICENSE=	qpl-v1.0 AND gnu-lgpl-v2
 
-HAS_CONFIGURE=	yes
+GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c
 
-USE_TOOLS+=	gmake
+USE_TOOLS+=	autoconf gmake perl
 
-CONFIGURE_ARGS+=	-prefix ${PREFIX}
+pre-configure:
+	cd ${WRKSRC} && autoconf -f
 
-.include "../../mk/bsd.prefs.mk"
+CONFIGURE_ARGS+=	CFLAGS=${CFLAGS:S/-fno-common//:Q}
 
-CONFIGURE_ARGS+=	-host ${MACHINE_GNU_PLATFORM}
-.if ${OPSYS} == "Darwin"
-CFLAGS+=		-arch ${MACHINE_ARCH}
-.endif
+CONFIGURE_ARGS+=	--prefix=${PREFIX}
 
-CONFIGURE_ARGS+=	-cc "${CC}"
-CONFIGURE_ARGS+=	-aspp "${CC} -c"
-CONFIGURE_ARGS+=	-as "as"
+CONFIGURE_ARGS+=	--disable-ocamldoc
+CONFIGURE_ARGS+=	--enable-shared
 
 BUILD_TARGET=	world.opt
 

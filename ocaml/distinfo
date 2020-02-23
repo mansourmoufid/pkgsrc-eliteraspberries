@@ -1,14 +1,8 @@
 $NetBSD$
 
-SHA1 (ocaml-4.02.3.tar.gz) = e68ffd2b5bb491a6345f46b27675e1361a49b274
-RMD160 (ocaml-4.02.3.tar.gz) = 3946204b9396a7fb81ae1042ce67a494579c151b
-Size (ocaml-4.02.3.tar.gz) = 3108892 bytes
-SHA1 (patch-byterun_caml_intext.h) = 57f612049cfaf2d0ac643f86e3bcd86212b293d4
-SHA1 (patch-byterun_extern.c) = 5044da22e082c01c08849cfc4d4d65f3b1202ceb
-SHA1 (patch-config_auto-aux_endian.c) = c6189701f5509a42aec5a98b9b96283019b29463
-SHA1 (patch-config_auto-aux_hasgot) = 9f0ee4cf3b932b70024ffaa349333630f9a77695
-SHA1 (patch-config_auto-aux_hasgot2) = c60c8f94a822a39a45facef499e98d13d3ce3a16
-SHA1 (patch-config_auto-aux_runtest) = ccad32cb689fe782cb0d0877c45c1eb579a1b793
-SHA1 (patch-config_auto-aux_trycompile) = 9f7c995e3ccdd52ab6afe724707dc604b32a6e05
-SHA1 (patch-configure) = 7b5d82808f843e5060b910c3acb2b257c55c3fb9
-SHA1 (patch-stdlib_Makefile) = 5518adf316d3d80fb5becefdbcdf6299267c7965
+SHA1 (ocaml-4.08.1.tar.gz) = f89ae7513ee4f064c7db92066f9dd4ac085634e2
+RMD160 (ocaml-4.08.1.tar.gz) = a8c0b80d9b6ff52c9a5725eec3ce64adffd81ca6
+SHA512 (ocaml-4.08.1.tar.gz) = 8239c1879926e59c3d9611ad0d97618ce21b0528f1bd59db3df9c24287ad180ffa74f34e52e1fab39e71cbf8113a9a4ee5037cc33ae64ca6a9a109fe4ada0256
+Size (ocaml-4.08.1.tar.gz) = 4897908 bytes
+SHA1 (patch-configure.ac) = 1a36bfc0c52bf3009c93b30561ae107af4cfd869
+SHA1 (patch-stdlib_Makefile) = a21e8434b0fc07bceb3091fac4382ddddeb6c369

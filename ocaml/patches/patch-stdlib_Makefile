@@ -1,21 +1,15 @@
 $NetBSD$
 
-https://github.com/ocaml/ocaml/pull/447
-
---- stdlib/Makefile.orig	2015-05-12 14:46:37.000000000 +0000
-+++ stdlib/Makefile
-@@ -48,10 +48,10 @@ stdlib.p.cmxa: $(OBJS:.cmo=.p.cmx)
- camlheader target_camlheader camlheaderd target_camlheaderd camlheader_ur: \
-   header.c ../config/Makefile
- 	if $(SHARPBANGSCRIPTS); then \
--	  echo '#!$(BINDIR)/ocamlrun' > camlheader && \
--	  echo '#!$(TARGET_BINDIR)/ocamlrun' > target_camlheader && \
--	  echo '#!$(BINDIR)/ocamlrund' > camlheaderd && \
--	  echo '#!$(TARGET_BINDIR)/ocamlrund' > target_camlheaderd && \
-+	  echo '#!/usr/bin/env ocamlrun' > camlheader && \
-+	  echo '#!/usr/bin/env ocamlrun' > target_camlheader && \
-+	  echo '#!/usr/bin/env ocamlrund' > camlheaderd && \
-+	  echo '#!/usr/bin/env ocamlrund' > target_camlheaderd && \
- 	  echo '#!' | tr -d '\012' > camlheader_ur; \
- 	else \
- 	  for suff in '' d; do \
+--- stdlib/Makefile.orig	2019-08-05 13:32:44.000000000 -0400
++++ stdlib/Makefile	2020-02-23 17:46:27.000000000 -0500
+@@ -157,8 +157,8 @@
+ ifeq "$(HASHBANGSCRIPTS)" "true"
+ $(CAMLHEADERS): $(ROOTDIR)/Makefile.config
+ 	for suff in '' d i; do \
+-	  echo '#!$(BINDIR)/ocamlrun'$$suff > camlheader$$suff && \
+-	  echo '#!$(TARGET_BINDIR)/ocamlrun'$$suff >target_camlheader$$suff; \
++	  echo '#!/usr/bin/env ocamlrun'$$suff > camlheader$$suff && \
++	  echo '#!/usr/bin/env ocamlrun'$$suff >target_camlheader$$suff; \
+ 	done && \
+ 	echo '#!' | tr -d '\012' > camlheader_ur;
+ else # Hashbang scripts not supported
