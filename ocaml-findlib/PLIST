@@ -1,6 +1,5 @@
 @comment $NetBSD$
 bin/ocamlfind
-etc/findlib.conf
 lib/ocaml/site-lib/bigarray/META
 lib/ocaml/site-lib/bytes/META
 lib/ocaml/site-lib/compiler-libs/META
@@ -17,7 +16,10 @@ lib/ocaml/site-lib/findlib/findlib_dynload.a
 lib/ocaml/site-lib/findlib/findlib_dynload.cma
 lib/ocaml/site-lib/findlib/findlib_dynload.cmxa
 lib/ocaml/site-lib/findlib/findlib_dynload.cmxs
+lib/ocaml/site-lib/findlib/findlib_top.a
 lib/ocaml/site-lib/findlib/findlib_top.cma
+lib/ocaml/site-lib/findlib/findlib_top.cmxa
+lib/ocaml/site-lib/findlib/findlib_top.cmxs
 lib/ocaml/site-lib/findlib/fl_dynload.cmi
 lib/ocaml/site-lib/findlib/fl_dynload.mli
 lib/ocaml/site-lib/findlib/fl_metascanner.cmi
@@ -27,13 +29,8 @@ lib/ocaml/site-lib/findlib/fl_package_base.cmi
 lib/ocaml/site-lib/findlib/fl_package_base.mli
 lib/ocaml/site-lib/findlib/topfind.cmi
 lib/ocaml/site-lib/findlib/topfind.mli
-lib/ocaml/site-lib/graphics/META
-lib/ocaml/site-lib/num-top/META
-lib/ocaml/site-lib/num-top/num_top.cma
-lib/ocaml/site-lib/num-top/num_top.cmi
-lib/ocaml/site-lib/num-top/num_top_printers.cmi
-lib/ocaml/site-lib/num/META
-lib/ocaml/site-lib/ocamlbuild/META
+lib/ocaml/site-lib/ocamldoc/META
+lib/ocaml/site-lib/raw_spacetime/META
 lib/ocaml/site-lib/stdlib/META
 lib/ocaml/site-lib/str/META
 lib/ocaml/site-lib/threads/META
@@ -43,3 +40,5 @@ man/man1/ocamlfind.1
 man/man5/META.5
 man/man5/findlib.conf.5
 man/man5/site-lib.5
+share/findlib.conf
+@pkgdir man/man3

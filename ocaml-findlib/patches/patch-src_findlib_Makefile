@@ -1,16 +1,8 @@
 $NetBSD$
 
---- src/findlib/Makefile.orig	2015-12-07 09:35:24.000000000 -0500
-+++ src/findlib/Makefile	2015-12-21 16:35:58.000000000 -0500
-@@ -14,6 +14,7 @@ NAME = findlib
- 
- # Need compiler-libs since ocaml-4.00
- OCAMLC = ocamlc -I +compiler-libs
-+OCAMLC += -cc ${CC} -ccopt '-fpic'
- OCAMLOPT = ocamlopt -I +compiler-libs
- OCAMLDEP = ocamldep
- OCAMLLEX = ocamllex
-@@ -112,30 +113,30 @@ clean:
+--- src/findlib/Makefile.orig	2020-02-23 18:08:32.000000000 -0500
++++ src/findlib/Makefile	2020-02-23 18:10:01.000000000 -0500
+@@ -118,30 +118,32 @@
  	  ocamlfind$(EXEC_SUFFIX) ocamlfind_opt$(EXEC_SUFFIX)
  
  install: all
@@ -19,8 +11,9 @@ $NetBSD$
 -	test $(INSTALL_TOPFIND) -eq 0 || cp topfind "$(prefix)$(OCAML_CORE_STDLIB)"
 +	mkdir -p "$(DESTDIR)$(prefix)$(OCAML_SITELIB)/$(NAME)"
 +	mkdir -p "$(DESTDIR)$(prefix)$(OCAMLFIND_BIN)"
-+	test $(INSTALL_TOPFIND) -eq 0 || cp topfind "$(DESTDIR)$(prefix)$(OCAML_CORE_STDLIB)"
- 	files=`$(TOP)/tools/collect_files $(TOP)/Makefile.config findlib.cmi findlib.mli findlib.cma topfind.cmi topfind.mli fl_package_base.mli fl_package_base.cmi fl_metascanner.mli fl_metascanner.cmi fl_metatoken.cmi findlib_top.cma findlib.cmxa findlib.a findlib.cmxs findlib_dynload.cma findlib_dynload.cmxa findlib_dynload.a findlib_dynload.cmxs fl_dynload.mli fl_dynload.cmi META` && \
++	test $(INSTALL_TOPFIND) -eq 0 || \
++		cp topfind "$(DESTDIR)$(prefix)$(OCAML_CORE_STDLIB)"
+ 	files=`$(SH) $(TOP)/tools/collect_files $(TOP)/Makefile.config findlib.cmi findlib.mli findlib.cma findlib.cmxa findlib$(LIB_SUFFIX) findlib.cmxs topfind.cmi topfind.mli fl_package_base.mli fl_package_base.cmi fl_metascanner.mli fl_metascanner.cmi fl_metatoken.cmi findlib_top.cma findlib_top.cmxa findlib_top$(LIB_SUFFIX) findlib_top.cmxs findlib_dynload.cma findlib_dynload.cmxa findlib_dynload$(LIB_SUFFIX) findlib_dynload.cmxs fl_dynload.mli fl_dynload.cmi META` && \
 -	cp $$files "$(prefix)$(OCAML_SITELIB)/$(NAME)"
 +	cp $$files "$(DESTDIR)$(prefix)$(OCAML_SITELIB)/$(NAME)"
  	f="ocamlfind$(EXEC_SUFFIX)"; { test -f ocamlfind_opt$(EXEC_SUFFIX) && f="ocamlfind_opt$(EXEC_SUFFIX)"; }; \
@@ -30,7 +23,8 @@ $NetBSD$
  	if [ $(OCAML_REMOVE_DIRECTORY) -eq 0 -a -f "$(OCAML_CORE_STDLIB)/compiler-libs/topdirs.cmi" ]; then \
  	    cd "$(OCAML_CORE_STDLIB)/compiler-libs/"; \
 -	    cp topdirs.cmi toploop.cmi "$(prefix)$(OCAML_SITELIB)/$(NAME)/"; \
-+	    cp topdirs.cmi toploop.cmi "$(DESTDIR)$(prefix)$(OCAML_SITELIB)/$(NAME)/"; \
++	    cp topdirs.cmi toploop.cmi \
++		"$(DESTDIR)$(prefix)$(OCAML_SITELIB)/$(NAME)/"; \
  	fi
  
  install-num-top:
@@ -51,4 +45,4 @@ $NetBSD$
 +	rm -f $(DESTDIR)$(prefix)$(OCAMLFIND_BIN)/ocamlfind$(EXEC_SUFFIX)
  
  
- depend: *.ml *.mli fl_meta.ml fl_metascanner.ml
+ depend: *.ml *.mli fl_meta.ml fl_metascanner.ml findlib_config.ml topfind.ml
