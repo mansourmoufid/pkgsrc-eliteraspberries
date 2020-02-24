@@ -1,0 +1,7 @@
+$NetBSD$
+
+SHA1 (stdcompat/13.tar.gz) = e240cf4fc08c56fdd5e589dba21e2f733145a853
+RMD160 (stdcompat/13.tar.gz) = 7a512c0bb2be17755f4307444a0c268c56d07adc
+SHA512 (stdcompat/13.tar.gz) = 9521235519cc199bee7256218162530343ac2551e091b2ba5326ca9eb04629c8f240f1f0e5476bfb0469fdacb252026ea018b6a316ea8d1f1315cae2a99d314c
+Size (stdcompat/13.tar.gz) = 343340 bytes
+SHA1 (patch-Makefile.am) = 627248fa4353ecec0f69bad715331fd37b6b8ae8
