@@ -1,7 +1,0 @@
-$NetBSD$
-
-SHA1 (menhir-20151112.tar.gz) = 222603131c2aa30d0fff1d03680c7941b764eb63
-RMD160 (menhir-20151112.tar.gz) = a64339b2787611ffbbf09205253f48c4f66cd34b
-Size (menhir-20151112.tar.gz) = 727051 bytes
-SHA1 (patch-Makefile) = 1c4620b3a391e664c6ce77f111f028483b30421f
-SHA1 (patch-src_Makefile) = 72f4003c416307405af3c48b38368d1cce1f364a

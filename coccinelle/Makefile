@@ -33,7 +33,7 @@ MAKE_ARGS+=		opt
 BUILDLINK_DEPMETHOD.camlp4=	build
 BUILDLINK_DEPMETHOD.menhir=	build
 .include "../../eliteraspberries/ocaml-camlp4/buildlink3.mk"
-.include "../../eliteraspberries/menhir/buildlink3.mk"
+.include "../../eliteraspberries/ocaml-menhir/buildlink3.mk"
 .include "../../eliteraspberries/ocaml/buildlink3.mk"
 .include "../../eliteraspberries/ocaml-findlib/buildlink3.mk"
 .include "../../eliteraspberries/parmap/buildlink3.mk"

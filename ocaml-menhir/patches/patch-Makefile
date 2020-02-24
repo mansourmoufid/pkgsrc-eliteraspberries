@@ -1,0 +1,80 @@
+$NetBSD$
+
+--- Makefile.orig	2019-09-24 05:29:51.000000000 -0400
++++ Makefile	2020-02-24 14:34:39.000000000 -0500
+@@ -46,10 +46,11 @@
+ # These may be overridden from outside; e.g., our opam package description
+ # provides its own values of docdir, libdir, and mandir.
+ 
+-bindir          := $(PREFIX)/bin
+-docdir		:= $(PREFIX)/share/doc/menhir
+-libdir	        := $(PREFIX)/share/menhir
+-mandir          := $(PREFIX)/share/man/man1
++bindir		?= $(PREFIX)/bin
++docdir		?= $(PREFIX)/share/doc/menhir
++libdir		?= $(PREFIX)/share/menhir
++mandir		?= $(PREFIX)/share/man/man1
++pkgdir		?= $(PREFIX)/lib/ocaml/site-lib
+ MANS            := doc/menhir.1
+ DOCS            := doc/manual.pdf doc/manual.html doc/manual*.png demos
+ 
+@@ -176,38 +177,42 @@
+ 
+ install:
+ # Install the executable.
+-	mkdir -p $(bindir)
+-	install $(BUILDDIR)/menhir.$(TARGET) $(bindir)/menhir$(EXE)
++	mkdir -p $(DESTDIR)$(bindir)
++	install $(BUILDDIR)/menhir.$(TARGET) $(DESTDIR)$(bindir)/menhir$(EXE)
+ # Install Menhir's standard library.
+-	mkdir -p $(libdir)
++	mkdir -p $(DESTDIR)$(libdir)
+ # Install MenhirLib and MenhirSdk.
++	mkdir -p $(DESTDIR)$(pkgdir)
+ 	@if `$(BUILDDIR)/menhir.$(TARGET) --suggest-ocamlfind | tr -d '\r'` ; then \
+ 	  echo 'Installing MenhirLib and MenhirSdk via ocamlfind.' ; \
+ 	  cp -f src/menhirLib.META META ; \
+-	  ocamlfind install menhirLib META $(patsubst %,$(BUILDDIR)/%,$(MENHIRLIB)) ; \
++	  ocamlfind install -destdir $(DESTDIR)$(pkgdir) \
++	    menhirLib META $(patsubst %,$(BUILDDIR)/%,$(MENHIRLIB)) ; \
+ 	  cp -f src/menhirSdk.META META ; \
+-	  ocamlfind install menhirSdk META $(patsubst %,$(SDKDIR)/%,$(MENHIRSDK)) ; \
++	  ocamlfind install -destdir $(DESTDIR)$(pkgdir) \
++	    menhirSdk META $(patsubst %,$(SDKDIR)/%,$(MENHIRSDK)) ; \
+ 	  rm -f META ; \
+ 	else \
+ 	  echo 'Installing MenhirLib and MenhirSdk manually.' ; \
+-	  install -m 644 $(patsubst %,$(BUILDDIR)/%,$(MENHIRLIB)) $(libdir) ; \
+-	  install -m 644 $(patsubst %,$(SDKDIR)/%,$(MENHIRSDK)) $(libdir) ; \
++	  install -m 644 $(patsubst %,$(BUILDDIR)/%,$(MENHIRLIB)) $(DESTDIR)$(libdir) ; \
++	  install -m 644 $(patsubst %,$(SDKDIR)/%,$(MENHIRSDK)) $(DESTDIR)$(libdir) ; \
+ 	fi
+ # Install the documentation. (If building from the repository, the documentation
+ # may be absent.)
+ 	if [ -f doc/manual.pdf ] ; then \
+-	  mkdir -p $(docdir) $(mandir) ; \
+-	  cp -r $(DOCS) $(docdir) ; \
+-	  cp -r $(MANS) $(mandir) ; \
++	  mkdir -p $(DESTDIR)$(docdir) $(DESTDIR)$(mandir) ; \
++	  cp -r $(DOCS) $(DESTDIR)$(docdir) ; \
++	  cp -r $(MANS) $(DESTDIR)$(mandir) ; \
+ 	fi
+ 
+ uninstall:
+-	@if `$(bindir)/menhir$(EXE) --suggest-ocamlfind | tr -d '\r'` ; then \
++	@if `$(DESTDIR)$(bindir)/menhir$(EXE) --suggest-ocamlfind | tr -d '\r'` ; then \
+ 	  echo 'Un-installing MenhirLib and MenhirSdk via ocamlfind.' ; \
+-	  ocamlfind remove menhirLib ; \
+-	  ocamlfind remove menhirSdk ; \
++	  ocamlfind remove -destdir $(DESTDIR)$(pkgdir) menhirLib ; \
++	  ocamlfind remove -destdir $(DESTDIR)$(pkgdir) menhirSdk ; \
+ 	fi
+-	rm -rf $(bindir)/menhir$(EXE)
+-	rm -rf $(libdir)
+-	rm -rf $(docdir)
+-	rm -rf $(mandir)/$(MANS)
++	rm -rf $(DESTDIR)$(bindir)/menhir$(EXE)
++	rm -rf $(DESTDIR)$(libdir)
++	rm -rf $(DESTDIR)$(docdir)
++	rm -rf $(DESTDIR)$(mandir)/$(MANS)
++	rm -rf $(DESTDIR)$(pkgdir)
