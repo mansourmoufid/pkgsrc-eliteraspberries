@@ -1,6 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	ocaml-4.08.1
+PKGREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	http://caml.inria.fr/pub/distrib/ocaml-4.08/
 
@@ -21,7 +22,6 @@ CONFIGURE_ARGS+=	CFLAGS=${CFLAGS:S/-fno-common//:Q}
 
 CONFIGURE_ARGS+=	--prefix=${PREFIX}
 
-CONFIGURE_ARGS+=	--disable-ocamldoc
 CONFIGURE_ARGS+=	--enable-shared
 
 BUILD_TARGET=	world.opt
