@@ -1,0 +1,10 @@
+$NetBSD$
+
+--- Makefile.orig	2020-02-24 09:10:03.000000000 -0500
++++ Makefile	2020-02-24 09:10:08.000000000 -0500
+@@ -1,5 +1,4 @@
+ OB := ocamlbuild -classic-display -no-ocamlfind
+-DESTDIR=
+ 
+ -include config.sh
+ 
