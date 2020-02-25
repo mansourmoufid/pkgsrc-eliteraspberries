@@ -1,0 +1,19 @@
+@comment $NetBSD$
+lib/ocaml/site-lib/pcre/META
+lib/ocaml/site-lib/pcre/dune-package
+lib/ocaml/site-lib/pcre/libpcre_stubs.a
+lib/ocaml/site-lib/pcre/opam
+lib/ocaml/site-lib/pcre/pcre.a
+lib/ocaml/site-lib/pcre/pcre.cma
+lib/ocaml/site-lib/pcre/pcre.cmi
+lib/ocaml/site-lib/pcre/pcre.cmt
+lib/ocaml/site-lib/pcre/pcre.cmti
+lib/ocaml/site-lib/pcre/pcre.cmx
+lib/ocaml/site-lib/pcre/pcre.cmxa
+lib/ocaml/site-lib/pcre/pcre.cmxs
+lib/ocaml/site-lib/pcre/pcre.ml
+lib/ocaml/site-lib/pcre/pcre.mli
+lib/ocaml/site-lib/stublibs/dllpcre_stubs.so
+share/doc/pcre/CHANGES.md
+share/doc/pcre/LICENSE.md
+share/doc/pcre/README.md

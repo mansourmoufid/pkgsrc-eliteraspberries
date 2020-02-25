@@ -11,7 +11,7 @@ PLIST_VARS+=		python
 USE_TOOLS+=		pkg-config
 CONFIGURE_ARGS+=	--enable-pcre
 CONFIGURE_ARGS+=	--enable-pcre-syntax
-.include "../../eliteraspberries/pcre-ocaml/buildlink3.mk"
+.include "../../eliteraspberries/ocaml-pcre/buildlink3.mk"
 .else
 CONFIGURE_ARGS+=	--disable-pcre
 CONFIGURE_ARGS+=	--disable-pcre-syntax
