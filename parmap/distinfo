@@ -1,6 +1,0 @@
-$NetBSD$
-
-SHA1 (parmap/1.0-rc7.tar.gz) = dbbda85c7272bbd1d9e1ff0753bb682ad23aee96
-RMD160 (parmap/1.0-rc7.tar.gz) = ffde11c1c97bbacec090d3a454c41de6b9893a16
-Size (parmap/1.0-rc7.tar.gz) = 97799 bytes
-SHA1 (patch-Makefile.in) = e1c8cefc6f59bdf756e37b97e955264fa40c3859

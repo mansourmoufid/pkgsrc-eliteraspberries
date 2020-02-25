@@ -36,5 +36,5 @@ BUILDLINK_DEPMETHOD.menhir=	build
 .include "../../eliteraspberries/ocaml-menhir/buildlink3.mk"
 .include "../../eliteraspberries/ocaml/buildlink3.mk"
 .include "../../eliteraspberries/ocaml-findlib/buildlink3.mk"
-.include "../../eliteraspberries/parmap/buildlink3.mk"
+.include "../../eliteraspberries/ocaml-parmap/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

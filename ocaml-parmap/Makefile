@@ -1,12 +1,10 @@
 # $NetBSD$
 
-GITHUB_PROJECT=	parmap
-DISTNAME=	1.0-rc7
-PKGNAME=	${GITHUB_PROJECT}-${DISTNAME:S/-rc/rc/}
-PKGREVISION=	5
+DISTNAME=	1.1.1
+PKGNAME=	ocaml-parmap-${DISTNAME:S/-rc/./}
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GITHUB:=rdicosmo/parmap/archive/}
-DIST_SUBDIR=	${GITHUB_PROJECT}
+DIST_SUBDIR=	ocaml-parmap
 
 MAINTAINER=	mansourmoufid@gmail.com
 HOMEPAGE=	${MASTER_SITE_GITHUB:=rdicosmo/parmap/}
@@ -14,10 +12,12 @@ COMMENT=	Efficient parallel map, fold and mapfold for OCaml
 LICENSE=	gnu-lgpl-v2
 
 WRKSRC=		${WRKDIR}/parmap-${DISTNAME}
-GNU_CONFIGURE=	yes
 
-USE_TOOLS+=	gmake
+BUILD_TARGET=	#
+
+post-extract:
+	cd ${WRKSRC} && ${ECHO} "(version ${PKGVERSION})" >> dune-project
 
 .include "../../eliteraspberries/ocaml/buildlink3.mk"
-.include "../../eliteraspberries/ocaml-findlib/buildlink3.mk"
+.include "../../eliteraspberries/ocaml/dune.mk"
 .include "../../mk/bsd.pkg.mk"
