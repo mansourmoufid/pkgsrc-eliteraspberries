@@ -1,7 +1,6 @@
 $NetBSD$
 
-SHA1 (coccinelle-1.0.7.tar.gz) = ad605eaa4e471fe388dab28cf983d4db65221374
-RMD160 (coccinelle-1.0.7.tar.gz) = f5de8d36b892595ed1647cf07e60aabcaaa90169
-SHA512 (coccinelle-1.0.7.tar.gz) = 94770f9ac41f34b519e1680e0b7b042c15862b3df7cfa94fbbc54d1ed0ee4743a993d3eac271decdd46d1fc3fcbe4aadabfcbab91b691c2b6e1a6019b46f1d28
-Size (coccinelle-1.0.7.tar.gz) = 6607407 bytes
-SHA1 (patch-Makefile) = c8e40fdfa2076186522cf9a06e7884447c88f270
+SHA1 (coccinelle/1.0.8.tar.gz) = 5eb00adab241eb8388088248f08fe455b35b849a
+RMD160 (coccinelle/1.0.8.tar.gz) = 2c7676dc5c0bdb6839b665e78cc7ca65db0c15f0
+SHA512 (coccinelle/1.0.8.tar.gz) = 496b1632c92cc026fbe28f784f56d4cd78f89a8ccd28dc7db1069c0c6b2b239675a10da305e37ed2a03c605668ecd3399aeed522f12ec3fbbf3ca07277ab7bce
+Size (coccinelle/1.0.8.tar.gz) = 2670961 bytes
