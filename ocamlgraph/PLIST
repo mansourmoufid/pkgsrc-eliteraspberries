@@ -1,6 +1,7 @@
 @comment $NetBSD$
 lib/ocaml/site-lib/ocamlgraph/META
 lib/ocaml/site-lib/ocamlgraph/builder.mli
+lib/ocaml/site-lib/ocamlgraph/chaoticIteration.mli
 lib/ocaml/site-lib/ocamlgraph/classic.mli
 lib/ocaml/site-lib/ocamlgraph/clique.mli
 lib/ocaml/site-lib/ocamlgraph/cliquetree.mli
@@ -30,6 +31,8 @@ lib/ocaml/site-lib/ocamlgraph/graph.cmi
 lib/ocaml/site-lib/ocamlgraph/graph.cmo
 lib/ocaml/site-lib/ocamlgraph/graph.cmx
 lib/ocaml/site-lib/ocamlgraph/graph.cmxa
+lib/ocaml/site-lib/ocamlgraph/graph.cmxs
+lib/ocaml/site-lib/ocamlgraph/graph.o
 lib/ocaml/site-lib/ocamlgraph/graphml.mli
 lib/ocaml/site-lib/ocamlgraph/graphviz.mli
 lib/ocaml/site-lib/ocamlgraph/imperative.mli
@@ -56,5 +59,6 @@ lib/ocaml/site-lib/ocamlgraph/util.mli
 lib/ocaml/site-lib/ocamlgraph/viewGraph_core.mli
 lib/ocaml/site-lib/ocamlgraph/viewGraph_select.mli
 lib/ocaml/site-lib/ocamlgraph/viewGraph_utils.mli
+lib/ocaml/site-lib/ocamlgraph/weakTopological.mli
 lib/ocaml/site-lib/ocamlgraph/xDot.mli
 lib/ocaml/site-lib/ocamlgraph/xDotDraw.mli

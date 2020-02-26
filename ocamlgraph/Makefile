@@ -1,15 +1,17 @@
 # $NetBSD$
 
-DISTNAME=	ocamlgraph-1.8.7
-PKGREVISION=	2
+DISTNAME=	v1.8.8
+PKGNAME=	ocamlgraph-${DISTNAME:S/v//}
 CATEGORIES=	math devel
-MASTER_SITES=	${MASTER_SITE_GITHUB:=backtracking/}
-GITHUB_TAG=	b111462199e62e9e4c9a9da8df09afa45d8dc778
+MASTER_SITES=	${MASTER_SITE_GITHUB:=backtracking/ocamlgraph/archive/}
+DIST_SUBDIR=	ocamlgraph
 
 MAINTAINER=	mansourmoufid@gmail.com
-HOMEPAGE=	${MASTER_SITE_GITHUB:=backtracking/ocamlgraph}
+HOMEPAGE=	http://ocamlgraph.lri.fr/
 COMMENT=	OCamlgraph is a graph library for Objective Caml
 LICENSE=	gnu-lgpl-v2.1
+
+WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c
