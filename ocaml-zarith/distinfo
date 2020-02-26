@@ -1,0 +1,7 @@
+$NetBSD$
+
+SHA1 (ocaml-zarith/release-1.9.1.tar.gz) = 1ddfdb3244600fa8bde41600bdbb2eb04aea8f74
+RMD160 (ocaml-zarith/release-1.9.1.tar.gz) = 9602605bcf5829f0db4c10786e4007fe7dc3fa36
+SHA512 (ocaml-zarith/release-1.9.1.tar.gz) = e77620c66a59d35811acfc45c7ef3f0d50d3042194654b1f5b652a2ed5fb9d5f88e9173222e5ced286c61854434da05a4d96668089faa66ff2917afa677fc32f
+Size (ocaml-zarith/release-1.9.1.tar.gz) = 92321 bytes
+SHA1 (patch-project.mak) = 154ae8be5c331f0c928f96ebd01e9750cd516c25

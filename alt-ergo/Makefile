@@ -17,9 +17,8 @@ USE_TOOLS+=	gmake
 
 BUILDLINK_DEPMETHOD.ocaml=	build
 BUILDLINK_DEPMETHOD.ocamlgraph=	build
-BUILDLINK_DEPMETHOD.zarith=	build
 .include "../../eliteraspberries/gmp/buildlink3.mk"
 .include "../../eliteraspberries/ocaml/buildlink3.mk"
 .include "../../eliteraspberries/ocamlgraph/buildlink3.mk"
-.include "../../eliteraspberries/zarith/buildlink3.mk"
+.include "../../eliteraspberries/ocaml-zarith/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
