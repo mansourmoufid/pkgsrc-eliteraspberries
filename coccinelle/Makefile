@@ -2,6 +2,7 @@
 
 DISTNAME=	1.0.8
 PKGNAME=	coccinelle-${DISTNAME}
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GITHUB:=coccinelle/coccinelle/archive/}
 DIST_SUBDIR=	coccinelle
@@ -22,6 +23,7 @@ post-extract:
 .for d in menhirLib parmap pcre stdcompat
 	cd ${WRKSRC} && rm -rf bundles/${d}/*
 .endfor
+	cd ${WRKSRC} && menhir parsing_cocci/parser_cocci_menhir.mly
 
 pre-configure:
 	cd ${WRKSRC} && autoreconf -i
