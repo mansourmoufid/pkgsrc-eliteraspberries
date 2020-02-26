@@ -21,7 +21,6 @@ CONFIGURE_ARGS+=	-coqide no
 BUILD_TARGET=		world
 MAKE_ENV+=		COQINSTALLPREFIX=${DESTDIR}
 
-BUILDLINK_DEPMETHOD.camlp5=	build
-.include "../../eliteraspberries/camlp5/buildlink3.mk"
+.include "../../eliteraspberries/ocaml-camlp5/buildlink3.mk"
 .include "../../eliteraspberries/ocaml/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
