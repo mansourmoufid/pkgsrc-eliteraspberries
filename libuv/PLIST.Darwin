@@ -1,0 +1,4 @@
+@comment $NetBSD$
+include/uv/darwin.h
+lib/libuv.1.dylib
+lib/libuv.dylib

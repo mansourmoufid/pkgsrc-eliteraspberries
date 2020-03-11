@@ -1,0 +1,5 @@
+@comment $NetBSD$
+include/uv/linux.h
+lib/libuv.so
+lib/libuv.so.1
+lib/libuv.so.1.0.0
