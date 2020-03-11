@@ -1,21 +1,8 @@
 $NetBSD$
 
---- bootstrap.orig	2017-11-10 07:28:59.000000000 -0500
-+++ bootstrap	2019-09-12 20:38:06.000000000 -0400
-@@ -740,10 +740,10 @@
-   --init=*) cmake_init_file=`cmake_arg "$1"` ;;
-   --system-libs) cmake_bootstrap_system_libs="${cmake_bootstrap_system_libs} -DCMAKE_USE_SYSTEM_LIBRARIES=1" ;;
-   --no-system-libs) cmake_bootstrap_system_libs="${cmake_bootstrap_system_libs} -DCMAKE_USE_SYSTEM_LIBRARIES=0" ;;
--  --system-bzip2|--system-curl|--system-expat|--system-jsoncpp|--system-libarchive|--system-librhash|--system-zlib|--system-liblzma)
-+  --system-bzip2|--system-curl|--system-expat|--system-jsoncpp|--system-libarchive|--system-librhash|--system-libuv|--system-zlib|--system-liblzma)
-     lib=`cmake_arg "$1" "--system-"`
-     cmake_bootstrap_system_libs="${cmake_bootstrap_system_libs} -DCMAKE_USE_SYSTEM_LIBRARY_`cmake_toupper $lib`=1" ;;
--  --no-system-bzip2|--no-system-curl|--no-system-expat|--no-system-jsoncpp|--no-system-libarchive|--no-system-librhash|--no-system-zlib|--no-system-liblzma)
-+  --no-system-bzip2|--no-system-curl|--no-system-expat|--no-system-jsoncpp|--no-system-libarchive|--no-system-librhash|--no-system-libuv|--no-system-zlib|--no-system-liblzma)
-     lib=`cmake_arg "$1" "--no-system-"`
-     cmake_bootstrap_system_libs="${cmake_bootstrap_system_libs} -DCMAKE_USE_SYSTEM_LIBRARY_`cmake_toupper $lib`=0" ;;
-   --qt-gui) cmake_bootstrap_qt_gui="1" ;;
-@@ -837,8 +837,8 @@
+--- bootstrap.orig	2020-02-04 09:22:11.000000000 -0500
++++ bootstrap	2020-02-27 18:12:18.000000000 -0500
+@@ -925,8 +925,8 @@
  fi
  
  # If exist compiler flags, set them
@@ -26,13 +13,20 @@ $NetBSD$
  cmake_ld_flags=${LDFLAGS}
  
  # Add Cygwin-specific flags
-@@ -1515,6 +1515,9 @@
- MAKE="${cmake_make_processor}"
+@@ -1573,12 +1573,13 @@
  export CC
  export CXX
-+export CFLAGS="${CPPFLAGS} ${CFLAGS}"
-+export CXXFLAGS="${CPPFLAGS} ${CFLAGS}"
-+export LDFLAGS
  export MAKE
+-export CFLAGS
+-export CXXFLAGS
++export CPPFLAGS
++export CFLAGS="${CPPFLAGS} ${CFLAGS}"
++export CXXFLAGS="${CPPFLAGS} ${CXXFLAGS}"
+ export LDFLAGS
  
  # Run bootstrap CMake to configure real CMake
+-cmake_options="-DCMAKE_BOOTSTRAP=1"
++cmake_options="-DCMAKE_BOOTSTRAP=1 ${CMAKE_OPTIONS}"
+ if [ -n "${cmake_verbose}" ]; then
+   cmake_options="${cmake_options} -DCMAKE_VERBOSE_MAKEFILE=1"
+ fi
