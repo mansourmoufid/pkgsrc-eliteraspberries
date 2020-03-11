@@ -1,0 +1,3 @@
+@comment $NetBSD$
+lib/libjsoncpp.21.dylib
+lib/libjsoncpp.dylib
