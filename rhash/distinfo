@@ -1,0 +1,9 @@
+$NetBSD$
+
+SHA1 (rhash/v1.3.9.tar.gz) = e272d455493763166fded48b90e736fd1d5c092a
+RMD160 (rhash/v1.3.9.tar.gz) = d05714d505d08aef5bfa5eb939402b07f273c9ee
+SHA512 (rhash/v1.3.9.tar.gz) = 6fae0587cdeb42df59d542c58bad734259d1ff39fba92531c10a469b51310644669ffbe0453e72d85c2cf38b176962f6dca9062a121ac019f1b30f207a176e60
+Size (rhash/v1.3.9.tar.gz) = 403415 bytes
+SHA1 (patch-Makefile) = 4775b9a3a1aaafd0bbf5b8694e9bd7df4c0c15d0
+SHA1 (patch-configure) = 249d87f5926c91525f8fb6dca5ed93997768db8b
+SHA1 (patch-librhash_Makefile) = 046b7ee4dc75a5dbd67e6c03fd3ac8d51d4abe49

@@ -1,0 +1,20 @@
+$NetBSD$
+
+--- librhash/Makefile.orig	2020-02-27 14:38:33.000000000 -0500
++++ librhash/Makefile	2020-02-27 14:38:36.000000000 -0500
+@@ -28,6 +28,7 @@
+ install-lib-shared: $(LIBRHASH_SHARED) $(EXTRA_INSTALL_LIBSHARED)
+ 	$(INSTALL) -d $(SO_DIR)
+ 	$(INSTALL_SHARED) $(LIBRHASH_SHARED) $(SO_DIR)/
++	cd $(SO_DIR) && ln -f -s $(LIBRHASH_SHARED) $(LIBRHASH_SOLINK)
+ 
+ install-implib:
+ 	$(INSTALL) -d $(LIBDIR)
+@@ -42,6 +43,7 @@
+ 
+ uninstall-lib-shared: $(EXTRA_UNINSTALL_LIBSHARED)
+ 	rm -f $(SO_DIR)/$(LIBRHASH_SHARED)
++	rm -f $(SO_DIR)/$(LIBRHASH_SOLINK)
+ 
+ uninstall-implib:
+ 	rm -f $(LIBDIR)/$(LIBRHASH_IMPLIB)
