@@ -4,6 +4,7 @@ bin/idle${X}.${Y}
 bin/pydoc${X}.${Y}
 bin/python${X}.${Y}
 bin/python${X}.${Y}-config
+bin/smtpd.py
 include/python${X}.${Y}/Python-ast.h
 include/python${X}.${Y}/Python.h
 include/python${X}.${Y}/abstract.h
@@ -811,6 +812,7 @@ lib/python${X}.${Y}/lib-dynload/grp.so
 lib/python${X}.${Y}/lib-dynload/itertools.so
 lib/python${X}.${Y}/lib-dynload/math.so
 lib/python${X}.${Y}/lib-dynload/mmap.so
+lib/python${X}.${Y}/lib-dynload/nis.so
 lib/python${X}.${Y}/lib-dynload/operator.so
 lib/python${X}.${Y}/lib-dynload/parser.so
 lib/python${X}.${Y}/lib-dynload/pyexpat.so

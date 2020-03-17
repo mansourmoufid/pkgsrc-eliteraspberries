@@ -10,7 +10,7 @@ for V in 2.7.16 3.5.7; do
     for f in DESCR PLIST; do
         test -f ../python${X}${Y}/${f} || cp ${f} ../python${X}${Y}/
     done
-    for F in Makefile buildlink3.mk fix-suffixes.sh; do
+    for F in Makefile buildlink3.mk fix-suffixes.sh plist.sh; do
         sed -e "s/{{X}}/${X}/g" \
             -e "s/{{Y}}/${Y}/g" \
             -e "s/{{Z}}/${Z}/g" \

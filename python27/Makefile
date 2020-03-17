@@ -47,23 +47,6 @@ post-install: fix-suffixes
 fix-suffixes: fix-suffixes.sh
 	sh fix-suffixes.sh
 
-PLIST.${OPSYS}:
-	${ECHO} '@comment $$NetBSD$$' > PLIST.${OPSYS}
-	find "${DESTDIR}${PRERIX}" -type f -o -type l \
-	| sed -e "s,^${DESTDIR}${PREFIX}[/]*,," \
-		-e 's,2[.]7[.]16,$${X}.$${Y}.$${Z},g' \
-		-e 's,2[.]7,$${X}.$${Y},g' \
-		-e 's,python2,python$${X},g' \
-		-e 's,pydoc2,pydoc$${X},g' \
-		-e 's,idle2,idle$${X},g' \
-		-e 's,-27,-$${X}$${Y},g' \
-		-e '/.pyc$$/d' \
-		-e '/.pyo$$/d' \
-		-e '/.whl$$/d' \
-		-e '/venv/d' \
-	| sort \
-	>> PLIST.${OPSYS}
-
 .include "../../archivers/bzip2/buildlink3.mk"
 .include "../../archivers/xz/buildlink3.mk"
 .include "../../databases/sqlite3/buildlink3.mk"

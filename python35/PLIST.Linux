@@ -2,7 +2,6 @@
 lib/libpython${X}.${Y}.so
 lib/libpython${X}.${Y}.so.1.0
 lib/libpython${X}.so
-lib/python${X}.${Y}/lib-dynload/nis.so
 lib/python${X}.${Y}/lib-dynload/ossaudiodev.so
 lib/python${X}.${Y}/lib-dynload/spwd.so
 lib/python${X}.${Y}/plat-linux/CDROM.py
