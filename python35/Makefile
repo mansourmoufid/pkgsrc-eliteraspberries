@@ -32,8 +32,8 @@ CONFIGURE_ARGS+=	OPT=""
 
 .include "../../eliteraspberries/tcl/Makefile.version"
 TCLTK_LIBS=		-ltcl${TCL_BASEVER} -ltk${TCL_BASEVER}
-CONFIGURE_ARGS+=	--with-tcltk-includes="-I${PREFIX}/include"
-CONFIGURE_ARGS+=	--with-tcltk-libs="-L${PREFIX}/lib ${TCLTK_LIBS}"
+CONFIGURE_ARGS+=	--with-tcltk-includes="-I${BUILDLINK_DIR}/include"
+CONFIGURE_ARGS+=	--with-tcltk-libs="-L${BUILDLINK_DIR}/lib ${TCLTK_LIBS}"
 
 MAKE_ENV+=		DYLD_FALLBACK_LIBRARY_PATH=${BUILDLINK_DIR}/lib
 
