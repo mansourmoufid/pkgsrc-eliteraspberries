@@ -44,35 +44,8 @@ PLIST_SUBST+=	Z=16
 post-install: fix-suffixes
 
 .PHONY: fix-suffixes
-fix-suffixes:
-.for f in 2to3 idle pydoc python
-.for s in "" 2 2.7 -2 -2.7
-	cd ${DESTDIR}${PREFIX}/bin && ( \
-		${TEST} -h ${f}${s} && rm ${f}${s} || ${TRUE}; \
-	)
-.endfor
-.endfor
-.for f in 2to3
-	cd ${DESTDIR}${PREFIX}/bin && ( \
-		${TEST} -f ${f} && mv ${f} ${f}-2 || ${TRUE}; \
-		${TEST} -f ${f}-2 && mv ${f}-2 ${f}-2.7 || ${TRUE}; \
-	)
-.endfor
-.for f in idle pydoc python
-	cd ${DESTDIR}${PREFIX}/bin && ( \
-		${TEST} -f ${f} && mv ${f} ${f}2 || ${TRUE}; \
-		${TEST} -f ${f}2 && mv ${f}2 ${f}2.7 || ${TRUE}; \
-	)
-.endfor
-.for s in "" 2 2.7
-	cd ${DESTDIR}${PREFIX}/bin && ( \
-		${TEST} -h python${s}-config && rm python${s}-config || ${TRUE}; \
-	)
-.endfor
-	cd ${DESTDIR}${PREFIX}/bin && (	\
-		${TEST} -f python-config && mv python-config python2-config || ${TRUE}; \
-		${TEST} -f python2-config && mv python2-config python2.7-config || ${TRUE}; \
-	)
+fix-suffixes: fix-suffixes.sh
+	sh fix-suffixes.sh
 
 PLIST.${OPSYS}:
 	${ECHO} '@comment $$NetBSD$$' > PLIST.${OPSYS}

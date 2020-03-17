@@ -9,7 +9,7 @@ for V in 2.7.16 3.5.7; do
     mkdir -p ../../eliteraspberries/python${X}${Y}
     cp DESCR ../../eliteraspberries/python${X}${Y}/
     cp PLIST ../../eliteraspberries/python${X}${Y}/
-    for F in Makefile buildlink3.mk; do
+    for F in Makefile buildlink3.mk fix-suffixes.sh; do
         sed -e "s/{{X}}/${X}/g" \
             -e "s/{{Y}}/${Y}/g" \
             -e "s/{{Z}}/${Z}/g" \
