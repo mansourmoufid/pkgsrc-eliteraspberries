@@ -17,5 +17,8 @@ for V in 2.7.16 3.5.7; do
         < ${F}.in \
         > ../../eliteraspberries/python${X}${Y}/${F}
     done
-    (cd ${LOCALPATCHES}/eliteraspberries && ln -F -s python python${X}${Y})
+    test -d ${LOCALPATCHES} && (
+        cd ${LOCALPATCHES}/eliteraspberries
+        ln -F -s python python${X}${Y}
+    )
 done
