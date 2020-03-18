@@ -27,6 +27,17 @@ test -d bin && (
     test -f python3-config && \
         mv python3-config python3.5-config
 ) || true
+test -d lib && (
+    cd lib
+    for ext in dylib so; do
+        for s in 3 3.5; do
+            test -h libpython${s}.${ext} && rm libpython${s}.${ext}
+        done
+        test -f libpython.${ext} && mv libpython.${ext} libpython3.${ext}
+        test -f libpython3.${ext} && \
+            mv libpython3.${ext} libpython3.5.${ext}
+    done
+) || true
 test -d man/man1 && (
     cd man/man1
     for s in "" 3 3.5; do

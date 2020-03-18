@@ -27,6 +27,17 @@ test -d bin && (
     test -f python2-config && \
         mv python2-config python2.7-config
 ) || true
+test -d lib && (
+    cd lib
+    for ext in dylib so; do
+        for s in 2 2.7; do
+            test -h libpython${s}.${ext} && rm libpython${s}.${ext}
+        done
+        test -f libpython.${ext} && mv libpython.${ext} libpython2.${ext}
+        test -f libpython2.${ext} && \
+            mv libpython2.${ext} libpython2.7.${ext}
+    done
+) || true
 test -d man/man1 && (
     cd man/man1
     for s in "" 2 2.7; do

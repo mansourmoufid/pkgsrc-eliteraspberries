@@ -27,6 +27,17 @@ test -d bin && (
     test -f python{{X}}-config && \
         mv python{{X}}-config python{{X}}.{{Y}}-config
 ) || true
+test -d lib && (
+    cd lib
+    for ext in dylib so; do
+        for s in {{X}} {{X}}.{{Y}}; do
+            test -h libpython${s}.${ext} && rm libpython${s}.${ext}
+        done
+        test -f libpython.${ext} && mv libpython.${ext} libpython{{X}}.${ext}
+        test -f libpython{{X}}.${ext} && \
+            mv libpython{{X}}.${ext} libpython{{X}}.{{Y}}.${ext}
+    done
+) || true
 test -d man/man1 && (
     cd man/man1
     for s in "" {{X}} {{X}}.{{Y}}; do
