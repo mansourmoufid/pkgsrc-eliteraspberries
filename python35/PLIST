@@ -2085,4 +2085,3 @@ lib/python${X}.${Y}/xmlrpc/server.py
 lib/python${X}.${Y}/zipapp.py
 lib/python${X}.${Y}/zipfile.py
 man/man1/python${X}.${Y}.1
-man/man1/python${X}.1

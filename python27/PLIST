@@ -1892,5 +1892,3 @@ lib/python${X}.${Y}/xmllib.py
 lib/python${X}.${Y}/xmlrpclib.py
 lib/python${X}.${Y}/zipfile.py
 man/man1/python${X}.${Y}.1
-man/man1/python${X}.1
-man/man1/python.1

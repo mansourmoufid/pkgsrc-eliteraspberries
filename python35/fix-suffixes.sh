@@ -27,3 +27,11 @@ test -d bin && (
     test -f python3-config && \
         mv python3-config python3.5-config
 ) || true
+test -d man/man1 && (
+    cd man/man1
+    for s in "" 3 3.5; do
+        test -h python${s}.1 && rm python${s}.1
+    done
+    test -f python.1 && mv python.1 python3.1
+    test -f python3.1 && mv python3.1 python3.5.1
+) || true

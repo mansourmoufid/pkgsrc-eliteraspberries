@@ -27,3 +27,11 @@ test -d bin && (
     test -f python{{X}}-config && \
         mv python{{X}}-config python{{X}}.{{Y}}-config
 ) || true
+test -d man/man1 && (
+    cd man/man1
+    for s in "" {{X}} {{X}}.{{Y}}; do
+        test -h python${s}.1 && rm python${s}.1
+    done
+    test -f python.1 && mv python.1 python{{X}}.1
+    test -f python{{X}}.1 && mv python{{X}}.1 python{{X}}.{{Y}}.1
+) || true

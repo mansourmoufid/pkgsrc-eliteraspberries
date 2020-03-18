@@ -27,3 +27,11 @@ test -d bin && (
     test -f python2-config && \
         mv python2-config python2.7-config
 ) || true
+test -d man/man1 && (
+    cd man/man1
+    for s in "" 2 2.7; do
+        test -h python${s}.1 && rm python${s}.1
+    done
+    test -f python.1 && mv python.1 python2.1
+    test -f python2.1 && mv python2.1 python2.7.1
+) || true
