@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	ocaml-4.08.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	lang
 MASTER_SITES=	http://caml.inria.fr/pub/distrib/ocaml-4.08/
 
@@ -18,11 +18,15 @@ USE_TOOLS+=	autoconf gmake perl
 pre-configure:
 	cd ${WRKSRC} && autoconf -f
 
+CONFIGURE_ARGS+=	AS=${AS}
+CONFIGURE_ARGS+=	ASPP="${CC} -c"
+CONFIGURE_ARGS+=	CC=${CC}
 CONFIGURE_ARGS+=	CFLAGS=${CFLAGS:S/-fno-common//:Q}
 
 CONFIGURE_ARGS+=	--prefix=${PREFIX}
 
 CONFIGURE_ARGS+=	--enable-shared
+CONFIGURE_ARGS+=	--with-pic
 
 BUILD_TARGET=	world.opt
 
