@@ -30,7 +30,7 @@ test -d bin && (
 test -d lib && (
     cd lib
     for ext in dylib so; do
-        for s in {{X}} {{X}}.{{Y}}; do
+        for s in "" {{X}}; do
             test -h libpython${s}.${ext} && rm libpython${s}.${ext}
         done
         test -f libpython.${ext} && mv libpython.${ext} libpython{{X}}.${ext}
