@@ -751,7 +751,6 @@ lib/python${X}.${Y}/lib-dynload/fcntl.so
 lib/python${X}.${Y}/lib-dynload/grp.so
 lib/python${X}.${Y}/lib-dynload/math.so
 lib/python${X}.${Y}/lib-dynload/mmap.so
-lib/python${X}.${Y}/lib-dynload/nis.so
 lib/python${X}.${Y}/lib-dynload/parser.so
 lib/python${X}.${Y}/lib-dynload/pyexpat.so
 lib/python${X}.${Y}/lib-dynload/readline.so
