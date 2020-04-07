@@ -37,7 +37,6 @@ lib/python${X}.${Y}/lib-dynload/_Win.so
 lib/python${X}.${Y}/lib-dynload/_scproxy.so
 lib/python${X}.${Y}/lib-dynload/autoGIL.so
 lib/python${X}.${Y}/lib-dynload/bsddb185.so
-lib/python${X}.${Y}/lib-dynload/dbm.so
 lib/python${X}.${Y}/lib-dynload/gestalt.so
 lib/python${X}.${Y}/lib-dynload/icglue.so
 lib/python${X}.${Y}/plat-darwin/IN.py
