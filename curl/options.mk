@@ -6,7 +6,6 @@ PKG_SUGGESTED_OPTIONS=	mbedtls
 
 .if !empty(PKG_OPTIONS:Mmbedtls)
 CONFIGURE_ARGS+=	--with-mbedtls
-.include "../../eliteraspberries/ca-certificates/buildlink3.mk"
 .include "../../eliteraspberries/mbedtls/buildlink3.mk"
 .else
 CONFIGURE_ARGS+=	--without-mbedtls
