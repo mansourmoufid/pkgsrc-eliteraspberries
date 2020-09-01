@@ -7,4 +7,4 @@ Size (pip/20.0.2.tar.gz) = 6445047 bytes
 SHA1 (patch-setup.py) = 5baabc9c56470e5cfb76dc966266678af866aace
 SHA1 (patch-src_pip__internal_network_session.py) = 03c26bd1aadc0d7711d83d1a263dee165559339f
 SHA1 (patch-src_pip__internal_operations_install_wheel.py) = c6166231d1533bdb5add8fb911240cc82d873d45
-SHA1 (patch-src_pip__vendor_distlib_scripts.py) = 727cd9614db68f9afd8085caa9b3e9b5c3018fd0
+SHA1 (patch-src_pip__vendor_distlib_scripts.py) = d8aa24f6e7cb4d871b190697e09c2e98a4a09306
