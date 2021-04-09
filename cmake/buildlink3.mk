@@ -1,5 +1,6 @@
 # $NetBSD$
-# BUILDLINK_DEPMETHOD.cmake?=	build
+
+BUILDLINK_DEPMETHOD.cmake?=	build
 
 BUILDLINK_TREE+=	cmake
 
