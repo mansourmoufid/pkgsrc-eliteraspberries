@@ -1,7 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	luarocks-3.0.4
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://luarocks.github.io/luarocks/releases/
 
@@ -22,8 +22,7 @@ do-configure:
 
 .include "../../eliteraspberries/lua/Makefile.common"
 
-post-install:
-	mkdir -p ${PKG_SYSCONFDIR}/luarocks
+INSTALLATION_DIRS+=	luarocks
 
 CONF_FILES=	${PREFIX}/share/examples/luarocks/config-$(LUA_BASEVER).lua \
 		${PKG_SYSCONFDIR}/luarocks/config-$(LUA_BASEVER).lua
