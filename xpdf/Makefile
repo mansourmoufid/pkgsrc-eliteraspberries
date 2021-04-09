@@ -1,6 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	xpdf-3.04
+PKGREVISION=	2
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.foolabs.com/pub/xpdf/
 
@@ -11,7 +12,7 @@ LICENSE=	gnu-gpl-v2
 
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c c++
-USE_TOOLS+=	autoconf perl
+USE_TOOLS+=	autoconf gmake perl
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 
