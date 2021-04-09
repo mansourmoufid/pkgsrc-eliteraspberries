@@ -1,6 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	motif-2.3.7
+PKGREVISION=	2
 CATEGORIES=	x11
 MASTER_SITES=	http://download.sourceforge.net/motif/
 
@@ -46,6 +47,8 @@ X_LIBS=	libX11.dylib \
 	libXrender.dylib \
 	libXt.dylib
 .endif
+
+MAKE_ENV+=		DYLD_FALLBACK_LIBRARY_PATH=${BUILDLINK_DIR}/lib
 
 .include "../../eliteraspberries/freetype2/buildlink3.mk"
 .include "../../eliteraspberries/fontconfig/buildlink3.mk"
