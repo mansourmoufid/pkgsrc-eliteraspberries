@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	libpng-1.6.28
+DISTNAME=	libpng-1.6.37
 CATEGORIES=	devel graphics
 MASTER_SITES=	http://download.sourceforge.net/libpng/
 
@@ -16,8 +16,7 @@ USE_TOOLS+=	pkg-config
 PKGCONFIG_OVERRIDE+=	libpng.pc.in
 PKGCONFIG_OVERRIDE+=	scripts/libpng.pc.in
 
-CONFIGURE_ARGS+=	--disable-shared
-CONFIGURE_ARGS+=	--enable-static
+CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	--with-pic
 
 .include "../../devel/zlib/buildlink3.mk"

@@ -5,8 +5,6 @@ include/libpng16/pnglibconf.h
 include/png.h
 include/pngconf.h
 include/pnglibconf.h
-lib/libpng16.a
-lib/libpng.a
 lib/pkgconfig/libpng.pc
 lib/pkgconfig/libpng16.pc
 man/man3/libpng.3

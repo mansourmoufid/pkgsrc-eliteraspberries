@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/libpng.dylib
+lib/libpng16.16.dylib
+lib/libpng16.dylib
