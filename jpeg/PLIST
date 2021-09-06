@@ -3,4 +3,4 @@ include/jconfig.h
 include/jerror.h
 include/jmorecfg.h
 include/jpeglib.h
-lib/libjpeg.a
+lib/pkgconfig/libjpeg.pc

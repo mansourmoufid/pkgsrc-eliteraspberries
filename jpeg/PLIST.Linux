@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/libjpeg.so
+lib/libjpeg.so.9.4.0
+lib/libjpeg.so.9

@@ -1,7 +1,7 @@
 $NetBSD$
 
-SHA1 (jpegsrc.v9b.tar.gz) = 15dd867617a88abd07573e06a86ace9bdb998ac2
-RMD160 (jpegsrc.v9b.tar.gz) = 7e261205cc653b8a0fafb3bd2267204c6bae8c42
-SHA512 (jpegsrc.v9b.tar.gz) = 74ea5af3545657d4ac03f8f7933913112cc2d982f0e379d0e5647f1acac21931468e53806297c30ebe180c7bcf84919a0ac20a4195afb03db03060d57904ef6c
-Size (jpegsrc.v9b.tar.gz) = 1022609 bytes
+SHA1 (jpegsrc.v9d.tar.gz) = e44187fc7717896d4372271ddd4aa1d465c811b8
+RMD160 (jpegsrc.v9d.tar.gz) = 1dc8783dc236301a0237e5572fc8bb11066702ff
+SHA512 (jpegsrc.v9d.tar.gz) = 6515a6f617fc9da7a3d7b4aecc7d78c4ee76159d36309050b7bf9f9672b4e29c2f34b1f4c3d7d65d7f6e2c104c49f53dd2e3b45eac22b1576d2cc54503faf333
+Size (jpegsrc.v9d.tar.gz) = 1070084 bytes
 SHA1 (patch-jdhuff.c) = 9036a8107956486bb6a9be09fd3bc568cc5913fc

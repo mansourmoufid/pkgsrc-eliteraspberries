@@ -1,8 +1,7 @@
 # $NetBSD$
 
-DISTNAME=	jpegsrc.v9b
+DISTNAME=	jpegsrc.v9d
 PKGNAME=	${DISTNAME:S/src.v/-/}
-PKGREVISION=	2
 CATEGORIES=	devel graphics
 MASTER_SITES=	http://www.ijg.org/files/
 
@@ -15,8 +14,7 @@ WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 
-CONFIGURE_ARGS+=	--disable-shared
-CONFIGURE_ARGS+=	--enable-static
+CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	--with-pic
 
 .include "../../mk/bsd.pkg.mk"
