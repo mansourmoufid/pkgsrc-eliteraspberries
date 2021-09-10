@@ -1,4 +1,4 @@
 @comment $NetBSD$
-lib/libcurl.so.4.4.0
-lib/libcurl.so.4
 lib/libcurl.so
+lib/libcurl.so.4
+lib/libcurl.so.4.7.0

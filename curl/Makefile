@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	curl-7.52.1
+DISTNAME=	curl-7.78.0
 CATEGORIES=	www
 MASTER_SITES=	https://curl.haxx.se/download/
 
@@ -45,7 +45,6 @@ CONFIGURE_ARGS+=	--disable-cookies
 
 CONFIGURE_ARGS+=	--without-zlib
 CONFIGURE_ARGS+=	--without-winssl
-CONFIGURE_ARGS+=	--without-darwinssl
 CONFIGURE_ARGS+=	--without-ssl
 CONFIGURE_ARGS+=	--without-gnutls
 CONFIGURE_ARGS+=	--without-polarssl
@@ -56,7 +55,6 @@ CONFIGURE_ARGS+=	--without-ca-bundle
 CONFIGURE_ARGS+=	--without-ca-path
 CONFIGURE_ARGS+=	--without-ca-fallback
 CONFIGURE_ARGS+=	--without-libpsl
-CONFIGURE_ARGS+=	--without-libmetalink
 CONFIGURE_ARGS+=	--without-libssh2
 CONFIGURE_ARGS+=	--without-librtmp
 CONFIGURE_ARGS+=	--without-winidn
