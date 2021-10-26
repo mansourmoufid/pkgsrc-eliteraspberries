@@ -1,6 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	curl-7.78.0
+PKGREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	https://curl.haxx.se/download/
 
@@ -61,6 +62,12 @@ CONFIGURE_ARGS+=	--without-winidn
 CONFIGURE_ARGS+=	--without-libidn
 CONFIGURE_ARGS+=	--without-nghttp2
 CONFIGURE_ARGS+=	--without-zsh-functions-dir
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "Darwin"
+CONFIGURE_ARGS+=	--with-secure-transport
+.endif
 
 .include "options.mk"
 
