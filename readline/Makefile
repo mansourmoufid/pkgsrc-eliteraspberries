@@ -1,7 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	readline-6.3
-PKGREVISION=	4
+DISTNAME=	readline-8.1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.gnu.org/gnu/readline/
 

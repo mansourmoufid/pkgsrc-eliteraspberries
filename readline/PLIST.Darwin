@@ -1,7 +1,7 @@
 @comment $NetBSD$
 lib/libhistory.${PKGVERSION}.dylib
-lib/libhistory.6.dylib
+lib/libhistory.8.dylib
 lib/libhistory.dylib
 lib/libreadline.${PKGVERSION}.dylib
-lib/libreadline.6.dylib
+lib/libreadline.8.dylib
 lib/libreadline.dylib
