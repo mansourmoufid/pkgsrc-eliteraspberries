@@ -7,7 +7,7 @@ test -d ${DESTDIR}${PREFIX}
 OPSYS="$(bmake show-var VARNAME=OPSYS)"
 find "${DESTDIR}${PRERIX}" -type f -o -type l \
 | sed -e "s,^${DESTDIR}${PREFIX}[/]*,," \
-    -e 's,2[.]7[.]16,${X}.${Y}.${Z},g' \
+    -e 's,2[.]7[.]18,${X}.${Y}.${Z},g' \
     -e 's,2[.]7,${X}.${Y},g' \
     -e 's,python2,python${X},g' \
     -e 's,pydoc2,pydoc${X},g' \

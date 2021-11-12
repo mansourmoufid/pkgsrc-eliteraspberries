@@ -1,9 +1,10 @@
 $NetBSD$
 
-SHA1 (Python-2.7.16.tgz) = e824c633a59fa2ca1dc2123de855007e64f9de98
-RMD160 (Python-2.7.16.tgz) = fa39cbb9fa913dd72d7db652ad703c90c7f4a679
-SHA512 (Python-2.7.16.tgz) = b13d04914b6573ebce687449316f2c2320fcd7e1b0f906faed35b9d31d61eb4fde42513ab8174b11b4971a5d720002bebbfed909d49ba9c9100ef0f87a4e7c55
-Size (Python-2.7.16.tgz) = 17431748 bytes
+SHA1 (Python-2.7.18.tgz) = 1a84bcb4aef49a08f39dbf9219d8b3190ebfd84d
+RMD160 (Python-2.7.18.tgz) = d6d4c16add6c7fc62ce095ba56abba7cf2bdb514
+SHA512 (Python-2.7.18.tgz) = 9a81cea8f8853b183364b399a238604075b00d18badb0cde118b20fe4428135de5d75a3feca0d56a3d8d40d557e3933de573671072d9da6f76f84435d23bf1ba
+Size (Python-2.7.18.tgz) = 17539408 bytes
+SHA1 (patch-Lib_ctypes___init__.py) = 4111a711230cb47fbfaf3b348849689181ba516c
 SHA1 (patch-Lib_distutils_command_install_egg_info.py) = e4904bca4301d03fc9c89cb4262b431ee31f19ce
 SHA1 (patch-configure.ac) = 0bf6ad5a1fd8e8845eaadf1ae4bea4ca7fc433af
 SHA1 (patch-setup.py) = e7629e63ceaed1714554dde4f2ce93fd29eaec83

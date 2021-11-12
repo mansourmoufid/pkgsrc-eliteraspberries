@@ -1,9 +1,9 @@
 # $NetBSD$
 
-DISTNAME=	Python-2.7.16
-PKGNAME=	python27-16
+DISTNAME=	Python-2.7.18
+PKGNAME=	python27-18
 CATEGORIES=	lang
-MASTER_SITES=	https://www.python.org/ftp/python/2.7.16/
+MASTER_SITES=	https://www.python.org/ftp/python/2.7.18/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	mansourmoufid@gmail.com
@@ -35,11 +35,12 @@ TCLTK_LIBS=		-ltcl${TCL_BASEVER} -ltk${TCL_BASEVER}
 CONFIGURE_ARGS+=	--with-tcltk-includes="-I${BUILDLINK_DIR}/include"
 CONFIGURE_ARGS+=	--with-tcltk-libs="-L${BUILDLINK_DIR}/lib ${TCLTK_LIBS}"
 
-MAKE_ENV+=		DYLD_FALLBACK_LIBRARY_PATH=${BUILDLINK_DIR}/lib
+CONFIGURE_ENV+=		_PYTHON_HOST_PLATFORM=${LOWER_OPSYS}
+MAKE_ENV+=		_PYTHON_HOST_PLATFORM=${LOWER_OPSYS}
 
 PLIST_SUBST+=	X=2
 PLIST_SUBST+=	Y=7
-PLIST_SUBST+=	Z=16
+PLIST_SUBST+=	Z=18
 
 post-install: fix-suffixes
 

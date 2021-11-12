@@ -342,6 +342,7 @@ lib/python${X}.${Y}/distutils/spawn.py
 lib/python${X}.${Y}/distutils/sysconfig.py
 lib/python${X}.${Y}/distutils/tests/Setup.sample
 lib/python${X}.${Y}/distutils/tests/__init__.py
+lib/python${X}.${Y}/distutils/tests/includetest.rst
 lib/python${X}.${Y}/distutils/tests/setuptools_build_ext.py
 lib/python${X}.${Y}/distutils/tests/setuptools_extension.py
 lib/python${X}.${Y}/distutils/tests/support.py
@@ -860,9 +861,7 @@ lib/python${X}.${Y}/lib-tk/tkMessageBox.py
 lib/python${X}.${Y}/lib-tk/tkSimpleDialog.py
 lib/python${X}.${Y}/lib-tk/ttk.py
 lib/python${X}.${Y}/lib-tk/turtle.py
-lib/python${X}.${Y}/lib2to3/Grammar${X}.${Y}.${Z}.final.0.pickle
 lib/python${X}.${Y}/lib2to3/Grammar.txt
-lib/python${X}.${Y}/lib2to3/PatternGrammar${X}.${Y}.${Z}.final.0.pickle
 lib/python${X}.${Y}/lib2to3/PatternGrammar.txt
 lib/python${X}.${Y}/lib2to3/__init__.py
 lib/python${X}.${Y}/lib2to3/__main__.py
@@ -1124,6 +1123,7 @@ lib/python${X}.${Y}/test/capath/5ed36f99.0
 lib/python${X}.${Y}/test/capath/6e88d7b8.0
 lib/python${X}.${Y}/test/capath/99d0fa06.0
 lib/python${X}.${Y}/test/capath/ce7b8643.0
+lib/python${X}.${Y}/test/capath/efa5f9c3.0
 lib/python${X}.${Y}/test/cfgparser.1
 lib/python${X}.${Y}/test/cjkencodings/big5-utf8.txt
 lib/python${X}.${Y}/test/cjkencodings/big5.txt
