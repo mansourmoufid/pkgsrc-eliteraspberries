@@ -2,7 +2,7 @@
 
 .include "../../eliteraspberries/llvm/Makefile.version"
 
-MASTER_SITES=	http://llvm.org/releases/${LLVM_VERSION}/
+MASTER_SITES=	https://releases.llvm.org/${LLVM_VERSION}/
 EXTRACT_SUFX=	.tar.xz
 DISTFILES=	llvm-${LLVM_VERSION}.src${EXTRACT_SUFX}
 
