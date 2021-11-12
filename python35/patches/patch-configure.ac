@@ -1,8 +1,18 @@
 $NetBSD$
 
---- configure.ac.orig	2020-02-09 13:51:46.000000000 -0500
-+++ configure.ac	2020-02-09 13:53:09.000000000 -0500
-@@ -3561,10 +3561,6 @@
+--- configure.ac.orig	2019-03-17 19:47:59.000000000 -0400
++++ configure.ac	2021-09-07 19:42:39.000000000 -0400
+@@ -2286,6 +2286,9 @@
+     	esac
+     else
+     	case `/usr/bin/arch` in
++    	arm64)
++    		MACOSX_DEFAULT_ARCH="arm64"
++    		;;
+     	i386)
+     		MACOSX_DEFAULT_ARCH="x86_64"
+     		;;
+@@ -3561,10 +3564,6 @@
  dnl wrong version of the library)
  case $ac_sys_system/$ac_sys_release in
  Darwin/*)
@@ -13,7 +23,7 @@ $NetBSD$
  	;;
  esac
  
-@@ -3572,8 +3568,6 @@
+@@ -3572,8 +3571,6 @@
  
  case $ac_sys_system/$ac_sys_release in
  Darwin/*)
@@ -22,7 +32,7 @@ $NetBSD$
  	;;
  esac
  
-@@ -4523,8 +4517,6 @@
+@@ -4523,8 +4520,6 @@
  
  AC_SUBST(EXT_SUFFIX)
  case $ac_sys_system in

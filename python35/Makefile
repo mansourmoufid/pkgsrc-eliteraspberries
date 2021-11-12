@@ -1,9 +1,9 @@
 # $NetBSD$
 
-DISTNAME=	Python-3.5.7
-PKGNAME=	python35-7
+DISTNAME=	Python-3.5.10
+PKGNAME=	python35-10
 CATEGORIES=	lang
-MASTER_SITES=	https://www.python.org/ftp/python/3.5.7/
+MASTER_SITES=	https://www.python.org/ftp/python/3.5.10/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	mansourmoufid@gmail.com
@@ -35,11 +35,12 @@ TCLTK_LIBS=		-ltcl${TCL_BASEVER} -ltk${TCL_BASEVER}
 CONFIGURE_ARGS+=	--with-tcltk-includes="-I${BUILDLINK_DIR}/include"
 CONFIGURE_ARGS+=	--with-tcltk-libs="-L${BUILDLINK_DIR}/lib ${TCLTK_LIBS}"
 
-MAKE_ENV+=		DYLD_FALLBACK_LIBRARY_PATH=${BUILDLINK_DIR}/lib
+CONFIGURE_ENV+=		_PYTHON_HOST_PLATFORM=${LOWER_OPSYS}
+MAKE_ENV+=		_PYTHON_HOST_PLATFORM=${LOWER_OPSYS}
 
 PLIST_SUBST+=	X=3
 PLIST_SUBST+=	Y=5
-PLIST_SUBST+=	Z=7
+PLIST_SUBST+=	Z=10
 
 post-install: fix-suffixes
 
