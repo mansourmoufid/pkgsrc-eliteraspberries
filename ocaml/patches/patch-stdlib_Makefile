@@ -1,15 +1,23 @@
 $NetBSD$
 
---- stdlib/Makefile.orig	2019-08-05 13:32:44.000000000 -0400
-+++ stdlib/Makefile	2020-02-23 17:46:27.000000000 -0500
-@@ -157,8 +157,8 @@
- ifeq "$(HASHBANGSCRIPTS)" "true"
- $(CAMLHEADERS): $(ROOTDIR)/Makefile.config
- 	for suff in '' d i; do \
--	  echo '#!$(BINDIR)/ocamlrun'$$suff > camlheader$$suff && \
--	  echo '#!$(TARGET_BINDIR)/ocamlrun'$$suff >target_camlheader$$suff; \
-+	  echo '#!/usr/bin/env ocamlrun'$$suff > camlheader$$suff && \
-+	  echo '#!/usr/bin/env ocamlrun'$$suff >target_camlheader$$suff; \
- 	done && \
- 	echo '#!' | tr -d '\012' > camlheader_ur;
- else # Hashbang scripts not supported
+--- stdlib/Makefile.orig	2021-11-13 15:21:03.000000000 -0500
++++ stdlib/Makefile	2021-11-13 15:22:31.000000000 -0500
+@@ -116,15 +116,15 @@
+ camlhead%: $(ROOTDIR)/Makefile.config Makefile
+ ifeq "$(LONG_SHEBANG)" "true"
+ 	echo '#!/bin/sh' > $@
+-	echo 'exec "$(BINDIR)/ocamlrun$(subst er,,$*)" "$$0" "$$@"' >> $@
++	echo 'exec "/usr/bin/env ocamlrun$(subst er,,$*)" "$$0" "$$@"' >> $@
+ else
+-	echo '#!$(BINDIR)/ocamlrun$(subst er,,$*)' > $@
++	echo '#!/usr/bin/env ocamlrun$(subst er,,$*)' > $@
+ endif
+ 
+ # TODO This does not take long shebangs into account (since TARGET_BINDIR is not
+ #      yet processed by configure)
+ target_%: $(ROOTDIR)/Makefile.config Makefile
+-	echo '#!$(TARGET_BINDIR)/ocamlrun$(subst camlheader,,$*)' > $@
++	echo '#!/usr/bin/env ocamlrun$(subst camlheader,,$*)' > $@
+ 
+ camlheader_ur: Makefile
+ 	echo '#!' | tr -d '\012' > $@

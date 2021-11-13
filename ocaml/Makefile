@@ -1,9 +1,8 @@
 # $NetBSD$
 
-DISTNAME=	ocaml-4.08.1
-PKGREVISION=	3
+DISTNAME=	ocaml-4.12.1
 CATEGORIES=	lang
-MASTER_SITES=	http://caml.inria.fr/pub/distrib/ocaml-4.08/
+MASTER_SITES=	http://caml.inria.fr/pub/distrib/ocaml-4.12/
 
 MAINTAINER=	mansourmoufid@gmail.com
 HOMEPAGE=	http://ocaml.org/
@@ -21,7 +20,6 @@ pre-configure:
 CONFIGURE_ARGS+=	AS=${AS}
 CONFIGURE_ARGS+=	ASPP="${CC} -c"
 CONFIGURE_ARGS+=	CC=${CC}
-CONFIGURE_ARGS+=	CFLAGS=${CFLAGS:S/-fno-common//:Q}
 
 CONFIGURE_ARGS+=	--prefix=${PREFIX}
 
@@ -29,5 +27,7 @@ CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	--with-pic
 
 BUILD_TARGET=	world.opt
+
+INSTALL_UNSTRIPPED=	yes
 
 .include "../../mk/bsd.pkg.mk"
