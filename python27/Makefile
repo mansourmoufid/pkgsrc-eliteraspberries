@@ -2,6 +2,7 @@
 
 DISTNAME=	Python-2.7.18
 PKGNAME=	python27-18
+PKGREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	https://www.python.org/ftp/python/2.7.18/
 EXTRACT_SUFX=	.tgz

@@ -28,7 +28,6 @@ lib/python${X}.${Y}/lib-dynload/_Mlte.so
 lib/python${X}.${Y}/lib-dynload/_OSA.so
 lib/python${X}.${Y}/lib-dynload/_Qd.so
 lib/python${X}.${Y}/lib-dynload/_Qdoffs.so
-lib/python${X}.${Y}/lib-dynload/_Qt.so
 lib/python${X}.${Y}/lib-dynload/_Res.so
 lib/python${X}.${Y}/lib-dynload/_Scrap.so
 lib/python${X}.${Y}/lib-dynload/_Snd.so

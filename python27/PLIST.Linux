@@ -1,6 +1,7 @@
 @comment $NetBSD$
 lib/libpython${X}.${Y}.so
 lib/libpython${X}.${Y}.so.1.0
+lib/python${X}.${Y}/lib-dynload/nis.so
 lib/python${X}.${Y}/lib-dynload/spwd.so
 lib/python${X}.${Y}/lib2to3/Grammar${X}.${Y}.${Z}.final.0.pickle
 lib/python${X}.${Y}/lib2to3/PatternGrammar${X}.${Y}.${Z}.final.0.pickle
