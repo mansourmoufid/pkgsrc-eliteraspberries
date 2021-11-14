@@ -1,0 +1,13 @@
+$NetBSD$
+
+SHA1 (Python-3.6.15.tgz) = 65f81196d028f75e5d439ddb75a803147ecaac72
+RMD160 (Python-3.6.15.tgz) = e2bd10a04763b0aafa57d1bbee6169a4c1173f6e
+SHA512 (Python-3.6.15.tgz) = c38fb9fa4e65cbeacf0640540268206033e7ff351593bd5e82aa525a6f469e506ea5dc227922db51b46786a4707a147e966ec9fb4806e0a7d7cb8ce6210783f0
+Size (Python-3.6.15.tgz) = 23035095 bytes
+SHA1 (patch-Lib_ctypes___init__.py) = 4111a711230cb47fbfaf3b348849689181ba516c
+SHA1 (patch-Lib_distutils_command_install_egg_info.py) = 95a3704e9cc203e4c99032e21065564077fc7541
+SHA1 (patch-Lib_distutils_sysconfig.py) = c97ba649e29929e78662a244e14c8b586d9154d5
+SHA1 (patch-Lib_sysconfig.py) = 437caea58cf9856cb6ef789a92e90ba150848397
+SHA1 (patch-Modules__decimal_libmpdec_mpdecimal.h) = 74ad30ad395f52226d339efc0b112a4560f5ab30
+SHA1 (patch-configure.ac) = e7d11d6fe7320967bbe6550291529af479932814
+SHA1 (patch-setup.py) = 3ce737ff2aee0ae4cce71a8caafdd23bb37e0e09
