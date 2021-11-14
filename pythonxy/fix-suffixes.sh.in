@@ -9,7 +9,7 @@ test -d bin && (
     cd bin
     for f in 2to3 idle pydoc python; do
         for s in "" {{X}} {{X}}.{{Y}} -{{X}} -{{X}}.{{Y}}; do
-            test -h ${f}${s} && rm ${f}${s}
+            test -L ${f}${s} && rm ${f}${s}
         done
     done
     for f in 2to3; do
@@ -21,7 +21,7 @@ test -d bin && (
         test -f ${f}{{X}} && mv ${f}{{X}} ${f}{{X}}.{{Y}}
     done
     for s in "" {{X}} {{X}}.{{Y}}; do
-        test -h python${s}-config && rm python${s}-config
+        test -L python${s}-config && rm python${s}-config
     done
     test -f python-config && mv python-config python{{X}}-config
     test -f python{{X}}-config && \
@@ -31,7 +31,7 @@ test -d lib && (
     cd lib
     for ext in dylib so; do
         for s in "" {{X}}; do
-            test -h libpython${s}.${ext} && rm libpython${s}.${ext}
+            test -L libpython${s}.${ext} && rm libpython${s}.${ext}
         done
         test -f libpython.${ext} && mv libpython.${ext} libpython{{X}}.${ext}
         test -f libpython{{X}}.${ext} && \
@@ -41,7 +41,7 @@ test -d lib && (
 test -d man/man1 && (
     cd man/man1
     for s in "" {{X}} {{X}}.{{Y}}; do
-        test -h python${s}.1 && rm python${s}.1
+        test -L python${s}.1 && rm python${s}.1
     done
     test -f python.1 && mv python.1 python{{X}}.1
     test -f python{{X}}.1 && mv python{{X}}.1 python{{X}}.{{Y}}.1
