@@ -97,9 +97,7 @@ include/python${X}.${Y}/ucnhash.h
 include/python${X}.${Y}/unicodeobject.h
 include/python${X}.${Y}/warnings.h
 include/python${X}.${Y}/weakrefobject.h
-lib/pkgconfig/python${X}.pc
 lib/pkgconfig/python-${X}.${Y}.pc
-lib/pkgconfig/python.pc
 lib/python${X}.${Y}/BaseHTTPServer.py
 lib/python${X}.${Y}/Bastion.py
 lib/python${X}.${Y}/CGIHTTPServer.py

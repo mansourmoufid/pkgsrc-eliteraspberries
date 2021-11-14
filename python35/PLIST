@@ -103,7 +103,6 @@ include/python${X}.${Y}/unicodeobject.h
 include/python${X}.${Y}/warnings.h
 include/python${X}.${Y}/weakrefobject.h
 lib/pkgconfig/python-${X}.${Y}.pc
-lib/pkgconfig/python${X}.pc
 lib/python${X}.${Y}/abc.py
 lib/python${X}.${Y}/aifc.py
 lib/python${X}.${Y}/antigravity.py

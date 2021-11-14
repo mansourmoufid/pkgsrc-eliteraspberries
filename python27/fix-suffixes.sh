@@ -37,6 +37,8 @@ test -d lib && (
         test -f libpython2.${ext} && \
             mv libpython2.${ext} libpython2.7.${ext}
     done
+    test -L pkgconfig/python2.pc && rm pkgconfig/python2.pc
+    test -L pkgconfig/python.pc && rm pkgconfig/python.pc
 ) || true
 test -d man/man1 && (
     cd man/man1
