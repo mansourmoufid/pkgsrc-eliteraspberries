@@ -1,0 +1,10 @@
+case ${STAGE} in
+POST-DEINSTALL)
+    ${RM} -f ${PREFIX}/bin/python3
+    ${RM} -f ${PREFIX}/bin/python
+    ${RM} -f ${PREFIX}/include/python
+    ${RM} -f ${PREFIX}/lib/python
+    ${RM} -f ${PREFIX}/lib/pkgconfig/python3.pc
+    ${RM} -f ${PREFIX}/lib/pkgconfig/python.pc
+    ;;
+esac

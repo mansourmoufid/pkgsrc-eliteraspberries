@@ -1,7 +1,10 @@
 case ${STAGE} in
 POST-INSTALL)
-    cd ${PREFIX}/bin && ${LN} -f -s python3.5 python
-    cd ${PREFIX}/include && ${LN} -F -s python3.5 python
-    cd ${PREFIX}/lib && ${LN} -F -s python3.5 python
+    cd ${PREFIX}/bin && ${LN} -f -s python3.6 python3
+    cd ${PREFIX}/bin && ${LN} -f -s python3 python
+    cd ${PREFIX}/include && ${LN} -F -s python3.6 python
+    cd ${PREFIX}/lib && ${LN} -F -s python3.6 python
+    cd ${PREFIX}/lib/pkgconfig && ${LN} -f -s python-3.6.pc python3.pc
+    cd ${PREFIX}/lib/pkgconfig && ${LN} -f -s python3.pc python.pc
     ;;
 esac
