@@ -1,11 +1,8 @@
 # $NetBSD$
 
-PKGNAME=	pyinstaller-3.6
-DISTNAME=	PyInstaller-${PKGVERSION_NOREV}
+DISTNAME=	pyinstaller-4.7
 CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_GITHUB:=pyinstaller/}
-GITHUB_RELEASE=	v${PKGVERSION_NOREV}
-DIST_SUBDIR=	pyinstaller
+MASTER_SITES=	${MASTER_SITE_PYPI:=p/pyinstaller/}
 
 MAINTAINER=	mansourmoufid@gmail.com
 HOMEPAGE=	http://www.pyinstaller.org/
@@ -24,12 +21,14 @@ post-patch:
 	find ${WRKSRC} -name '*.orig' | while read f; do rm -f $$f; done
 
 pre-build:
-	cd ${WRKSRC}/bootloader && python ./waf all
+	cd ${WRKSRC}/bootloader && python ./waf --no-universal2 all
 
 .include "../../devel/zlib/buildlink3.mk"
+.include "../../eliteraspberries/pyinstaller-hooks-contrib/buildlink3.mk"
 .include "../../eliteraspberries/python/buildlink3.mk"
 .include "../../eliteraspberries/python/setuppy.mk"
-.include "../../eliteraspberries/python-dis3/buildlink3.mk"
+.include "../../eliteraspberries/python-altgraph/buildlink3.mk"
+.include "../../eliteraspberries/python-importlib-metadata/buildlink3.mk"
 .include "../../eliteraspberries/python-macholib/buildlink3.mk"
 .include "../../eliteraspberries/python-pefile/buildlink3.mk"
 .include "../../eliteraspberries/python-setuptools/buildlink3.mk"

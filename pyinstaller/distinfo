@@ -1,13 +1,7 @@
 $NetBSD$
 
-SHA1 (pyinstaller/PyInstaller-3.6.tar.gz) = a8c97df46c1d2ea4a09c15458dc00925fe94eb5e
-RMD160 (pyinstaller/PyInstaller-3.6.tar.gz) = 89d682b195fc2c027439b2f697f9967b34c982d4
-SHA512 (pyinstaller/PyInstaller-3.6.tar.gz) = 97e7ac3632b5a84a85268c68cb3f3a404ca9f2786396f31016313a15c81c9c453983fd9d0376de0e7543401d3ad8af58b839dde7cefb0dfe7cbb9f3ac360f3e0
-Size (pyinstaller/PyInstaller-3.6.tar.gz) = 3539593 bytes
-SHA1 (patch-PyInstaller_building_build_main.py) = 0ec8403c61993fec3760aa23f52844af87cd70c4
-SHA1 (patch-PyInstaller_hooks_hook-_tkinter.py) = 3aa6c10b48778ee71d0511b8b3c26cf84e842da8
-SHA1 (patch-PyInstaller_hooks_hook-sdl2.py) = 3a229ab970b1e79ffeee80f57ef1ce4ebfed5350
-SHA1 (patch-PyInstaller_loader_rthooks.dat) = 7d0d7ee109975b5da0086fc4d4bb552d53e617a4
-SHA1 (patch-PyInstaller_loader_rthooks_pyi_rth__tkinter.py) = 0d5afe75358627751ab4fb1a0a106e469a35c1bf
-SHA1 (patch-PyInstaller_loader_rthooks_pyi_rth_sdl2.py) = ef91d17ebeb25b5510d638b31c185e812f60c7ee
-SHA1 (patch-bootloader_wscript) = 4094c5939924368c90dd86b9107c9a10bcc89543
+SHA1 (pyinstaller-4.7.tar.gz) = 77c1a95b09b8fe28cef87170449460b7be672598
+RMD160 (pyinstaller-4.7.tar.gz) = 3f32461847f388c0b53257007a5469475b50ea25
+SHA512 (pyinstaller-4.7.tar.gz) = 59e124e759b9c3c9fb52cb9f393c37f3ea688404780e368540c470de0b2a22240a6b93f4c49fe8928d34e31dca3c40f1bd3e8cb879bdd945f5cacb8746ef0c43
+Size (pyinstaller-4.7.tar.gz) = 2783049 bytes
+SHA1 (patch-setup.py) = 5b952880206c75cbee79a60ace7b7b077a3346be
