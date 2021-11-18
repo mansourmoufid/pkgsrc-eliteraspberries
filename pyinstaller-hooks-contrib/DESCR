@@ -1,0 +1,2 @@
+This repository is a collection of hooks for many packages, and allows
+PyInstaller to work with these packages seamlessly.
