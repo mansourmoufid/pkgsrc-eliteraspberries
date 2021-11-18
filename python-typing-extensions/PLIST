@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/python/typing_extensions-${PKGVERSION}.egg-info/PKG-INFO
+lib/python/typing_extensions-${PKGVERSION}.egg-info/SOURCES.txt
+lib/python/typing_extensions-${PKGVERSION}.egg-info/dependency_links.txt
+lib/python/typing_extensions-${PKGVERSION}.egg-info/top_level.txt
+lib/python/typing_extensions.py
