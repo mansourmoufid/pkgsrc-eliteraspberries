@@ -1,6 +1,7 @@
 $NetBSD$
 
-SHA1 (pyobjc-core-5.3.tar.gz) = 0b9e10f77182760f682a6c0b675a3115156b7ce9
-RMD160 (pyobjc-core-5.3.tar.gz) = 6c2f3aa3d444bc5d577a3b59a116241374787587
-SHA512 (pyobjc-core-5.3.tar.gz) = bc574febb9c8d559455eb15e684a745ebedb34e6bc94bf0cdef790c7fd6d5d7f19406eb6eaf38366e471f147c98c0c1ccb9afd376f1ab0d1aca090d78b8a2265
-Size (pyobjc-core-5.3.tar.gz) = 811139 bytes
+SHA1 (pyobjc-core-8.0.tar.gz) = bdb0d0cc9c73b3a2a4ea9f106ad5eaa21f7164e8
+RMD160 (pyobjc-core-8.0.tar.gz) = 8edf6e081eca7bedd47b7ce44821fbfdd1b16071
+SHA512 (pyobjc-core-8.0.tar.gz) = 48207e92be316fbb665c8f106e6b77ee7e1826fcf297d412399d63ff5308986c92513ec82e9e370db09f7bc3bac25aa8a723e2487c0cd834bdb31ebd0cba8f38
+Size (pyobjc-core-8.0.tar.gz) = 709653 bytes
+SHA1 (patch-Modules_objc_libffi_support.m) = e27a65f4c1e57ef47d34e715ea3192d9c45fdb80

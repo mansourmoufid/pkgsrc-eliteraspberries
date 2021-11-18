@@ -8,7 +8,7 @@ PKGNAME=	python-pyobjc-${PYOBJC_VERSION}
 CATEGORIES=	lang
 
 MAINTAINER=	mansourmoufid@gmail.com
-HOMEPAGE=	https://bitbucket.org/ronaldoussoren/pyobjc
+HOMEPAGE=	https://github.com/ronaldoussoren/pyobjc
 COMMENT=	PyObjC is a bridge between Python and Objective-C
 LICENSE=	mit
 

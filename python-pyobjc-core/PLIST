@@ -23,6 +23,7 @@ lib/python/objc/_convenience_sequence.py
 lib/python/objc/_descriptors.py
 lib/python/objc/_dyld.py
 lib/python/objc/_framework.py
+lib/python/objc/_fwloader.py
 lib/python/objc/_lazyimport.py
 lib/python/objc/_locking.py
 lib/python/objc/_machsignals.so
