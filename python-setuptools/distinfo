@@ -1,8 +1,8 @@
 $NetBSD$
 
-SHA1 (setuptools-40.2.0.zip) = 5e225ba87f03d9e89bad793e1871e3b5c12e0d74
-RMD160 (setuptools-40.2.0.zip) = af4bdbefef4bc1aa188f5684ec67abcc7e5a0ccd
-SHA512 (setuptools-40.2.0.zip) = dc5c8e803118c918c04134fada0647d0e8938c0174cd7bee8ab33cb6f1837b138ba18ee5ebf0d253ffae5ab7c4f729a8ae86eead409677e239fbc0946b6b201d
-Size (setuptools-40.2.0.zip) = 853783 bytes
-SHA1 (patch-pkg_resources___init__.py) = 8314b4bb501ab8e8eb0c1a8e3408383e81f5375d
-SHA1 (patch-setup.py) = 6fcf0e97084dd3a7620b3996c5c4308e9dbd1d48
+SHA1 (setuptools-49.6.0.zip) = 14103612bfd0ff4e5a9469abaa5ecbdc811d5293
+RMD160 (setuptools-49.6.0.zip) = 1bc3425baa1498ee9378d4d904fd6180664cd412
+SHA512 (setuptools-49.6.0.zip) = aad6e74b0e276da0f79c9429860a6d1c7860a30e9a02ce55527abbe7671366640423a1e5476da9ecadfc62ae1bf803cb0c664e2a09cf7619a9c8ac3965b9cf31
+Size (setuptools-49.6.0.zip) = 2188590 bytes
+SHA1 (patch-pkg_resources___init__.py) = 8414c90d2cbe62adc15a50a3e5484366746e81a6
+SHA1 (patch-setup.py) = f3d0baa8f907775fba7d9587f24a27b2c5a9ba45

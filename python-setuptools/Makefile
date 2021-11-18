@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	setuptools-40.2.0
+DISTNAME=	setuptools-49.6.0
 PKGNAME=	python-${DISTNAME}
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_PYPI:=s/setuptools/}
