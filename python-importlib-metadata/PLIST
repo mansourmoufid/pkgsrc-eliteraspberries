@@ -1,0 +1,15 @@
+@comment $NetBSD$
+lib/python/importlib_metadata-${PKGVERSION}.egg-info/PKG-INFO
+lib/python/importlib_metadata-${PKGVERSION}.egg-info/SOURCES.txt
+lib/python/importlib_metadata-${PKGVERSION}.egg-info/dependency_links.txt
+lib/python/importlib_metadata-${PKGVERSION}.egg-info/requires.txt
+lib/python/importlib_metadata-${PKGVERSION}.egg-info/top_level.txt
+lib/python/importlib_metadata/__init__.py
+lib/python/importlib_metadata/_adapters.py
+lib/python/importlib_metadata/_collections.py
+lib/python/importlib_metadata/_compat.py
+lib/python/importlib_metadata/_functools.py
+lib/python/importlib_metadata/_itertools.py
+lib/python/importlib_metadata/_meta.py
+lib/python/importlib_metadata/_text.py
+lib/python/importlib_metadata/py.typed

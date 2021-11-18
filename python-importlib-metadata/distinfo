@@ -1,0 +1,7 @@
+$NetBSD$
+
+SHA1 (importlib_metadata-4.8.2.tar.gz) = 7d15d8e06299a8f24e076600899aceee75ce8b0b
+RMD160 (importlib_metadata-4.8.2.tar.gz) = 18906bf12228563163a2078eb42875c68fddfa60
+SHA512 (importlib_metadata-4.8.2.tar.gz) = bdf90ef1c5a9c24dc139d32e9f9fa0b7a020ce4f840e6f80b8d7bb0204d8ea02ba532bce31213b0e449586418c2606a4d5edd64d6f312d6d6d55db6000e687ba
+Size (importlib_metadata-4.8.2.tar.gz) = 41791 bytes
+SHA1 (patch-setup.cfg) = c863a70a5875d3f10ad7e5b07e7df97e183a6405

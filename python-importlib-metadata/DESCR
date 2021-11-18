@@ -1,0 +1,3 @@
+This package supplies third-party access to the functionality of
+importlib.metadata including improvements added to subsequent Python
+versions.
