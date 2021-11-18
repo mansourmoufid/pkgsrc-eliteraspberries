@@ -1,0 +1,7 @@
+@comment $NetBSD$
+lib/python/zipp-${PKGVERSION}.egg-info/PKG-INFO
+lib/python/zipp-${PKGVERSION}.egg-info/SOURCES.txt
+lib/python/zipp-${PKGVERSION}.egg-info/dependency_links.txt
+lib/python/zipp-${PKGVERSION}.egg-info/requires.txt
+lib/python/zipp-${PKGVERSION}.egg-info/top_level.txt
+lib/python/zipp.py
