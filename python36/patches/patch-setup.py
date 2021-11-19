@@ -26,3 +26,16 @@ $NetBSD$
          # lib_dirs and inc_dirs are used to search for files;
          # if a file is found in one of those directories, it can
          # be assumed that no additional -I,-L directives are needed.
+@@ -1953,11 +1940,9 @@
+ 
+         if host_platform == 'darwin':
+             sources.append('_ctypes/malloc_closure.c')
+-            sources.append('_ctypes/darwin/dlfcn_simple.c')
++            extra_compile_args.append('-DUSING_MALLOC_CLOSURE_DOT_C=1')
+             extra_compile_args.append('-DMACOSX')
+             include_dirs.append('_ctypes/darwin')
+-# XXX Is this still needed?
+-##            extra_link_args.extend(['-read_only_relocs', 'warning'])
+ 
+         elif host_platform == 'sunos5':
+             # XXX This shouldn't be necessary; it appears that some
