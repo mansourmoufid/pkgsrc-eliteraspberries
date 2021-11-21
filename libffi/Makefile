@@ -1,9 +1,9 @@
 # $NetBSD$
 
-DISTNAME=	libffi-3.2.1
-PKGREVISION=	3
+DISTNAME=	libffi-3.4.2
 CATEGORIES=	devel
-MASTER_SITES=	ftp://sourceware.org/pub/libffi/
+MASTER_SITES=	${MASTER_SITE_GITHUB:=libffi/}
+GITHUB_RELEASE=	v${PKGVERSION_NOREV}
 
 MAINTAINER=	mansourmoufid@gmail.com
 HOMEPAGE=	http://sourceware.org/libffi/
@@ -20,8 +20,8 @@ PKGCONFIG_OVERRIDE+=	libffi.pc.in
 SPATCH=		no
 
 CONFIGURE_ARGS+=	--includedir=${PREFIX}/include
-CONFIGURE_ARGS+=	--disable-shared
-CONFIGURE_ARGS+=	--enable-static
+CONFIGURE_ARGS+=	--enable-shared
+CONFIGURE_ARGS+=	--disable-static
 CONFIGURE_ARGS+=	--with-pic
 CONFIGURE_ARGS+=	--enable-portable-binary
 

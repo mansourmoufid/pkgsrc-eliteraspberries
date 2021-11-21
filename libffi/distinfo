@@ -1,9 +1,7 @@
 $NetBSD$
 
-SHA1 (libffi-3.2.1.tar.gz) = 280c265b789e041c02e5c97815793dfc283fb1e6
-RMD160 (libffi-3.2.1.tar.gz) = 9b546a3d002380bec3f00d86fc47d730abf51dfd
-SHA512 (libffi-3.2.1.tar.gz) = 980ca30a8d76f963fca722432b1fe5af77d7a4e4d2eac5144fbc5374d4c596609a293440573f4294207e1bdd9fda80ad1e1cafb2ffb543df5a275bc3bd546483
-Size (libffi-3.2.1.tar.gz) = 940837 bytes
-SHA1 (patch-ac) = f3c6324f4334d23e684b4eca25173a13be5d37eb
-SHA1 (patch-ad) = 8bb3ec9ea69a8c06b0b1963b3f24018c6384c249
+SHA1 (libffi-3.4.2.tar.gz) = 460882cfdb52a2bd13fc08edc540b242ae421033
+RMD160 (libffi-3.4.2.tar.gz) = 05606691305f980b3ea8a15aeed333780cc0c844
+SHA512 (libffi-3.4.2.tar.gz) = 31bad35251bf5c0adb998c88ff065085ca6105cf22071b9bd4b5d5d69db4fadf16cadeec9baca944c4bb97b619b035bb8279de8794b922531fddeb0779eb7fb1
+Size (libffi-3.4.2.tar.gz) = 1351355 bytes
 SHA1 (patch-src_dlmalloc.c) = 4e1615ec012e28859c7efa101b9a3dae62dbdccc
