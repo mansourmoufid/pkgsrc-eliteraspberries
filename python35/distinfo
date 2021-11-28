@@ -11,4 +11,4 @@ SHA1 (patch-Modules__ctypes_malloc_closure.c) = 62a60abfbd231d225afe6ea6b9275f43
 SHA1 (patch-Modules__cursesmodule.c) = 8628d01173234575bea30c5c73c23d4ae48fa404
 SHA1 (patch-Modules__decimal_libmpdec_mpdecimal.h) = 74ad30ad395f52226d339efc0b112a4560f5ab30
 SHA1 (patch-configure.ac) = 393902fabc320e914b96d9c901c3026303ba0b19
-SHA1 (patch-setup.py) = 15e45aa50d794f332bf3b9d1246a098da85c9ea7
+SHA1 (patch-setup.py) = c5366ecbe568d7143d57738adf8ad32ede16035c

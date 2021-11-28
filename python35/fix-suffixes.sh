@@ -7,12 +7,12 @@ test -d ${DESTDIR}${PREFIX}
 cd ${DESTDIR}${PREFIX}
 test -d bin && (
     cd bin
-    for f in 2to3 idle pydoc python; do
+    for f in 2to3 idle pydoc python pyvenv; do
         for s in "" 3 3.5 -3 -3.5; do
             test -L ${f}${s} && rm ${f}${s}
         done
     done
-    for f in 2to3; do
+    for f in 2to3 pyvenv; do
         test -f ${f} && mv ${f} ${f}-3
         test -f ${f}-3 && mv ${f}-3 ${f}-3.5
     done

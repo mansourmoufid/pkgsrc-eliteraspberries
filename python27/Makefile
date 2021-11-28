@@ -24,11 +24,11 @@ pre-configure:
 CONFIGURE_ARGS+=	--disable-universalsdk
 CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	--mandir=${PKGMANDIR}
-CONFIGURE_ARGS+=	--with-system-ffi
 CONFIGURE_ARGS+=	--without-ensurepip
 CONFIGURE_ARGS+=	--without-pydebug
 CONFIGURE_ARGS+=	--without-pymalloc
 
+CONFIGURE_ARGS+=	LIBFFI_INCLUDEDIR=${BUILDLINK_DIR}/include
 CONFIGURE_ARGS+=	OPT=""
 
 .include "../../eliteraspberries/tcl/Makefile.version"

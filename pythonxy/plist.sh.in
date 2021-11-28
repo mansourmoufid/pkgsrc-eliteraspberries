@@ -2,9 +2,9 @@
 set -e
 set -x
 DESTDIR="$(bmake show-var VARNAME=DESTDIR)"
-PREFIX="$(bmake show-var VARNAME=PREFIX)"
-test -d ${DESTDIR}${PREFIX}
 OPSYS="$(bmake show-var VARNAME=OPSYS)"
+PREFIX="$(bmake show-var VARNAME=PREFIX)"
+test -d ${DESTDIR}${PREFIX} && \
 find "${DESTDIR}${PRERIX}" -type f -o -type l \
 | sed -e "s,^${DESTDIR}${PREFIX}[/]*,," \
     -e 's,{{X}}[.]{{Y}}[.]{{Z}},${X}.${Y}.${Z},g' \
@@ -16,7 +16,6 @@ find "${DESTDIR}${PRERIX}" -type f -o -type l \
     -e '/.pyc$/d' \
     -e '/.pyo$/d' \
     -e '/.whl$/d' \
-    -e '/venv/d' \
 | sort \
 > PLIST.${OPSYS}
 test -f PLIST.Darwin || echo > PLIST.Darwin

@@ -4,6 +4,7 @@ bin/idle${X}.${Y}
 bin/pydoc${X}.${Y}
 bin/python${X}.${Y}
 bin/python${X}.${Y}-config
+bin/pyvenv-${X}.${Y}
 include/python${X}.${Y}/abstract.h
 include/python${X}.${Y}/accu.h
 include/python${X}.${Y}/asdl.h
@@ -1947,6 +1948,7 @@ lib/python${X}.${Y}/test/test_userstring.py
 lib/python${X}.${Y}/test/test_utf8source.py
 lib/python${X}.${Y}/test/test_uuid.py
 lib/python${X}.${Y}/test/test_uu.py
+lib/python${X}.${Y}/test/test_venv.py
 lib/python${X}.${Y}/test/test_wait3.py
 lib/python${X}.${Y}/test/test_wait4.py
 lib/python${X}.${Y}/test/test_warnings/data/import_warning.py
@@ -2109,6 +2111,11 @@ lib/python${X}.${Y}/urllib/response.py
 lib/python${X}.${Y}/urllib/robotparser.py
 lib/python${X}.${Y}/uuid.py
 lib/python${X}.${Y}/uu.py
+lib/python${X}.${Y}/venv/__init__.py
+lib/python${X}.${Y}/venv/__main__.py
+lib/python${X}.${Y}/venv/scripts/common/activate
+lib/python${X}.${Y}/venv/scripts/posix/activate.csh
+lib/python${X}.${Y}/venv/scripts/posix/activate.fish
 lib/python${X}.${Y}/warnings.py
 lib/python${X}.${Y}/wave.py
 lib/python${X}.${Y}/weakref.py

@@ -1,7 +1,7 @@
 $NetBSD$
 
 --- setup.py.orig	2021-09-03 23:49:41.000000000 -0400
-+++ setup.py	2021-11-13 20:52:02.351452570 -0500
++++ setup.py	2021-11-23 10:15:56.000000000 -0500
 @@ -517,12 +517,6 @@
              return ['m']
  
@@ -15,18 +15,15 @@ $NetBSD$
          # only change this for cross builds for 3.3, issues on Mageia
          if cross_compiling:
              self.add_gcc_paths()
-@@ -574,8 +568,8 @@
-             add_dir_to_list(self.compiler.include_dirs,
-                             sysconfig.get_config_var("INCLUDEDIR"))
+@@ -1955,6 +1949,7 @@
+         return True
  
--        system_lib_dirs = ['/lib64', '/usr/lib64', '/lib', '/usr/lib']
--        system_include_dirs = ['/usr/include']
-+        system_lib_dirs = []
-+        system_include_dirs = []
-         # lib_dirs and inc_dirs are used to search for files;
-         # if a file is found in one of those directories, it can
-         # be assumed that no additional -I,-L directives are needed.
-@@ -1953,11 +1940,9 @@
+     def configure_ctypes(self, ext):
++        return True
+         if not self.use_system_libffi:
+             if host_platform == 'darwin':
+                 return self.configure_ctypes_darwin(ext)
+@@ -2025,11 +2020,9 @@
  
          if host_platform == 'darwin':
              sources.append('_ctypes/malloc_closure.c')
@@ -39,3 +36,19 @@ $NetBSD$
  
          elif host_platform == 'sunos5':
              # XXX This shouldn't be necessary; it appears that some
+@@ -2058,15 +2051,6 @@
+                      libraries=math_libs)
+         self.extensions.extend([ext, ext_test])
+ 
+-        if host_platform == 'darwin':
+-            if '--with-system-ffi' not in sysconfig.get_config_var("CONFIG_ARGS"):
+-                return
+-            # OS X 10.5 comes with libffi.dylib; the include files are
+-            # in /usr/include/ffi
+-            inc_dirs.append('/usr/include/ffi')
+-        elif '--without-system-ffi' in sysconfig.get_config_var("CONFIG_ARGS"):
+-            return
+-
+         ffi_inc = [sysconfig.get_config_var("LIBFFI_INCLUDEDIR")]
+         if not ffi_inc or ffi_inc[0] == '':
+             ffi_inc = find_file('ffi.h', [], inc_dirs)
