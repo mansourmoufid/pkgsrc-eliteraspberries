@@ -1,10 +1,10 @@
 $NetBSD$
 
-SHA1 (pip/20.0.2.tar.gz) = 4192da2254fbf46cfb22099b4478200ec2cac29b
-RMD160 (pip/20.0.2.tar.gz) = 6bdd755e307badf0020f7f8972c6ea071988450d
-SHA512 (pip/20.0.2.tar.gz) = f9965944ca0f319d01db1638ce97cf64772afff1778b3b1271155de73208cfcb3954d89a469c1143c0bf3288a53d4446165a49df994374b16ac6f7ffdae85857
-Size (pip/20.0.2.tar.gz) = 6445047 bytes
-SHA1 (patch-setup.py) = 5baabc9c56470e5cfb76dc966266678af866aace
-SHA1 (patch-src_pip__internal_network_session.py) = 03c26bd1aadc0d7711d83d1a263dee165559339f
-SHA1 (patch-src_pip__internal_operations_install_wheel.py) = c6166231d1533bdb5add8fb911240cc82d873d45
-SHA1 (patch-src_pip__vendor_distlib_scripts.py) = d8aa24f6e7cb4d871b190697e09c2e98a4a09306
+SHA1 (pip/pip-21.3.1.tar.gz) = a243525070cf70f22a185447ebd3e1435dabb218
+RMD160 (pip/pip-21.3.1.tar.gz) = 6fbc06856640ede9373cc0b44b8e18a6887c6501
+SHA512 (pip/pip-21.3.1.tar.gz) = cc8cb13a7f4f53ddcaa1bf10586d0caa51bc334728bbd664f7085b3bfbfd09d082c2f01f4d1ecd6a69d7228976058a965087f1852da6d1155526fac1f107bf13
+Size (pip/pip-21.3.1.tar.gz) = 1731517 bytes
+SHA1 (patch-setup.py) = 153ceaeca72dba471b75958e3494ddaf8ad3cef9
+SHA1 (patch-src_pip__internal_network_session.py) = b2ee6d4b7b112628a10c6eb22d04ed5e577568d2
+SHA1 (patch-src_pip__internal_operations_install_wheel.py) = 7e8c6aaeccdcffbf2c4f7395b4bdb74e2c1b24f6
+SHA1 (patch-src_pip__vendor_distlib_scripts.py) = 727cd9614db68f9afd8085caa9b3e9b5c3018fd0
