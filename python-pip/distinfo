@@ -7,4 +7,4 @@ Size (pip/pip-21.3.1.tar.gz) = 1731517 bytes
 SHA1 (patch-setup.py) = 153ceaeca72dba471b75958e3494ddaf8ad3cef9
 SHA1 (patch-src_pip__internal_network_session.py) = b2ee6d4b7b112628a10c6eb22d04ed5e577568d2
 SHA1 (patch-src_pip__internal_operations_install_wheel.py) = 7e8c6aaeccdcffbf2c4f7395b4bdb74e2c1b24f6
-SHA1 (patch-src_pip__vendor_distlib_scripts.py) = 727cd9614db68f9afd8085caa9b3e9b5c3018fd0
+SHA1 (patch-src_pip__vendor_distlib_scripts.py) = 58f13fbdf2d0e4f8f147b04dc65b0a92c1e49bcb
