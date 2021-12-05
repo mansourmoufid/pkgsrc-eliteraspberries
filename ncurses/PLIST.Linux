@@ -1,3 +1,20 @@
+@comment $NetBSD$
+lib/libform.so
+lib/libformw.so
+lib/libformw.so.${PKGVERSION}
+lib/libformw.so.6
+lib/libmenu.so
+lib/libmenuw.so
+lib/libmenuw.so.${PKGVERSION}
+lib/libmenuw.so.6
+lib/libncurses.so
+lib/libncursesw.so
+lib/libncursesw.so.${PKGVERSION}
+lib/libncursesw.so.6
+lib/libpanel.so
+lib/libpanelw.so
+lib/libpanelw.so.${PKGVERSION}
+lib/libpanelw.so.6
 share/terminfo/1/1178
 share/terminfo/1/1730-lm
 share/terminfo/2/2621
@@ -64,6 +81,7 @@ share/terminfo/Q/Q310-vip-Hw
 share/terminfo/Q/Q310-vip-w
 share/terminfo/Q/Q310-vip-w-am
 share/terminfo/X/X-hpterm
+share/terminfo/X/X-hpterm-color2
 share/terminfo/a/a210
 share/terminfo/a/a80
 share/terminfo/a/a980
@@ -115,9 +133,11 @@ share/terminfo/a/abm85
 share/terminfo/a/abm85e
 share/terminfo/a/abm85h
 share/terminfo/a/abm85h-old
+share/terminfo/a/absolute
 share/terminfo/a/act4
 share/terminfo/a/act5
 share/terminfo/a/addrinfo
+share/terminfo/a/adds200
 share/terminfo/a/adds980
 share/terminfo/a/addsviewpoint
 share/terminfo/a/addsvp60
@@ -149,6 +169,9 @@ share/terminfo/a/aj
 share/terminfo/a/aj510
 share/terminfo/a/aj830
 share/terminfo/a/aj832
+share/terminfo/a/alacritty
+share/terminfo/a/alacritty+common
+share/terminfo/a/alacritty-direct
 share/terminfo/a/alt2
 share/terminfo/a/alt3
 share/terminfo/a/alt4
@@ -204,6 +227,7 @@ share/terminfo/a/ansi+local
 share/terminfo/a/ansi+local1
 share/terminfo/a/ansi+pp
 share/terminfo/a/ansi+rca
+share/terminfo/a/ansi+rca2
 share/terminfo/a/ansi+rep
 share/terminfo/a/ansi+sgr
 share/terminfo/a/ansi+sgrbold
@@ -345,6 +369,8 @@ share/terminfo/a/att605
 share/terminfo/a/att605-pc
 share/terminfo/a/att605-w
 share/terminfo/a/att610
+share/terminfo/a/att610+cvis
+share/terminfo/a/att610+cvis0
 share/terminfo/a/att610-103k
 share/terminfo/a/att610-103k-w
 share/terminfo/a/att610-w
@@ -827,6 +853,7 @@ share/terminfo/d/dmd1
 share/terminfo/d/dmdt80
 share/terminfo/d/dmdt80w
 share/terminfo/d/dmterm
+share/terminfo/d/domterm
 share/terminfo/d/dp3360
 share/terminfo/d/dp8242
 share/terminfo/d/ds40
@@ -854,6 +881,7 @@ share/terminfo/d/dw4
 share/terminfo/d/dwk
 share/terminfo/d/dwk-vt
 share/terminfo/e/ecma+color
+share/terminfo/e/ecma+index
 share/terminfo/e/ecma+italics
 share/terminfo/e/ecma+sgr
 share/terminfo/e/ecma+strikeout
@@ -902,6 +930,9 @@ share/terminfo/f/fbterm
 share/terminfo/f/fenix
 share/terminfo/f/fenixw
 share/terminfo/f/fixterm
+share/terminfo/f/foot
+share/terminfo/f/foot+base
+share/terminfo/f/foot-direct
 share/terminfo/f/fortune
 share/terminfo/f/fos
 share/terminfo/f/fox
@@ -1083,7 +1114,9 @@ share/terminfo/h/hp70092a
 share/terminfo/h/hp9837
 share/terminfo/h/hp9845
 share/terminfo/h/hp98550
+share/terminfo/h/hp98550-color
 share/terminfo/h/hp98550a
+share/terminfo/h/hp98550a-color
 share/terminfo/h/hp98720
 share/terminfo/h/hp98721
 share/terminfo/h/hpansi
@@ -1093,6 +1126,9 @@ share/terminfo/h/hpgeneric
 share/terminfo/h/hpsub
 share/terminfo/h/hpterm
 share/terminfo/h/hpterm-color
+share/terminfo/h/hpterm-color2
+share/terminfo/h/hterm
+share/terminfo/h/hterm-256color
 share/terminfo/h/htx11
 share/terminfo/h/hurd
 share/terminfo/h/hz1000
@@ -1169,6 +1205,7 @@ share/terminfo/i/ims950
 share/terminfo/i/ims950-b
 share/terminfo/i/ims950-rv
 share/terminfo/i/infoton
+share/terminfo/i/infoton2
 share/terminfo/i/interix
 share/terminfo/i/interix-nti
 share/terminfo/i/intertec
@@ -1201,6 +1238,9 @@ share/terminfo/k/kds7372
 share/terminfo/k/kds7372-w
 share/terminfo/k/kermit
 share/terminfo/k/kermit-am
+share/terminfo/k/kitty
+share/terminfo/k/kitty+common
+share/terminfo/k/kitty-direct
 share/terminfo/k/klone+acs
 share/terminfo/k/klone+color
 share/terminfo/k/klone+koi8acs
@@ -1233,6 +1273,8 @@ share/terminfo/l/layer
 share/terminfo/l/lft
 share/terminfo/l/lft-pc850
 share/terminfo/l/linux
+share/terminfo/l/linux+decid
+share/terminfo/l/linux+sfkeys
 share/terminfo/l/linux-16color
 share/terminfo/l/linux-basic
 share/terminfo/l/linux-c
@@ -1245,6 +1287,7 @@ share/terminfo/l/linux-m1
 share/terminfo/l/linux-m1b
 share/terminfo/l/linux-m2
 share/terminfo/l/linux-nic
+share/terminfo/l/linux-s
 share/terminfo/l/linux-vt
 share/terminfo/l/linux2.2
 share/terminfo/l/linux2.6
@@ -1316,6 +1359,9 @@ share/terminfo/m/minix-1.7
 share/terminfo/m/minix-3.0
 share/terminfo/m/minix-old
 share/terminfo/m/minix-old-am
+share/terminfo/m/mintty
+share/terminfo/m/mintty+common
+share/terminfo/m/mintty-direct
 share/terminfo/m/mlterm
 share/terminfo/m/mlterm+pcfkeys
 share/terminfo/m/mlterm-256color
@@ -1334,6 +1380,7 @@ share/terminfo/m/morphos
 share/terminfo/m/mouse-sun
 share/terminfo/m/mrxvt
 share/terminfo/m/mrxvt-256color
+share/terminfo/m/ms-terminal
 share/terminfo/m/ms-vt-utf8
 share/terminfo/m/ms-vt100
 share/terminfo/m/ms-vt100+
@@ -1350,6 +1397,7 @@ share/terminfo/m/mt70
 share/terminfo/m/mterm
 share/terminfo/m/mterm-ansi
 share/terminfo/m/mvterm
+share/terminfo/n/n7900
 share/terminfo/n/nansi.sys
 share/terminfo/n/nansi.sysk
 share/terminfo/n/nansisys
@@ -1480,6 +1528,7 @@ share/terminfo/n/nsterm-acs-m
 share/terminfo/n/nsterm-acs-m-s
 share/terminfo/n/nsterm-acs-s
 share/terminfo/n/nsterm-bce
+share/terminfo/n/nsterm-build309
 share/terminfo/n/nsterm-build326
 share/terminfo/n/nsterm-build343
 share/terminfo/n/nsterm-build361
@@ -1490,6 +1539,7 @@ share/terminfo/n/nsterm-c-acs
 share/terminfo/n/nsterm-c-s
 share/terminfo/n/nsterm-c-s-7
 share/terminfo/n/nsterm-c-s-acs
+share/terminfo/n/nsterm-direct
 share/terminfo/n/nsterm-m
 share/terminfo/n/nsterm-m-7
 share/terminfo/n/nsterm-m-acs
@@ -1723,12 +1773,15 @@ share/terminfo/p/putty+fnkeys+sco
 share/terminfo/p/putty+fnkeys+vt100
 share/terminfo/p/putty+fnkeys+vt400
 share/terminfo/p/putty+fnkeys+xterm
+share/terminfo/p/putty+keypad
+share/terminfo/p/putty+screen
 share/terminfo/p/putty-256color
 share/terminfo/p/putty-m1
 share/terminfo/p/putty-m1b
 share/terminfo/p/putty-m2
 share/terminfo/p/putty-noapp
 share/terminfo/p/putty-sco
+share/terminfo/p/putty-screen
 share/terminfo/p/putty-vt100
 share/terminfo/q/qansi
 share/terminfo/q/qansi-g
@@ -1840,6 +1893,7 @@ share/terminfo/s/screen.linux
 share/terminfo/s/screen.linux-m1
 share/terminfo/s/screen.linux-m1b
 share/terminfo/s/screen.linux-m2
+share/terminfo/s/screen.linux-s
 share/terminfo/s/screen.minitel1
 share/terminfo/s/screen.minitel1-nb
 share/terminfo/s/screen.minitel12-80
@@ -1865,8 +1919,12 @@ share/terminfo/s/screen.xterm-r6
 share/terminfo/s/screen.xterm-xfree86
 share/terminfo/s/screen2
 share/terminfo/s/screen3
+share/terminfo/s/screen4
+share/terminfo/s/screen5
 share/terminfo/s/screwpoint
 share/terminfo/s/scrhp
+share/terminfo/s/scrt
+share/terminfo/s/securecrt
 share/terminfo/s/sibo
 share/terminfo/s/simpleterm
 share/terminfo/s/simterm
@@ -1877,6 +1935,7 @@ share/terminfo/s/spinwriter
 share/terminfo/s/st
 share/terminfo/s/st-0.6
 share/terminfo/s/st-0.7
+share/terminfo/s/st-0.8
 share/terminfo/s/st-16color
 share/terminfo/s/st-256color
 share/terminfo/s/st-direct
@@ -1990,9 +2049,14 @@ share/terminfo/t/terminet300
 share/terminfo/t/terminology
 share/terminfo/t/terminology-0.6.1
 share/terminfo/t/terminology-1.0.0
+share/terminfo/t/terminology-1.8.1
 share/terminfo/t/termite
 share/terminfo/t/tgtelnet
 share/terminfo/t/ti700
+share/terminfo/t/ti703
+share/terminfo/t/ti703-w
+share/terminfo/t/ti707
+share/terminfo/t/ti707-w
 share/terminfo/t/ti733
 share/terminfo/t/ti735
 share/terminfo/t/ti745
@@ -2016,6 +2080,7 @@ share/terminfo/t/ti_ansi
 share/terminfo/t/tkterm
 share/terminfo/t/tmux
 share/terminfo/t/tmux-256color
+share/terminfo/t/tmux-direct
 share/terminfo/t/tn1200
 share/terminfo/t/tn300
 share/terminfo/t/trs16
@@ -2239,6 +2304,8 @@ share/terminfo/v/vremote
 share/terminfo/v/vs100
 share/terminfo/v/vs100-x10
 share/terminfo/v/vsc
+share/terminfo/v/vscode
+share/terminfo/v/vscode-direct
 share/terminfo/v/vt-61
 share/terminfo/v/vt-utf8
 share/terminfo/v/vt100
@@ -2281,9 +2348,14 @@ share/terminfo/v/vt200-js
 share/terminfo/v/vt200-old
 share/terminfo/v/vt200-w
 share/terminfo/v/vt220
+share/terminfo/v/vt220+cvis
+share/terminfo/v/vt220+cvis8
 share/terminfo/v/vt220+keypad
+share/terminfo/v/vt220+pcedit
+share/terminfo/v/vt220+vtedit
 share/terminfo/v/vt220-8
 share/terminfo/v/vt220-8bit
+share/terminfo/v/vt220-base
 share/terminfo/v/vt220-js
 share/terminfo/v/vt220-nam
 share/terminfo/v/vt220-old
@@ -2305,6 +2377,7 @@ share/terminfo/v/vt340
 share/terminfo/v/vt400
 share/terminfo/v/vt400-24
 share/terminfo/v/vt420
+share/terminfo/v/vt420+lrmm
 share/terminfo/v/vt420f
 share/terminfo/v/vt420pc
 share/terminfo/v/vt420pcdos
@@ -2314,6 +2387,8 @@ share/terminfo/v/vt510
 share/terminfo/v/vt510pc
 share/terminfo/v/vt510pcdos
 share/terminfo/v/vt52
+share/terminfo/v/vt52+keypad
+share/terminfo/v/vt52-basic
 share/terminfo/v/vt520
 share/terminfo/v/vt520ansi
 share/terminfo/v/vt525
@@ -2326,6 +2401,7 @@ share/terminfo/v/vte-2008
 share/terminfo/v/vte-2012
 share/terminfo/v/vte-2014
 share/terminfo/v/vte-2017
+share/terminfo/v/vte-2018
 share/terminfo/v/vte-256color
 share/terminfo/v/vte-direct
 share/terminfo/v/vtnt
@@ -2637,18 +2713,27 @@ share/terminfo/x/xnuppc-m-f2
 share/terminfo/x/xtalk
 share/terminfo/x/xterm
 share/terminfo/x/xterm+256color
+share/terminfo/x/xterm+256color2
 share/terminfo/x/xterm+256setaf
 share/terminfo/x/xterm+88color
+share/terminfo/x/xterm+88color2
 share/terminfo/x/xterm+alt+title
 share/terminfo/x/xterm+alt1049
 share/terminfo/x/xterm+app
 share/terminfo/x/xterm+direct
+share/terminfo/x/xterm+direct16
 share/terminfo/x/xterm+direct2
+share/terminfo/x/xterm+direct256
 share/terminfo/x/xterm+edit
 share/terminfo/x/xterm+indirect
 share/terminfo/x/xterm+kbs
+share/terminfo/x/xterm+keypad
+share/terminfo/x/xterm+meta
 share/terminfo/x/xterm+noalt
 share/terminfo/x/xterm+noapp
+share/terminfo/x/xterm+nofkeys
+share/terminfo/x/xterm+nopcfkeys
+share/terminfo/x/xterm+osc104
 share/terminfo/x/xterm+pc+edit
 share/terminfo/x/xterm+pcc0
 share/terminfo/x/xterm+pcc1
@@ -2667,6 +2752,7 @@ share/terminfo/x/xterm+sm+1005
 share/terminfo/x/xterm+sm+1006
 share/terminfo/x/xterm+titlestack
 share/terminfo/x/xterm+tmux
+share/terminfo/x/xterm+tmux2
 share/terminfo/x/xterm+vt+edit
 share/terminfo/x/xterm+x10mouse
 share/terminfo/x/xterm+x11hilite
@@ -2684,8 +2770,11 @@ share/terminfo/x/xterm-basic
 share/terminfo/x/xterm-bold
 share/terminfo/x/xterm-color
 share/terminfo/x/xterm-direct
+share/terminfo/x/xterm-direct16
 share/terminfo/x/xterm-direct2
+share/terminfo/x/xterm-direct256
 share/terminfo/x/xterm-hp
+share/terminfo/x/xterm-mono
 share/terminfo/x/xterm-new
 share/terminfo/x/xterm-nic
 share/terminfo/x/xterm-noapp
@@ -2709,6 +2798,7 @@ share/terminfo/x/xterm-xf86-v43
 share/terminfo/x/xterm-xf86-v44
 share/terminfo/x/xterm-xfree86
 share/terminfo/x/xterm-xi
+share/terminfo/x/xterm.js
 share/terminfo/x/xterm1
 share/terminfo/x/xtermc
 share/terminfo/x/xtermm

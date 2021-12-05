@@ -1,12 +1,16 @@
 @comment $NetBSD$
+bin/captoinfo
 bin/clear
 bin/infocmp
+bin/infotocap
 bin/ncursesw6-config
+bin/reset
 bin/tabs
 bin/tic
 bin/toe
 bin/tput
 bin/tset
+include/ncurses
 include/ncursesw/curses.h
 include/ncursesw/cursesapp.h
 include/ncursesw/cursesf.h
@@ -19,6 +23,7 @@ include/ncursesw/etip.h
 include/ncursesw/form.h
 include/ncursesw/menu.h
 include/ncursesw/nc_tparm.h
+include/ncursesw/ncurses.h
 include/ncursesw/ncurses_dll.h
 include/ncursesw/panel.h
 include/ncursesw/term.h
@@ -26,11 +31,7 @@ include/ncursesw/term_entry.h
 include/ncursesw/termcap.h
 include/ncursesw/tic.h
 include/ncursesw/unctrl.h
-lib/libformw.a
-lib/libmenuw.a
-lib/libncurses++w.a
-lib/libncursesw.a
-lib/libpanelw.a
+lib/terminfo
 share/tabset/std
 share/tabset/stdcrt
 share/tabset/vt100

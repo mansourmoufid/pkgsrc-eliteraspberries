@@ -1,8 +1,8 @@
 $NetBSD$
 
-SHA1 (ncurses-6.1.tar.gz) = 57acf6bc24cacd651d82541929f726f4def780cc
-RMD160 (ncurses-6.1.tar.gz) = 938235f3922f9c6ef0f1081d643ecb2da1347a17
-SHA512 (ncurses-6.1.tar.gz) = e308af43f8b7e01e98a55f4f6c4ee4d1c39ce09d95399fa555b3f0cdf5fd0db0f4c4d820b4af78a63f6cf6d8627587114a40af48cfc066134b600520808a77ee
-Size (ncurses-6.1.tar.gz) = 3365395 bytes
+SHA1 (ncurses-6.3.tar.gz) = 38fb1462d13b04bb900adf07918725c4b7ed0682
+RMD160 (ncurses-6.3.tar.gz) = 936d854da7480a663bc0a8b7ef2f8f080aafecb5
+SHA512 (ncurses-6.3.tar.gz) = 5373f228cba6b7869210384a607a2d7faecfcbfef6dbfcd7c513f4e84fbd8bcad53ac7db2e7e84b95582248c1039dcfc7c4db205a618f7da22a166db482f0105
+Size (ncurses-6.3.tar.gz) = 3583550 bytes
 SHA1 (patch-form_fty__enum.c) = 225978270a63fd261a854f312bf882209ca030c5
-SHA1 (patch-ncurses_tty_tty_update.c) = de0b19354cd250096f2f5f3a92f442c52b7c6eae
+SHA1 (patch-ncurses_tty_tty_update.c) = d927b33d838362af1ac03303de7b74be3f9f2212
