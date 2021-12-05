@@ -6,6 +6,7 @@ SHA512 (Python-3.5.10.tgz) = 069c5dd36854649aedce1e3cf636b885d85b14e89e332b84794
 Size (Python-3.5.10.tgz) = 20807565 bytes
 SHA1 (patch-Lib_ctypes___init__.py) = 4111a711230cb47fbfaf3b348849689181ba516c
 SHA1 (patch-Lib_distutils_command_install_egg_info.py) = 3753d716f041406db890e2931c80d9625ec2e4b8
+SHA1 (patch-Lib_venv___init__.py) = 97cb39b4850a1e28e05a7cc6458d09685a86f6a2
 SHA1 (patch-Modules__ctypes_ctypes.h) = d525d262e2da468a651e5b4ba9ff4dbfa993c59c
 SHA1 (patch-Modules__ctypes_malloc_closure.c) = 62a60abfbd231d225afe6ea6b9275f435edaa275
 SHA1 (patch-Modules__cursesmodule.c) = 8628d01173234575bea30c5c73c23d4ae48fa404
