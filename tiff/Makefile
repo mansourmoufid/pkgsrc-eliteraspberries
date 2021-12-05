@@ -1,11 +1,11 @@
 # $NetBSD$
 
-DISTNAME=	tiff-4.0.6
+DISTNAME=	tiff-4.3.0
 CATEGORIES=	devel graphics
 MASTER_SITES=	http://download.osgeo.org/libtiff/
 
 MAINTAINER=	mansourmoufid@gmail.com
-HOMEPAGE=	http://www.remotesensing.org/libtiff/
+HOMEPAGE=	https://libtiff.gitlab.io/libtiff/
 COMMENT=	TIFF library and utilities
 LICENSE=	mit
 
@@ -15,8 +15,7 @@ USE_LANGUAGES=	c
 
 PKGCONFIG_OVERRIDE+=	libtiff-4.pc.in
 
-CONFIGURE_ARGS+=	--disable-shared
-CONFIGURE_ARGS+=	--enable-static
+CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	--with-pic
 CONFIGURE_ARGS+=	--disable-cxx
 

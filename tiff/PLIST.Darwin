@@ -1,0 +1,3 @@
+@comment $NetBSD$
+lib/libtiff.5.dylib
+lib/libtiff.dylib

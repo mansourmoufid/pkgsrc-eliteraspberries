@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/libtiff.so.5.7.0
+lib/libtiff.so.5
+lib/libtiff.so
