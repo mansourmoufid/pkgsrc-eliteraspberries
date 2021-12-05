@@ -8,6 +8,7 @@ SHA1 (patch-Lib_ctypes___init__.py) = 4111a711230cb47fbfaf3b348849689181ba516c
 SHA1 (patch-Lib_distutils_command_install_egg_info.py) = 95a3704e9cc203e4c99032e21065564077fc7541
 SHA1 (patch-Lib_distutils_sysconfig.py) = c97ba649e29929e78662a244e14c8b586d9154d5
 SHA1 (patch-Lib_sysconfig.py) = 437caea58cf9856cb6ef789a92e90ba150848397
+SHA1 (patch-Lib_venv___init__.py) = 97cb39b4850a1e28e05a7cc6458d09685a86f6a2
 SHA1 (patch-Modules__ctypes_ctypes.h) = d525d262e2da468a651e5b4ba9ff4dbfa993c59c
 SHA1 (patch-Modules__ctypes_malloc_closure.c) = 62a60abfbd231d225afe6ea6b9275f435edaa275
 SHA1 (patch-Modules__decimal_libmpdec_mpdecimal.h) = 74ad30ad395f52226d339efc0b112a4560f5ab30
