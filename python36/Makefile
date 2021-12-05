@@ -2,7 +2,7 @@
 
 DISTNAME=	Python-3.6.15
 PKGNAME=	python36-15
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	lang
 MASTER_SITES=	https://www.python.org/ftp/python/3.6.15/
 EXTRACT_SUFX=	.tgz
