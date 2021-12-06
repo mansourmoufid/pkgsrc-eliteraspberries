@@ -2,7 +2,7 @@
 
 DISTNAME=	Python-3.7.12
 PKGNAME=	python37-12
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	lang
 MASTER_SITES=	https://www.python.org/ftp/python/3.7.12/
 EXTRACT_SUFX=	.tgz

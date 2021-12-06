@@ -1,8 +1,26 @@
 $NetBSD$
 
---- Lib/distutils/sysconfig.py.orig	2021-11-13 23:03:43.000000000 -0500
-+++ Lib/distutils/sysconfig.py	2021-11-13 23:08:45.000000000 -0500
-@@ -238,7 +238,7 @@
+--- Lib/distutils/sysconfig.py.orig	2021-09-03 23:49:21.000000000 -0400
++++ Lib/distutils/sysconfig.py	2021-12-06 17:46:24.359852505 -0500
+@@ -224,6 +224,7 @@
+             archiver = ar + ' ' + os.environ['ARFLAGS']
+         else:
+             archiver = ar + ' ' + ar_flags
++        ranlib = os.environ.get('RANLIB', None)
+ 
+         cc_cmd = cc + ' ' + cflags
+         compiler.set_executables(
+@@ -233,7 +234,8 @@
+             compiler_cxx=cxx,
+             linker_so=ldshared,
+             linker_exe=cc,
+-            archiver=archiver)
++            archiver=archiver,
++            ranlib=ranlib)
+ 
+         compiler.shared_lib_extension = shlib_suffix
+ 
+@@ -256,7 +258,7 @@
      if python_build:
          return os.path.join(_sys_home or project_base, "Makefile")
      lib_dir = get_python_lib(plat_specific=0, standard_lib=1)
@@ -11,7 +29,7 @@ $NetBSD$
      if hasattr(sys.implementation, '_multiarch'):
          config_file += '-%s' % sys.implementation._multiarch
      return os.path.join(lib_dir, config_file, 'Makefile')
-@@ -415,12 +415,7 @@
+@@ -433,12 +435,7 @@
  def _init_posix():
      """Initialize the module as appropriate for POSIX systems."""
      # _sysconfigdata is generated at build time, see the sysconfig module
