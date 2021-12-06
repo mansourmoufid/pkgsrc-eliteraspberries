@@ -2,7 +2,7 @@
 
 DISTNAME=	Python-3.5.10
 PKGNAME=	python35-10
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	lang
 MASTER_SITES=	https://www.python.org/ftp/python/3.5.10/
 EXTRACT_SUFX=	.tgz
