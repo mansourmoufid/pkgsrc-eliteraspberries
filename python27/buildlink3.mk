@@ -11,6 +11,7 @@ BUILDLINK_PKGSRCDIR.python27?= ../../eliteraspberries/python27
 BUILDLINK_INCDIRS.python27+= include/python2.7
 
 .include "../../archivers/bzip2/buildlink3.mk"
+.include "../../archivers/xz/buildlink3.mk"
 .include "../../databases/sqlite3/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../eliteraspberries/libffi/buildlink3.mk"
