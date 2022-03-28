@@ -4,4 +4,5 @@ SHA1 (pyinstaller-4.7.tar.gz) = 77c1a95b09b8fe28cef87170449460b7be672598
 RMD160 (pyinstaller-4.7.tar.gz) = 3f32461847f388c0b53257007a5469475b50ea25
 SHA512 (pyinstaller-4.7.tar.gz) = 59e124e759b9c3c9fb52cb9f393c37f3ea688404780e368540c470de0b2a22240a6b93f4c49fe8928d34e31dca3c40f1bd3e8cb879bdd945f5cacb8746ef0c43
 Size (pyinstaller-4.7.tar.gz) = 2783049 bytes
+SHA1 (patch-PyInstaller_building_api.py) = 69dab956a89c8141f445d5aa256e9b2e8b8bd617
 SHA1 (patch-setup.py) = 5b952880206c75cbee79a60ace7b7b077a3346be
