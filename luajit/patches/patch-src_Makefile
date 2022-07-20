@@ -1,5 +1,5 @@
---- src/Makefile.orig	2022-01-29 13:43:13.000000000 -0500
-+++ src/Makefile	2022-01-29 13:45:47.000000000 -0500
+--- src/Makefile.orig	2022-02-09 22:59:36.000000000 -0500
++++ src/Makefile	2022-02-09 23:02:12.000000000 -0500
 @@ -27,7 +27,7 @@
  DEFAULT_CC = gcc
  #
@@ -34,7 +34,17 @@
  HOST_ALIBS= $(HOST_XLIBS) $(LIBS) $(HOST_LIBS)
  
  STATIC_CC = $(CROSS)$(CC)
-@@ -596,7 +596,7 @@
+@@ -211,7 +211,8 @@
+ TARGET_STCC= $(STATIC_CC)
+ TARGET_DYNCC= $(DYNAMIC_CC)
+ TARGET_LD= $(CROSS)$(CC)
+-TARGET_AR= $(CROSS)ar rcus
++AR?= ar
++TARGET_AR= $(CROSS)$(AR) rcus
+ TARGET_STRIP= $(CROSS)strip
+ 
+ TARGET_LIBPATH= $(or $(PREFIX),/usr/local)/$(or $(MULTILIB),lib)
+@@ -596,7 +597,7 @@
  endif
  endif
  
