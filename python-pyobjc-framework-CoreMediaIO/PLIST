@@ -1,0 +1,10 @@
+@comment $NetBSD$
+lib/python/CoreMediaIO/_CoreMediaIO.so
+lib/python/CoreMediaIO/__init__.py
+lib/python/CoreMediaIO/_metadata.py
+lib/python/pyobjc_framework_CoreMediaIO-${PKGVERSION}.egg-info/PKG-INFO
+lib/python/pyobjc_framework_CoreMediaIO-${PKGVERSION}.egg-info/SOURCES.txt
+lib/python/pyobjc_framework_CoreMediaIO-${PKGVERSION}.egg-info/dependency_links.txt
+lib/python/pyobjc_framework_CoreMediaIO-${PKGVERSION}.egg-info/not-zip-safe
+lib/python/pyobjc_framework_CoreMediaIO-${PKGVERSION}.egg-info/requires.txt
+lib/python/pyobjc_framework_CoreMediaIO-${PKGVERSION}.egg-info/top_level.txt
