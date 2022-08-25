@@ -15,11 +15,13 @@ LICENSE=	mit
 
 USE_LANGUAGES=	c
 
-SUBST_CLASSES+=			include
+SUBST_CLASSES+=				include
 SUBST_STAGE.include=		pre-configure
-SUBST_FILES.include=		Modules/objc/libffi_support.h
+SUBST_FILES.include+=		Modules/objc/libffi_extra.h
+SUBST_FILES.include+=		Modules/objc/libffi_extra.m
+SUBST_FILES.include+=		Modules/objc/libffi_support.h
 SUBST_FILES.include+=		Modules/objc/selector.h
-SUBST_SED.include=		-e 's,ffi/ffi.h,ffi.h,g'
+SUBST_SED.include+=			-e 's|ffi/ffi.h|ffi.h|'
 
 .include "../../eliteraspberries/libffi/buildlink3.mk"
 .include "../../eliteraspberries/python/buildlink3.mk"

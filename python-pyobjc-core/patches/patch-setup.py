@@ -1,7 +1,5 @@
-$NetBSD$
-
---- setup.py.orig	2021-10-27 06:34:04.000000000 -0400
-+++ setup.py	2021-11-22 21:36:48.000000000 -0500
+--- setup.py.orig	2022-04-11 04:03:15.000000000 -0400
++++ setup.py	2022-08-25 14:36:08.000000000 -0400
 @@ -67,7 +67,6 @@
  
  # CFLAGS for the objc._objc extension:
@@ -10,20 +8,21 @@ $NetBSD$
      "-fexceptions",
      # Explicitly opt-out of ARC
      "-fno-objc-arc",
-@@ -86,12 +85,7 @@
+@@ -86,13 +85,7 @@
      "-Wshorten-64-to-32",
      # "-fsanitize=address", "-fsanitize=undefined", "-fno-sanitize=vptr",
      # "--analyze",
 -    "-Werror",
 -    "-I/usr/include/ffi",
      "-fvisibility=hidden",
--    # -O0", "-g"
+-    # "-O0",
+-    "-g",
 -    "-O3",
--    "-flto",
+-    "-flto=thin",
  ]
  
  # CFLAGS for other (test) extensions:
-@@ -104,14 +98,9 @@
+@@ -105,14 +98,9 @@
      "-framework",
      "Foundation",
      # "-fvisibility=protected",
@@ -32,13 +31,13 @@ $NetBSD$
      # "-fsanitize=address", "-fsanitize=undefined", "-fno-sanitize=vptr",
      "-fvisibility=hidden",
 -    # "-O0",
--    # "-g"
+-    "-g",
 -    "-O3",
--    "-flto",
+-    "-flto=thin",
  ]
  
  
-@@ -557,9 +546,10 @@
+@@ -583,9 +571,10 @@
  
          if self.sdk_root != "python":
              if "-isysroot" not in CFLAGS:

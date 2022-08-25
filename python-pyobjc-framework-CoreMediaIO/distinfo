@@ -1,7 +1,7 @@
 $NetBSD$
 
-SHA1 (pyobjc-framework-CoreMediaIO-8.0.tar.gz) = 89b1da53e71f06b75718d4500691089c4926c362
-RMD160 (pyobjc-framework-CoreMediaIO-8.0.tar.gz) = 0c0b57a751ef6c942ecbe8d0eef9ec464833921f
-SHA512 (pyobjc-framework-CoreMediaIO-8.0.tar.gz) = 929f098e4a0deeee789536f603ac1dd7273e165df0fc1b3d775fd78176d1f9a8580cedafa681db1f964a3542867f639a422e9a4cde7ddfd65bddd105f97393e1
-Size (pyobjc-framework-CoreMediaIO-8.0.tar.gz) = 61333 bytes
+SHA1 (pyobjc-framework-CoreMediaIO-8.5.tar.gz) = aa832e91ea8ad54cc99c4aa1085e42b0c76d984e
+RMD160 (pyobjc-framework-CoreMediaIO-8.5.tar.gz) = 328649f5aba0864f14855c1f4b6f70671ef8feec
+SHA512 (pyobjc-framework-CoreMediaIO-8.5.tar.gz) = 15dc045e7c12b75f981b6cc1d89e2dee2387a791cc6f2eb66261cc16b7b8c04ed24c87418b7c3912fa3e58cfd381e0897b1ea2a85de9e545a2200057508b0eed
+Size (pyobjc-framework-CoreMediaIO-8.5.tar.gz) = 81583 bytes
 SHA1 (patch-pyobjc_setup.py) = e2ae95bdd53536de39235c8dd50f243ef71997d0

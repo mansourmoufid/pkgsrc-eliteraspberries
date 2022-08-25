@@ -1,12 +1,13 @@
 $NetBSD$
 
-SHA1 (pyobjc-core-8.0.tar.gz) = bdb0d0cc9c73b3a2a4ea9f106ad5eaa21f7164e8
-RMD160 (pyobjc-core-8.0.tar.gz) = 8edf6e081eca7bedd47b7ce44821fbfdd1b16071
-SHA512 (pyobjc-core-8.0.tar.gz) = 48207e92be316fbb665c8f106e6b77ee7e1826fcf297d412399d63ff5308986c92513ec82e9e370db09f7bc3bac25aa8a723e2487c0cd834bdb31ebd0cba8f38
-Size (pyobjc-core-8.0.tar.gz) = 709653 bytes
+SHA1 (pyobjc-core-8.5.tar.gz) = 7b8102d40aba3d01c256021e6ad182c8a57bdcfd
+RMD160 (pyobjc-core-8.5.tar.gz) = 0a0dd852804c53785662cbc943275d38bc866819
+SHA512 (pyobjc-core-8.5.tar.gz) = 3c7ba6bd0452400609e02ec8e8f3b19d28335efc436972795b6e998d2eaa5fceb0739ef28413b2134c2b044c61cd50db1fe2facbcefa638d78e93be337cf1a8d
+Size (pyobjc-core-8.5.tar.gz) = 788586 bytes
 SHA1 (patch-Modules_objc_block_support.m) = 50fd7715671a4c0b814082c7ea4eeb052dd9e0c7
+SHA1 (patch-Modules_objc_closure_pool.h) = 1f0e21a29f6b3700646662a0377f5d2f03d7fe0b
 SHA1 (patch-Modules_objc_function.m) = 0c9c2ae865cc4c0e5012ef1e07453e633f202505
-SHA1 (patch-Modules_objc_libffi_support.m) = 236095d2a68d6cdb0251b13d5a5beb019cbde377
-SHA1 (patch-Modules_objc_opaque-pointer.m) = 1550858753af411d208431fd30ff754bc991dbc8
-SHA1 (patch-Modules_objc_struct-wrapper.m) = aeca7d8a1fd6a9891f94fe4989056f51edcdfa6d
-SHA1 (patch-setup.py) = af3c961afd16e59807f30b2a0bb50b17dfb5345e
+SHA1 (patch-Modules_objc_libffi_extra.m) = bc8ed83bee4288d0088b6ea531e806cd5481a28b
+SHA1 (patch-Modules_objc_libffi_support.m) = e5081e73911ef28e9bec81886acbd4ac40f197d0
+SHA1 (patch-Modules_objc_opaque-pointer.m) = 30379d9fe9d72f9f69ba637041973414bf3267cf
+SHA1 (patch-setup.py) = 32c1b3ed69e3438d945ebe6f22a075836d867c28
