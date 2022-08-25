@@ -1,10 +1,10 @@
 # $NetBSD$
 
-DISTNAME=	Python-{{X}}.{{Y}}.{{Z}}
-PKGNAME=	python{{X}}{{Y}}-{{Z}}
+DISTNAME=	Python-3.8.13
+PKGNAME=	python38-13
 PKGREVISION=	2
 CATEGORIES=	lang
-MASTER_SITES=	https://www.python.org/ftp/python/{{X}}.{{Y}}.{{Z}}/
+MASTER_SITES=	https://www.python.org/ftp/python/3.8.13/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	mansourmoufid@gmail.com
@@ -44,9 +44,9 @@ CONFIGURE_ARGS+=	--with-tcltk-libs="-L${BUILDLINK_DIR}/lib ${TCLTK_LIBS}"
 CONFIGURE_ENV+=		_PYTHON_HOST_PLATFORM=${LOWER_OPSYS}
 MAKE_ENV+=		_PYTHON_HOST_PLATFORM=${LOWER_OPSYS}
 
-PLIST_SUBST+=	X={{X}}
-PLIST_SUBST+=	Y={{Y}}
-PLIST_SUBST+=	Z={{Z}}
+PLIST_SUBST+=	X=3
+PLIST_SUBST+=	Y=8
+PLIST_SUBST+=	Z=13
 
 post-install: fix-suffixes
 
