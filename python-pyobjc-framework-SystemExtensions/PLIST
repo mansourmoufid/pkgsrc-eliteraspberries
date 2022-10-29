@@ -1,0 +1,10 @@
+@comment $NetBSD$
+lib/python/SystemExtensions/_SystemExtensions.so
+lib/python/SystemExtensions/__init__.py
+lib/python/SystemExtensions/_metadata.py
+lib/python/pyobjc_framework_SystemExtensions-${PKGVERSION}.egg-info/PKG-INFO
+lib/python/pyobjc_framework_SystemExtensions-${PKGVERSION}.egg-info/SOURCES.txt
+lib/python/pyobjc_framework_SystemExtensions-${PKGVERSION}.egg-info/dependency_links.txt
+lib/python/pyobjc_framework_SystemExtensions-${PKGVERSION}.egg-info/not-zip-safe
+lib/python/pyobjc_framework_SystemExtensions-${PKGVERSION}.egg-info/requires.txt
+lib/python/pyobjc_framework_SystemExtensions-${PKGVERSION}.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+$NetBSD$
+
+SHA1 (pyobjc-framework-SystemExtensions-8.5.tar.gz) = 72cf0edd286949286065e5c27bdaa47cd16f9076
+RMD160 (pyobjc-framework-SystemExtensions-8.5.tar.gz) = f64b9818ad120f9c27cf849ce82446e82d21db8d
+SHA512 (pyobjc-framework-SystemExtensions-8.5.tar.gz) = ed8649feffc98879339f4bdcdda7b9ba3a2418a6fe6c08b90019837e380d06b087f8da45eac0a35057d37f2921e0c53502b3c5794b15ba7211c539d6f45a68fb
+Size (pyobjc-framework-SystemExtensions-8.5.tar.gz) = 19638 bytes
+SHA1 (patch-pyobjc_setup.py) = e2ae95bdd53536de39235c8dd50f243ef71997d0
