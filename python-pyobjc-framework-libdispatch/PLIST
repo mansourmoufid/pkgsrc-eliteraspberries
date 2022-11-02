@@ -1,0 +1,11 @@
+@comment $NetBSD$
+lib/python/libdispatch/__init__.py
+lib/python/libdispatch/_inlines.so
+lib/python/libdispatch/_libdispatch.so
+lib/python/libdispatch/_metadata.py
+lib/python/pyobjc_framework_libdispatch-${PKGVERSION}.egg-info/PKG-INFO
+lib/python/pyobjc_framework_libdispatch-${PKGVERSION}.egg-info/SOURCES.txt
+lib/python/pyobjc_framework_libdispatch-${PKGVERSION}.egg-info/dependency_links.txt
+lib/python/pyobjc_framework_libdispatch-${PKGVERSION}.egg-info/not-zip-safe
+lib/python/pyobjc_framework_libdispatch-${PKGVERSION}.egg-info/requires.txt
+lib/python/pyobjc_framework_libdispatch-${PKGVERSION}.egg-info/top_level.txt
