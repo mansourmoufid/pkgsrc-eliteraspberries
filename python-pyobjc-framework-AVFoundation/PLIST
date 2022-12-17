@@ -1,0 +1,11 @@
+@comment $NetBSD$
+lib/python/AVFoundation/_AVFoundation.so
+lib/python/AVFoundation/__init__.py
+lib/python/AVFoundation/_inlines.so
+lib/python/AVFoundation/_metadata.py
+lib/python/pyobjc_framework_AVFoundation-${PKGVERSION}.egg-info/PKG-INFO
+lib/python/pyobjc_framework_AVFoundation-${PKGVERSION}.egg-info/SOURCES.txt
+lib/python/pyobjc_framework_AVFoundation-${PKGVERSION}.egg-info/dependency_links.txt
+lib/python/pyobjc_framework_AVFoundation-${PKGVERSION}.egg-info/not-zip-safe
+lib/python/pyobjc_framework_AVFoundation-${PKGVERSION}.egg-info/requires.txt
+lib/python/pyobjc_framework_AVFoundation-${PKGVERSION}.egg-info/top_level.txt

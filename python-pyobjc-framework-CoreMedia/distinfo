@@ -1,0 +1,7 @@
+$NetBSD$
+
+SHA1 (pyobjc-framework-CoreMedia-8.5.tar.gz) = 797dc4790ef46c36e1cc3c42f5e2e7043e3232c6
+RMD160 (pyobjc-framework-CoreMedia-8.5.tar.gz) = f5df9332b4a2d88f78b4a98b8ccb746a0c76e294
+SHA512 (pyobjc-framework-CoreMedia-8.5.tar.gz) = 09a039fded9bc0403ca7e7ff44bd86b9a58049a79346015a09177a198b68435f323cc3ea7be33a821567617839779c40fb95157b78c2038072aaa7272131abd1
+Size (pyobjc-framework-CoreMedia-8.5.tar.gz) = 139571 bytes
+SHA1 (patch-pyobjc_setup.py) = e2ae95bdd53536de39235c8dd50f243ef71997d0

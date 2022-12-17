@@ -1,0 +1,11 @@
+@comment $NetBSD$
+lib/python/CoreAudio/_CoreAudio.so
+lib/python/CoreAudio/__init__.py
+lib/python/CoreAudio/_inlines.so
+lib/python/CoreAudio/_metadata.py
+lib/python/pyobjc_framework_CoreAudio-${PKGVERSION}.egg-info/PKG-INFO
+lib/python/pyobjc_framework_CoreAudio-${PKGVERSION}.egg-info/SOURCES.txt
+lib/python/pyobjc_framework_CoreAudio-${PKGVERSION}.egg-info/dependency_links.txt
+lib/python/pyobjc_framework_CoreAudio-${PKGVERSION}.egg-info/not-zip-safe
+lib/python/pyobjc_framework_CoreAudio-${PKGVERSION}.egg-info/requires.txt
+lib/python/pyobjc_framework_CoreAudio-${PKGVERSION}.egg-info/top_level.txt
