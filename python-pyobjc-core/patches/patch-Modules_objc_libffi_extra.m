@@ -1,5 +1,7 @@
---- Modules/objc/libffi_extra.m.orig	2022-01-10 07:42:10.000000000 -0500
-+++ Modules/objc/libffi_extra.m	2022-08-25 15:40:19.000000000 -0400
+$NetBSD$
+
+--- Modules/objc/libffi_extra.m.orig	2024-04-17 15:23:52
++++ Modules/objc/libffi_extra.m	2024-04-17 15:27:55
 @@ -11,90 +11,12 @@
      *codeloc = NULL;
  
@@ -26,13 +28,13 @@
  
 -#ifdef __arm64__
 -
--    /* XXX: This pragma is needed because we compile with deployment
--     *      target 10.9 even for arm64.
+-    /* This pragma is needed because we compile with deployment
+-     * target 10.9 even for arm64.
 -     */
 -#pragma clang diagnostic push
 -#pragma clang diagnostic ignored "-Wunguarded-availability-new"
 -
-     rv = ffi_prep_closure_loc(*cl, cif, func, userdata, *codeloc);
+     rv = ffi_prep_closure_loc(*cl, cif, (void (*)(ffi_cif *, void *, void **, void *))func, userdata, *codeloc);
  
 -#pragma clang diagnostic pop
 -
@@ -41,12 +43,12 @@
 -#if PyObjC_BUILD_RELEASE >= 1015
 -
 -    if (@available(macOS 10.15, *)) { // LCOV_BR_EXCL_LINE
--        rv = ffi_prep_closure_loc(*cl, cif, func, userdata, *codeloc);
+-        rv = ffi_prep_closure_loc(*cl, cif, (void (*)(ffi_cif *, void *, void **, void *))func, userdata, *codeloc);
 -    } else {
 -#pragma clang diagnostic push
 -#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 -
--        rv = ffi_prep_closure(*cl, cif, func, userdata);
+-        rv = ffi_prep_closure(*cl, cif, (void (*)(ffi_cif *, void *, void **, void *))func, userdata);
 -
 -#pragma clang diagnostic pop
 -    }

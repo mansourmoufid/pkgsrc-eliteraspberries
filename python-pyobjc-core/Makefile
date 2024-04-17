@@ -4,7 +4,6 @@
 
 DISTNAME=	pyobjc-core-${PYOBJC_VERSION}
 PKGNAME=	python-${DISTNAME}
-PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_PYPI:=p/pyobjc-core/}
 

@@ -1,7 +1,7 @@
 $NetBSD$
 
-SHA1 (pyobjc-framework-IOSurface-8.5.tar.gz) = 4d7ba134c82a862bee7ee4c0d7bda7d6d7e34634
-RMD160 (pyobjc-framework-IOSurface-8.5.tar.gz) = 4bb541921661c949bb36ec23dee7531d43798551
-SHA512 (pyobjc-framework-IOSurface-8.5.tar.gz) = cab0eeaab32d5c5814afbeef93597b92bc84bff863d1018ff93488f036a5c0c2c1f7227b447dcbfea854b61030629f90512af5556529ba80232f69e961bdae35
-Size (pyobjc-framework-IOSurface-8.5.tar.gz) = 17215 bytes
-SHA1 (patch-pyobjc_setup.py) = e2ae95bdd53536de39235c8dd50f243ef71997d0
+SHA1 (pyobjc-framework-IOSurface-10.2.tar.gz) = df4a7c43ec6dbfdd9c94dee8b1040c1aaf824a4f
+RMD160 (pyobjc-framework-IOSurface-10.2.tar.gz) = 45bb3968da4774b3e5ec09c6b0e25d3484ad0f93
+SHA512 (pyobjc-framework-IOSurface-10.2.tar.gz) = ca6aa7a31840b776d4880bd98c884c9e9beaa3ae9747553e8957596d01895cd38dffbca9d95c37668017b0fcad7590f6b76b04ad6b6181f1df44fd1747e6c7d5
+Size (pyobjc-framework-IOSurface-10.2.tar.gz) = 19997 bytes
+SHA1 (patch-pyobjc_setup.py) = 9952d786882ac3d328f2cad2509fd4c62e40acb2

@@ -1,7 +1,7 @@
 $NetBSD$
 
-SHA1 (pyobjc-framework-libdispatch-8.5.tar.gz) = b1c6aefa44b4a5a7e2dd37ed40cb8465a9dff103
-RMD160 (pyobjc-framework-libdispatch-8.5.tar.gz) = d8ab24c08413a57c433a963176e12d72ccb228ca
-SHA512 (pyobjc-framework-libdispatch-8.5.tar.gz) = 3870a3ed01f2400f7d0e2eb26d7dab239723d64e05150d2d93d2cd97020d5a60ff910b0362ebe63fa299a783475ec4ea8fa55cfb3af7ba6093e31095db7417d9
-Size (pyobjc-framework-libdispatch-8.5.tar.gz) = 29113 bytes
-SHA1 (patch-pyobjc_setup.py) = e2ae95bdd53536de39235c8dd50f243ef71997d0
+SHA1 (pyobjc-framework-libdispatch-10.2.tar.gz) = 08aa6e8f46f963cdf181efae36cbbe5fe9bf22c5
+RMD160 (pyobjc-framework-libdispatch-10.2.tar.gz) = 20ebfdc2d8eceff509df72a41b2ba365b194d7a9
+SHA512 (pyobjc-framework-libdispatch-10.2.tar.gz) = 3be0fdbbf80a578d215171c09e142a3442fbc4a2ba82594878e565260e1feadf2955134c328e88a1e213621c54ded45548bfb6c3977b01daa75a5e35ce4158b5
+Size (pyobjc-framework-libdispatch-10.2.tar.gz) = 37344 bytes
+SHA1 (patch-pyobjc_setup.py) = 9952d786882ac3d328f2cad2509fd4c62e40acb2

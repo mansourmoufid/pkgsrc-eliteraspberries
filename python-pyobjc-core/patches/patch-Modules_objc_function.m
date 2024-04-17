@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Modules/objc/function.m.orig	2021-11-23 14:25:51.000000000 -0500
-+++ Modules/objc/function.m	2021-11-23 14:31:04.000000000 -0500
-@@ -192,34 +192,9 @@
+--- Modules/objc/function.m.orig	2024-04-17 11:37:15
++++ Modules/objc/function.m	2024-04-17 11:38:34
+@@ -213,35 +213,9 @@
      }
  
      if (variadicAllArgs) {
@@ -16,9 +16,9 @@ $NetBSD$
 -#ifndef __arm64__
 -        if (@available(macOS 10.15, *)) {
 -#endif
-             r = ffi_prep_cif_var(
-                 &cif, FFI_DEFAULT_ABI, (int)Py_SIZE(self->methinfo), (int)cif_arg_count,
-                 PyObjCFFI_Typestr2FFI(self->methinfo->rettype->type), arglist);
+-            r = ffi_prep_cif_var(
+-                &cif, FFI_DEFAULT_ABI, (int)Py_SIZE(self->methinfo), (int)cif_arg_count,
+-                PyObjCFFI_Typestr2FFI(self->methinfo->rettype->type), arglist);
 -#ifndef __arm64__
 -        } else
 -#endif
@@ -34,6 +34,10 @@ $NetBSD$
 -#else
 -#pragma clang diagnostic pop
 -#endif
- 
+-
++        r = ffi_prep_cif_var(
++            &cif, FFI_DEFAULT_ABI, (int)Py_SIZE(self->methinfo), (int)cif_arg_count,
++            PyObjCFFI_Typestr2FFI(self->methinfo->rettype->type), arglist);
          if (r != FFI_OK) {
              PyErr_Format(PyExc_RuntimeError, "Cannot setup FFI CIF [%d]", r);
+             goto error;

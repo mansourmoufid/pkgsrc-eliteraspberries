@@ -1,0 +1,7 @@
+$NetBSD$
+
+SHA1 (pyobjc-framework-StoreKit-10.2.tar.gz) = dc7436a216af24cbb9d4499bb4abb86c0effd96b
+RMD160 (pyobjc-framework-StoreKit-10.2.tar.gz) = 34333f5ffe587ce1bfe954a975648b8d8deb6ac0
+SHA512 (pyobjc-framework-StoreKit-10.2.tar.gz) = d7084c19fcb777669626bead45660a3ed66aa74f1c25de6e16d265dffcd177b57542b0f953a2295b32967cfbcbfccea8fa25a47434230c3eeb156ea1cdf064d1
+Size (pyobjc-framework-StoreKit-10.2.tar.gz) = 83839 bytes
+SHA1 (patch-pyobjc_setup.py) = 9952d786882ac3d328f2cad2509fd4c62e40acb2

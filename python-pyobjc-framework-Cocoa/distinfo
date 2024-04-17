@@ -1,7 +1,7 @@
 $NetBSD$
 
-SHA1 (pyobjc-framework-Cocoa-8.5.tar.gz) = 140c2cc085f2aaab1ef545d78dddd44a6fb8850c
-RMD160 (pyobjc-framework-Cocoa-8.5.tar.gz) = 2cb50aa3b9462ecbc3a16688dc7d5e9d02333e7d
-SHA512 (pyobjc-framework-Cocoa-8.5.tar.gz) = b441b2638ba4f0f2de30c309d8e6e77a1df8ff2dd18c114cd4ec8b49155fbab3ee8fac9fff8b39b8aa667cdacc88505f5837c35f8f6e9b8d9077b5f1251ca001
-Size (pyobjc-framework-Cocoa-8.5.tar.gz) = 4629376 bytes
-SHA1 (patch-pyobjc_setup.py) = e2ae95bdd53536de39235c8dd50f243ef71997d0
+SHA1 (pyobjc-framework-Cocoa-10.2.tar.gz) = 8c2be736b652c84f660c21531c76635e7ddc2310
+RMD160 (pyobjc-framework-Cocoa-10.2.tar.gz) = 1eb84b4263fd7b8c8917ebf82b036baa30a97f79
+SHA512 (pyobjc-framework-Cocoa-10.2.tar.gz) = 49758875ae14a8cacf8375055f29bd7601f73265aeb64be2340ea82e00c33c806fa564b5a7e230d2614866b41b162ce91ec7288b248312637893cf8d23fc589b
+Size (pyobjc-framework-Cocoa-10.2.tar.gz) = 7127790 bytes
+SHA1 (patch-pyobjc_setup.py) = 9952d786882ac3d328f2cad2509fd4c62e40acb2

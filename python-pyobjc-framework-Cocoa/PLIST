@@ -18,15 +18,14 @@ lib/python/Foundation/_inlines.so
 lib/python/Foundation/_metadata.py
 lib/python/Foundation/_nsindexset.py
 lib/python/Foundation/_nsobject.py
+lib/python/Foundation/_nsurl.py
 lib/python/PyObjCTools/AppCategories.py
 lib/python/PyObjCTools/AppHelper.py
 lib/python/PyObjCTools/Conversion.py
 lib/python/PyObjCTools/FndCategories.py
-lib/python/pyobjc_framework_Cocoa-${PKGVERSION}-nspkg.pth
 lib/python/pyobjc_framework_Cocoa-${PKGVERSION}.egg-info/PKG-INFO
 lib/python/pyobjc_framework_Cocoa-${PKGVERSION}.egg-info/SOURCES.txt
 lib/python/pyobjc_framework_Cocoa-${PKGVERSION}.egg-info/dependency_links.txt
-lib/python/pyobjc_framework_Cocoa-${PKGVERSION}.egg-info/namespace_packages.txt
 lib/python/pyobjc_framework_Cocoa-${PKGVERSION}.egg-info/not-zip-safe
 lib/python/pyobjc_framework_Cocoa-${PKGVERSION}.egg-info/requires.txt
 lib/python/pyobjc_framework_Cocoa-${PKGVERSION}.egg-info/top_level.txt

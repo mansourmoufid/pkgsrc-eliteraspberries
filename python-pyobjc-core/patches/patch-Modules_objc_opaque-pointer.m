@@ -1,9 +1,12 @@
---- Modules/objc/opaque-pointer.m.orig	2022-04-11 04:03:15.000000000 -0400
-+++ Modules/objc/opaque-pointer.m	2022-08-25 14:06:59.000000000 -0400
-@@ -403,30 +403,6 @@
+$NetBSD$
+
+--- Modules/objc/opaque-pointer.m.orig	2024-04-17 15:34:26
++++ Modules/objc/opaque-pointer.m	2024-04-17 15:35:27
+@@ -402,31 +402,7 @@
+     return (PyObject*)newType;
  
  error_cleanup:
- 
+-
 -#ifdef HAVE_CLOSURE_POOL
 -#if PyObjC_BUILD_RELEASE >= 1015
 -    if (@available(macOS 10.15, *)) {
@@ -20,7 +23,7 @@
 -        if (cl_to_c) {
 -            PyObjC_ffi_closure_free(cl_to_c);
 -        }
--
+ 
 -        if (cl_from_c) {
 -            PyObjC_ffi_closure_free(cl_from_c);
 -        }

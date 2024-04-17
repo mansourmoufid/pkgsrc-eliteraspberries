@@ -1,0 +1,10 @@
+@comment $NetBSD$
+lib/python/StoreKit/_StoreKit.so
+lib/python/StoreKit/__init__.py
+lib/python/StoreKit/_metadata.py
+lib/python/pyobjc_framework_StoreKit-${PKGVERSION}.egg-info/PKG-INFO
+lib/python/pyobjc_framework_StoreKit-${PKGVERSION}.egg-info/SOURCES.txt
+lib/python/pyobjc_framework_StoreKit-${PKGVERSION}.egg-info/dependency_links.txt
+lib/python/pyobjc_framework_StoreKit-${PKGVERSION}.egg-info/not-zip-safe
+lib/python/pyobjc_framework_StoreKit-${PKGVERSION}.egg-info/requires.txt
+lib/python/pyobjc_framework_StoreKit-${PKGVERSION}.egg-info/top_level.txt

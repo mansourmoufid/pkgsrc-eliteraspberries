@@ -1,7 +1,7 @@
 $NetBSD$
 
---- Modules/objc/block_support.m.orig	2021-11-23 14:25:40.000000000 -0500
-+++ Modules/objc/block_support.m	2021-11-23 14:30:07.000000000 -0500
+--- Modules/objc/block_support.m.orig	2024-01-20 05:56:15
++++ Modules/objc/block_support.m	2024-04-17 15:43:55
 @@ -292,8 +292,6 @@
          values[0]  = &block_ptr;
      }

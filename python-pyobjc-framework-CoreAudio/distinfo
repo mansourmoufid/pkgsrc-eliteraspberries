@@ -1,7 +1,7 @@
 $NetBSD$
 
-SHA1 (pyobjc-framework-CoreAudio-8.5.tar.gz) = 339fdeefc33c5f81a455ba0cec56a5b3772791f8
-RMD160 (pyobjc-framework-CoreAudio-8.5.tar.gz) = 437c167f349d1a04aaccd8b53675645d2dcdebb2
-SHA512 (pyobjc-framework-CoreAudio-8.5.tar.gz) = d0661efabfa37f5e610e0bf399779c0e2f0dc0847e6f8ae4831147a486120b0ca8b754252da34021b1e00d2415bc3766b37d2e126db870276bf10f556d2ac4f5
-Size (pyobjc-framework-CoreAudio-8.5.tar.gz) = 109258 bytes
-SHA1 (patch-pyobjc_setup.py) = e2ae95bdd53536de39235c8dd50f243ef71997d0
+SHA1 (pyobjc-framework-CoreAudio-10.2.tar.gz) = fecfa655c3f9402ccf9070fed4473fd2ec8a0085
+RMD160 (pyobjc-framework-CoreAudio-10.2.tar.gz) = 55edf1668ebc5beb4bb8a3c362c99977bda2545d
+SHA512 (pyobjc-framework-CoreAudio-10.2.tar.gz) = 8e853ba04ec65a47176b1291adab281c08805d4b87ac55cb378251414570b2ad73f48a363c6e9aba7953a3bd681f77aca51f450d581f01363776461bec80139f
+Size (pyobjc-framework-CoreAudio-10.2.tar.gz) = 154642 bytes
+SHA1 (patch-pyobjc_setup.py) = 9952d786882ac3d328f2cad2509fd4c62e40acb2

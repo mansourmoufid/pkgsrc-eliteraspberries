@@ -1,6 +1,8 @@
---- Modules/objc/libffi_support.m.orig	2022-04-11 04:03:15.000000000 -0400
-+++ Modules/objc/libffi_support.m	2022-08-25 14:28:34.000000000 -0400
-@@ -4379,30 +4379,8 @@
+$NetBSD$
+
+--- Modules/objc/libffi_support.m.orig	2024-04-17 15:31:14
++++ Modules/objc/libffi_support.m	2024-04-17 15:32:59
+@@ -4492,30 +4492,8 @@
          goto error_cleanup;
  
      if (methinfo->variadic) {
@@ -31,7 +33,7 @@
      } else {
          r = ffi_prep_cif(&cif, FFI_DEFAULT_ABI, (int)r, retsig, arglist);
      }
-@@ -4923,30 +4901,8 @@
+@@ -5045,30 +5023,8 @@
      }
  
      if (methinfo->variadic) {
@@ -62,18 +64,18 @@
      } else {
          rv = ffi_prep_cif(cif, FFI_DEFAULT_ABI, (int)Py_SIZE(methinfo), cl_ret_type,
                            cl_arg_types);
-@@ -5010,12 +4966,8 @@
+@@ -5137,12 +5093,8 @@
  void*
  PyObjCFFI_FreeClosure(IMP closure)
  {
 -    ffi_cif* cif;
 -    void*    userdata;
 -
--    free_closure_from_codeloc(closure, &cif, &userdata);
+-    free_closure_from_codeloc((void*)closure, &cif, &userdata);
 -    PyObjCFFI_FreeCIF(cif);
 -    return userdata;
 +    ffi_closure_free(closure);
 +    return NULL;
  }
  
- NS_ASSUME_NONNULL_END
+ /*

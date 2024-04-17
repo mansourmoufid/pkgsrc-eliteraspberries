@@ -23,6 +23,7 @@ lib/python/objc/_convenience_sequence.py
 lib/python/objc/_descriptors.py
 lib/python/objc/_dyld.py
 lib/python/objc/_framework.py
+lib/python/objc/_informal_protocol.py
 lib/python/objc/_lazyimport.py
 lib/python/objc/_locking.py
 lib/python/objc/_machsignals.so
@@ -31,12 +32,13 @@ lib/python/objc/_properties.py
 lib/python/objc/_protocols.py
 lib/python/objc/_pycoder.py
 lib/python/objc/_pythonify.py
-lib/python/pyobjc_core-${PKGVERSION}-nspkg.pth
+lib/python/objc/_structtype.py
+lib/python/objc/_transform.py
+lib/python/objc/simd.py
 lib/python/pyobjc_core-${PKGVERSION}.egg-info/PKG-INFO
 lib/python/pyobjc_core-${PKGVERSION}.egg-info/SOURCES.txt
 lib/python/pyobjc_core-${PKGVERSION}.egg-info/dependency_links.txt
 lib/python/pyobjc_core-${PKGVERSION}.egg-info/include/pyobjc-api.h
 lib/python/pyobjc_core-${PKGVERSION}.egg-info/include/pyobjc-compat.h
-lib/python/pyobjc_core-${PKGVERSION}.egg-info/namespace_packages.txt
 lib/python/pyobjc_core-${PKGVERSION}.egg-info/not-zip-safe
 lib/python/pyobjc_core-${PKGVERSION}.egg-info/top_level.txt

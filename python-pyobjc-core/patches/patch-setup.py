@@ -1,5 +1,7 @@
---- setup.py.orig	2022-04-11 04:03:15.000000000 -0400
-+++ setup.py	2022-08-25 14:36:08.000000000 -0400
+$NetBSD$
+
+--- setup.py.orig	2024-01-20 05:56:15
++++ setup.py	2024-04-17 15:40:57
 @@ -67,7 +67,6 @@
  
  # CFLAGS for the objc._objc extension:
@@ -8,21 +10,20 @@
      "-fexceptions",
      # Explicitly opt-out of ARC
      "-fno-objc-arc",
-@@ -86,13 +85,7 @@
-     "-Wshorten-64-to-32",
+@@ -91,12 +90,7 @@
      # "-fsanitize=address", "-fsanitize=undefined", "-fno-sanitize=vptr",
      # "--analyze",
--    "-Werror",
+     "-Werror",
 -    "-I/usr/include/ffi",
      "-fvisibility=hidden",
 -    # "-O0",
 -    "-g",
+-    # "-O0",
 -    "-O3",
--    "-flto=thin",
- ]
- 
- # CFLAGS for other (test) extensions:
-@@ -105,14 +98,9 @@
+     "-flto=thin",
+     # XXX: Use object_path_lto (during linking?)
+     "-UNDEBUG",
+@@ -112,13 +106,9 @@
      "-framework",
      "Foundation",
      # "-fvisibility=protected",
@@ -33,20 +34,16 @@
 -    # "-O0",
 -    "-g",
 -    "-O3",
--    "-flto=thin",
+     "-flto=thin",
+     "-fexceptions",
  ]
- 
- 
-@@ -583,9 +571,10 @@
+@@ -612,9 +602,7 @@
  
          if self.sdk_root != "python":
              if "-isysroot" not in CFLAGS:
 -                CFLAGS.extend(["-isysroot", self.sdk_root])
 -                EXT_CFLAGS.extend(["-isysroot", self.sdk_root])
 -                OBJC_LDFLAGS.extend(["-isysroot", self.sdk_root])
-+                # CFLAGS.extend(["-isysroot", self.sdk_root])
-+                # EXT_CFLAGS.extend(["-isysroot", self.sdk_root])
-+                # OBJC_LDFLAGS.extend(["-isysroot", self.sdk_root])
 +                pass
  
          cflags = get_config_var("CFLAGS")

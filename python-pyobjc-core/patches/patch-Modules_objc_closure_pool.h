@@ -1,5 +1,7 @@
---- Modules/objc/closure_pool.h.orig	2022-08-25 14:52:49.000000000 -0400
-+++ Modules/objc/closure_pool.h	2022-08-25 14:53:21.000000000 -0400
+$NetBSD$
+
+--- Modules/objc/closure_pool.h.orig	2024-04-17 11:34:52
++++ Modules/objc/closure_pool.h	2024-04-17 11:35:17
 @@ -7,6 +7,8 @@
  
  #import <Foundation/Foundation.h>

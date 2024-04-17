@@ -1,7 +1,7 @@
 $NetBSD$
 
-SHA1 (pyobjc-framework-AVFoundation-8.5.tar.gz) = 1967ba43356b2ebaaa40a9f5628993fd13b4c86a
-RMD160 (pyobjc-framework-AVFoundation-8.5.tar.gz) = 5bd64ac7a997f20d1b917bd527e1d4a5df2948ee
-SHA512 (pyobjc-framework-AVFoundation-8.5.tar.gz) = d2083aa346583a557f8798c5e6348344bdae2c5ed54e612c978dcc337894296ba4fdcb911ba4f14c7fe28f534f8fca83a5f4a7b88746ce6061f76f9500d01fbe
-Size (pyobjc-framework-AVFoundation-8.5.tar.gz) = 547492 bytes
-SHA1 (patch-pyobjc_setup.py) = e2ae95bdd53536de39235c8dd50f243ef71997d0
+SHA1 (pyobjc-framework-AVFoundation-10.2.tar.gz) = a65ce4c29d7b93b8e6355cb93e8ab448841f9877
+RMD160 (pyobjc-framework-AVFoundation-10.2.tar.gz) = db3b20d4508e05035c60de5e01893911bfc70d3b
+SHA512 (pyobjc-framework-AVFoundation-10.2.tar.gz) = 13dd463625f926a772e08c06a77f978e378f98f7aff7ad89148b0630881e02df1c7ed2683c34848b9a605a243093d737eee7c63835556ee7eeeb95ecc9665787
+Size (pyobjc-framework-AVFoundation-10.2.tar.gz) = 910940 bytes
+SHA1 (patch-pyobjc_setup.py) = 9952d786882ac3d328f2cad2509fd4c62e40acb2
