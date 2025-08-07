@@ -1,7 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	pyinstaller-4.7
-PKGREVISION=	3
+DISTNAME=	pyinstaller-6.3.0
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_PYPI:=p/pyinstaller/}
 

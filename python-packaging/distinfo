@@ -1,0 +1,7 @@
+$NetBSD$
+
+SHA1 (packaging-23.2.tar.gz) = 603cbd6e3416f1f4b6c0f924216f96fe67d9f6da
+RMD160 (packaging-23.2.tar.gz) = 03c80dfdca845d7967148b68429019159360c270
+SHA512 (packaging-23.2.tar.gz) = 8ab5e9bc4feef2fac1c9044dc8a6f2d41aaf9fe2dae671de8b98c0b1a19dca2169588b87d85a8c990d808b1e76faee65984ce970eaa3282b75e107ca82cc2863
+Size (packaging-23.2.tar.gz) = 146714 bytes
+SHA1 (patch-pyproject.toml) = e9a0f8d2f96183af89d54596b48ce3f3aac18738

@@ -1,0 +1,11 @@
+--- pyproject.toml.orig	2023-10-01 08:58:59
++++ pyproject.toml	2024-04-10 15:44:02
+@@ -1,8 +1,3 @@
+-[build-system]
+-requires = ["flit_core >=3.3"]
+-build-backend = "flit_core.buildapi"
+-
+-
+ [project]
+ name = "packaging"
+ description = "Core utilities for Python packages"
