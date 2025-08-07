@@ -1,0 +1,12 @@
+bootstrap	digest>=20010302	../../pkgtools/digest
+tool	nbpatch-[0-9]*	../../devel/nbpatch
+build	python-setuptools>=20.4	../../eliteraspberries/python-setuptools
+build	python-packaging>=23.2	../../eliteraspberries/python-packaging
+build	python-pip>=21.3.1	../../eliteraspberries/python-pip
+full	zlib>=1.2.3	../../devel/zlib
+full	pyinstaller-hooks-contrib>=2021.3	../../eliteraspberries/pyinstaller-hooks-contrib
+full	python>=3	../../eliteraspberries/python
+full	python-altgraph>=0.15	../../eliteraspberries/python-altgraph
+full	python-importlib-metadata>=4.8.2	../../eliteraspberries/python-importlib-metadata
+full	python-macholib>=1.9	../../eliteraspberries/python-macholib
+full	python-pefile>=2017.11.5	../../eliteraspberries/python-pefile

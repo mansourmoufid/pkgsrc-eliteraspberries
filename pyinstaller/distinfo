@@ -1,8 +1,7 @@
 $NetBSD$
 
-SHA1 (pyinstaller-4.7.tar.gz) = 77c1a95b09b8fe28cef87170449460b7be672598
-RMD160 (pyinstaller-4.7.tar.gz) = 3f32461847f388c0b53257007a5469475b50ea25
-SHA512 (pyinstaller-4.7.tar.gz) = 59e124e759b9c3c9fb52cb9f393c37f3ea688404780e368540c470de0b2a22240a6b93f4c49fe8928d34e31dca3c40f1bd3e8cb879bdd945f5cacb8746ef0c43
-Size (pyinstaller-4.7.tar.gz) = 2783049 bytes
-SHA1 (patch-PyInstaller_building_api.py) = 8e70aa089c3a75caf9fe9870ade204b06651e9c8
+SHA1 (pyinstaller-6.3.0.tar.gz) = b9ba34fa2819a8569256d26ff81591aa0564b3bb
+RMD160 (pyinstaller-6.3.0.tar.gz) = 14cffeab12b55db9af18a879e6c59497566d34bd
+SHA512 (pyinstaller-6.3.0.tar.gz) = fc4ffd4d1692f4f6b38fa104705e48b140ac204bcc5233af0db23172e4c0839e7722d3bdeb8fb828339a80509f6525acec69cf3997b090fced8b70a75ae6a851
+Size (pyinstaller-6.3.0.tar.gz) = 4133400 bytes
 SHA1 (patch-setup.py) = 5b952880206c75cbee79a60ace7b7b077a3346be
