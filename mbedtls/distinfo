@@ -1,10 +1,7 @@
 $NetBSD$
 
-SHA1 (mbedtls-2.4.0-apache.tgz) = 20fe40f9f831ca63839967178e3db5aaf77705d3
-RMD160 (mbedtls-2.4.0-apache.tgz) = fd59bc63bc358bbd69aa37e7694ac273c778df03
-SHA512 (mbedtls-2.4.0-apache.tgz) = da6e429a5c5c81238bc11816b68fd832730bf4eb48d1dc5b6eeaed234103fb20bd46052eeea5faf91d4df95d9045b3e43c54caa8f7e600974801280a06af67ae
-Size (mbedtls-2.4.0-apache.tgz) = 1917968 bytes
-SHA1 (patch-Makefile) = 1561d378ba6d830d585182a7041364a2945c6bb8
-SHA1 (patch-library_Makefile) = 75a01a3b376e1fdb5333122e04808112f5faa63b
-SHA1 (patch-library_x509.c) = 3ef1c4352631ce7f4dd730b82b6045156278f3a2
-SHA1 (patch-programs_Makefile) = 458c71e25ccde20432c93c3c95b9e4d50d3c33af
+BLAKE2s (mbedtls-3.6.4.tar.bz2) = fd7819a676cf4c56363e04ad70978d501d243c0126b6167cc9d203b5168616a2
+SHA512 (mbedtls-3.6.4.tar.bz2) = 6671fb8fcaa832e5b115dfdce8f78baa6a4aea71f5c89a640583634cdee27aefe3bf4be075744da91f7c3ae5ea4e0c765c8fc3937b5cfd9ea73d87ef496524da
+Size (mbedtls-3.6.4.tar.bz2) = 5099459 bytes
+SHA1 (patch-Makefile) = 344a6734a5566384700655434d20dfc6da024cd2
+SHA1 (patch-library_Makefile) = 3977172588704435c02b433b0ff47aef532ed0a7

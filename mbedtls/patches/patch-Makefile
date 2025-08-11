@@ -1,15 +1,17 @@
-$NetBSD$
-
---- Makefile.orig	2017-01-09 11:20:20.000000000 -0800
-+++ Makefile	2017-01-09 11:20:28.000000000 -0800
-@@ -1,9 +1,7 @@
- 
+--- Makefile.orig	2025-06-30 02:24:52
++++ Makefile	2025-08-11 18:34:33
+@@ -1,4 +1,4 @@
 -DESTDIR=/usr/local
 +DESTDIR?=/usr/local
  PREFIX=mbedtls_
+ PERL ?= perl
+ 
+@@ -21,8 +21,6 @@
+     include framework/exported.make
+ endif
  
 -.SILENT:
 -
- .PHONY: all no_test programs lib tests install uninstall clean test check covtest lcov apidoc apidoc_clean
+ .PHONY: all no_test programs lib tests install uninstall clean test check lcov apidoc apidoc_clean
  
  all: programs tests

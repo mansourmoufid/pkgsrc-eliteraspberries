@@ -1,18 +1,16 @@
 # $NetBSD$
 
-DISTNAME=	mbedtls-2.4.0-apache
-PKGNAME=	${DISTNAME:S/-apache//}
-PKGREVISION=	3
+DISTNAME=	mbedtls-3.6.4
 CATEGORIES=	security
-MASTER_SITES=	https://tls.mbed.org/download/
-EXTRACT_SUFX=	.tgz
+MASTER_SITES=	${MASTER_SITE_GITHUB:=Mbed-TLS/}
+EXTRACT_SUFX=	.tar.bz2
+GITHUB_RELEASE=	${DISTNAME}
 
 MAINTAINER=	mansourmoufid@gmail.com
 HOMEPAGE=	https://tls.mbed.org/
 COMMENT=	mbed TLS library
 LICENSE=	apache-2.0
 
-WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 USE_LANGUAGES=	c
 USE_TOOLS+=	gmake
 
@@ -26,13 +24,21 @@ MAKE_ENV+=	DLEXT=dylib
 
 BUILD_TARGET=	lib
 
+post-extract:
+	touch ${WRKSRC}/library/psa_crypto_driver_wrappers.h
+	touch ${WRKSRC}/library/psa_crypto_driver_wrappers_no_static.c
+
 do-install:
 	mkdir -p ${DESTDIR}${PREFIX}/include/mbedtls
-	for h in ${WRKDIR}/${PKGNAME_NOREV}/include/mbedtls/*; do \
+	mkdir -p ${DESTDIR}${PREFIX}/include/psa
+	for h in ${WRKSRC}/include/mbedtls/*; do \
 		${INSTALL_DATA} $$h ${DESTDIR}${PREFIX}/include/mbedtls; \
 	done
+	for h in ${WRKSRC}/include/psa/*; do \
+		${INSTALL_DATA} $$h ${DESTDIR}${PREFIX}/include/psa; \
+	done
 	mkdir -p ${DESTDIR}${PREFIX}/lib
-	for l in ${WRKDIR}/${PKGNAME_NOREV}/library/lib*.*; do \
+	for l in ${WRKSRC}/library/lib*.*; do \
 		${INSTALL_LIB} $$l ${DESTDIR}${PREFIX}/lib; \
 	done
 
