@@ -1,7 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	curl-7.78.0
-PKGREVISION=	2
+DISTNAME=	curl-8.15.0
 CATEGORIES=	www
 MASTER_SITES=	https://curl.haxx.se/download/
 
@@ -12,7 +11,7 @@ LICENSE=	original-bsd
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-USE_TOOLS+=	pkg-config
+USE_TOOLS+=	pkg-config perl
 USE_LANGUAGES=	c
 
 PKGCONFIG_OVERRIDE+=	libcurl.pc.in
@@ -46,7 +45,6 @@ CONFIGURE_ARGS+=	--disable-cookies
 
 CONFIGURE_ARGS+=	--without-zlib
 CONFIGURE_ARGS+=	--without-winssl
-CONFIGURE_ARGS+=	--without-ssl
 CONFIGURE_ARGS+=	--without-gnutls
 CONFIGURE_ARGS+=	--without-polarssl
 CONFIGURE_ARGS+=	--without-cyassl
