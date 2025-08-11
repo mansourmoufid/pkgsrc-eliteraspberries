@@ -1,0 +1,53 @@
+--- configure.ac.orig	2025-08-11 09:24:50
++++ configure.ac	2025-08-11 09:28:44
+@@ -82,7 +82,7 @@
+ 	    AC_MSG_ERROR([python$PACKAGE_VERSION interpreter not found])
+ 	fi
+         AC_MSG_RESULT($interp)
+-	PYTHON_FOR_BUILD='_PYTHON_PROJECT_BASE=$(abs_builddir) _PYTHON_HOST_PLATFORM=$(_PYTHON_HOST_PLATFORM) PYTHONPATH=$(shell test -f pybuilddir.txt && echo $(abs_builddir)/`cat pybuilddir.txt`:)$(srcdir)/Lib _PYTHON_SYSCONFIGDATA_NAME=_sysconfigdata_$(ABIFLAGS)_$(MACHDEP)_$(MULTIARCH) '$interp
++	PYTHON_FOR_BUILD='_PYTHON_PROJECT_BASE=$(abs_builddir) _PYTHON_HOST_PLATFORM=$(_PYTHON_HOST_PLATFORM) PYTHONPATH=$(shell test -f pybuilddir.txt && echo $(abs_builddir)/`cat pybuilddir.txt`:)$(srcdir)/Lib _PYTHON_SYSCONFIGDATA_NAME=_sysconfigdata '$interp
+     fi
+ elif test "$cross_compiling" = maybe; then
+     AC_MSG_ERROR([Cross compiling required --host=HOST-TUPLE and --build=ARCH])
+@@ -3949,10 +3949,6 @@
+ dnl wrong version of the library)
+ case $ac_sys_system/$ac_sys_release in
+ Darwin/*)
+-	_CUR_CFLAGS="${CFLAGS}"
+-	_CUR_LDFLAGS="${LDFLAGS}"
+-	CFLAGS="${CFLAGS} -Wl,-search_paths_first"
+-	LDFLAGS="${LDFLAGS} -Wl,-search_paths_first -L/usr/local/lib"
+ 	;;
+ esac
+ 
+@@ -3960,8 +3956,6 @@
+ 
+ case $ac_sys_system/$ac_sys_release in
+ Darwin/*)
+-	CFLAGS="${_CUR_CFLAGS}"
+-	LDFLAGS="${_CUR_LDFLAGS}"
+ 	;;
+ esac
+ 
+@@ -4824,7 +4818,7 @@
+ fi
+ 
+ AC_SUBST(EXT_SUFFIX)
+-EXT_SUFFIX=.${SOABI}${SHLIB_SUFFIX}
++EXT_SUFFIX=${SHLIB_SUFFIX}
+ 
+ AC_MSG_CHECKING(LDVERSION)
+ LDVERSION='$(VERSION)$(ABIFLAGS)'
+@@ -4869,11 +4863,7 @@
+ 
+ dnl define LIBPL after ABIFLAGS and LDVERSION is defined.
+ AC_SUBST(PY_ENABLE_SHARED)
+-if test x$PLATFORM_TRIPLET = x; then
+-  LIBPL='$(prefix)'"/${PLATLIBDIR}/python${VERSION}/config-${LDVERSION}"
+-else
+-  LIBPL='$(prefix)'"/${PLATLIBDIR}/python${VERSION}/config-${LDVERSION}-${PLATFORM_TRIPLET}"
+-fi
++LIBPL='$(prefix)'"/${PLATLIBDIR}/python${VERSION}/config-${LDVERSION}"
+ AC_SUBST(LIBPL)
+ 
+ # Check whether right shifting a negative integer extends the sign bit

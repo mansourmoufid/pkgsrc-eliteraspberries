@@ -1,0 +1,14 @@
+$NetBSD$
+
+BLAKE2s (Python-3.9.23.tgz) = 415010f68dafb26bae49948251a4e9add0906c27c0599268a90affa634a07def
+SHA512 (Python-3.9.23.tgz) = 889d0447017a7ba2cbd548fc1d97b9bfb25ae59061e6a567f525d446667ca9524dcb31d3b979b36473303fcaf8e3582833638cca1b5409ac8f78686eb25b2ba2
+Size (Python-3.9.23.tgz) = 26133294 bytes
+SHA1 (patch-Lib_distutils_command_install_egg_info.py) = c352b10fde2ffef4fdcb821d42dd95b3cc68a349
+SHA1 (patch-Lib_distutils_sysconfig.py) = 53cc3afee509ab1a434fc8efbd6d00a7730653c0
+SHA1 (patch-Lib_distutils_unixccompiler.py) = ad2db79bd5c3a0a59bb1c4469666e877f1410783
+SHA1 (patch-Lib_sysconfig.py) = 70bc260633d01b9b6a334fac77bee6e142161e6e
+SHA1 (patch-Lib_venv___init__.py) = 16b2e0fc84ac7fcc04e842d7ed905ef94c90a618
+SHA1 (patch-Makefile.pre.in) = 123df5f459f649833f3925ca0e4e51cc0a99a5cd
+SHA1 (patch-Modules__decimal_libmpdec_mpdecimal.h) = b0f5e7374a2d88dd1bfe6757df86a2414a7ff154
+SHA1 (patch-configure.ac) = dfb50abe5720fde88af3c571a76280da6d7ace37
+SHA1 (patch-setup.py) = 3a7b64f0ef14bad463101b7b4aad662bad083c24

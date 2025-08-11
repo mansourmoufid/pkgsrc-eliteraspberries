@@ -2,7 +2,7 @@
 set -e
 set -x
 LOCALPATCHES="$(cd ../python && bmake show-var VARNAME=LOCALPATCHES)"
-for V in 3.8.13; do
+for V in 3.8.13 3.9.23; do
     X="$(echo ${V} | awk -F. '{print $1}')"
     Y="$(echo ${V} | awk -F. '{print $2}')"
     Z="$(echo ${V} | awk -F. '{print $3}')"
