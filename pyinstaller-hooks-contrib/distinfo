@@ -1,6 +1,5 @@
 $NetBSD$
 
-SHA1 (pyinstaller-hooks-contrib-2021.3.tar.gz) = 0ebfa718940bf166c11ad97e45009f1e92eaafa1
-RMD160 (pyinstaller-hooks-contrib-2021.3.tar.gz) = 28efdcc5b5aa60595ac493cf8d40463655b44a36
-SHA512 (pyinstaller-hooks-contrib-2021.3.tar.gz) = 401190bb10b96002ea867099b75c8c7182937ed2b0f6ac4466a028b5769661e3a7187e9a135359278243048a0dce9f3d331d953e662652156e30368ba42a6360
-Size (pyinstaller-hooks-contrib-2021.3.tar.gz) = 65351 bytes
+BLAKE2s (pyinstaller-hooks-contrib-2021.4.tar.gz) = 1e3f65ca705729e6d6252d8c2071465ed308c9f003e9fd07a82c021ee908e785
+SHA512 (pyinstaller-hooks-contrib-2021.4.tar.gz) = 70f6a4c3099f176a879069b779eced3d7f5e25c9deb3ab032309e3f79bfb21ab4539e40a7727844fba0f73ae32cecdc45dd8a6af97a4d93a22a0b3d6078a7a44
+Size (pyinstaller-hooks-contrib-2021.4.tar.gz) = 69879 bytes

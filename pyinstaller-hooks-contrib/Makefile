@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	pyinstaller-hooks-contrib-2021.3
+DISTNAME=	pyinstaller-hooks-contrib-2021.4
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_PYPI:=p/pyinstaller-hooks-contrib/}
 
