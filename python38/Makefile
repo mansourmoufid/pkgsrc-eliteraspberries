@@ -2,7 +2,7 @@
 
 DISTNAME=	Python-3.8.13
 PKGNAME=	python38-13
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	lang
 MASTER_SITES=	https://www.python.org/ftp/python/3.8.13/
 EXTRACT_SUFX=	.tgz
@@ -58,9 +58,9 @@ fix-suffixes: fix-suffixes.sh
 .include "../../archivers/xz/buildlink3.mk"
 .include "../../databases/sqlite3/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
-.include "../../eliteraspberries/libffi/buildlink3.mk"
-.include "../../eliteraspberries/ncurses/buildlink3.mk"
-.include "../../eliteraspberries/readline/buildlink3.mk"
+.include "../../devel/libffi/buildlink3.mk"
+.include "../../devel/ncurses/buildlink3.mk"
+.include "../../devel/readline/buildlink3.mk"
 .include "../../eliteraspberries/tcl/buildlink3.mk"
 .include "../../eliteraspberries/tk/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"

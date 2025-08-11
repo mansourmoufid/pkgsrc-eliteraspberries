@@ -867,7 +867,6 @@ lib/python${X}.${Y}/lib-dynload/cStringIO.so
 lib/python${X}.${Y}/lib-dynload/_csv.so
 lib/python${X}.${Y}/lib-dynload/_ctypes.so
 lib/python${X}.${Y}/lib-dynload/_ctypes_test.so
-lib/python${X}.${Y}/lib-dynload/_curses_panel.so
 lib/python${X}.${Y}/lib-dynload/_curses.so
 lib/python${X}.${Y}/lib-dynload/datetime.so
 lib/python${X}.${Y}/lib-dynload/_elementtree.so
@@ -875,7 +874,6 @@ lib/python${X}.${Y}/lib-dynload/fcntl.so
 lib/python${X}.${Y}/lib-dynload/_functools.so
 lib/python${X}.${Y}/lib-dynload/future_builtins.so
 lib/python${X}.${Y}/lib-dynload/grp.so
-lib/python${X}.${Y}/lib-dynload/_hashlib.so
 lib/python${X}.${Y}/lib-dynload/_heapq.so
 lib/python${X}.${Y}/lib-dynload/_hotshot.so
 lib/python${X}.${Y}/lib-dynload/_io.so

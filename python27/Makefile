@@ -28,6 +28,11 @@ CONFIGURE_ARGS+=	--without-ensurepip
 CONFIGURE_ARGS+=	--without-pydebug
 CONFIGURE_ARGS+=	--without-pymalloc
 
+CONFIGURE_ARGS+=	have_openssl=yes
+CONFIGURE_ARGS+=	OPENSSL_INCLUDES="-I${BUILDLINK_DIR}/include"
+CONFIGURE_ARGS+=	OPENSSL_LDFLAGS="-L${BUILDLINK_DIR}/lib"
+CONFIGURE_ARGS+=	OPENSSL_LIBS="-lssl -lcrypto"
+
 CONFIGURE_ARGS+=	LIBFFI_INCLUDEDIR=${BUILDLINK_DIR}/include
 CONFIGURE_ARGS+=	OPT=""
 
@@ -53,9 +58,9 @@ fix-suffixes: fix-suffixes.sh
 .include "../../archivers/xz/buildlink3.mk"
 .include "../../databases/sqlite3/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
-.include "../../eliteraspberries/libffi/buildlink3.mk"
-.include "../../eliteraspberries/ncurses/buildlink3.mk"
-.include "../../eliteraspberries/readline/buildlink3.mk"
+.include "../../devel/libffi/buildlink3.mk"
+.include "../../devel/ncurses/buildlink3.mk"
+.include "../../devel/readline/buildlink3.mk"
 .include "../../eliteraspberries/tcl/buildlink3.mk"
 .include "../../eliteraspberries/tk/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
