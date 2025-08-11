@@ -4,7 +4,7 @@
 
 DISTNAME=	tcl${TCL_VERSION}-src
 PKGNAME=	tcl-${TCL_VERSION}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tcl/}
 
@@ -41,6 +41,13 @@ SUBST_STAGE.tcl-config=		post-configure
 SUBST_MESSAGE.tcl-config=	Fixing paths in tclConfig.sh.
 SUBST_FILES.tcl-config=		unix/tclConfig.sh
 SUBST_SED.tcl-config=		-e "s,${WRKSRC},../../..,g"
+
+.if ${OPSYS} == "Darwin"
+post-build:
+.for lib in itcl4.1.1/libitcl4.1.1.dylib thread2.8.2/libthread2.8.2.dylib
+	install_name_tool -id ${PREFIX}/lib/${lib} ${WRKSRC}/unix/pkgs/${lib}
+.endfor
+.endif
 
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
