@@ -2,6 +2,7 @@
 
 DISTNAME=	Python-3.9.23
 PKGNAME=	python39-23
+PKGREVISION=    2
 CATEGORIES=	lang
 MASTER_SITES=	https://www.python.org/ftp/python/3.9.23/
 EXTRACT_SUFX=	.tgz
@@ -12,7 +13,7 @@ COMMENT=	Python programming language
 LICENSE=	python-software-foundation
 
 GNU_CONFIGURE=	yes
-USE_TOOLS+=	autoconf automake autoreconf gmake perl pkg-config
+USE_TOOLS+=	autoconf autoconf-archive automake autoreconf gmake perl pkg-config
 USE_LANGUAGES=	c
 
 PKGCONFIG_OVERRIDE+=	Misc/python.pc.in

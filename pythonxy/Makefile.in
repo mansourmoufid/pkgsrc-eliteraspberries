@@ -13,7 +13,7 @@ COMMENT=	Python programming language
 LICENSE=	python-software-foundation
 
 GNU_CONFIGURE=	yes
-USE_TOOLS+=	autoconf automake autoreconf gmake perl pkg-config
+USE_TOOLS+=	autoconf autoconf-archive automake autoreconf gmake perl pkg-config
 USE_LANGUAGES=	c
 
 PKGCONFIG_OVERRIDE+=	Misc/python.pc.in
