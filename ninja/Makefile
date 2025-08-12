@@ -2,6 +2,7 @@
 
 DISTNAME=	v1.10.0
 PKGNAME=	ninja-${DISTNAME:S/v//}
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GITHUB:=ninja-build/ninja/archive/}
 DIST_SUBDIR=	ninja
@@ -22,4 +23,6 @@ do-build:
 do-install:
 	cd ${WRKSRC} && ${INSTALL_PROGRAM} ninja ${DESTDIR}${PREFIX}/bin/ninja
 
+BUILDLINK_DEPMETHOD.python=build
+.include "../../eliteraspberries/python/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
