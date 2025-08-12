@@ -1,8 +1,6 @@
-$NetBSD$
-
---- setup.py.orig	2020-02-06 18:00:59.000000000 -0500
-+++ setup.py	2020-02-06 18:01:09.000000000 -0500
-@@ -44,7 +44,7 @@
+--- setup.py.orig	2025-07-30 14:13:00
++++ setup.py	2025-08-11 20:57:30
+@@ -28,7 +28,7 @@
  data_files = []
  if sys.platform != 'win32':
      # Only useful on UNIX-like systems
@@ -10,4 +8,4 @@ $NetBSD$
 +    data_files = [('man/man1', ['man/meson.1']),
                    ('share/polkit-1/actions', ['data/com.mesonbuild.install.policy'])]
  
- if __name__ == '__main__':
+ setup(data_files=data_files,**scm_args)

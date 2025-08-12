@@ -1,9 +1,9 @@
 # $NetBSD$
 
-DISTNAME=	meson-0.53.1
+DISTNAME=	meson-1.8.3
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GITHUB:=mesonbuild/}
-GITHUB_RELEASE=	0.53.1
+GITHUB_RELEASE=	${PKGVERSION_NOREV}
 
 MAINTAINER=	mansourmoufid@gmail.com
 HOMEPAGE=	https://mesonbuild.com/
