@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	1.9.1
+DISTNAME=	1.9.6
 PKGNAME=	jsoncpp-${DISTNAME}
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GITHUB:=open-source-parsers/jsoncpp/archive/}
