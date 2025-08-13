@@ -1,13 +1,12 @@
 # $NetBSD$
 
-CMAKE_MAJOR_VERSION=	3
-CMAKE_MINOR_VERSION=	15
-CMAKE_PATCH_VERSION=	7
+CMAKE_MAJOR_VERSION=	4
+CMAKE_MINOR_VERSION=	1
+CMAKE_PATCH_VERSION=	0
 CMAKE_BASEVER=		${CMAKE_MAJOR_VERSION}.${CMAKE_MINOR_VERSION}
 CMAKE_VERSION=		${CMAKE_BASEVER}.${CMAKE_PATCH_VERSION}
 
 DISTNAME=	cmake-${CMAKE_VERSION}
-PKGREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	https://cmake.org/files/v${CMAKE_BASEVER}/
 
@@ -16,31 +15,33 @@ HOMEPAGE=	https://cmake.org/
 COMMENT=	CMake cross-platform build system
 LICENSE=	original-bsd
 
+PKGPATH_OVERRIDE=	devel/cmake
+
 HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	bootstrap
 USE_LANGUAGES=		c c++
+USE_TOOLS=			pkg-config
 
 post-extract:
-.for d in cmcurl cmexpat cmjsoncpp cmlibarchive cmlibrhash cmzlib
+.for d in cmcurl cmexpat cmjsoncpp cmlibarchive cmlibrhash cmlibuv cmzlib
 	cd ${WRKSRC} && rm -rf Utilities/${d}
 .endfor
 
-post-patch:
-	find ${WRKSRC} -name '*.orig' | while read f; do rm -f "$$f"; done
+#post-patch:
+#	find ${WRKSRC} -name '*.orig' | while read f; do rm -f "$$f"; done
 
 CONFIGURE_ARGS+=	--datadir=share/cmake-${CMAKE_VERSION}
 CONFIGURE_ARGS+=	--docdir=share/doc/cmake-${CMAKE_VERSION}
 CONFIGURE_ARGS+=	--mandir=${PKGMANDIR}
 CONFIGURE_ARGS+=	--prefix=${PREFIX}
 
+CONFIGURE_ARGS+=	--bootstrap-system-libuv
+CONFIGURE_ARGS+=	--bootstrap-system-jsoncpp
+CONFIGURE_ARGS+=	--bootstrap-system-librhash
 CONFIGURE_ARGS+=	--system-libs
+CONFIGURE_ARGS+=	--no-system-cppdap
 
 CONFIGURE_ENV+=		CMAKE_OPTIONS="-DCMAKE_PREFIX_PATH=${PREFIX}"
-
-post-configure:
-.for d in cmlibuv
-	cd ${WRKSRC} && rm -rf Utilities/${d}
-.endfor
 
 MAKE_ENV.Darwin+=	DYLD_LIBRARY_PATH=${BUILDLINK_DIR}/lib
 

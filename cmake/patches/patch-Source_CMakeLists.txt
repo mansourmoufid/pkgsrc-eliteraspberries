@@ -1,10 +1,8 @@
-$NetBSD$
-
---- Source/CMakeLists.txt.orig	2020-02-28 12:55:39.000000000 -0500
-+++ Source/CMakeLists.txt	2020-02-28 12:55:47.000000000 -0500
-@@ -652,8 +652,6 @@
-   cmWriteFileCommand.cxx
-   cmWriteFileCommand.h
+--- Source/CMakeLists.txt.orig	2025-08-05 10:55:57
++++ Source/CMakeLists.txt	2025-08-13 16:02:16
+@@ -778,8 +778,6 @@
+   cmNinjaLinkLineDeviceComputer.cxx
+   cmNinjaLinkLineDeviceComputer.h
  
 -  cm_get_date.h
 -  cm_get_date.c

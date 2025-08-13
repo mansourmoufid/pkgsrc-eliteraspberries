@@ -1,9 +1,7 @@
-$NetBSD$
-
---- Modules/CMakeCInformation.cmake.orig	2020-02-06 15:59:25.000000000 -0500
-+++ Modules/CMakeCInformation.cmake	2020-02-06 15:59:43.000000000 -0500
-@@ -100,7 +100,7 @@
-   set(CMAKE_SHARED_MODULE_CREATE_C_FLAGS ${CMAKE_SHARED_LIBRARY_CREATE_C_FLAGS})
+--- Modules/CMakeCInformation.cmake.orig	2025-08-05 10:55:57
++++ Modules/CMakeCInformation.cmake	2025-08-13 13:08:56
+@@ -91,7 +91,7 @@
+   set(CMAKE_USER_MAKE_RULES_OVERRIDE_C "${_override}")
  endif()
  
 -set(CMAKE_C_FLAGS_INIT "$ENV{CFLAGS} ${CMAKE_C_FLAGS_INIT}")

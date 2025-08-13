@@ -1,8 +1,6 @@
-$NetBSD$
-
---- bootstrap.orig	2020-02-04 09:22:11.000000000 -0500
-+++ bootstrap	2020-02-27 18:12:18.000000000 -0500
-@@ -925,8 +925,8 @@
+--- bootstrap.orig	2025-08-05 10:55:57
++++ bootstrap	2025-08-13 14:06:47
+@@ -1110,8 +1110,8 @@
  fi
  
  # If exist compiler flags, set them
@@ -12,14 +10,13 @@ $NetBSD$
 +cmake_cxx_flags="${CPPFLAGS} ${CXXFLAGS}"
  cmake_ld_flags=${LDFLAGS}
  
- # Add Cygwin-specific flags
-@@ -1573,12 +1573,13 @@
+ # Add generator-specific files
+@@ -2099,12 +2101,12 @@
  export CC
  export CXX
  export MAKE
 -export CFLAGS
 -export CXXFLAGS
-+export CPPFLAGS
 +export CFLAGS="${CPPFLAGS} ${CFLAGS}"
 +export CXXFLAGS="${CPPFLAGS} ${CXXFLAGS}"
  export LDFLAGS
@@ -27,6 +24,6 @@ $NetBSD$
  # Run bootstrap CMake to configure real CMake
 -cmake_options="-DCMAKE_BOOTSTRAP=1"
 +cmake_options="-DCMAKE_BOOTSTRAP=1 ${CMAKE_OPTIONS}"
- if [ -n "${cmake_verbose}" ]; then
+ if test -n "${cmake_verbose}"; then
    cmake_options="${cmake_options} -DCMAKE_VERBOSE_MAKEFILE=1"
  fi

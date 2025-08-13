@@ -1,11 +1,11 @@
 $NetBSD$
 
-SHA1 (cmake-3.15.7.tar.gz) = d33cf9da2ce22338c1f177649bad53f7c5e2fe55
-RMD160 (cmake-3.15.7.tar.gz) = fddd38fe75fff823fbf22b151998f08f5d120611
-SHA512 (cmake-3.15.7.tar.gz) = 8cef072c986e36e795c8e611d4a470e53637e25d3b3a5ef2aa51a5b6af76837fc0fe33793df013d836bced4b37bab597b9aad14d7b2e3bf15563e095a20a9ebd
-Size (cmake-3.15.7.tar.gz) = 9273622 bytes
-SHA1 (patch-Modules_CMakeCInformation.cmake) = c591d6aa1f56ecc2cdf9408ee0a5722acb627f1d
-SHA1 (patch-Modules_CMakeCXXInformation.cmake) = 1cb97c564174fe08e94ebbc439bdc9e4098e601c
-SHA1 (patch-Source_CMakeLists.txt) = 369d9bfd958ce3410a4b4ced811cc019b83851cf
-SHA1 (patch-Source_cmArchiveWrite.cxx) = e0ab947d7b5f5fae3d280d44d7253645262149c2
-SHA1 (patch-bootstrap) = 882dc505bfd56da5d48ba8b53c26fa1b895b857a
+BLAKE2s (cmake-4.1.0.tar.gz) = e519a976ffacd3524615a9e171193b861bbe30fd1d0958e3d5707567c5d573d1
+SHA512 (cmake-4.1.0.tar.gz) = 644b6b13539ba0e7f35a7496e4240b1d3361606163f35b69006e47d03ffd9759d35c62a73826253ed168af4196df29983ec10c0f561ea74d7ed6ffee0c2cd8e4
+Size (cmake-4.1.0.tar.gz) = 12042798 bytes
+SHA1 (patch-Modules_CMakeCInformation.cmake) = b604d164542e2b650aa672e4ff77e9672e2ce98c
+SHA1 (patch-Modules_CMakeCXXInformation.cmake) = 5af9beeef3479992431c9884eac5335ca5035fc5
+SHA1 (patch-Source_CMakeLists.txt) = 6da3b8a31e27606305f024dea72d1245237acb6a
+SHA1 (patch-Source_cmArchiveWrite.cxx) = 7cd0fbc02055f3735f265402fdbffac1ad7309e1
+SHA1 (patch-Source_cmCTest.cxx) = e09148747495ad1019261762a46bd60878b2d3b8
+SHA1 (patch-bootstrap) = f65c6b077b132be2e354bda7619ece7118bf5e75
