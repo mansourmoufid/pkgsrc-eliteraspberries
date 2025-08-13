@@ -11,8 +11,10 @@ bin/sfv-hash
 bin/tiger-hash
 bin/tth-hash
 bin/whirlpool-hash
+etc/rhashrc
 include/rhash.h
 include/rhash_torrent.h
+lib/pkgconfig/librhash.pc
 man/man1/ed2k-link.1
 man/man1/edonr256-hash.1
 man/man1/edonr512-hash.1
@@ -25,5 +27,3 @@ man/man1/sfv-hash.1
 man/man1/tiger-hash.1
 man/man1/tth-hash.1
 man/man1/whirlpool-hash.1
-share/rhashrc
-@pkgdir etc

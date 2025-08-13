@@ -1,3 +1,4 @@
 @comment $NetBSD$
-lib/librhash.0.dylib
+lib/librhash.${PKGVERSION}.dylib
+lib/librhash.1.dylib
 lib/librhash.dylib
