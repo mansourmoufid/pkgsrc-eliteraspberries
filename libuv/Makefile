@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	libuv-v1.34.2
+DISTNAME=	libuv-v1.51.0
 PKGNAME=	${DISTNAME:S/-v/-/}
 CATEGORIES=	devel
 MASTER_SITES=	https://dist.libuv.org/dist/v${PKGVERSION_NOREV}/

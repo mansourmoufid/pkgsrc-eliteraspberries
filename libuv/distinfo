@@ -1,7 +1,6 @@
 $NetBSD$
 
-SHA1 (libuv-v1.34.2.tar.gz) = 9b5b19143d8ebf759f6f9b03f54a55f093c620bf
-RMD160 (libuv-v1.34.2.tar.gz) = 210bec2d513a8625259da2b5bf2fe25449e5635a
-SHA512 (libuv-v1.34.2.tar.gz) = 1b526af6e68441999f62d00edae55141330f9a16f80eb1be995e935bd951e00daf50e75461c1d28cfe2c4a4918482b23ceea702af61010b73752a63bab89e286
-Size (libuv-v1.34.2.tar.gz) = 1235997 bytes
-SHA1 (patch-configure.ac) = 9cba5895bc19390bbfb49b76bbec4af9e0f91834
+BLAKE2s (libuv-v1.51.0.tar.gz) = f85a46dcada21afb8d5454c3d172985fdb2309f91126363a52fd73355e6a201f
+SHA512 (libuv-v1.51.0.tar.gz) = 99e5c6529fb97019d20d5ce8638be504c35236e7102a7a6b7a2242205928d152d6b535bb6f45961a78506d408eebd0e3300b090969a64fa87dfdf6c8f4291a12
+Size (libuv-v1.51.0.tar.gz) = 1343638 bytes
+SHA1 (patch-configure.ac) = ea3167f7e5ec2c45180ea8159fa0e6fa49407655

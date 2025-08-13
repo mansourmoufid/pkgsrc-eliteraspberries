@@ -1,5 +1,6 @@
 @comment $NetBSD$
 include/uv.h
+include/uv/darwin.h
 include/uv/errno.h
 include/uv/threadpool.h
 include/uv/unix.h
