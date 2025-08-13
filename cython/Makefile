@@ -1,7 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	Cython-${PKGVERSION_NOREV}
-PKGNAME=	cython-0.29.24
+DISTNAME=	cython-3.1.2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_PYPI:=c/cython/}
 
