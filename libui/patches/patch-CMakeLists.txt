@@ -1,0 +1,10 @@
+--- CMakeLists.txt.orig	2025-08-15 12:41:17
++++ CMakeLists.txt	2025-08-15 12:41:36
+@@ -102,7 +102,6 @@
+ 	# TODO actually get rid of incremental linking here
+ else()
+ 	set(_COMMON_CFLAGS
+-		-Wall -Wextra -pedantic
+ 		-Wno-unused-parameter
+ 		-Wno-switch
+ 		-fvisibility=hidden
