@@ -6,4 +6,7 @@ SHA512 (setuptools-49.6.0.zip) = aad6e74b0e276da0f79c9429860a6d1c7860a30e9a02ce5
 Size (setuptools-49.6.0.zip) = 2188590 bytes
 SHA1 (patch-pkg_resources___init__.py) = 8414c90d2cbe62adc15a50a3e5484366746e81a6
 SHA1 (patch-setup.py) = f3d0baa8f907775fba7d9587f24a27b2c5a9ba45
+SHA1 (patch-setuptools__distutils_command_install_egg_info.py) = 6617f6df0281b8c16005def8f21168e6cd94dbc1
+SHA1 (patch-setuptools__distutils_sysconfig.py) = dc579554771919d6a651907799b310397d464946
+SHA1 (patch-setuptools__distutils_unixccompiler.py) = d20ecfd66df761a9c9a18b39dafeb225bd8e566d
 SHA1 (patch-setuptools_command_build_ext.py) = c3cad3858027eb40406e8b62cef270cf7e21433f
