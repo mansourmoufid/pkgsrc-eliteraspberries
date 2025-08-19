@@ -1,8 +1,10 @@
 # $NetBSD$
 
-DISTNAME=	scons-3.1.2
-CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=scons/}
+DISTNAME=		SCons-${PKGVERSION_NOREV}
+PKGNAME=		scons-4.7.0
+CATEGORIES=		devel
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=scons/scons/${PKGVERSION_NOREV}/}
+EXTRACT_SUFX=	.tar.gz
 
 MAINTAINER=	mansourmoufid@gmail.com
 HOMEPAGE=	http://scons.org/
