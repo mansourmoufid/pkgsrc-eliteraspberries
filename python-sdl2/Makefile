@@ -1,13 +1,11 @@
 # $NetBSD$
 
-DISTNAME=	py-sdl2-0.9.6
-PKGNAME=	${DISTNAME:S/py-/python-/}
-PKGREVISION=	2
-CATEGORIES=	devel multimedia
-MASTER_SITES=	${MASTER_SITE_GITHUB:=marcusva/py-sdl2/archive/}
-DISTFILES=	rel_${PKGVERSION_NOREV:S/./_/g}.tar.gz
-DIST_SUBDIR=	py-sdl2
-WRKSRC=		${WRKDIR}/py-sdl2-rel_${PKGVERSION_NOREV:S/./_/g}
+DISTNAME=		py-sdl2-0.9.17
+PKGNAME=		${DISTNAME:S/py-/python-/}
+CATEGORIES=		devel multimedia
+MASTER_SITES=	${MASTER_SITE_GITHUB:=py-sdl/}
+GITHUB_PROJECT=	py-sdl2
+GITHUB_TAG=		${PKGVERSION_NOREV}
 
 MAINTAINER=	mansourmoufid@gmail.com
 HOMEPAGE=	https://github.com/marcusva/py-sdl2

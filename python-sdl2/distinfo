@@ -1,6 +1,5 @@
 $NetBSD$
 
-SHA1 (py-sdl2/rel_0_9_6.tar.gz) = cf26fd2fd7d0ee8c222501e98b1b591e851268cf
-RMD160 (py-sdl2/rel_0_9_6.tar.gz) = cea88afbab80f31aeeff8952c2c7e0aec2f6d4c1
-SHA512 (py-sdl2/rel_0_9_6.tar.gz) = 92a80dcdfa02fc2a9f8ef7d572d9410280f332d54d561dffaf074cc2051901d31c131576612607ef9408105b4e8273ba14a0ce2ac376ee273d37f7ab6a0239e9
-Size (py-sdl2/rel_0_9_6.tar.gz) = 716364 bytes
+BLAKE2s (py-sdl2-0.9.17.tar.gz) = 8352f49281f04cc0eabe66ec312b6ba01b289ee727a0c7dc6052d0de8fbf9634
+SHA512 (py-sdl2-0.9.17.tar.gz) = 5d077b0016a7f46e10d0dcdd9bc555d18cf4b62eabf5997ad49d9ab2d31e7ac09680883037daa55c5e06dff65d4ab0fce8d7bc620290db1141064892a55a6ec1
+Size (py-sdl2-0.9.17.tar.gz) = 782707 bytes
