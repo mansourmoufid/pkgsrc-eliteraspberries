@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	sdl2-2.0.10
+DISTNAME=	sdl2-2.30.11
 CATEGORIES=	devel multimedia
 DISTFILES=	${DISTNAME:tu}.tar.gz
 MASTER_SITES=	https://www.libsdl.org/release/
@@ -18,9 +18,6 @@ USE_LANGUAGES=	c
 
 PKGCONFIG_OVERRIDE+=	sdl2.pc.in
 
-#pre-configure:
-#	cd ${WRKSRC}; autoreconf -i
-
 CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	--disable-static
 CONFIGURE_ARGS+=	--with-pic
@@ -28,9 +25,9 @@ CONFIGURE_ARGS+=	--with-pic
 CONFIGURE_ARGS+=	--enable-audio
 CONFIGURE_ARGS+=	--enable-events
 CONFIGURE_ARGS+=	--enable-pthreads
-CONFIGURE_ARGS+=	--enable-threads
+CONFIGURE_ARGS+=	--enable-render
 CONFIGURE_ARGS+=	--enable-video
-CONFIGURE_ARGS+=	--enable-video-opengl
+CONFIGURE_ARGS+=	--disable-video-x11
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -41,10 +38,13 @@ CONFIGURE_ARGS+=	--enable-ssemath
 .endif
 
 .if ${OPSYS} == "Darwin"
-CONFIGURE_ARGS+=	--disable-video-x11
 CONFIGURE_ARGS+=	--enable-video-cocoa
+CONFIGURE_ARGS+=	--enable-video-metal
+CONFIGURE_ARGS+=	--enable-render-metal
 .else
+CONFIGURE_ARGS+=	--enable-video-vulkan
 CONFIGURE_ARGS+=	--enable-video-x11
+CONFIGURE_ARGS+=	--enable-video-wayland
 .endif
 
 .include "../../mk/pthread.buildlink3.mk"
