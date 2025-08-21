@@ -1,6 +1,7 @@
 # $NetBSD$
 
 DISTNAME=	pyinstaller-6.3.0
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_PYPI:=p/pyinstaller/}
 
@@ -22,6 +23,15 @@ post-patch:
 
 pre-build:
 	cd ${WRKSRC}/bootloader && python ./waf --no-universal2 all
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "Darwin"
+post-install:
+	${MKDIR} ${DESTDIR}${PREFIX}/lib/python/PyInstaller/bootloader/Darwin-64bit
+	${INSTALL_PROGRAM} ${WRKSRC}/bootloader/build/*/run* \
+		${DESTDIR}${PREFIX}/lib/python/PyInstaller/bootloader/Darwin-64bit
+.endif
 
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../eliteraspberries/pyinstaller-hooks-contrib/buildlink3.mk"

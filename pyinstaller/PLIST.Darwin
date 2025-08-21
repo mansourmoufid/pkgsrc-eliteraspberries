@@ -1,1 +1,5 @@
 @comment $NetBSD$
+lib/python/PyInstaller/bootloader/Darwin-64bit/run
+lib/python/PyInstaller/bootloader/Darwin-64bit/run_d
+lib/python/PyInstaller/bootloader/Darwin-64bit/runw
+lib/python/PyInstaller/bootloader/Darwin-64bit/runw_d
