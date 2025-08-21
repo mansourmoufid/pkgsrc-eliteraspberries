@@ -2,7 +2,7 @@
 
 DISTNAME=	alpha4.1
 PKGNAME=	libui-${DISTNAME:S/alpha//}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	devel graphics
 MASTER_SITES=	${MASTER_SITE_GITHUB:=andlabs/libui/archive/}
 DIST_SUBDIR=	libui
