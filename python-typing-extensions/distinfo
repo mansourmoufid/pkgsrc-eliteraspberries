@@ -1,6 +1,5 @@
 $NetBSD$
 
-SHA1 (typing_extensions-4.0.0.tar.gz) = cc23326bc8276270fcb6a999927271d06939a2b4
-RMD160 (typing_extensions-4.0.0.tar.gz) = a9feed618c40c8c751ebe599ecd410b89830aa76
-SHA512 (typing_extensions-4.0.0.tar.gz) = 9bc488d3ea535a47a5ae8d2e25831b23025f4c63f856f3750f6d66ed18f021c79f3226cae3a37e6513807b17c61a8f3b8949b72e6eafece9ecbb331a41ff830e
-Size (typing_extensions-4.0.0.tar.gz) = 37038 bytes
+BLAKE2s (typing_extensions-4.2.0.tar.gz) = 30a84eae3068d936dd764145107c95d3193d54b2ef0b435621636fcab99e0b3e
+SHA512 (typing_extensions-4.2.0.tar.gz) = 69be30a9cf56a3bb342d744f0fce7761b2b8d6e18362cbda5e14f3c7b67cffcf0e597aac87151b43352182ce27364f122e591601acd6a9811cc3157e0461f35a
+Size (typing_extensions-4.2.0.tar.gz) = 42982 bytes
