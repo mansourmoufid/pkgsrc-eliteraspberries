@@ -41,5 +41,19 @@ do-install:
 	for l in ${WRKSRC}/library/lib*.*; do \
 		${INSTALL_LIB} $$l ${DESTDIR}${PREFIX}/lib; \
 	done
+.if ${OPSYS} == "Darwin"
+	install_name_tool -id ${PREFIX}/lib/libmbedtls.dylib \
+		${DESTDIR}${PREFIX}/lib/libmbedtls.dylib
+	install_name_tool -change libmbedx509.dylib ${PREFIX}/lib/libmbedx509.dylib \
+		${DESTDIR}${PREFIX}/lib/libmbedtls.dylib
+	install_name_tool -change libmbedcrypto.dylib ${PREFIX}/lib/libmbedcrypto.dylib \
+		${DESTDIR}${PREFIX}/lib/libmbedtls.dylib
+	install_name_tool -id ${PREFIX}/lib/libmbedx509.dylib \
+		${DESTDIR}${PREFIX}/lib/libmbedx509.dylib
+	install_name_tool -change libmbedcrypto.dylib ${PREFIX}/lib/libmbedcrypto.dylib \
+		${DESTDIR}${PREFIX}/lib/libmbedx509.dylib
+	install_name_tool -id ${PREFIX}/lib/libmbedcrypto.dylib \
+		${DESTDIR}${PREFIX}/lib/libmbedcrypto.dylib
+.endif
 
 .include "../../mk/bsd.pkg.mk"
